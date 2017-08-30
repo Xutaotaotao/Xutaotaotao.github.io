@@ -1,24 +1,16 @@
 # Site settings
-title: Your Blog
-SEOTitle: 你的博客 | Your Blog
+title: Taotao's Blog
+SEOTitle: 徐涛焘的博客 | Taotao's blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: ""
-keyword: ""
+email: xutaotao1108@outlook.com
+description: "做个潇洒的假极客"
+keyword: "徐涛焘的博客,徐涛焘,博客,前端,前端设计,前端爱好者,css,JavaScript"
 url: "https://xutaotaotao.github.io/"              # your host, for absolute URL
 baseurl: "/"         # for example, '/blog' if your blog hosted on 'host/blog'
 
-
-
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
-#twitter_username:  huxpro
-facebook_username:  huxpro
-
-
+weibo_username:     爱好很多能力很小的徐先生
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
@@ -27,8 +19,6 @@ permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
-
-
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
@@ -68,8 +58,8 @@ ga_domain: huangxuan.me
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "就是这么简单大方，做个潇洒的假极客。"
+sidebar-avatar: /img/me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -82,8 +72,8 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
+        title: "Taotao's Blog",
+        href: "https://xutaotaotao.github.io/"
     },{
         title: "Foo",
         href: "#"
