@@ -43,7 +43,7 @@ kramdown:
 # Duoshuo settings
 #duoshuo_username: 
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+duoshuo_share: false                     # set to false if you want to use Comment without Sharing
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -64,16 +64,7 @@ friends: [
         title: "Taotao's Blog",
         href: "https://xutaotaotao.github.io/"
     },{
-        title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
+        title: "湖北大学互联网协会",
+        href: "http://hlwxh.xutaotao.cn"
     }
 ]
