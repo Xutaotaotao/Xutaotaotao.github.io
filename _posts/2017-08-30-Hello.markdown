@@ -4,7 +4,7 @@ title:      "Hello , this is Taotao's Blog"
 subtitle:   " \"Hello World, Hello Blog\""
 date:       2017-08-30 19:51:00
 author:     "Taotao"
-header-img: "img/post-bg-2017-8-30.jpg"
+header-img: "img/post-bg-2017-8-30.jpeg"
 tags:
     - 生活
 ---
