@@ -29,7 +29,9 @@
 
     Str.toUpperCase();
     
-大小写转换的应用:重名验证，邮箱验证，验证码，密码验证 3)获取指定位置字符:
+大小写转换的应用:重名验证，邮箱验证，验证码，密码验证 
+
+3)获取指定位置字符:
 
     var char=str.charAt(index);
     
@@ -50,5 +52,5 @@
 2.蠢:默认只能从位置0开始 
 
 	var index=str.indexOf("keyword",from);
-	
+
 from:开始查找的位置，从from开始向后查找。
