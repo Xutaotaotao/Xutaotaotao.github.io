@@ -12,8 +12,8 @@ tags:
 1.String的创建<br>
 1)创建原始类型字符串变量<br>
 <code>
-var gender="man";<br>
-var priceString=String(150,5);<br>
+var gender="man";
+var priceString=String(150,5);
 </code>
 
 2)创建引用类型字符串对象<br>
@@ -57,8 +57,10 @@ var priceString=String(150,5);<br>
 <br>
 	返回关键字所在位置，如果没找到，返回–1
 	<br>
-	特点:1.懒:只找第一个关键字位置
-	<br>
-	     2.蠢:默认只能从位置0开始
-
-var index=str.p
+	特点:
+	1.懒:只找第一个关键字位置
+	2.蠢:默认只能从位置0开始
+<code>
+	var index=str.indexOf("keyword",from);
+</code>
+from:开始查找的位置，从from开始向后查找。
