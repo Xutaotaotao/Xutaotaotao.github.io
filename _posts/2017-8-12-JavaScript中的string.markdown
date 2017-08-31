@@ -13,6 +13,7 @@ tags:
 1)创建原始类型字符串变量<br>
 <code>
 var gender="man";
+<br>
 var priceString=String(150,5);
 </code>
 
@@ -34,6 +35,7 @@ var priceString=String(150,5);
 </code>
 <br>
 都转为大写:
+<br>
 <code>
 	Str.toUpperCase();
 </code>
@@ -58,9 +60,12 @@ var priceString=String(150,5);
 	返回关键字所在位置，如果没找到，返回–1
 	<br>
 	特点:
+	<br>
 	1.懒:只找第一个关键字位置
+	<br>
 	2.蠢:默认只能从位置0开始
 <code>
 	var index=str.indexOf("keyword",from);
 </code>
+<br>
 from:开始查找的位置，从from开始向后查找。
