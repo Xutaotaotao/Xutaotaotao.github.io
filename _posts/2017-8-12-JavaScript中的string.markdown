@@ -47,5 +47,8 @@
 
 1.懒:只找第一个关键字位置
 
-2.蠢:默认只能从位置0开始 var index=str.indexOf("keyword",from);
+2.蠢:默认只能从位置0开始 
+
+	var index=str.indexOf("keyword",from);
+	
 from:开始查找的位置，从from开始向后查找。
