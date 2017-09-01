@@ -9,7 +9,7 @@ tags:
     - JavaScript
 ---
 
-### String的创建
+## String的创建
 #### 1.创建原始类型字符串变量
 
     var gender="man";
