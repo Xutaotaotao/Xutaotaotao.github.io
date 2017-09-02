@@ -6,7 +6,7 @@ email: xutaotao1108@outlook.com
 description: "做个潇洒的假极客"
 keyword: "徐涛焘的博客,徐涛焘,博客,前端,前端设计,前端爱好者,css,JavaScript"
 url: "https://xutaotaotao.github.io/"              # your host, for absolute URL
-baseurl: "/"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: "/Xutaotaotao.github.io"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
 RSS: false
@@ -23,7 +23,7 @@ anchorjs: true                          # if you want to customize anchor. check
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 
 
@@ -37,18 +37,18 @@ kramdown:
 
 
 
-# Disqus settings
-#disqus_username: _your_disqus_short_name_
+#Disqus settings
+#disqus_username: xutaotao
 
 # Duoshuo settings
 #duoshuo_username: 
 # Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: false                     # set to false if you want to use Comment without Sharing
+duoshuo_share: false                  # set to false if you want to use Comment without Sharing
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "只想做个潇洒的假极客。"
-sidebar-avatar: /img/me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /Xutaotaotao.github.io/img/me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

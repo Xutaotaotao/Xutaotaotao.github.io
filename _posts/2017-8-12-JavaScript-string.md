@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      "JavaScript-js"
+title:      "JavaScript-String"
 subtitle:   "js中的string总结"
 date:       2017-08-05 19:51:00
-author:     "Taotao"
+author:     "xutaotao"
 header-img: "img/post-bg-2017-8-30.jpeg"
 tags:
     - JavaScript
