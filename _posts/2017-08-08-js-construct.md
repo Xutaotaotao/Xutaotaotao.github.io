@@ -6,7 +6,7 @@ layout: post
 categories:
   - 前端日记
 tags:
-  - javascript
+  - JavaScript
 ---
 1.程序结构有三类：顺序，分支，循环。今天讨论分支和循环两种结构。
 

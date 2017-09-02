@@ -7,7 +7,7 @@ layout: post
 categories:
   - 前端日记
 tags:
-  - javascript
+  - JavaScript
 ---
 对于一个简单逻辑的网页没想到今天花了我几个小时，问题得不到解决，做出的东西很菜鸡。
 

@@ -6,7 +6,7 @@ layout: post
 categories:
   - 前端日记
 tags:
-  - javascript
+  - JavaScript
 ---
 1.函数（方法）：封装执行一项专门任务的步骤的代码序列。
 
