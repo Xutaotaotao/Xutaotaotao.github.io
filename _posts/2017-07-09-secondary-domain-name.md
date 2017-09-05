@@ -3,8 +3,6 @@ title: 关于如何将二级域名解析到服务器子目录的问题
 date: 2017-07-09T16:26:58+00:00
 author: xutaotao
 layout: post
-categories:
-  - 前端日记
 tags:
   - 二级域名
 ---

@@ -3,8 +3,6 @@ title: js中的函数（方法）基础知识回顾
 date: 2017-08-07T21:33:41+00:00
 author: xutaotao
 layout: post
-categories:
-  - 前端日记
 tags:
   - JavaScript
 ---

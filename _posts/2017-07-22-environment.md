@@ -3,8 +3,6 @@ title: 搭建环境使我快乐
 date: 2017-07-22T18:21:11+00:00
 author: xutaotao
 layout: post
-categories:
-  - 心情日记
 tags:
   - 生活
 ---

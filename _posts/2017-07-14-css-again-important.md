@@ -3,8 +3,6 @@ title: '重学CSS&#8211;代码结构的重要性'
 date: 2017-07-14T21:31:39+00:00
 author: xutaotao
 layout: post
-categories:
-  - 前端日记
 tags:
   - css
 ---

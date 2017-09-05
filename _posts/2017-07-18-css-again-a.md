@@ -3,8 +3,6 @@ title: 重学CSS-链接，导航
 date: 2017-07-18T22:47:46+00:00
 author: xutaotao
 layout: post
-categories:
-  - 前端日记
 tags:
   - css
 ---

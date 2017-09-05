@@ -3,8 +3,6 @@ title: 重学css-盒子模型，定位
 date: 2017-07-16T21:27:54+00:00
 author: xutaotao
 layout: post
-categories:
-  - 前端日记
 tags:
   - css
 ---

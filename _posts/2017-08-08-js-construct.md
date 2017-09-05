@@ -3,8 +3,6 @@ title: js中的分支结构和循环结构
 date: 2017-08-08T22:12:59+00:00
 author: xutaotao
 layout: post
-categories:
-  - 前端日记
 tags:
   - JavaScript
 ---

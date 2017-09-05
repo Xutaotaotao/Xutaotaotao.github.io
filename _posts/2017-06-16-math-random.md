@@ -4,8 +4,6 @@ title: 'Math.random()，function document.onkeydown()，setIntvel'
 date: 2017-06-16T16:46:18+00:00
 author: xutaotao
 layout: post
-categories:
-  - 前端日记
 tags:
   - JavaScript
 ---

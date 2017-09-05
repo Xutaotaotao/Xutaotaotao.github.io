@@ -3,8 +3,6 @@ title: jQuery中mousemove和css中的position搭配使用更配
 date: 2017-07-07T12:51:20+00:00
 author: xutaotao
 layout: post
-categories:
-  - 前端日记
 tags:
   - jquery
 ---

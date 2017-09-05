@@ -3,8 +3,6 @@ title: html基础知识回顾2——常用的html标签
 date: 2017-07-30T09:17:09+00:00
 author: xutaotao
 layout: post
-categories:
-  - 前端日记
 tags:
   - html
 ---

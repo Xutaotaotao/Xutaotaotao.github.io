@@ -3,8 +3,6 @@ title: '关于CSS中BACKGROUND-IMAGE: URL()的问题'
 date: 2017-06-14T13:42:33+00:00
 author: xutaotao
 layout: post
-categories:
-  - 前端日记
 tags:
   - css
 ---

@@ -3,8 +3,6 @@ title: 仿豆瓣静态首页总结
 date: 2017-07-29T11:43:12+00:00
 author: xutaotao
 layout: post
-categories:
-  - 前端日记
 tags:
   - html
   - css

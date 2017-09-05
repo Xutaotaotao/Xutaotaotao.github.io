@@ -3,8 +3,6 @@ title: 终于作息时间正常
 date: 2017-07-06T17:24:12+00:00
 author: xutaotao
 layout: post
-categories:
-  - 心情日记
 tags:
     - 生活
 ---

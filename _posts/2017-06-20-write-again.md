@@ -3,8 +3,7 @@ title: 一篇写了两遍的博文
 date: 2017-06-20T18:47:51+00:00
 author: xutaotao
 layout: post
-categories:
-  - 心情日记
+
 tags:
   - 生活
 ---

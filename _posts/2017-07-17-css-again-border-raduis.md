@@ -3,8 +3,6 @@ title: 重学CSS-圆角，投影，不透明度，图像替换
 date: 2017-07-17T22:59:46+00:00
 author: xutaotao
 layout: post
-categories:
-  - 前端日记
 tags:
   - css
 ---
