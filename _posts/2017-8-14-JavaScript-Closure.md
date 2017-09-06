@@ -1,10 +1,10 @@
 ---
-title: 'js中的闭包（坑）'
+layout: post
+title: "js中的闭包（坑）"
 subtitle:   "js中的闭包总结"
-date: 2017-08-14T13:42:33+00:00
+date: 2017-08-14 13:42:33
 author: xutaotao
 header-img:"img/post-bg-js-version.jpg"
-layout: post
 tags:
   - JavaScript
 ---
