@@ -6,31 +6,29 @@ layout: post
 tags:
   - JavaScript
 ---
-1.函数（方法）：封装执行一项专门任务的步骤的代码序列。
+**1.函数（方法）：封装执行一项专门任务的步骤的代码序列。**
 
-2.定义方法的方式
+**2.定义方法的方式**
 
 1）使用function关键字声明方式定义方法
 
-`function function_name（arg1,arg2,...,argn）{<br />
-function_body;<br />
-}`
+	function function_name（arg1,arg2,...,argn）{
+		function_body;
+	}
 
-2）使用Function对象方式定义方法
+2）使用Function类直接创建来定义方法
 
-`var function_name=new Function("arg1","arg2",...,"argn","fuction_body;");`
+	var function_name=new Function("arg1","arg2",...,"argn","fuction_body;");
 
 3)使用匿名函数赋值的方式定义方法
   
-`<br />
-var function_name=function(arg1,arg2,...,argn){<br />
-function_body;<br />
-}<br />
-` 
+	var function_name=function(arg1,arg2,...,argn){
+		function_body;
+	}
 
-注：以上两种方式只有第一种使用function关键字声明方式定义方法才会被提前解析。
+注：以上三种方式只有第一种使用function关键字声明方式定义方法才会被提前解析。
 
-3.方法调用时的细节问题
+**3.方法调用时的细节问题**
 
 1）调用：方法名（参数值列表）
 
@@ -40,7 +38,7 @@ function_body;<br />
 
 4）返回值：方法执行完成后，由方法返回的一个数据。
 
-4.关于作用域的问题
+**4.关于作用域的问题**
 
 1）作用域的简单理解：一个变量的可用范围。
 
@@ -52,4 +50,4 @@ function_body;<br />
 
 <img class="size-medium wp-image-468 aligncenter" src="http://www.xutaotao.cn/wp-content/uploads/2017/08/type-conversion-1-300x210.png" alt="" width="300" height="210" srcset="http://www.xutaotao.cn/wp-content/uploads/2017/08/type-conversion-1-300x210.png 300w, http://www.xutaotao.cn/wp-content/uploads/2017/08/type-conversion-1-386x270.png 386w, http://www.xutaotao.cn/wp-content/uploads/2017/08/type-conversion-1.png 684w" sizes="(max-width: 300px) 100vw, 300px" />
 
-注：局部（函数）作用域在调用方法时创建，方法执行完立刻销毁。
+*注：局部（函数）作用域在调用方法时创建，方法执行完立刻销毁。*
