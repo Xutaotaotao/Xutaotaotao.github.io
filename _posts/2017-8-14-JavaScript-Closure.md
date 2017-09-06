@@ -1,13 +1,14 @@
 ---
-layout: post
-title: "js中的闭包（坑）"
+layout: 	post
+title: 		"js中的闭包（坑）"
 subtitle:   "js中的闭包总结"
-date: 2017-08-14 13:42:33
-author: xutaotao
-header-img:"img/post-bg-js-version.jpg"
+date: 		2017-08-14 13:42:33
+author: 	"xutaotao"
+header-img: "img/post-bg-js-version.jpg"
 tags:
   - JavaScript
 ---
+
 ## 前言
 
 *闭包这个玩意真的很好玩，要是玩得好，那就是利器，玩得不好的话，那就是凶器。每次遇到闭包的问题都会复习一下闭包。*
