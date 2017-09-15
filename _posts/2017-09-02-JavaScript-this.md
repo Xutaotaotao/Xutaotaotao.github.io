@@ -19,13 +19,16 @@ tags:
 
 1. 无任何前缀的函数调用时，this指向顶层对象或者叫全局对象，浏览器里是window（nodejs里是global）。
 
+<pre>
 	function fn(){
 	console.log(this);
 	}
 	fn();                //打印结果为window{...}
+</pre>
 
 2. 方法调用的时候，this指向方法所在的对象。
 
+<pre>
 	var robot = {
 		name:"cup",
 		say:function(){
@@ -33,9 +36,11 @@ tags:
 		}
 	};
 	robot.say();        //打印结果为'cup'
+</pre>
 
 3. 构造函数里，this指向新生成的实例。
 
+<pre>
 	function Robot(name){
 		this.name = name;
 		this.say = function(){
@@ -46,9 +51,11 @@ tags:
 	robot_1.say()        //  打印结果为'bower'
 	var robot_2 = new Robot('cup');
 	robot_2.say()        //  打印结果为'cup'
+</pre>
 
 4. apply/call调用的时候，this指向apply/call方法中的第一个参数
 
+<pre>
 	var robot_1 = {name:'cup'}
 	var robot_2 = {name:'bower'}
 	function say(){
@@ -56,6 +63,7 @@ tags:
 	}
 	say.call(robot_1)     //  打印结果为'cup'
 	say.call(robot_2)     //  打印结果为'bower'
+</pre>
 
 /*对于apply/call这个js里面的特殊用法注意一下。*/
 
@@ -63,20 +71,24 @@ tags:
 
 1. 方法内的this调用
 
+<pre>
 	var robot = {
 	name : "cup",
 	say : function() { console.log( "Hi, I'm " + this.name + "."); }
 	}
 	robot.say()            // 打印结果为 Hi, I'm cup.
+</pre>
 
 2. 函数内的this调用
 
+<pre>
 	var robot = {
 	name : "cup",
 	say : function() { console.log( "Hi, I'm " + this.name + "."); }
 	}
 	var fn = robot.say;			// 将robot.say引用的函数赋值给全局变量 fn.
 	fn()                        // 打印结果为 Hi, I'm .
+</pre>
 
 ## 后记 ##
 
