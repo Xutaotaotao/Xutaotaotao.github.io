@@ -20,27 +20,27 @@ tags:
 1. 无任何前缀的函数调用时，this指向顶层对象或者叫全局对象，浏览器里是window（nodejs里是global）。
 
 	function fn(){
-    	console.log(this);
+	console.log(this);
 	}
 	fn();                //打印结果为window{...}
 
 2. 方法调用的时候，this指向方法所在的对象。
 
 	var robot = {
-            name:"cup",
-            say:function(){
-                   console.log(this.name)
-                }
-            };
+		name:"cup",
+		say:function(){
+		console.log(this.name)
+		}
+	};
 	robot.say();        //打印结果为'cup'
 
 3. 构造函数里，this指向新生成的实例。
 
 	function Robot(name){
-    this.name = name;
-    this.say = function(){
-                console.log(this.name)
-             }
+		this.name = name;
+		this.say = function(){
+		console.log(this.name)
+		}
 	}
 	var robot_1 = new Robot('bower');
 	robot_1.say()        //  打印结果为'bower'
@@ -51,9 +51,8 @@ tags:
 
 	var robot_1 = {name:'cup'}
 	var robot_2 = {name:'bower'}
-
 	function say(){
-  	console.log(this.name)
+	console.log(this.name)
 	}
 	say.call(robot_1)     //  打印结果为'cup'
 	say.call(robot_2)     //  打印结果为'bower'
@@ -65,16 +64,16 @@ tags:
 1. 方法内的this调用
 
 	var robot = {
-    name : "cup",
-    say : function() { console.log( "Hi, I'm " + this.name + "."); }
+	name : "cup",
+	say : function() { console.log( "Hi, I'm " + this.name + "."); }
 	}
 	robot.say()            // 打印结果为 Hi, I'm cup.
 
 2. 函数内的this调用
 
 	var robot = {
-    name : "cup",
-    say : function() { console.log( "Hi, I'm " + this.name + "."); }
+	name : "cup",
+	say : function() { console.log( "Hi, I'm " + this.name + "."); }
 	}
 	var fn = robot.say;			// 将robot.say引用的函数赋值给全局变量 fn.
 	fn()                        // 打印结果为 Hi, I'm .
