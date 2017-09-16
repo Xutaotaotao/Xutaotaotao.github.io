@@ -17,7 +17,7 @@ tags:
 
 **对于this的指向问题大概有如下四种**
 
-1. 无任何前缀的函数调用时，this指向顶层对象或者叫全局对象，浏览器里是window（nodejs里是global）。
+1.无任何前缀的函数调用时，this指向顶层对象或者叫全局对象，浏览器里是window（nodejs里是global）。
 
 <pre>
 	function fn(){
@@ -26,7 +26,7 @@ tags:
 	fn();                //打印结果为window{...}
 </pre>
 
-2. 方法调用的时候，this指向方法所在的对象。
+2.方法调用的时候，this指向方法所在的对象。
 
 <pre>
 	var robot = {
@@ -38,7 +38,7 @@ tags:
 	robot.say();        //打印结果为'cup'
 </pre>
 
-3. 构造函数里，this指向新生成的实例。
+3.构造函数里，this指向新生成的实例。
 
 <pre>
 	function Robot(name){
@@ -53,7 +53,7 @@ tags:
 	robot_2.say()        //  打印结果为'cup'
 </pre>
 
-4. apply/call调用的时候，this指向apply/call方法中的第一个参数
+4.apply/call调用的时候，this指向apply/call方法中的第一个参数
 
 <pre>
 	var robot_1 = {name:'cup'}
@@ -69,7 +69,7 @@ tags:
 
 说了this的指向问题不得不说一下，this在什么时候来调用的问题。
 
-1. 方法内的this调用
+1.方法内的this调用
 
 <pre>
 	var robot = {
@@ -79,7 +79,7 @@ tags:
 	robot.say()            // 打印结果为 Hi, I'm cup.
 </pre>
 
-2. 函数内的this调用
+2.函数内的this调用
 
 <pre>
 	var robot = {
