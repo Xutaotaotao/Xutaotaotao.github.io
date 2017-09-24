@@ -10,7 +10,7 @@ tags:
 ---
 
 
-// 1.删除数组中与指定数值相等的元素
+1.删除数组中与指定数值相等的元素
 
 	a = [1,2,3,4,5,7,8,7,7]
 	function removeWithoutCopy(arr, item) {
@@ -25,7 +25,7 @@ tags:
 	 var b = removeWithoutCopy(a,7);
 	 console.log(b);
 
- //2.给数组添加新的元素，不改变原数组
+2.给数组添加新的元素，不改变原数组
 
 	function append(arr, item) {
 		var newArr = arr.slice(0);
@@ -35,7 +35,7 @@ tags:
 	var c = append(a,9);
 	console.log(c);
 
-//3.找出数组arr中重复出现过的元素
+3.找出数组arr中重复出现过的元素
 
 	var d=[1,2,3,4,2,5,7,9,7]
 	function duplicates(arr){
@@ -51,7 +51,7 @@ tags:
 	console.log(duplicates(d));
 
 
-//4.实现一个打点计时器，要求
+4.实现一个打点计时器，要求
 
 1)从 start 到 end（包含 start 和 end），每隔 100 毫秒 console.log 一个数字，每次数字增幅为 1
 
@@ -79,7 +79,7 @@ tags:
 
 
 
-// 5.创建一个可执行对象.既可以当作对象来使用（有原型链），也可以当作函数来直接调用.
+5.创建一个可执行对象.既可以当作对象来使用（有原型链），也可以当作函数来直接调用.
 
 	function SuperRobot(data) {
 	    var say = function() { return "Hello World!"; };
