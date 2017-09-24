@@ -37,7 +37,9 @@ tags:
 ### 前端使用异步的场景
 
 1）定时任务：setTimeout,setIneverval
+
 2）网络请求：ajax请求，动态`<img>`加载
+
 3）事件绑定
 
 
@@ -96,15 +98,16 @@ alert是同步，setTimeout是异步
 
 
 ### 一个关于setTimeout的笔试题
-console.log(1);
-setTimeout(function() {
-    console.log(2);
-}, 0);
-console.log(3);
-setTimeout(function() {
-    console.log(4);
-}, 1000);
-console.log(5);
+
+	console.log(1);
+	setTimeout(function() {
+	    console.log(2);
+	}, 0);
+	console.log(3);
+	setTimeout(function() {
+	    console.log(4);
+	}, 1000);
+	console.log(5);
 
 ### 日期API
 
