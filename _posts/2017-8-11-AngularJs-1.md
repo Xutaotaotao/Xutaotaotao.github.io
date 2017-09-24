@@ -31,7 +31,7 @@ tags:
 
 4.与 JavaScript 表达式不同，AngularJS 表达式支持过滤器。
 
-###AngularJS指令
+### AngularJS指令
 
 AngularJS 通过被称为 指令 的新属性来扩展 HTML。
 AngularJS 通过内置的指令来为应用添加功能。
