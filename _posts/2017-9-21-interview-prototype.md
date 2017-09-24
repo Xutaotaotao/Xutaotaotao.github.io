@@ -1,6 +1,6 @@
 ---
 layout: 	post
-title: 		"js代码片段"
+title: 		"js代码片段一"
 subtitle:   "一些杂碎笔记"
 date: 		2017-09-21 13:42:33
 author: 	"xutaotao"
@@ -76,27 +76,11 @@ tags:
 	    };
 	}
 
-	function insert_data_to_array( array_a ,insert_index, array_b)
-	{
-	    //在这里写入代码
-	    for (var i = 0; i < array_b.length; i++) {
-	        array_a.splice(insert_index,0,array_b[i]);
-	        insert_index++;
-	    }
-	    return array_a;
-	}
-	var A=[1,4,5,7,9];
-	var B=[2,3];
-	console.log(insert_data_to_array(A,1,B)) ;
-
-	// 将数组 arr 中的元素作为调用函数 fn 的参数
-	function argsAsArray(fn, arr) {
-	    return fn.apply(this,arr);
-	}
 
 
 
 // 5.创建一个可执行对象.既可以当作对象来使用（有原型链），也可以当作函数来直接调用.
+
 	function SuperRobot(data) {
 	    var say = function() { return "Hello World!"; };
 	    say.__proto__ = data.age;
