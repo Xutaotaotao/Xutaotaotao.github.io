@@ -12,6 +12,7 @@ baseurl: "/Xutaotaotao.github.io"         # for example, '/blog' if your blog ho
 RSS: false
 weibo_username: u/5319493854 
 github_username: Xutaotaotao
+jianshu_username: u/3dc8e3ea06bc
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
