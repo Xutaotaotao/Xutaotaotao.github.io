@@ -44,7 +44,7 @@ tags:
 		background: orange;
 	}
 
-###### 利用position:fixed属性，margin:auto这个必须不要忘记了。
+###### 3.利用position:fixed属性，margin:auto这个必须不要忘记了。
 
 	.three{
 		position: fixed;
@@ -165,20 +165,20 @@ tags:
 		background: yellow;
 	}
 
-###### 左边左浮动，右边加个margin-left
+###### 2.左边左浮动，右边加个margin-left
 
-#two .left{
-	float: left;
-	width: 200px;
-	height: 200px;
-	background: red;
-}
-#two .right{
-	margin-left: 200px;
-	height: 200px;
-	width: auto;
-	background: yellow;
-}
+	#two .left{
+		float: left;
+		width: 200px;
+		height: 200px;
+		background: red;
+	}
+	#two .right{
+		margin-left: 200px;
+		height: 200px;
+		width: auto;
+		background: yellow;
+	}
 
 ###### 左边绝对定位，右边加个margin-left
 
@@ -259,7 +259,7 @@ tags:
 		height: 200px;
 		background: yellow;
 	}
-	
+
 #### 四、css中的hack技术有哪些？
 
 ### JS类
