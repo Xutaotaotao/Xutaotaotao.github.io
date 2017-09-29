@@ -266,6 +266,111 @@ tags:
 
 #### 一、js面向对象有几种方式并用js写出
 
+##### 1.工厂模式
+
+	function createPerson(name,age,job){
+		var o = new Object();
+		o.name = name;
+		o.age = age;
+		o.job = job;
+		o.sayName = function(){
+			alert(this.name);
+		};
+		return o;
+	}
+
+	var person1 = createPerson("Xutaotao",22,"student");
+
+##### 2.构造函数模式
+
+	function Person(name,age,job){
+		this.name = name;
+		this.age = age;
+		this.job = job;
+		this.sayName = function(){
+			alert(this.name);
+		};
+	}
+
+##### 3.原型模式
+
+	function Person(){
+
+	}
+	Person.prototype.name = "Xutaotao";
+	Person.prototype.age = 22;
+	Person.prototype.job = "student";
+	Person.prototype.sayName = function(){
+		alert(this.name);
+	};
+
+##### 4.更加简单的原型模式
+
+	function Person(){
+
+	}
+	Person.prototype = {
+		name:"Nicholas",
+		age:22,
+		job:"student",
+		sayName:function(){
+			alert(this.name);
+		}
+	}
+
+##### 6.组合使用构造函数模式和原型模式
+
+	function Person(name,age,job){
+		this.name = name;
+		this.age = age;
+		this.job = job;
+		this.friends = ["haha","hehe"];
+	}
+	Person.prototype = {
+		constructor:Person,
+		sayName:function(){
+			alert(this.name);
+		}
+	}
+
+#####  7.动态原型模式
+
+	function Person(name,age,job){
+		this.name = name;
+		this.age = age;
+		this.job = job;
+
+		if (typeof this.sayName != "function") {
+			Person.prototype.sayName = function(){
+				alert(this.name);
+			};
+		}
+	}
+
+##### 8.寄生构造函数模式
+
+	function Person(name,age,job){
+		var o = new Object();
+		o.name = name;
+		o.age = job;
+		o.sayName = function(){
+			alert(this.name);
+		};
+		return o;
+	}
+
+##### 9.稳妥构造函数模式
+
+	function Person(name,age,job){
+		//创建要返回的对象
+		var o = new Object();
+		//可以在这里定义私有变量和函数
+		//添加方法
+		o.sayName = function(){
+			alert(name);
+		};
+		return o;
+	}
 
 ### 综合类
 
@@ -276,3 +381,21 @@ tags:
 ### 编程题
 
 #### 一、用js实现快速排序算法
+
+	function quickSort(arr){
+		if (arr.length <= 1) {
+			return arr;
+		}
+		var piovtIndex = Math.floor(arr.length/2);
+		var piovt  = arr.splice(piovtIndex,1)[0];
+		var left = [];
+		var right = [];
+		for (var i = 0; i < arr.length; i++) {
+			if (arr[i] < piovt) {
+				left.push(arr[i]);
+			}else{
+				right.push(arr[i]);
+			}
+		}
+		return quickSort(left).concat([piovt],quickSort(right));
+	}	
