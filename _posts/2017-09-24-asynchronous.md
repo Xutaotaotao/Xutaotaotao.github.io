@@ -1,6 +1,6 @@
 ---
 layout: 	post
-title: 		"js代码片段二"
+title: 		"js代码片段三"
 subtitle:   "一些杂碎笔记"
 date: 		2017-09-24 13:42:33
 author: 	"xutaotao"
