@@ -60,7 +60,7 @@ CSRF，通常称为跨站请求伪造，英文名Cross-site request forgery
 
 * CSRF攻击原理
 
-<img src="/Xutaotaotao.github.io/img/in-post/post-jsversion/csrf1.png" alt="">
+<img src="/Xutaotaotao.github.io/img/in-post/post-js-version/csrf1.png" alt="">
 
 
 * CSRF防御措施
