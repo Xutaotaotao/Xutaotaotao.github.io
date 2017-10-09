@@ -1,7 +1,6 @@
 ---
 layout: 	post
 title: 		"AngularJs学习笔记1"
-subtitle:   "为什么学AngularJs"
 date: 		2017-08-14 13:42:33
 author: 	"xutaotao"
 header-img: "img/banner-angularjs.jpg"
