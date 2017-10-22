@@ -1,10 +1,10 @@
 ---
 layout: 	post
-title: 		"一些关于HTML&CSS的基础问题"
+title: 		"一些HTML&CSS的基础问题"
 subtitle:   "杂碎笔记"
 date: 		2017-09-25 17:42:33
 author: 	"xutaotao"
-header-img: "img/HTML5.jpg"
+header-img: "img/HTML5.png"
 tags:
   - HTML
 ---
@@ -46,4 +46,3 @@ HTML 标签可以拥有属性。属性提供了有关 HTML 元素的更多的信
 **9.标签和属性是什么关系？**
 属性总是在 HTML 元素的开始标签中规定。
 
-**10.
