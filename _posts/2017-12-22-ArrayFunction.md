@@ -6,7 +6,7 @@ date: 		2017-12-22 15:42:33
 author: 	"xutaotao"
 header-img: "img/post-bg-js-version.jpg"
 tags:
-  - Javascript
+  - JavaScript
 ---
 
 ### filter方法（ES5 Way）

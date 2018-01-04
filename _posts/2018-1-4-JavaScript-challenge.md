@@ -6,7 +6,7 @@ date: 		2018-1-4 15:42:33
 author: 	"xutaotao"
 header-img: "img/post-bg-js-version.jpg"
 tags:
-  - Javascript
+  - JavaScript
 ---
 
 # 1.JavaScript Drums
