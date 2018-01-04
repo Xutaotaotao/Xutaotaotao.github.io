@@ -9,7 +9,7 @@ tags:
   - Javascript
 ---
 
-# JavaScript Drums
+# 1.JavaScript Drums
 
 ## 涉及知识点
 - 获取键盘事件
