@@ -66,7 +66,7 @@ tags:
 作为API调用者，我想获取有关电影的信息，以便在电影浏览页面和电影详细页面给网站用户显示电影
 
 #### 验收标准：
-
+s
 - 提供一个API返回多部电影详细信息
 - 支持按类别过滤
 - 支持按电影名称搜索
@@ -78,6 +78,10 @@ tags:
 
 ## 项目环境
 - windows操作系统
-- node.js，mongoDB
+- node.js，mongoDB,express
+- [node.js的安装]:（http://www.runoob.com/nodejs/nodejs-install-setup.html）
+- [mogoDB的安装]:（https://www.jianshu.com/p/591b8d63e816）
+- express的安装:打开命令行运行：npm install express --save
 
 ## 搭建项目
+
