@@ -81,7 +81,9 @@ s
 - node.js，mongoDB,express
 - [node.js的安装]:（http://www.runoob.com/nodejs/nodejs-install-setup.html）
 - [mogoDB的安装]:（https://www.jianshu.com/p/591b8d63e816）
-- express的安装:打开命令行运行：npm install express --save
+- express的安装:打开命令行运行：`npm install express --save`
 
 ## 搭建项目
+用express建立一个以ejs为模板引擎的项目，打开命令行，输入`express -e cinema`,
+
 

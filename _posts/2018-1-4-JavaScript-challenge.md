@@ -58,3 +58,26 @@ keypress 事件与 keydown 事件类似。当按钮被按下时，会发生该�
 
 ## js控制样式变换
 `$("selector").css("style1","style2","style3"...)`
+
+# 2.JS Clock
+## 涉及知识点
+- document.querySelector()方法
+- js获取时间的方法
+- transform的相关方法
+
+## document.querySelector()方法
+querySelector(CSS selectors) 方法返回文档中匹配指定 CSS 选择器的一个元素。
+
+参数遵循CSS的选择器的规则
+
+注意： querySelector() 方法仅仅返回匹配指定选择器的第一个元素。如果需要返回所有的元素，使用 querySelectorAll() 方法替代。
+
+## js获取时间的方法
+    let nowTime = new Data();//获取现在的时间
+    let seconds = nowTime.getSeconds();//获取现在时间的秒数
+    let mins = nowTime.getMinutes();//获取现在时间的分钟数
+    let hours = nowTime.getHours();//获取现在时间的小时数
+
+## transform方法
+
+`transform:none|transform-functions`Transform属性应用于元素的2D或3D转换。这个属性允许你将元素旋转，缩放，移动，倾斜等。
