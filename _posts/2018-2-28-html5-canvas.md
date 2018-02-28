@@ -2,7 +2,7 @@
 layout: 	post
 title: 		"HTML实现canvas画板"
 subtitle:   "杂碎笔记"
-date: 		2017-09-25 17:42:33
+date: 		2018-02-28 17:42:33
 author: 	"xutaotao"
 header-img: "img/HTML5.png"
 tags:
