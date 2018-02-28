@@ -24,8 +24,7 @@ CSS 变量当前有两种形式：
 	:root{
 		--base:#ffc600;
 		--spacing:10px;
-		--blur:10px;
-	}
+		--blur:10px;	}
 
 :root 这个 CSS 伪类匹配文档树的根元素。对于 HTML 来说，:root 表示 <html> 元素，除了优先级更高之外，与 html 选择器相同。在声明全局 CSS 变量时 :root 会很有用。
 
