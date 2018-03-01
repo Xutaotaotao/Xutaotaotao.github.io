@@ -21,6 +21,7 @@ tags:
 
 canvas起初是空白的。为了展示，首先脚本需要找到渲染上下文，然后在它的上面绘制。<canvas> 元素有一个叫做 getContext() 的方法，这个方法是用来获得渲染上下文和它的绘画功能。getContext()只有一个参数，上下文的格式,参数现在唯一的合法值为2d。
 #### （1）document.querySelector()方法来为<canvas>元素得到DOM对象。
+
 ##### 返回值
 返回文档中匹配指定的选择器组的第一个元素(使用深度优先先序遍历文档的节点 | 并且通过文档标记中的第一个元素，并按照子节点数量的顺序迭代顺序节点)。
 ##### 语法
@@ -92,7 +93,7 @@ selectors 是一个字符串，包含一个或是多个 CSS 选择器 ，多个�
         ctx.lineWidth--;
         }
     }
-    
+
 ### 5.给canvas添加监听事件
 
     canvas.addEventListener('mousedown',(e) => {
