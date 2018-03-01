@@ -4,7 +4,7 @@ title: 		Canvas画板实现
 subtitle:   "Canvas"
 date: 		2018-2-28 20:42:33
 author: 	"xutaotao"
-header-img: "img/HTML5.PNG"
+header-img: "img/HTML5.png"
 tags:
   - HTML5
 ---
@@ -12,8 +12,9 @@ tags:
 ## 步骤及方法
 
 ### 1.首先建立canvas画板
+
     <canvas id="draw" width="800" height="800"></canvas>
-    
+
 <canvas> 元素创造了一个固定大小的画布，它公开了一个或多个渲染上下文，其可以用来绘制和处理要展示的内容。
 
 ### 2.渲染上下文
