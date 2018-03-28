@@ -1,10 +1,10 @@
 ---
 layout: 	post
 title: 		"Oracle基础知识总结"
-subtitle:   "Oracle baseic"
+subtitle:   "Oracle basis"
 date: 		2018-3-13 21:21
 author: 	"xutaotao"
-header-img: "img/post-bg-js-version.jpg"
+header-img: "img/book.jpeg"
 tags:
   - 数据库
 ---

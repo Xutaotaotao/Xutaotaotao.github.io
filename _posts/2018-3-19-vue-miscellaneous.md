@@ -2,7 +2,7 @@
 layout:     post
 title:      "VUE杂记"
 subtitle:   "VUE"
-date:       2018-3-13 21:21
+date:       2018-3-19 21:21
 author:     "xutaotao"
 header-img: "img/book.jpeg"
 tags:
