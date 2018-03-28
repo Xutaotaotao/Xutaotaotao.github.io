@@ -6,7 +6,7 @@ date: 		2018-3-13 21:21
 author: 	"xutaotao"
 header-img: "img/book.jpeg"
 tags:
-  - 数据库
+  - Oracle
 ---
 
 
