@@ -150,6 +150,7 @@ new Vue({
  `npm run build`
 
  在这里就已经实现了用webpack加载静态资源的功能。
+ 
 
  ### 4.配置webpack-dev-server
 
