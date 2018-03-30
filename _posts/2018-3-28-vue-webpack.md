@@ -9,11 +9,11 @@ tags:
   - Vue.js,Webpack
 ---
 
-**目标：**
+### 目标：
 
 - 配置开发时的前端工程
 
-**环境**
+###  环境
 
 - win10家庭中文版+node6.13.1+webpack3.10.0
 
@@ -37,6 +37,7 @@ tags:
 
 - 在项目目录下创建src目录
 - 在src目录下创建app.vue文件
+
 ```
 <template>
     <div id="weather">
@@ -61,6 +62,7 @@ tags:
     }
 </style>
 ```
+
 此时的app.vue文件无法直接在页面上展示，需要对webpack进行配置。
 
 
@@ -68,6 +70,7 @@ tags:
 
 - 在项目目录下创建webpack.confing.js
 - 配置出口，入口文件以及相应的文件module
+
 ```
 const path = require('path');
 
@@ -113,8 +116,11 @@ module.exports = {
         ]
     }
 };
+
 ```
+
 - 在src目录下创建index.js
+
 ```
 // 引入vue,app.vue
 import Vue from 'vue'
@@ -128,6 +134,7 @@ document.body.appendChild(root);
 new Vue({
     render:(h) => h(App)
 }).$mount(root);
+
 ```
 
 - 在package.json文件里面加入脚本
@@ -139,6 +146,7 @@ new Vue({
 `npm i style-loader url-loader file-loader css-loader less less-loader --save`
 
 - 然后将项目bulid
+
  `npm run build`
 
  在这里就已经实现了用webpack加载静态资源的功能。
@@ -148,6 +156,7 @@ new Vue({
  - 修改package.json中的script
 
 ```
+
 "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",//修改之前的bulid
 "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js"//添加dev
 ```
@@ -157,6 +166,7 @@ new Vue({
 `npm i cross-env --save`
 
 - 再次配置webpack.config.js
+
 ```
 const path = require('path');
 const HTMLPlugin = require('html-webpack-plugin');
@@ -239,11 +249,13 @@ module.exports = config;
 
 - 安装重新配置的需要的依赖项
 
+
 ` npm i html-webpack-plugin webpack-dev-server@2.11.2 --save`
 
 到这里基本的项目配置就完成了，然后就可以开始开发了。
 
 下面为开发需要的依赖：
+
 ```
 "dependencies": {
     "cross-env": "^5.1.4",
@@ -262,6 +274,7 @@ module.exports = config;
   }
   
 ```
+
 项目目录结构
 
 ![Contents.png](https://upload-images.jianshu.io/upload_images/8108267-71dfbeec530edbb0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
