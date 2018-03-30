@@ -2,7 +2,7 @@
 layout:     post
 title:      "从零开始用webpack+vue搭建前端工程的基本过程"
 subtitle:   "webpack+vue"
-date:       2018-3-19 21:21
+date:       2018-3-28 21:21
 author:     "xutaotao"
 header-img: "img/book.jpeg"
 tags:
@@ -150,7 +150,7 @@ new Vue({
  `npm run build`
 
  在这里就已经实现了用webpack加载静态资源的功能。
- 
+
 
  ### 4.配置webpack-dev-server
 
