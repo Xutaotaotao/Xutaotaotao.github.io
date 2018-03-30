@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "VUE杂记"
-subtitle:   "VUE"
+subtitle:   "VUE Miscellaneous"
 date:       2018-3-19 21:21
 author:     "xutaotao"
 header-img: "img/book.jpeg"
