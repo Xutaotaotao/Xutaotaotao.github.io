@@ -164,9 +164,12 @@ new Vue({
 
  在这里就已经实现了用webpack加载静态资源的功能。
 
+
  ### 4.配置webpack-dev-server
 
+
  #### 4.1修改package.json中的script
+
 
 ```
 "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",//修改之前的bulid
@@ -175,9 +178,11 @@ new Vue({
 
 #### 4.2安装依赖项cross-env
 
+
 `npm i cross-env --save`
 
 #### 4.3再次配置webpack.config.js
+
 ```
 //引入各种模块
 const path = require('path');
