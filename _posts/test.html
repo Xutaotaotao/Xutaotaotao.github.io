@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+		let dataCache = localStorage;
+		$.ajax({
+			type:'POST',
+			url:'http://rong.hand-china.com/hrzp/oauth/token?client_id=client2&client_secret=secret&grant_type=password&username=admin&password=hand@2468',
+			dataType:'json',
+			success:function(data){
+				dataCache.setItem('access_token',data.access_token)	
+			}
+		})
+		$.ajax({ 
+		type:'POST',
+		url:'http://rong.hand-china.com/hrzp/oauth/token?client_id=client2&client_secret=secret&grant_type=password&username=admin&password=hand@2468&access_token='+ dataCache.getItem('access_token'),
+		dataType:'json',
+		data:{
+			
+		},
+		success:function(data){
+			if(data.success){
+				// do something
+			}else{
+				//do something
+			}
+		}
+		})
+</script>
+</html>
