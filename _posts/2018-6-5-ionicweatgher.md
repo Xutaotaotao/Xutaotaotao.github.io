@@ -164,6 +164,7 @@ export class HomePage {
 - 设置界面UI控件
 主要就是一个输入框和提交按钮
 通过表单提交的方式将数据保存在本地存储数据中。
+
 ```
 <ion-header>
   <ion-navbar>
@@ -189,8 +190,12 @@ export class HomePage {
     </ion-row>
   </ion-grid>
 </ion-content>
+
 ```
+
 - 设置组件的控制器
+
+
 ```
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -233,6 +238,7 @@ export class SettingsPage {
   }
 }
 ```
+
 到这里，一个简单的天气APP就完成了。通过此实例你可以学习到，ionic基本的UI控件使用，以及angualr创建一个服务实例的基本过程。
 
 如果需要生成APP
