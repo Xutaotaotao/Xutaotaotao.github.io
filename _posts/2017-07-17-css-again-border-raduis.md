@@ -11,7 +11,8 @@ tags:
 1.创建固定宽度的圆角框。
 
   * 需要两个图像，一个底部曲线图像用于框的底部，一个顶部曲线图像用于框的顶部。此方法对于单色而且没有边框的简单框是有效的。
-  * /\*box1\*/
+  * box1
+  ```
   
     .box1{
   
@@ -38,10 +39,10 @@ tags:
     padding: 0 20px;
   
     }
-
+```
   * 上述方法改进：使用相同的方式，不在框上设置背景颜色，而是设置一个重复显示的背景图像。然后将底部曲线图像应用到另一个元素上。特点：因为框未设置高度，所以它会随着文本尺寸的增加进行垂直扩展。
-  * /\*box2\*/
-  
+  * box2
+```
     .box2{
   
     width: 424px;
@@ -73,13 +74,13 @@ tags:
     padding-right: 20px;
   
     }
-
+```
 
 2.滑动门技术。
 
   * 需要四个图像，两个顶部图像组成顶部曲线，两个底部图像组成底部曲线和框的主体，底部图像的高度必须与框的最大高度相同。
-  * /\*box3\*/
-  
+  * box3
+```
     .box3{
   
     width: 20em;
@@ -119,13 +120,13 @@ tags:
     padding-right: 1em;
   
     }
-
+```
 3.山顶角。
 
   * 不用创建有颜色的角图像，而是创建曲线形的位图角蒙板，主框div添加背景颜色。
   * 缺点：添加太多非语义性标记。
-  * /\*box4\*/
-  
+  * box4
+```
     .box4{
   
     width: 20em;
@@ -163,9 +164,12 @@ tags:
     padding-right: 5%;
   
     }
+```   
+
   * 改进：用css3实现多个背景图像。
-  * /\*box5\*/
-  
+  * box5
+
+```
     .box5 {
   
     width: 30em;
@@ -195,13 +199,13 @@ tags:
   
     background-position: top left,top right,bottom left,bottom right;
   
-    }</li> </ul> 
-    
+    }
+```
     4.border-radius。
     
       * 设置边框角半径。
-      * /\*box6\*/
-  
+      * box6
+```
         .box6 {
   
         width: 30em;
@@ -233,11 +237,14 @@ tags:
         border-radius: 1em;
   
         }
-    
+```
     5.border-image。
     
       * 背景图像为有四边曲线的图像，图像平铺。
-      * .box7 {
+      * box7
+
+```
+      .box7 {
   
         width: 30em;
   
@@ -264,13 +271,16 @@ tags:
         -webkit-border-image:url(../img/corners.gif) 25% 25% 25% 25% / 25px round ;
   
         }
-    
+```
+
     **投影方法**
     
     1.简单投影。
     
       * 将一个大的投影图像应用于容器div的背景，然后使用负的外边距偏移此图像，从而显示出投影。
-      * /\*shadow1\*/
+      * shadow1
+
+```
   
         .img-wrapper1{
   
@@ -293,11 +303,13 @@ tags:
         margin:-5px 5px 5px -5px;
   
         }
-    
+
+```    
     2.clagnut投影法。
     
       * 与上一方法相似，但是使用相对定位来偏移图像。
-      * /\*shadow2\*/
+      * shadow2
+```      
   
         .img-wrapper2{
   
@@ -323,11 +335,11 @@ tags:
   
         top:-5px;</p> 
         }</li> </ul> 
-        
+```        
         3.box-shadow方法。
         
-          * /\*shadow3\*/
-  
+          * shadow3
+``` 
             .img-wrapper3 img{
   
             -webkit-box-shadow:3px 3px 6px #666;
@@ -337,7 +349,7 @@ tags:
             box-shadow: 3px 3px 6px #666;
   
             }
-        
+```        
         **不透明度**
         
         1.css不透明度。

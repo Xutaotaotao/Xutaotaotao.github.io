@@ -26,7 +26,6 @@ tags:
 
 3.确定此处的语句是否被注释掉，若被注释掉，请去除#
 
-<img class="size-full wp-image-210 aligncenter" src="http://www.xutaotao.cn/wp-content/uploads/2017/07/OQYW5QZB3D9ZCFMZE1G3.png" alt="" width="341" height="97" />
 
 4.在文档最后添加如下代码，箭头标记的地方特别注意，前面一定不要有#，如果有#，NameVirtualHost无法开启，至于NameVirtualHost是什么，自行Google或者百度，推荐Google.到此，httpd.conf文件配置完成，按下esc键退出编辑状态，输入命令   ：wq  退出并保存。
 
