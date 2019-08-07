@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "js中Array类型的方法"
+title:      "JavaScript中Array类型的方法"
 subtitle:   " 操作数组的各种方法"
 date:       2017-09-02 19:51:00
 author:     "xutaotao"

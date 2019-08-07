@@ -1,6 +1,6 @@
 ---
 layout: 	post
-title: 		"秋招鄙视题（不定更新）"
+title: 		"秋招鄙视题"
 subtitle:   "愿自己走过秋招还能热勇一腔"
 date: 		2017-09-22 16:42:33
 author: 	"xutaotao"

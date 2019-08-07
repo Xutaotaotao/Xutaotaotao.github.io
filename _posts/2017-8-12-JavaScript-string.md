@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "JavaScript-String"
-subtitle:   "js中的string总结"
+subtitle:   "JavaScript中的string总结"
 date:       2017-08-05 19:51:00
 author:     "xutaotao"
 header-img: "img/post-bg-2017-8-30.jpeg"

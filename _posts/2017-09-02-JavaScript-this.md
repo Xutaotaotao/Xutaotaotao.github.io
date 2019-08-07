@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "js中this引用的指向问题"
+title:      "JavaScript中this引用的指向问题"
 subtitle:   "这么多this你说到底指谁呢"
 date:       2017-09-02 19:51:00
 author:     "xutaotao"

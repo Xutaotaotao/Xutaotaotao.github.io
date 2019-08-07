@@ -1,6 +1,6 @@
 ---
 layout: 	post
-title: 		"js中的闭包（坑）"
+title: 		"JavaScript中的闭包问题"
 subtitle:   "js中的闭包总结"
 date: 		2017-08-14 13:42:33
 author: 	"xutaotao"
