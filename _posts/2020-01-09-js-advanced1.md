@@ -4,10 +4,10 @@ title:      "JS高级-JavaScript继承"
 subtitle:   "JavaScript继承"
 date:       2020-01-09 18:36
 author:     "xutaotao"
-header-img: "img/book.jpeg"
+header-img: "img/post-bg-js-version.jpg"
 tags:
 
-  + Javascript
+  + Javascript高级
 
 ---
 
