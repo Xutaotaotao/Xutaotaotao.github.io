@@ -6,8 +6,7 @@ date:       2020-01-09 18:36
 author:     "xutaotao"
 header-img: "img/post-bg-js-version.jpg"
 tags:
-
-  + Javascript高级
+  - Javascript高级
 
 ---
 

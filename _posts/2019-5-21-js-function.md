@@ -1,13 +1,12 @@
 ---
 layout:     post
-title:      "JavaScript函数-函数参数"
+title:      "Js高级-JavaScript函数参数"
 subtitle:   "JavaScript function"
 date:       2019-5-21 23:36
 author:     "xutaotao"
 header-img: "img/post-bg-js-version.jpg"
 tags:
-
-  + Javascript高级
+  - Javascript高级
 
 ---
 
