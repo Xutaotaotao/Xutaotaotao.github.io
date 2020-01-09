@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "JavaScript高级-JavaScript继承"
+title:      "JS高级-JavaScript继承"
 subtitle:   "JavaScript继承"
 date:       2020-01-09 18:36
 author:     "xutaotao"
@@ -9,11 +9,10 @@ tags:
   - Javascript
 ---
 
-# Javascript继承
 
 ### 概述
 当谈到继承时，JavaScript只有一种结构：对象。每个实例对象（ object ）都有一个私有属性（称之为 __proto__ ）指向它的构造函数的原型对象（prototype ）。该原型对象也有一个自己的原型对象( __proto__ ) ，层层向上直到一个对象的原型对象为 null。根据定义，null 没有原型，并作为这个原型链中的最后一个环节。几乎所有JavaScript 中的对象都是位于原型链顶端的 Object 的实例。JS中继承可以按照是否使用object函数，将继承分成两部分（Object.create是ES5新增的方法，用来规范化这个函数）。
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/277039/1577115213216-7f217da5-07f4-4271-8f36-7d8a55135c29.png#align=left&display=inline&height=331&name=image.png&originHeight=366&originWidth=800&size=107477&status=done&style=none&width=723)
+
 ### 继承属性
 js对象是动态的属性“包”，js对象有一个指向一个原型的链。当试图访问一个对象的属性时，它不仅仅在对象上搜寻，还会搜寻改对象的原型以及该对象的原型的原型，依次层层向上搜索，直到找到一个名字匹配的属性或到达原型链的末尾。
 ### 继承方案
@@ -150,7 +149,6 @@ child2.colors.push('2')
 console.log(child1)
 console.log(child2)
 ```
-![image.png](https://cdn.nlark.com/yuque/0/2019/png/277039/1577113326639-042bc6d8-ae03-47b9-8cf4-c7598e74412e.png#align=left&display=inline&height=387&name=image.png&originHeight=484&originWidth=932&size=67139&status=done&style=none&width=746)
 
 #### 7.ES6类继承extends
 计算矩形面积的例子，正方形继承矩形
