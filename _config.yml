@@ -62,10 +62,7 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "別話不说",
-        href: "https://www.xutaotao.cn"
-    },{
-        title: "湖北大学互联网协会",
-        href: "http://hlwxh.xutaotao.cn"
-    }
+        title: "Ninecat-ui",
+        href: "https://ninecat-ui.github.io/"
+    },
 ]
