@@ -1,13 +1,13 @@
 ---
 layout:     post
 title:      "JS高级-call, apply, bind模拟实现"
-subtitle:   "JavaScript New"
+subtitle:   "JavaScript call, apply, bind"
 date:       2020-01-09 18:36
 author:     "xutaotao"
 header-img: "img/post-bg-js-version.jpg"
 tags:
 
-  + Javascript call, apply, bind
+  + Javascript高级
 
 ---
 
