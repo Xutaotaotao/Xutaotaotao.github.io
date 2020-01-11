@@ -1,72 +1,74 @@
 ---
 layout:     post
-title:      "JS高级-call,apply,bind模拟实现"
+title:      "JS高级-call, apply, bind模拟实现"
 subtitle:   "JavaScript New"
 date:       2020-01-09 18:36
 author:     "xutaotao"
 header-img: "img/post-bg-js-version.jpg"
 tags:
 
-  - Javascript call,apply,bind
+  + Javascript call, apply, bind
 
 ---
 
-
 ### call实现
-`**call()**` 方法使用一个指定的 `this` 值和单独给出的一个或多个参数来调用一个函数。
 
-```javascript
+`**call()**`  方法使用一个指定的  `this`  值和单独给出的一个或多个参数来调用一个函数。
+
+``` javascript
 // 原函数
-function.call(thisArg,arg1,arg2,...)
+function.call(thisArg, arg1, arg2, ...)
 
 /* 
 thisArg可选的。在 function 函数运行时使用的 this 值。请注意，this可能不是该方法看到的实际值：如果这个函数处于非严格模式下，则指定为 null 或 undefined 时会自动替换为指向全局对象，原始值会被包装
 arg1, arg2, ...
 指定的参数列表。
-*/              
+*/
 ```
 
-```javascript
+``` javascript
 /*
 模拟实现
 1.将函数设为对象的属性
 2.执行该函数
 3.删除该函数
 */
-Function.prototype.testCall = function(thisArg){
-	thisArg = thisArg || window;
-  thisArg.fn = this;
-  var args = [];
-  for(var i = 1,len = arguments.length;i < len; i++){
-  	args.push('arguments[' + i + ']')
-  }
-  var result = eval('thisArg.fn(' + args + ')');
-  delete thisArg.fn
-  return result;
+Function.prototype.testCall = function(thisArg) {
+    thisArg = thisArg || window;
+    thisArg.fn = this;
+    var args = [];
+    for (var i = 1, len = arguments.length; i < len; i++) {
+        args.push('arguments[' + i + ']')
+    }
+    var result = eval('thisArg.fn(' + args + ')');
+    delete thisArg.fn
+    return result;
 }
 
 // 测试
 var value = 2;
 var obj = {
-	value:1
+    value: 1
 }
+
 function bar(name, age) {
-	console.log(this.value);
-  return {
-  	value:this.value,
-    name:name,
-    age:age
-  }
+    console.log(this.value);
+    return {
+        value: this.value,
+        name: name,
+        age: age
+    }
 }
 bar.testCall(null); // 2
-var barTest = bar.testCall(obj,'taotao','18')
+var barTest = bar.testCall(obj, 'taotao', '18')
 console.log(barTest) // 1, {value: 1, name: "taotao", age: "18"}
 ```
 
 ### apply实现
-**`apply()`** 方法调用一个具有给定`this`值的函数，以及作为一个数组（或[类似数组对象](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Indexed_collections#Working_with_array-like_objects)）提供的参数。
 
-```javascript
+**`apply()`** 方法调用一个具有给定 `this` 值的函数，以及作为一个数组（或[类似数组对象](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Indexed_collections#Working_with_array-like_objects)）提供的参数。
+
+``` javascript
 // 原函数
 func.apply(thisArg, [argsArray])
 
@@ -76,25 +78,25 @@ argsArray可选的。一个数组或者类数组对象，其中的数组元素�
 */
 ```
 
-```javascript
+``` javascript
 // 模拟实现
-Function.prototype.testApply = function(thisArg,argsArray){
-	thisArg = Object(thisArg) || window;
-  thisArg.fn = this;
-  
-  var result;
-  if(!argsArray){
-  	result = thisArg.fn();
-  }else{
-  	var args = [];
-    for(var i = 0, len = argsArray.length; i < len; i++){
-    	argsArray.push('argsArray[' + i + ']');
+Function.prototype.testApply = function(thisArg, argsArray) {
+    thisArg = Object(thisArg) || window;
+    thisArg.fn = this;
+
+    var result;
+    if (!argsArray) {
+        result = thisArg.fn();
+    } else {
+        var args = [];
+        for (var i = 0, len = argsArray.length; i < len; i++) {
+            argsArray.push('argsArray[' + i + ']');
+        }
+        result = eval('thisArg.fn(' + args + ')');
     }
-    result = eval('thisArg.fn(' + args + ')');
-  }
-  
-  delete thisArg.fn;
-  return result;
+
+    delete thisArg.fn;
+    return result;
 }
 
 // 测试
@@ -104,18 +106,20 @@ array.push.apply(array, elements);
 console.info(array); // ["a", "b", 0, 1, 2]
 ```
 
-```javascript
+``` javascript
 // call模拟实现apply
-Function.prototype.testApply = function(thisArg,argArray){
-  const _this = this
-	const arg = argArray.join()
-  return _this.call(thisArg,arg)
+Function.prototype.testApply = function(thisArg, argArray) {
+    const _this = this
+    const arg = argArray.join()
+    return _this.call(thisArg, arg)
 }
 ```
 
 ### bind实现
-`**bind()**` 方法创建一个新的函数，在 `bind()` 被调用时，这个新函数的 `this` 被指定为 `bind()` 的第一个参数，而其余参数将作为新函数的参数，供调用时使用。
-```javascript
+
+`**bind()**`  方法创建一个新的函数，在  `bind()`  被调用时，这个新函数的  `this`  被指定为  `bind()`  的第一个参数，而其余参数将作为新函数的参数，供调用时使用。
+
+``` javascript
 // 原函数
 function.bind(thisArg[, arg1[, arg2[, ...]]])
 
@@ -126,30 +130,31 @@ arg1, arg2, ...
 */
 ```
 
-```javascript
+``` javascript
 // 模拟实现
-Function.prototype.testBind = function(thisArg,args){
-	var slice = Array.prototype.slice;
-  var _this = this,_thisArg = arguments[0];
-  var args = slice.call(arguments,1);
-  if(typeof _this !== 'function'){
-  	throw new Error("Function.prototype.bind - what is trying to be bound is not callabl");   
-  }
-	return function(){
-  	var funcArgs = args.concat(slice.call(arguments))
-    return _this.apply(_thisArg,funcArgs)
-  }
+Function.prototype.testBind = function(thisArg, args) {
+    var slice = Array.prototype.slice;
+    var _this = this,
+        _thisArg = arguments[0];
+    var args = slice.call(arguments, 1);
+    if (typeof _this !== 'function') {
+        throw new Error("Function.prototype.bind - what is trying to be bound is not callabl");
+    }
+    return function() {
+        var funcArgs = args.concat(slice.call(arguments))
+        return _this.apply(_thisArg, funcArgs)
+    }
 }
 
 // 测试
 var foo = {
     value: 1
 };
+
 function bar() {
     console.log(this.value);
 }
 var bindFoo = bar.testBind(foo);
 bindFoo() // 1
-
 ```
 
