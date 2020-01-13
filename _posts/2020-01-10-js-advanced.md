@@ -2,7 +2,7 @@
 layout:     post
 title:      "JS高级-New关键字模拟实现"
 subtitle:   "JavaScript New"
-date:       2020-01-09 18:36
+date:       2020-01-10 18:36
 author:     "xutaotao"
 header-img: "img/post-bg-js-version.jpg"
 tags:

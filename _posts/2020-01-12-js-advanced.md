@@ -2,7 +2,7 @@
 layout:     post
 title:      "JS高级-Javascript各种继承"
 subtitle:   "JavaScript 继承"
-date:       2020-01-09 18:36
+date:       2020-01-12 18:36
 author:     "xutaotao"
 header-img: "img/post-bg-js-version.jpg"
 tags:
