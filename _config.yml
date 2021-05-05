@@ -6,7 +6,7 @@ email: xutaotao1108@outlook.com
 description: "做个潇洒的假极客"
 keyword: "徐涛焘的博客,徐涛焘,博客,前端,前端设计,前端爱好者,css,JavaScript"
 url: "https://xutaotaotao.github.io/"              # your host, for absolute URL
-baseurl: "/Xutaotaotao.github.io"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
 RSS: false

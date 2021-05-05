@@ -7,7 +7,7 @@ author:     "xutaotao"
 header-img: "img/post-bg-js-version.jpg"
 tags:
 
-  + Javascript高级
+  - Javascript高级
 
 ---
 
