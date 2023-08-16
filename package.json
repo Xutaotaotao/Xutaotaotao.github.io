@@ -1,22 +1,23 @@
 {
-    "name": "xutaotao-blog",
-    "title": "Xutaotao Blog",
-    "version": "1.0.0",
-    "homepage": "https://xutaotaotao.github.io",
-    "author": "Xutaotao",
-    "devDependencies": {
-        "grunt": "~0.4.5",
-        "grunt-contrib-less": "~0.11.4",
-        "grunt-contrib-watch": "~0.6.1",
-        "grunt-banner": "~0.2.3",
-        "grunt-contrib-uglify": "~0.5.1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Xutaotaotao/Xutaotaotao.github.io"
-    },
-    "scripts": {
-        "preview": "cd _site; python -m SimpleHTTPServer 8020",
-        "watch": "grunt watch & npm run preview & jekyll serve -w;"
-    }
+  "name": "taotao-blog",
+  "title": "Taotao‘s Blog",
+  "version": "2.0.0",
+  "homepage": "https://xutaotaotao.github.io",
+  "description": "Taotao‘s Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "author": "Xutaotaotao",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Xutaotaotao/Xutaotaotao.github.io"
+  }
 }
