@@ -11,29 +11,19 @@ export default defineConfig({
       { text: '问题解析', link: '/question/',activeMatch: '^/question/' },
       { text: '个人成长', link: '/growth/',activeMatch: '^/growth/' }
     ],
-
-    // sidebar: [
-    //   {
-    //     text: '问题解析',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //     ]
-    //   },
-    //   {
-    //     text: '个人成长',
-    //     items: [
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ]
-    //   }
-    // ],
     sidebar: {
       '/summary/': [
         {
           text: '技术总结',
           items: [
             {
-              text: '总结1',
-              link: '/summary/'
+              text: 'Electron实战',
+              items: [
+                {
+                  text: '1.为什么选择Electron',
+                  link: '/summary/electron/why_choose_electron'
+                },
+              ]
             },
           ]
         }
@@ -41,29 +31,29 @@ export default defineConfig({
       '/question/': [
         {
           text: '问题解析',
-          items: [
-            {
-              text: '问题1',
-              link: '/question/'
-            },
-          ]
+          // items: [
+          //   {
+          //     text: '问题1',
+          //     link: '/question/'
+          //   },
+          // ]
         }
       ],
       '/growth/': [
         {
           text: '个人成长',
-          items: [
-            {
-              text: '成长1',
-              link: '/growth/'
-            },
-          ]
+          // items: [
+          //   {
+          //     text: '成长1',
+          //     link: '/growth/'
+          //   },
+          // ]
         }
       ]
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/Xutaotaotao/Xutaotaotao.github.io' }
     ]
   }
 })

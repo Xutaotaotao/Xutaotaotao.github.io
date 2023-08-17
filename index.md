@@ -16,10 +16,10 @@ hero:
 
 features:
   - title: 技术总结
-    details: 一些开发的技术总结
+    details: 一些工作中开发的技术总结，结晶
   - title: 问题解析
-    details: 一些问题解析
+    details: 一些问题解析，把一个问题研究清楚
   - title: 个人成长
-    details: 关于自己的成长
+    details: 关于自己的成长，反思自己
 ---
 
