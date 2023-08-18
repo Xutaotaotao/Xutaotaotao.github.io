@@ -31,12 +31,17 @@ export default defineConfig({
       '/question/': [
         {
           text: '问题解析',
-          // items: [
-          //   {
-          //     text: '问题1',
-          //     link: '/question/'
-          //   },
-          // ]
+          items: [
+            {
+              text: 'Vue',
+              items: [
+                {
+                  text: 'Vue中组件通信方式有哪些？',
+                  link: '/question/vue/component_communication_method'
+                },
+              ]
+            },
+          ]
         }
       ],
       '/growth/': [
