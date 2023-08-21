@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Taotao's Blog",
@@ -38,6 +37,15 @@ export default defineConfig({
                 {
                   text: 'Vue中组件通信方式有哪些？',
                   link: '/question/vue/component_communication_method'
+                },
+              ]
+            },
+            {
+              text: '网络',
+              items: [
+                {
+                  text: ' TCP和UDP的区别？',
+                  link: '/question/network/tcp_and_udp'
                 },
               ]
             },

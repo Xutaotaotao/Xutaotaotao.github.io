@@ -4,7 +4,8 @@ outline: deep
 
 # Vue中组件通信方式有哪些？
 
-![An image](/question/vue/component_communication_method.jpg)
+<img src="/question/vue/component_communication_method.jpg" width="500" height="520">
+
 
 ## Props / $emit
 
