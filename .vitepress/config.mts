@@ -44,8 +44,12 @@ export default defineConfig({
               text: '网络',
               items: [
                 {
-                  text: ' TCP和UDP的区别？',
+                  text: 'TCP和UDP的区别？',
                   link: '/question/network/tcp_and_udp'
+                },
+                {
+                  text: '输入URL回车后会发生什么？',
+                  link: '/question/network/what_steps_after_entering_the_url'
                 },
               ]
             },
