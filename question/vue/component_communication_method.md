@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Vue中组件通信方式有哪些？
+# Vue组件通信方式
 
 ![An image](/question/vue/component_communication_method.jpg)
 

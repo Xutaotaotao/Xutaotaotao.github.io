@@ -36,8 +36,17 @@ export default defineConfig({
               text: 'Vue',
               items: [
                 {
-                  text: 'Vue中组件通信方式有哪些？',
+                  text: 'Vue组件通信方式',
                   link: '/question/vue/component_communication_method'
+                },
+              ]
+            },
+            {
+              text: 'React',
+              items: [
+                {
+                  text: 'React样式解决方案',
+                  link: '/question/react/react_styling_solutions'
                 },
               ]
             },
