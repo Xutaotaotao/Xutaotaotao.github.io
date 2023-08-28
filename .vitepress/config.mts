@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Taotao's Blog",
@@ -47,6 +46,19 @@ export default defineConfig({
                 {
                   text: 'React样式解决方案',
                   link: '/question/react/react_styling_solutions'
+                }
+              ]
+            },
+            {
+              text: '网络',
+              items: [
+                {
+                  text: 'TCP和UDP的区别',
+                  link: '/question/network/tcp_and_udp'
+                },
+                {
+                  text: '输入URL回车后全过程',
+                  link: '/question/network/what_steps_after_entering_the_url'
                 },
               ]
             },
