@@ -46,6 +46,18 @@ export default defineConfig({
                 {
                   text: '5.原生模块调用&开发',
                   link: '/summary/electron/native_module_call_development'
+                },
+                {
+                  text: '6.应用打包',
+                  link: '/summary/electron/application_packaging'
+                },
+                {
+                  text: '7.应用升级',
+                  link: '/summary/electron/application_update'
+                },
+                {
+                  text: '8.网络请求封装',
+                  link: '/summary/electron/network_request'
                 }
               ]
             },

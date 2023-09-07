@@ -1,3 +1,6 @@
+---
+outline: deep
+---
 # Electron跨进程通信
 
 ## 前言
