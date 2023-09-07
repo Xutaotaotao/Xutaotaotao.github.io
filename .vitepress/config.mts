@@ -1,6 +1,15 @@
 import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  head: [
+    ['link', 
+      { rel: 'icon', href: '/favicon.ico' }
+    ],
+    [
+      'meta',
+      {name: 'referrer',content: 'no-referrer'}
+    ]
+  ],
   title: "Taotao's Blog",
   description: "一个写博客的地方",
   themeConfig: {
@@ -22,6 +31,22 @@ export default defineConfig({
                   text: '1.为什么选择Electron',
                   link: '/summary/electron/why_choose_electron'
                 },
+                {
+                  text: '2.Electron生态开发技术选型',
+                  link: '/summary/electron/development_technology_selection'
+                },
+                {
+                  text: '3.环境&工程搭建',
+                  link: '/summary/electron/vite_electron_react'
+                },
+                {
+                  text: '4.Electron跨进程通信',
+                  link: '/summary/electron/cross_process_communication'
+                },
+                {
+                  text: '5.原生模块调用&开发',
+                  link: '/summary/electron/native_module_call_development'
+                }
               ]
             },
           ]
