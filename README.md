@@ -2,7 +2,8 @@
 
 ## 一个写博客的地方
 
-<a herf="xutaotaotao.github.io/">xutaotaotao.github.io</a>
+[xutaotaotao.github.io](https://xutaotaotao.github.io/)
+
 
 - 技术总结
 
