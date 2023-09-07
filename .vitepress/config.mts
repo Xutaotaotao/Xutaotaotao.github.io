@@ -61,6 +61,15 @@ export default defineConfig({
                 }
               ]
             },
+            {
+              text: '一些实践',
+              items: [
+                {
+                  text: 'Vue keep-alive使用&详解',
+                  link: '/summary/practice/vue_keep_alive'
+                }
+              ]
+            }
           ]
         }
       ],
