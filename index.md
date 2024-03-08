@@ -6,13 +6,13 @@ hero:
   name: "Taotao's Blog"
   text: "一个写博客的地方"
   # tagline: My great project tagline
-  # actions:
-  #   - theme: brand
-  #     text: Markdown Examples
-  #     link: /markdown-examples
-  #   - theme: alt
-  #     text: API Examples
-  #     link: /api-examples
+  actions:
+    - theme: brand
+      text: 看看我的GitHub
+      link: https://github.com/Xutaotaotao
+    # - theme: alt
+    #   text: API Examples
+    #   link: /api-examples
 
 features:
   - title: 技术总结
