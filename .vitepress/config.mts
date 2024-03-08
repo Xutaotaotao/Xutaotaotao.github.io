@@ -21,11 +21,31 @@ export default defineConfig({
           "xutaotao,Xutaotaotao,Taotao,徐涛涛,blog,Blog,技术博客,博客,个人博客,技术总结,问题解析,个人成长,前端,JavaScript,Vue,React,网络,Electron,Node.js,TypeScript,Rust",
       },
     ],
+    [
+      'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=GTM-TFGN8CGD' }
+    ],
+    [
+      'script',
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'TAG_ID');`
+    ]
   ],
+  lastUpdated: true,
   title: "Taotao's Blog",
   description: "一个写博客的地方",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local'
+    },
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2019-present TaotaoXu'
+    },
     nav: [
       { text: '技术总结', link: '/summary/',activeMatch: '^/summary/' },
       { text: '问题解析', link: '/question/',activeMatch: '^/question/' },
@@ -79,6 +99,10 @@ export default defineConfig({
                 {
                   text: 'Vue keep-alive使用&详解',
                   link: '/summary/practice/vue_keep_alive'
+                },
+                {
+                  text: 'react-i18next 实现国际化',
+                  link: '/summary/practice/react_i18'
                 }
               ]
             }
