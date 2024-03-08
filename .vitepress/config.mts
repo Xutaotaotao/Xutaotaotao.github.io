@@ -103,6 +103,10 @@ export default defineConfig({
                 {
                   text: 'react-i18next 实现国际化',
                   link: '/summary/practice/react_i18'
+                },
+                {
+                  text: 'Mac Root模式Tarui + Eletron实现WebView',
+                  link: '/summary/practice/tauri_webview'
                 }
               ]
             }
