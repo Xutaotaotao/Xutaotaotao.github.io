@@ -7,8 +7,20 @@ export default defineConfig({
     ],
     [
       'meta',
-      {name: 'referrer',content: 'no-referrer'}
-    ]
+      {name: 'referrer',content: 'no-referrer'},
+    ],
+    [
+      'meta',
+      {name:'robots',content:"index,follow"}
+    ],
+    [
+      "meta",
+      {
+        name: "keywords",
+        content:
+          "xutaotao,Xutaotaotao,Taotao,徐涛涛,blog,Blog,技术博客,博客,个人博客,技术总结,问题解析,个人成长,前端,JavaScript,Vue,React,网络,Electron,Node.js,TypeScript,Rust",
+      },
+    ],
   ],
   title: "Taotao's Blog",
   description: "一个写博客的地方",
@@ -17,7 +29,7 @@ export default defineConfig({
     nav: [
       { text: '技术总结', link: '/summary/',activeMatch: '^/summary/' },
       { text: '问题解析', link: '/question/',activeMatch: '^/question/' },
-      { text: '个人成长', link: '/growth/',activeMatch: '^/growth/' }
+      // { text: '个人成长', link: '/growth/',activeMatch: '^/growth/' }
     ],
     sidebar: {
       '/summary/': [
