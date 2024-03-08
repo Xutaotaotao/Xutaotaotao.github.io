@@ -35,8 +35,8 @@ export default defineConfig({
     ]
   ],
   lastUpdated: true,
-  title: "Taotao's Blog",
-  description: "一个写博客的地方",
+  title: "徐涛焘的博客",
+  description: "徐涛焘的博客",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
