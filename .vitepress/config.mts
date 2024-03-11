@@ -50,6 +50,7 @@ export default defineConfig({
       { text: '技术总结', link: '/summary/',activeMatch: '^/summary/' },
       { text: '问题解析', link: '/question/',activeMatch: '^/question/' },
       // { text: '个人成长', link: '/growth/',activeMatch: '^/growth/' }
+      { text: '摄影集锦', link: '/photo/',activeMatch: '^/photo/' }
     ],
     sidebar: {
       '/summary/': [
@@ -200,15 +201,21 @@ export default defineConfig({
           ]
         }
       ],
-      '/growth/': [
+      // '/growth/': [
+      //   {
+      //     text: '个人成长',
+      //     // items: [
+      //     //   {
+      //     //     text: '成长1',
+      //     //     link: '/growth/'
+      //     //   },
+      //     // ]
+      //   }
+      // ]
+      '/photo/':[
         {
-          text: '个人成长',
-          // items: [
-          //   {
-          //     text: '成长1',
-          //     link: '/growth/'
-          //   },
-          // ]
+          text:'2024-03-09',
+          link:'/photo/2024-03-09'
         }
       ]
     },
