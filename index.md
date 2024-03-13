@@ -15,13 +15,16 @@ hero:
     #   link: /api-examples
 
 features:
-  - title: 技术总结
+  - icon: 📖
+    title: 技术总结
     details: 一些工作中开发的技术总结，结晶
     link: /summary/
-  - title: 问题解析
+  - icon: 💡
+    title: 问题解析
     details: 一些问题解析，把一个问题研究清楚
     link: /question/
-  - title: 摄影集锦
+  - icon: 📷
+    title: 摄影集锦
     details: 一些摄影集锦，记录生活中的美好瞬间
     link: /photo/
   # - title: 个人成长
