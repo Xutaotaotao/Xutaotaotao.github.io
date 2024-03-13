@@ -1,16 +1,5 @@
 <script setup lang="ts">
 import Prover from './Prover.vue'
-
-// const data = [
-//   {
-//     // size:'middle',
-//     items: [{ img: 'https://cdn.jsdelivr.net/gh/maomao1996/picture/sponsor/wechat-color.jpg' }]
-//   },
-//   {
-//     // size:'middle',
-//     items: [{ img: 'https://cdn.jsdelivr.net/gh/maomao1996/picture/sponsor/alipay-color.jpg' }]
-//   }
-// ]
 </script>
 
 <template>
