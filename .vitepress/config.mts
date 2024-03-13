@@ -18,7 +18,7 @@ export default defineConfig({
       {
         name: "keywords",
         content:
-          "xutaotao,Xutaotaotao,Taotao,徐涛涛,blog,Blog,技术博客,博客,个人博客,技术总结,问题解析,个人成长,前端,JavaScript,Vue,React,网络,Electron,Node.js,TypeScript,Rust",
+          "徐涛焘的博客,Taotao's Blog,xutaotao,Xutaotaotao,Taotao,徐涛焘,徐涛涛,徐涛,blog,Blog,技术博客,博客,个人博客,技术总结,问题解析,个人成长,前端,JavaScript,Vue,React,网络,Electron,Node.js,TypeScript,Rust",
       },
     ],
     [
