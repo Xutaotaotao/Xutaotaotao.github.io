@@ -43,7 +43,7 @@ export default defineConfig({
       provider: 'local'
     },
     footer: {
-      message: 'Released under the MIT License.',
+      message: '如有转载或 CV 的请标注本站原文地址',
       copyright: 'Copyright © 2019-present TaotaoXu'
     },
     nav: [
