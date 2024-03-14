@@ -50,7 +50,8 @@ export default defineConfig({
       { text: '技术总结', link: '/summary/',activeMatch: '^/summary/' },
       { text: '问题解析', link: '/question/',activeMatch: '^/question/' },
       // { text: '个人成长', link: '/growth/',activeMatch: '^/growth/' }
-      { text: '摄影集锦', link: '/photo/',activeMatch: '^/photo/' }
+      { text: '摄影集锦', link: '/photo/',activeMatch: '^/photo/' },
+      { text: '关于我', link: '/about/',activeMatch: '^/about/' }
     ],
     sidebar: {
       '/summary/': [
