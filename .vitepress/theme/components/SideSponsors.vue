@@ -4,7 +4,7 @@ import Prover from './Prover.vue'
 
 <template>
   <div style="display: flex;flex-direction: column;">
-    <div style="display: flex;justify-content:center;margin-bottom: 20px;color:#d4380d">鼓励作者欢迎打赏或赞助</div>
+    <div style="display: flex;justify-content:center;margin-bottom: 20px;color:#d4380d">鼓励作者欢迎打赏</div>
     <div style="display: flex;justify-content: center;">
       <Prover proverImage="https://cdn.jsdelivr.net/gh/Xutaotaotao/cloud_img@v1.1.0/payment/IMG_5471.JPG" left="-10px">
         <div style="padding: 20px;">

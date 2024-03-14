@@ -61,37 +61,45 @@ export default defineConfig({
               text: 'Electron实战',
               items: [
                 {
-                  text: '1.为什么选择Electron',
+                  text: '为什么选择Electron',
                   link: '/summary/electron/why_choose_electron'
                 },
                 {
-                  text: '2.Electron生态开发技术选型',
+                  text: 'Electron生态开发技术选型',
                   link: '/summary/electron/development_technology_selection'
                 },
                 {
-                  text: '3.环境&工程搭建',
+                  text: '环境&工程搭建',
                   link: '/summary/electron/vite_electron_react'
                 },
                 {
-                  text: '4.Electron跨进程通信',
+                  text: 'Electron跨进程通信',
                   link: '/summary/electron/cross_process_communication'
                 },
                 {
-                  text: '5.原生模块调用&开发',
+                  text: '原生模块调用&开发',
                   link: '/summary/electron/native_module_call_development'
                 },
                 {
-                  text: '6.应用打包',
+                  text: '应用打包',
                   link: '/summary/electron/application_packaging'
                 },
                 {
-                  text: '7.应用升级',
+                  text: '应用升级',
                   link: '/summary/electron/application_update'
                 },
                 {
-                  text: '8.网络请求封装',
+                  text: '网络请求封装',
                   link: '/summary/electron/network_request'
-                }
+                },
+                {
+                  text: 'Mac Root模式Tarui + Eletron实现WebView',
+                  link: '/summary/electron/tauri_webview'
+                },
+                {
+                  text: 'Electron 中使用 SQLite',
+                  link: '/summary/electron/electron_sqlite'
+                },
               ]
             },
             {
@@ -105,10 +113,6 @@ export default defineConfig({
                   text: 'react-i18next 实现国际化',
                   link: '/summary/practice/react_i18'
                 },
-                {
-                  text: 'Mac Root模式Tarui + Eletron实现WebView',
-                  link: '/summary/practice/tauri_webview'
-                }
               ]
             }
           ]
