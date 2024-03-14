@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: Electron跨进程通信
+titleTemplate: Electron跨进程通信
 ---
 # Electron跨进程通信
 

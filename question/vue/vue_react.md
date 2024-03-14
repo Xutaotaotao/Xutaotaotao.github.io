@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: Vue 和 React
+titleTemplate: Vue 和 React对比
 ---
 
 # Vue 和 React

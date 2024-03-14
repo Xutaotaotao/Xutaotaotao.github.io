@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: 为什么选择Electron
+titleTemplate: 为什么选择Electron
 ---
 
 # 为什么选择Electron

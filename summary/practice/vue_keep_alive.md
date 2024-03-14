@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: Vue keep-alive 使用及缓存机制详解
+titleTemplate: Vue keep-alive 使用及缓存机制详解
 ---
 
 # Vue keep-alive 使用及缓存机制详解

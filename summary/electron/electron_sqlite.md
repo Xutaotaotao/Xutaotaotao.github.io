@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: Electron 中使用 SQLite
+titleTemplate: Electron 中使用 SQLite
 ---
 
 # Electron 中使用 SQLite

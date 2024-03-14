@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: Vue组件通信方式
+titleTemplate: Vue组件通信方式
 ---
 
 # Vue组件通信方式

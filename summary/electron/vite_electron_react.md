@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: 环境&工程搭建
+titleTemplate: Electron + Vite + React 环境搭建
 ---
 
 # 环境&工程搭建

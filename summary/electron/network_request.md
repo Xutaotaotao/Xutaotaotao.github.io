@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: 网络请求封装
+titleTemplate: Electorn网络请求封装
 ---
 
 # 网络请求封装

@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: 应用打包
+titleTemplate: Electron 应用打包
 ---
 
 # 应用打包

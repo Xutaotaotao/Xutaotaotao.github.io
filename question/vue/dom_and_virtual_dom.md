@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: 真实 DOM 和虚拟 DOM
+titleTemplate: 真实 DOM 和虚拟 DOM对比
 ---
 
 # 真实 DOM 和虚拟 DOM

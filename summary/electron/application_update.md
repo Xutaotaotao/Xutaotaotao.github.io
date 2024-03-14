@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: 应用升级
+titleTemplate: Electron 应用升级
 ---
 
 # 应用升级
