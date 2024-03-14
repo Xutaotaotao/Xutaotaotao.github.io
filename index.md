@@ -6,10 +6,10 @@ hero:
   name: "Taotao's Blog"
   text: "一个写博客的地方"
   # tagline: My great project tagline
-  actions:
-    - theme: brand
-      text: 看看我的GitHub
-      link: https://github.com/Xutaotaotao
+  # actions:
+  #   - theme: brand
+  #     text: 看看我的GitHub
+  #     link: https://github.com/Xutaotaotao
     # - theme: alt
     #   text: API Examples
     #   link: /api-examples

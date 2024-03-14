@@ -226,7 +226,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Xutaotaotao/Xutaotaotao.github.io' }
+      { icon: 'github', link: 'https://github.com/Xutaotaotao' }
     ]
   }
 })
