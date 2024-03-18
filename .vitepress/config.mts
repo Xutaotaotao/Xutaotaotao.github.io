@@ -101,6 +101,10 @@ export default defineConfig({
                   text: 'Electron 中使用 SQLite',
                   link: '/summary/electron/electron_sqlite'
                 },
+                {
+                  text: 'Electron 实现一个桌面悬浮窗',
+                  link: '/summary/electron/electron-min-window'
+                },
               ]
             },
             {
