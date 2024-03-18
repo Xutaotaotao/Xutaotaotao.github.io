@@ -221,6 +221,10 @@ export default defineConfig({
         {
           text:'2024-03-09',
           link:'/photo/2024-03-09'
+        },
+        {
+          text:'2024-03-16',
+          link:'/photo/2024-03-16'
         }
       ]
     },
