@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Electron 实现一个桌面悬浮窗
-titleTemplate: Electron 实现一个桌面悬浮窗
+titleTemplate: Electron实战
 ---
 
 # Electron 实现一个桌面悬浮窗

@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Electron跨进程通信
-titleTemplate: Electron跨进程通信
+titleTemplate: Electron实战
 ---
 # Electron跨进程通信
 

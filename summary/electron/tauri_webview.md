@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Mac Root 模式 Tarui + Eletron 实现 WebView
-titleTemplate: Mac Root 模式 Tarui + Eletron 实现 WebView
+titleTemplate: Electron实战
 ---
 
 # Mac Root 模式 Tarui + Eletron 实现 WebView
