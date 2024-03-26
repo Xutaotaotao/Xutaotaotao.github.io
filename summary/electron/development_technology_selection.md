@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Electron生态开发技术选型
-titleTemplate: Electron生态开发技术选型
+titleTemplate: Electron实战
 ---
 
 # Electron生态开发技术选型

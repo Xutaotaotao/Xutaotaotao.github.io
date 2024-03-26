@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: 原生模块调用&开发
-titleTemplate: Electorn原生模块调用&开发
+titleTemplate: Electron实战
 ---
 # 原生模块调用&开发
 
