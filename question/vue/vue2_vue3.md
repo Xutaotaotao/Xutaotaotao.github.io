@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Vue2 和 Vue3对比
-titleTemplate: Vue2 和 Vue3对比
+titleTemplate: 前端框架
 ---
 
 # Vue2 和 Vue3对比

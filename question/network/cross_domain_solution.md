@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: 跨域解决方案
+titleTemplate: 前端网络
 ---
 # 跨域解决方案
 

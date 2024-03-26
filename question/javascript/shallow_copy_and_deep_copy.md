@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: 浅拷贝和深拷贝
+titleTemplate: 前端Javascript
 ---
 # 浅拷贝和深拷贝
 

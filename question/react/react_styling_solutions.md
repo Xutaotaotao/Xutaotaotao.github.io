@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: React样式解决方案
+titleTemplate: 前端框架
 ---
 
 # React样式解决方案

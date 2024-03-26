@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: apply、call、bind 比较
+titleTemplate: 前端Javascript
 ---
 # apply、call、bind 比较
 

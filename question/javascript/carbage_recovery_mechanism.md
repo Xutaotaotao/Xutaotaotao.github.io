@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: JS垃圾回收机制
+titleTemplate: 前端Javascript
 ---
 # JS垃圾回收机制
 

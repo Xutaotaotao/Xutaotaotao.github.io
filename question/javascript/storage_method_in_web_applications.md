@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: Web 应用中的存储方式
+titleTemplate: 前端Javascript
 ---
 
 # Web 应用中的存储方式

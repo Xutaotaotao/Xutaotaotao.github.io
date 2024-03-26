@@ -1,5 +1,7 @@
 ---
 outline: deep
+title: JS 模块化
+titleTemplate: 前端Javascript
 ---
 # JS 模块化
 
