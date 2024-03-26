@@ -51,7 +51,7 @@ export default defineConfig({
   },
   lastUpdated: true,
   title: "徐涛焘的博客",
-  description: "徐涛焘的博客",
+  description: "徐涛焘的博客,Taotao's Blog,xutaotao,Xutaotaotao,Taotao,徐涛焘,徐涛涛,徐涛,blog,Blog,技术博客,博客,个人博客,技术总结,问题解析,个人成长,前端,JavaScript,Vue,React,网络,Electron,Node.js,TypeScript,Rust",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
