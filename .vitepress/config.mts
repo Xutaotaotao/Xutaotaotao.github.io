@@ -14,6 +14,10 @@ export default defineConfig({
       {name:'robots',content:"index,follow"}
     ],
     [
+      'meta',
+      {name: 'referrer',content: 'no-referrer'},
+    ],
+    [
       "meta",
       {
         name: "keywords",
@@ -34,6 +38,17 @@ export default defineConfig({
       gtag('config', 'TAG_ID');`
     ]
   ],
+  transformPageData(pageData) {
+    const canonicalUrl = `https://xutaotao.top/${pageData.relativePath}`
+      .replace(/index\.md$/, '')
+      .replace(/\.md$/, '.html')
+
+    pageData.frontmatter.head ??= []
+    pageData.frontmatter.head.push([
+      'link',
+      { rel: 'canonical', href: canonicalUrl }
+    ])
+  },
   lastUpdated: true,
   title: "徐涛焘的博客",
   description: "徐涛焘的博客",
