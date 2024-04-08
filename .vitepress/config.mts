@@ -59,7 +59,7 @@ export default defineConfig({
     },
     footer: {
       message: '如有转载或 CV 的请标注本站原文地址',
-      copyright: 'Copyright © 2019-present TaotaoXu'
+      copyright: 'ICP备案/许可证号：  <a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2023003982号-2</a>'
     },
     nav: [
       { text: '技术总结', link: '/summary/',activeMatch: '^/summary/' },
