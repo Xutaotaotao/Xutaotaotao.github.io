@@ -6,7 +6,7 @@ import Prover from './Prover.vue'
   <div style="display: flex;flex-direction: column;">
     <div style="display: flex;justify-content:center;margin-bottom: 20px;color:#d4380d">鼓励作者欢迎打赏</div>
     <div style="display: flex;justify-content: center;">
-      <Prover proverImage="https://cdn.jsdelivr.net/gh/Xutaotaotao/cloud_img@v1.1.0/payment/IMG_5471.JPG" left="-10px">
+      <Prover proverImage="/payment/IMG_5471.jpeg" left="-10px">
         <div style="padding: 20px;">
           <svg
             t="1710310096476"
@@ -32,7 +32,7 @@ import Prover from './Prover.vue'
         </div>
       </Prover>
       
-      <Prover proverImage="https://cdn.jsdelivr.net/gh/Xutaotaotao/cloud_img@v1.1.0/payment/IMG_5472.jpg">
+      <Prover proverImage="/payment/IMG_5472.jpg">
         <div style="padding: 20px;">
           <svg
             t="1710310045669"
