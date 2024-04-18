@@ -66,7 +66,11 @@ export default defineConfig({
       { text: '问题解析', link: '/question/',activeMatch: '^/question/' },
       // { text: '个人成长', link: '/growth/',activeMatch: '^/growth/' }
       { text: '摄影集锦', link: '/photo/',activeMatch: '^/photo/' },
-      { text: '关于我', link: '/about/',activeMatch: '^/about/' }
+      { text: '开源项目',items: [
+        { text: 'electron-prokit', link: 'https://taotaoxu.com/electron-prokit/' },
+        { text: 'FindAll', link: 'https://findallteam.github.io/' },
+      ]},
+      { text: '关于我', link: '/about/',activeMatch: '^/about/' },
     ],
     sidebar: {
       '/summary/': [
