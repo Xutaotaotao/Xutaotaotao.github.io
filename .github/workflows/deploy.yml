@@ -61,6 +61,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
+      - name: List output files
+        run: ls -l
+
       - name: Upload to Deploy Server
         uses: appleboy/scp-action@master
         with:
@@ -68,7 +72,7 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           port: ${{ secrets.SERVER_PORT }}
-          source: '.vitepress/dist/*'
-          target: '/usr/share/nginx/html'
+          source: ".vitepress/dist/*"
+          target: "/usr/share/nginx/html"
           overwrite: true
           strip_components: 1
