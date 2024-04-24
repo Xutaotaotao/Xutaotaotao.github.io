@@ -25,7 +25,7 @@ concurrency:
 
 jobs:
   # Build job
-  build:
+  build&deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -69,12 +69,11 @@ jobs:
           path: dist
 
       - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@v2.1.5
         env:
-          SSH_USER: ${{ secrets.SERVER_USERNAME }}
-          SSH_HOST: ${{ secrets.SERVER_HOST }}  
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          scp -r dist ${SSH_USER}@${SSH_HOST}:/usr/share/nginx/html
+            SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+            ARGS: '-rltgoDzvO --delete'
+            SOURCE: dist/
+            REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+            REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
+            TARGET: /usr/share/nginx/html/
