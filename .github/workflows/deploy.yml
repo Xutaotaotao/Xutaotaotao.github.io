@@ -25,7 +25,7 @@ concurrency:
 
 jobs:
   # Build job
-  build:
+  build & upload to Server:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -44,6 +44,15 @@ jobs:
         run: yarn install # or pnpm install / yarn install
       - name: Build with VitePress
         run: yarn docs:build # or pnpm docs:build / yarn docs:build
+      - name: Deploy to Server
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+            SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+            ARGS: '-rltgoDzvO --delete'
+            SOURCE: .vitepress/dist
+            REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+            REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
+            TARGET: /usr/share/nginx/html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
@@ -68,12 +77,4 @@ jobs:
           name: github-pages
           path: path-to-download-artifact 
 
-      - name: Deploy to Server
-        uses: easingthemes/ssh-deploy@v2.1.5
-        env:
-            SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-            ARGS: '-rltgoDzvO --delete'
-            SOURCE: path-to-download-artifact
-            REMOTE_HOST: ${{ secrets.SERVER_HOST }}
-            REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
-            TARGET: /usr/share/nginx/html
+      
