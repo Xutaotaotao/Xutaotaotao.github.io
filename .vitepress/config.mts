@@ -50,8 +50,8 @@ export default defineConfig({
     ])
   },
   lastUpdated: true,
-  title: "徐涛焘的博客",
-  description: "徐涛焘的博客,Taotao's Blog,xutaotao,Xutaotaotao,Taotao,徐涛焘,徐涛涛,徐涛,blog,Blog,技术博客,博客,个人博客,技术总结,问题解析,个人成长,前端,JavaScript,Vue,React,网络,Electron,Node.js,TypeScript,Rust",
+  title: "技术总结备忘录",
+  description: "技术总结备忘录,徐涛焘的博客,Taotao's Blog,xutaotao,Xutaotaotao,Taotao,徐涛焘,徐涛涛,徐涛,blog,Blog,技术博客,博客,个人博客,技术总结,问题解析,个人成长,前端,JavaScript,Vue,React,网络,Electron,Node.js,TypeScript,Rust",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     search: {
@@ -67,7 +67,7 @@ export default defineConfig({
       // { text: '个人成长', link: '/growth/',activeMatch: '^/growth/' }
       { text: '摄影集锦', link: '/photo/',activeMatch: '^/photo/' },
       { text: '开源项目',items: [
-        { text: 'electron-prokit', link: 'https://taotaoxu.com/electron-prokit/' },
+        { text: 'electron-prokit', link: 'https://xutaotaotao.github.io/electron-prokit/' },
         { text: 'FindAll', link: 'https://findallteam.github.io/' },
       ]},
       { text: '关于我', link: '/about/',activeMatch: '^/about/' },
