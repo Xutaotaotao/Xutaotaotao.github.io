@@ -67,6 +67,9 @@ jobs:
         with:
           name: github-pages
           path: dist
+      
+      - name: List downloaded files
+          run: ls -lah dist
 
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@v2.1.5
