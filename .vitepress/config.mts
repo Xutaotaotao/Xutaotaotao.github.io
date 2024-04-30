@@ -39,7 +39,7 @@ export default defineConfig({
     ]
   ],
   transformPageData(pageData) {
-    const canonicalUrl = `https://xutaotao.top/${pageData.relativePath}`
+    const canonicalUrl = `https://taotaoxu.com/${pageData.relativePath}`
       .replace(/index\.md$/, '')
       .replace(/\.md$/, '.html')
 
