@@ -53,9 +53,7 @@ export default {
 
 .prover-image {
   position: absolute;
-  top: -160px;
-  left: -80px;
-  z-index: 1;
+  z-index: 999;
   padding: 10px;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -63,8 +61,8 @@ export default {
 }
 
 .prover-image img {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .fade-enter-active, .fade-leave-active {
