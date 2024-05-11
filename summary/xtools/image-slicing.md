@@ -220,6 +220,9 @@ const downloadSlice = (sliceData, fileName) => {
 
 未来,随着Web技术的不断进步,我相信前端图像处理能力一定会变得越来越强大。这不仅能给图像处理相关的Web应用注入新的活力,也为Web开发人员拓展了新的能力边界,让我们拭目以待!
 
+## 源码
+https://github.com/Xutaotaotao/XTools/blob/master/src/pages/imageSlicing.tsx
+
 ## XTools
 
 - 专注工具，助力高效。
