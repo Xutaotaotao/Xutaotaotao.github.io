@@ -130,6 +130,15 @@ export default defineConfig({
               ]
             },
             {
+              text: 'XTools系列',
+              items: [
+                {
+                  text: '纯前端实现图片切割,一键导出多张分割图片',
+                  link: '/summary/xtools/image-slicing'
+                },
+              ]
+            },
+            {
               text: '一些实践',
               items: [
                 {
