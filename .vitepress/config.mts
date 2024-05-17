@@ -31,6 +31,19 @@ export default defineConfig({
     ],
     [
       'script',
+      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-TB63M8G2D6' }
+    ],
+    [
+      'script',
+      {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-TB63M8G2D6');`
+    ],
+    [
+      'script',
       {},
       `(function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
