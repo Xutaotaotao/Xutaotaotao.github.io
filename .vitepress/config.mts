@@ -260,6 +260,15 @@ export default defineConfig({
                 },
               ]
             },
+            {
+              text:'杂项',
+              items:[
+                {
+                  text: 'JSBridge原理简析',
+                  link: '/question/sundry/JSBridge'
+                },
+              ]
+            }
           ]
         }
       ],

@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: React样式解决方案
-titleTemplate: 前端框架
+titleTemplate: 徐涛焘的博客
 ---
 
 # React样式解决方案
