@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Vue2 和 Vue3对比
-titleTemplate: 前端框架
+titleTemplate: 徐涛焘的博客
 ---
 
 # Vue2 和 Vue3对比

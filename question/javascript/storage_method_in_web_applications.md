@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Web 应用中的存储方式
-titleTemplate: 前端Javascript
+titleTemplate: 徐涛焘的博客
 ---
 
 # Web 应用中的存储方式

@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Vue组件通信方式
-titleTemplate: 前端框架
+titleTemplate: 徐涛焘的博客
 ---
 
 # Vue组件通信方式

@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Vue 和 React
-titleTemplate: 前端框架
+titleTemplate: 徐涛焘的博客
 ---
 
 # Vue 和 React

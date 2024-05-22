@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: JS 模块化
-titleTemplate: 前端Javascript
+titleTemplate: 徐涛焘的博客
 ---
 # JS 模块化
 

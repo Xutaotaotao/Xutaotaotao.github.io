@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: apply、call、bind 比较
-titleTemplate: 前端Javascript
+titleTemplate: 徐涛焘的博客
 ---
 # apply、call、bind 比较
 
