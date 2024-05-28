@@ -236,6 +236,10 @@ export default defineConfig({
                 {
                   text: 'React样式解决方案',
                   link: '/question/react/react_styling_solutions'
+                },
+                {
+                  text: 'React组件通信方式总结',
+                  link: '/question/react/react_components_props'
                 }
               ]
             },
@@ -260,6 +264,15 @@ export default defineConfig({
                 },
               ]
             },
+            {
+              text:'杂项',
+              items:[
+                {
+                  text: 'JSBridge原理简析',
+                  link: '/question/sundry/JSBridge'
+                },
+              ]
+            }
           ]
         }
       ],

@@ -1,5 +1,6 @@
 ---
 outline: deep
+titleTemplate: 徐涛焘的博客
 ---
 
 # 技术总结

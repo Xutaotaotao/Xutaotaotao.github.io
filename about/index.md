@@ -1,6 +1,8 @@
 ---
 outline: deep
 footer: false
+title: 关于我
+titleTemplate: 徐涛焘的博客
 ---
 
 # 关于我

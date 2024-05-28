@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: 前端异步编程解决方案
-titleTemplate: 前端Javascript
+titleTemplate: 徐涛焘的博客
 ---
 
 # 前端异步编程解决方案
