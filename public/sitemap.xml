@@ -1,191 +1,146 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://taotaoxu.com/</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://taotaoxu.com/</loc>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/summary/</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://taotaoxu.com/summary/</loc>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://taotaoxu.com/question/</loc>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/photo/</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://taotaoxu.com/photo/</loc>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/XTools/</loc>
-  <lastmod>2024-05-09T11:22:10+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://taotaoxu.com/XTools/</loc>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/about/</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://taotaoxu.com/about/</loc>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/summary/electron/why_choose_electron.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/summary/electron/why_choose_electron.html</loc>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/summary/electron/development_technology_selection.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/summary/electron/development_technology_selection.html</loc>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/summary/electron/vite_electron_react.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/summary/electron/vite_electron_react.html</loc>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/summary/electron/cross_process_communication.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/summary/electron/cross_process_communication.html</loc>
+<priority>0.85</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/summary/electron/native_module_call_development.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/summary/electron/native_module_call_development.html</loc>
+<priority>0.85</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/summary/electron/application_packaging.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/summary/electron/application_packaging.html</loc>
+<priority>0.85</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/summary/electron/application_update.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/summary/electron/application_update.html</loc>
+<priority>0.85</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/summary/electron/network_request.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/summary/electron/network_request.html</loc>
+<priority>0.85</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/summary/electron/tauri_webview.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/summary/electron/tauri_webview.html</loc>
+<priority>0.85</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/summary/electron/electron_sqlite.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/summary/electron/electron_sqlite.html</loc>
+<priority>0.85</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/summary/electron/electron-min-window.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/summary/electron/electron-min-window.html</loc>
+<priority>0.85</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/summary/practice/vue_keep_alive.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/summary/practice/vue_keep_alive.html</loc>
+<priority>0.85</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/summary/practice/react_i18.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/summary/practice/react_i18.html</loc>
+<priority>0.84</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/javascript/carbage_recovery_mechanism.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/javascript/storage_method_in_web_applications.html</loc>
+<priority>0.78</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/javascript/storage_method_in_web_applications.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/javascript/apply_call_bind.html</loc>
+<priority>0.78</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/javascript/apply_call_bind.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/javascript/js_modularization.html</loc>
+<priority>0.78</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/javascript/js_modularization.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/javascript/asynchronous_solution.html</loc>
+<priority>0.78</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/javascript/asynchronous_solution.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/javascript/shallow_copy_and_deep_copy.html</loc>
+<priority>0.78</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/javascript/shallow_copy_and_deep_copy.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/vue/component_communication_method.html</loc>
+<priority>0.78</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/vue/component_communication_method.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/vue/dom_and_virtual_dom.html</loc>
+<priority>0.78</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/vue/dom_and_virtual_dom.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/vue/vue_react.html</loc>
+<priority>0.78</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/vue/vue_react.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/vue/vue2_vue3.html</loc>
+<priority>0.78</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/vue/vue2_vue3.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/react/react_styling_solutions.html</loc>
+<priority>0.78</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/react/react_styling_solutions.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/network/tcp_and_udp.html</loc>
+<priority>0.78</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/network/tcp_and_udp.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/network/what_steps_after_entering_the_url.html</loc>
+<priority>0.78</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/network/what_steps_after_entering_the_url.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/network/cross_domain_solution.html</loc>
+<priority>0.78</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/network/cross_domain_solution.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/javascript/carbage_recovery_mechanism.html</loc>
+<priority>0.77</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/question/network/http_and_https.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/question/network/http_and_https.html</loc>
+<priority>0.76</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/photo/2024-03-09.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/photo/2024-03-09.html</loc>
+<priority>0.59</priority>
 </url>
 <url>
-  <loc>https://taotaoxu.com/photo/2024-03-16.html</loc>
-  <lastmod>2024-05-09T03:06:55+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://taotaoxu.com/photo/2024-03-16.html</loc>
+<priority>0.58</priority>
 </url>
-
-
 </urlset>
