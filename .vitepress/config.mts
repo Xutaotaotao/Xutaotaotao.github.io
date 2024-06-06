@@ -163,6 +163,27 @@ export default defineConfig({
               ]
             },
             {
+              text: 'Tauri应用开发实践指南',
+              items: [
+                {
+                  text: 'Tauri 怎么样',
+                  link: '/summary/tauri/how_about_tauri'
+                },
+                {
+                  text: 'Tauri 工程搭建',
+                  link: '/summary/tauri/tauri_project'
+                },
+                {
+                  text: 'Tauri 配置介绍',
+                  link: '/summary/tauri/tauri_config'
+                },
+                {
+                  text: 'Tauri 原生能力',
+                  link: '/summary/tauri/tauri_native'
+                },
+              ]
+            },
+            {
               text: 'XTools系列',
               items: [
                 {
