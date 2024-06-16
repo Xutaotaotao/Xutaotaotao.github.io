@@ -181,6 +181,10 @@ export default defineConfig({
                   text: 'Tauri 原生能力',
                   link: '/summary/tauri/tauri_native'
                 },
+                {
+                  text: 'Tauri 集成本地数据库',
+                  link: '/summary/tauri/tauri_db'
+                },
               ]
             },
             {
