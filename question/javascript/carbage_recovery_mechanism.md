@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: JS垃圾回收机制
-titleTemplate: 徐涛焘的博客
+titleTemplate: 小徐前端手记
 ---
 # JS垃圾回收机制
 

@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: 跨域解决方案
-titleTemplate: 徐涛焘的博客
+titleTemplate: 小徐前端手记
 ---
 # 跨域解决方案
 

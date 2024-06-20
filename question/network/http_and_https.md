@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: HTTP和HTTPS的区别
-titleTemplate: 徐涛焘的博客
+titleTemplate: 小徐前端手记
 ---
 # HTTP和HTTPS的区别
 

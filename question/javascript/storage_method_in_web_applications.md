@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Web 应用中的存储方式
-titleTemplate: 徐涛焘的博客
+titleTemplate: 小徐前端手记
 ---
 
 # Web 应用中的存储方式

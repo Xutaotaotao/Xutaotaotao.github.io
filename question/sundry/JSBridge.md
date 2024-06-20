@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: JSBridge原理简析
-titleTemplate: 徐涛焘的博客
+titleTemplate: 小徐前端手记
 ---
 
 # JSBridge原理简析

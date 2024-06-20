@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: JS 模块化
-titleTemplate: 徐涛焘的博客
+titleTemplate: 小徐前端手记
 ---
 # JS 模块化
 

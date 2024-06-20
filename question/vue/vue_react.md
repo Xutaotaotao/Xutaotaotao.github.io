@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Vue 和 React
-titleTemplate: 徐涛焘的博客
+titleTemplate: 小徐前端手记
 ---
 
 # Vue 和 React
