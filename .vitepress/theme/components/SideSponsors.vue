@@ -7,7 +7,7 @@
     <div style="display: flex;justify-content: center;">
       <img style="border: 1px solid #e2e2e3;border-radius: 8px;" src="/payment/IMG_5471.jpeg"/>
     </div>
-    <div style="display: flex;justify-content:center;margin-top: 40px; margin-bottom: 20px;color:#d4380d">关注微信公众号[前端小怪物]</div>
+    <div style="display: flex;justify-content:center;margin-top: 40px; margin-bottom: 20px;color:#d4380d">关注微信公众号【小徐前端手记】</div>
     <div style="display: flex;justify-content: center;">
       <img style="border: 1px solid #e2e2e3;border-radius: 8px;" src="/wx_qr.jpg"/>
     </div>
