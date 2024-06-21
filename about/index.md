@@ -29,8 +29,7 @@ titleTemplate: 小徐前端手记
   :::
 
 ::: danger 联系我
-`添加微信好友时请添加备注，谢谢！`
-
-- 微信：Xutaotao1108
-- 邮箱：xutaotao1108@outlook.com
+扫码添加微信好友，请添加备注，谢谢！
+<img src="/wx.jpg" alt="微信二维码" style="width: 250px;" />
   :::
+
