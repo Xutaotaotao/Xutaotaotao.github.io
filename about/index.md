@@ -28,8 +28,4 @@ titleTemplate: 小徐前端手记
 - [get-installed-apps](https://github.com/Xutaotaotao/get-installed-apps)：通过 Node.js 获取电脑安装的软件，支持 Windows 和 Mac 两个平台。
   :::
 
-::: danger 联系我
-扫码添加微信好友，请添加备注，谢谢！
-<img src="/wx.jpg" alt="微信二维码" style="width: 250px;" />
-  :::
 
