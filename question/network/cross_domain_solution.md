@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: 跨域解决方案
-titleTemplate: 小徐前端手记
+titleTemplate: 前端徐徐
 ---
 # 跨域解决方案
 

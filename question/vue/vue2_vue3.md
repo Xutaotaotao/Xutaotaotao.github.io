@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Vue2 和 Vue3对比
-titleTemplate: 小徐前端手记
+titleTemplate: 前端徐徐
 ---
 
 # Vue2 和 Vue3对比

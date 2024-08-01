@@ -2,7 +2,7 @@
 outline: deep
 footer: false
 title: 关于我
-titleTemplate: 小徐前端手记
+titleTemplate: 前端徐徐
 ---
 
 # 关于我

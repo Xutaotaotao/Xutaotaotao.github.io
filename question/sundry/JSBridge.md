@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: JSBridge原理简析
-titleTemplate: 小徐前端手记
+titleTemplate: 前端徐徐
 ---
 
 # JSBridge原理简析

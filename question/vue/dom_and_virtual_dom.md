@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: 真实 DOM 和虚拟 DOM
-titleTemplate: 小徐前端手记
+titleTemplate: 前端徐徐
 ---
 
 # 真实 DOM 和虚拟 DOM

@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "小徐前端手记"
+  name: "前端徐徐"
   text: "一个写博客的地方"
   # tagline: My great project tagline
   # actions:

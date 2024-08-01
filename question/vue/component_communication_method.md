@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Vue组件通信方式
-titleTemplate: 小徐前端手记
+titleTemplate: 前端徐徐
 ---
 
 # Vue组件通信方式

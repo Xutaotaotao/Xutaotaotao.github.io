@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: JS 模块化
-titleTemplate: 小徐前端手记
+titleTemplate: 前端徐徐
 ---
 # JS 模块化
 
