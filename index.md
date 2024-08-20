@@ -16,8 +16,8 @@ hero:
 
 features:
   - icon: 📖
-    title: 技术总结
-    details: 一些工作中开发的技术总结，结晶
+    title: 开发实战
+    details: Electron & Tauri & 小需求开发实战
     link: /summary/
   - icon: 💡
     title: 问题解析
@@ -26,7 +26,7 @@ features:
   - icon: 📷
     title: 摄影集锦
     details: 一些摄影集锦，记录生活中的美好瞬间
-    link: /photo/
+    link: https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzkwOTUyMzc1NA==&scene=1&album_id=3537712498173345795#wechat_redirect
 
   - icon: 🔧
     title: Electron-Prokit

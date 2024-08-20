@@ -16,7 +16,7 @@ _⚠️注意：此工程搭建，演示环境为macOS。_
 - [https://tauri.app/zh-cn/v1/guides/getting-started/prerequisites](https://tauri.app/zh-cn/v1/guides/getting-started/prerequisites)
 
 ## 命令行初始化项目
-```javascript
+```bash
 pnpm create tauri-app
 ```
 按照命令行提示依次输入项目名称，包名，前端语言，包管理工具，前端UI框架库以及编程语言
@@ -25,7 +25,7 @@ pnpm create tauri-app
 如果一切顺利，你会出现这个界面，我这里选择的是Vite + React 的模式所以会出现这个界面，你如果选择其他的将会出现对应的界面。
 ![截屏2024-06-03 14.49.56.png](https://cdn.nlark.com/yuque/0/2024/png/277039/1717397420748-2366a93c-6f1a-476d-9c29-1abbb0f61f8e.png#averageHue=%2331302f&clientId=u477b8675-8224-4&from=drop&id=u6fefe072&originHeight=1200&originWidth=1600&originalType=binary&ratio=2&rotation=0&showTitle=false&size=150092&status=done&style=none&taskId=ue7bb1b22-81ad-48b3-88d1-3be592ee34c&title=)
 ## 项目结构
-```javascript
+```bash
 [tauri-app] # 项目名称
 ├─ [node_modules] # 前端依赖
 ├─ [src] # 前端程序源
@@ -46,7 +46,7 @@ pnpm create tauri-app
 ## 打包构建
 这里我们只是最简单的打包构建，并没有涉及到签名等操作，只是为了根据直观的学习整个流程，后面的教程会有专门的章节来讲打包构建。
 直接运行构建命令
-```javascript
+```bash
 pnpm tauri build
 ```
 会出现如下错误，需要修改一下`src-tauri/tauri.conf.json`中的`"identifier"为"com.xtool"`，可根据自身的项目来确定identifier。第一次构建也会比较费时间，依然建议使用科学上网。

@@ -97,10 +97,10 @@ export default defineConfig({
       copyright: 'ICP备案/许可证号：  <a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2023003982号-2</a>'
     },
     nav: [
-      { text: '技术总结', link: '/summary/',activeMatch: '^/summary/' },
+      { text: '开发实战', link: '/summary/',activeMatch: '^/summary/' },
       { text: '问题解析', link: '/question/',activeMatch: '^/question/' },
       // { text: '个人成长', link: '/growth/',activeMatch: '^/growth/' }
-      { text: '摄影集锦', link: '/photo/',activeMatch: '^/photo/' },
+      { text: '摄影集锦', link: 'https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzkwOTUyMzc1NA==&scene=1&album_id=3537712498173345795#wechat_redirect' },
       { text: '开源项目',items: [
         { text: 'electron-prokit', link: 'https://xutaotaotao.github.io/electron-prokit/' },
         { text: 'FindAll', link: 'https://findallteam.github.io/' },
@@ -111,10 +111,10 @@ export default defineConfig({
     sidebar: {
       '/summary/': [
         {
-          text: '技术总结',
+          text: '开发实战',
           items: [
             {
-              text: 'Electron实战',
+              text: 'Electron 开发实践指南',
               items: [
                 {
                   text: '为什么选择Electron',
@@ -160,10 +160,14 @@ export default defineConfig({
                   text: 'Electron 实现一个桌面悬浮窗',
                   link: '/summary/electron/electron-min-window'
                 },
+                {
+                  text: '谈谈我做 Electron 桌面端应用的这一两年',
+                  link: '/summary/electron/talk_about_electron'
+                },
               ]
             },
             {
-              text: 'Tauri应用开发实践指南',
+              text: 'Tauri 开发实践指南',
               items: [
                 {
                   text: 'Tauri 怎么样',
@@ -185,19 +189,30 @@ export default defineConfig({
                   text: 'Tauri 集成本地数据库',
                   link: '/summary/tauri/tauri_db'
                 },
-              ]
-            },
-            {
-              text: 'XTools系列',
-              items: [
                 {
-                  text: '纯前端实现图片切割,一键导出多张分割图片',
-                  link: '/summary/xtools/image-slicing'
+                  text: 'Tauri 主题&多语言设置开发',
+                  link: '/summary/tauri/tauri_theme'
+                },
+                {
+                  text: 'Tauri 自定义多语言菜单开发',
+                  link: '/summary/tauri/tauri_menu'
+                },
+                {
+                  text: 'Tauri 日志记录功能开发',
+                  link: '/summary/tauri/tauri_log'
+                },
+                {
+                  text: 'Tauri HTTP 请求开发',
+                  link: '/summary/tauri/tauri_http'
+                },
+                {
+                  text: 'CI/CD 自动构建发布 Tauri 桌面端应用',
+                  link: '/summary/tauri/tauri_ci_cd'
                 },
               ]
             },
             {
-              text: '一些实践',
+              text: '一些杂项实战',
               items: [
                 {
                   text: 'Vue keep-alive使用&详解',
@@ -206,6 +221,10 @@ export default defineConfig({
                 {
                   text: 'react-i18next 实现国际化',
                   link: '/summary/practice/react_i18'
+                },
+                {
+                  text: '纯前端实现图片切割,一键导出多张分割图片',
+                  link: '/summary/practice/image-slicing'
                 },
               ]
             }
