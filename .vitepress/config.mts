@@ -209,6 +209,10 @@ export default defineConfig({
                   text: 'CI/CD 自动构建发布 Tauri 桌面端应用',
                   link: '/summary/tauri/tauri_ci_cd'
                 },
+                {
+                  text: '打造《黑神话：悟空》壁纸软件：使用 Tauri 快速上手',
+                  link: '/summary/tauri/tauri_wukong_wallpaper'
+                },
               ]
             },
             {
