@@ -105,6 +105,8 @@ export default defineConfig({
         { text: 'electron-prokit', link: 'https://xutaotaotao.github.io/electron-prokit/' },
         { text: 'FindAll', link: 'https://findallteam.github.io/' },
         { text: 'XTools', link: 'https://taotaoxu.com/XTools/' },
+        { text: 'get-installed-apps', link: 'https://github.com/Xutaotaotao/get-installed-apps' },
+        { text: 'wukong-wallpaper', link: 'https://github.com/Xutaotaotao/wukong-wallpaper' },
       ]},
       { text: '关于我', link: '/about/',activeMatch: '^/about/' },
     ],

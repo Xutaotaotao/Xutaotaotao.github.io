@@ -1,33 +1,35 @@
 ---
-outline: [1,2]
+outline: deep
 title: 打造《黑神话：悟空》壁纸软件：使用 Tauri 快速上手
 titleTemplate: Tauri应用开发实践指南
 ---
 
+# 打造《黑神话：悟空》壁纸软件：使用 Tauri 快速上手
+
 大家好，我是徐徐！在这里跟大家分享一下我如何用半天时间实现一款《黑神话：悟空》桌面壁纸软件的。先看效果图。
 
-## Windows
+- Windows
 
 ![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/462829652d3b470c9f0b38b5e3c47c04~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725009449&x-orig-sign=AvwhrII60pdnZfuuRnzgiI5zUp0%3D)
 
-## Mac
+- Mac
 
 ![970af9b5e896db75b9ffd660a2b99e5.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/2545a5091e0a4b89997fee8cd6fa78b7~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725009449&x-orig-sign=wVn8zkvcBDOwDR%2B38m9UQYGJgUs%3D)
 
-# 前言
+## 前言
 
 最近 《黑神话：悟空》这款游戏太火爆了，里面的场景和画面都非常的美丽，就想到是不是可以把里面的图片设置成桌面壁纸呢，然后我就在网上看了一下图片，发现了 Wegame 的官网有图片，但是需要一张张下载，要么就是需要下载 Wegame 然后设置桌面壁纸，我就想想我办公电脑肯定不能下载 Wegame，然后也不想一张张下载图片。
 
 于是就直接想着写个桌面应用程序来设置壁纸得了。话不多说，让我们来看看如何用 Tauri 快速完成一个桌面端的壁纸软件吧！
 
-# 前期准备
+## 前期准备
 
 在开始项目之前需要完成 rust 环境安装和 tauri 项目初始化的准备工作。具体参考如下：
 
 *   rust 环境安装：<https://www.rust-lang.org/zh-CN/tools/install>
 *   tauri 项目初始化：<https://tauri.app/zh-cn/v1/guides/getting-started/setup/>
 
-# 核心流程
+## 核心流程
 
 其实核心流程很简单，如下图所示。
 ![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/61ef91d799e74cb0a04c0fe0cb286670~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725009449&x-orig-sign=Ck1R%2BGvAPAyGGj4fnGfng8mxVMo%3D)
@@ -37,9 +39,9 @@ titleTemplate: Tauri应用开发实践指南
 ![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/c6c332213e374f32997573c90d6e4622~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725009449&x-orig-sign=4GzE%2FSXJ5p6jtYCMk%2B0IIQwUzcg%3D)
 上面的两个流程最核心的就是下载壁纸和更换壁纸，这两个地方也是最难的地方。
 
-# 如何实现下载和更换壁纸
+## 如何实现下载和更换壁纸
 
-## 下载壁纸实现
+### 下载壁纸实现
 
 ```rust
 #[command]
@@ -64,7 +66,7 @@ async fn download_and_set_wallpaper(url: String, file_name: String) -> Result<()
 *   通过 `reqwest` 发送 HTTP 请求下载图片数据，并保存到本地文件。
 *   下载完成后，调用 `change_wallpaper` 函数将该图片设置为桌面壁纸。
 
-## 更换壁纸实现
+### 更换壁纸实现
 
 ```rust
 fn change_wallpaper(image_path: String) -> Result<(), String> {
@@ -122,7 +124,7 @@ fn change_wallpaper(image_path: String) -> Result<(), String> {
 
 设置壁纸这一块也有很多其他的方法，我暂时觉得上面的两个方法更加简单方便，如果你有其他的方案也可以替换。
 
-# 前后端如何交互
+## 前后端如何交互
 
 前后端交互主要是用到两个方法，前端向后端发消息使用 `invoke`,前端收后端的消息使用 `listen`。
 大概分四大块，分别是：
@@ -219,7 +221,7 @@ useEffect(() => {
 
 到这里其实所有的核心代码逻辑就完成了，然后只需要测试修改添加一些其他的辅助功能就可以使用了。
 
-# 一些已知问题
+## 一些已知问题
 
 *   Mac 端扩展屏幕壁纸不同步，确保扩展屏幕在主屏幕即可
 *   Mac 首次使用文件权限提醒
@@ -232,14 +234,14 @@ useEffect(() => {
 ![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/2467fdaad7c94f1b99ee8dbd7792f377~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725009449&x-orig-sign=LBH2esSjI2S7D9GHdQosQGtpHgI%3D)
 解除限制即可使用，原因是因为没有签名。
 
-# 源码
+## 源码
 
 <https://github.com/Xutaotaotao/wukong-wallpaper>
 
-# 下载地址
+## 下载地址
 
 <https://github.com/Xutaotaotao/wukong-wallpaper/releases>
 
-# 结语
+## 结语
 
 这个应用纯粹是个人玩具，图片源自于 Wegame 官网，如果大家有兴趣可以下载使用体验体验。空闲时间做一些好玩的东西也是不错的，可以锻炼技术，还可以让自己方便，何乐而不为？
