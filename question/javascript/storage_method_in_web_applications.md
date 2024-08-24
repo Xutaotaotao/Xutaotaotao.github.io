@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Web 应用中的存储方式
-titleTemplate: 前端徐徐
+titleTemplate: 前端面试题
 ---
 
 # Web 应用中的存储方式

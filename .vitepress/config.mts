@@ -98,7 +98,7 @@ export default defineConfig({
     },
     nav: [
       { text: '开发实战', link: '/summary/',activeMatch: '^/summary/' },
-      { text: '问题解析', link: '/question/',activeMatch: '^/question/' },
+      { text: '前端面试题', link: '/question/',activeMatch: '^/question/' },
       // { text: '个人成长', link: '/growth/',activeMatch: '^/growth/' }
       { text: '摄影集锦', link: 'https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzkwOTUyMzc1NA==&scene=1&album_id=3537712498173345795#wechat_redirect' },
       { text: '开源项目',items: [
@@ -239,7 +239,7 @@ export default defineConfig({
       ],
       '/question/': [
         {
-          text: '问题解析',
+          text: '前端面试题',
           items: [
             {
               text: 'Javascript',

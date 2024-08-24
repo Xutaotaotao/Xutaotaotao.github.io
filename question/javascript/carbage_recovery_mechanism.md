@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: JS垃圾回收机制
-titleTemplate: 前端徐徐
+titleTemplate: 前端面试题
 ---
 # JS垃圾回收机制
 

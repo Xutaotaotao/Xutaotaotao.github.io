@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: JS 模块化
-titleTemplate: 前端徐徐
+titleTemplate: 前端面试题
 ---
 # JS 模块化
 

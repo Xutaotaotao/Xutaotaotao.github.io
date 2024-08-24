@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: apply、call、bind 比较
-titleTemplate: 前端徐徐
+titleTemplate: 前端面试题
 ---
 # apply、call、bind 比较
 
