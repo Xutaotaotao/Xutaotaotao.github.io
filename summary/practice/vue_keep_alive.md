@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Vue keep-alive 使用及缓存机制详解
-titleTemplate: Vue 实践
+titleTemplate: Vue 实战
 ---
 
 # Vue keep-alive 使用及缓存机制详解

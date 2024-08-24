@@ -232,6 +232,14 @@ export default defineConfig({
                   text: '纯前端实现图片切割,一键导出多张分割图片',
                   link: '/summary/practice/image-slicing'
                 },
+                {
+                  text: '教你一步步用 Julep + ChatUI 构建 AI 应用',
+                  link: '/summary/practice/chatui_julep'
+                },
+                {
+                  text: 'Google 浏览器中的 AI 魔法 — window.ai （本地运行 AI 程序）',
+                  link: '/summary/practice/window_ai'
+                },
               ]
             }
           ]

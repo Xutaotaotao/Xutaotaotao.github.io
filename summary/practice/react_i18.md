@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: react-i18next 实现国际化
-titleTemplate: react实践
+titleTemplate: React 实战
 ---
 
 # react-i18next 实现国际化
