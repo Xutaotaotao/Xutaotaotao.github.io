@@ -342,6 +342,6 @@ export const unauthorizedFetch = () => {
 
 到这里我们整个网络请求的封装就完成了。我们可以简单的在页面上添加两个按钮来实现401登录失效的跳转，验证我们是否可以成功的执行相应的请求，并跳转回登录页面。
 
-![WechatIMG62.jpeg](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8d6e3d9776d74f5aa0a0358c21088359~tplv-k3u1fbpfcp-watermark.png?)
+![WechatIMG62.jpeg](/img/8d6e3d9776d74f5aa0a0358c21088359~tplv-k3u1fbpfcp-watermark.png)
 
 三种情况都可以！完成！

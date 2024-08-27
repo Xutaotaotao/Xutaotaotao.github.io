@@ -28,7 +28,7 @@ titleTemplate: XTools系列
 
 最终的实现效果如下图所示:
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8ce660d34cc64aa8934b121f4bf0a49d~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=4096\&h=2062\&s=303218\&e=png\&b=eaeaea)
+![image.png](/img/XToolstaotaoxu-com.png)
 
 ## 技术选型
 

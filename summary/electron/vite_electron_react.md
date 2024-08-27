@@ -21,13 +21,13 @@ pnpm create vite
 
 选择 React，选择 Typescript + SWC，SWC 是什么——>[https://swc.rs](https://swc.rs/)
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e1d2f7d942684e3f81e935f584921480~tplv-k3u1fbpfcp-zoom-1.png)
+![](/img/e1d2f7d942684e3f81e935f584921480~tplv-k3u1fbpfcp-zoom-1.png)
 
 ## 修改项目结构
 
 我们把 src 下创建一个 render 目录和 main 目录，故名思义就是渲染进程和主进程，然后改变 index.html 中 script 的引入`<script type="module" src="/src/render/main.tsx"></script>`，这样极简的项目结构就出现了
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f8a68f86b0be4a5fb62eea691fe86ea2~tplv-k3u1fbpfcp-zoom-1.png)
+![](/img/f8a68f86b0be4a5fb62eea691fe86ea2~tplv-k3u1fbpfcp-zoom-1.png)
 
 ## 自定义开发脚本
 
@@ -77,7 +77,7 @@ initDev();
 
 现阶段的目录结构如下：
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6583f518a9024909a09b05bd1ff4a32b~tplv-k3u1fbpfcp-zoom-1.png)
+![](/img/6583f518a9024909a09b05bd1ff4a32b~tplv-k3u1fbpfcp-zoom-1.png)
 
 现在`render`进程的脚本基本差不多了，下一步就是要把 Electron 集成进去。
 
@@ -165,10 +165,10 @@ initDev();
 
 现阶段的代码结构如下：
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9c010fb4ec044b2bab414661f339e416~tplv-k3u1fbpfcp-zoom-1.png)
+![](/img/9c010fb4ec044b2bab414661f339e416~tplv-k3u1fbpfcp-zoom-1.png)
 
 不出意外`pnpm dev`会出现下面的界面。
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c8e0bf6461464173883bc7cc5a4d9051~tplv-k3u1fbpfcp-zoom-1.png)
+![](/img/c8e0bf6461464173883bc7cc5a4d9051~tplv-k3u1fbpfcp-zoom-1.png)
 
 到现在，一个最简单的 Electron 开发环境搭建好了。

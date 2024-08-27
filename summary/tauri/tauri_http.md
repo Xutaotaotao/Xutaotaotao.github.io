@@ -228,7 +228,7 @@ export default Http
 ```
 
 非常简单的页面，到这里，在 Tauri 中进行 HTTP 请求的功能就实现了。
-![截屏2024-07-26 14.31.37.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/15e52257393542fa8f395bb45fa9558d~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724758012&x-orig-sign=SalMy2I%2F%2F0iEN3O5Gj4no%2B3sguY%3D)
+![截屏2024-07-26 14.31.37.png](/img/15e52257393542fa8f395bb45fa9558d~tplv-73owjymdk6-jj-mark-v1_0_0_0_0_5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q_q75.webp)
 
 # 源码地址
 

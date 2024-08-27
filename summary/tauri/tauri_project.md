@@ -20,10 +20,10 @@ _⚠️注意：此工程搭建，演示环境为macOS。_
 pnpm create tauri-app
 ```
 按照命令行提示依次输入项目名称，包名，前端语言，包管理工具，前端UI框架库以及编程语言
-![截屏2024-06-03 14.29.47.png](https://cdn.nlark.com/yuque/0/2024/png/277039/1717396208111-791c75c3-90e6-4d82-8460-187c97459c1d.png#averageHue=%23242424&clientId=ud078a279-bb11-4&from=drop&id=uecdc459a&originHeight=1168&originWidth=1660&originalType=binary&ratio=2&rotation=0&showTitle=false&size=197468&status=done&style=none&taskId=uae5cecf0-5048-4c64-a8c4-2667d56f3a6&title=)
+![截屏2024-06-03 14.29.47.png](/img/截屏2024-06-03 14.29.47.png)
 现在如果你的vscode安装了[rust-analyzer](https://code.visualstudio.com/docs/languages/rust)和[Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode)这两个插件，在打开此项目的时候，会自动下载rust相关的依赖。按照提示可以进入项目根目录安装前端相关依赖并启动项目。首次启动会下载编译一些文件，可能会比较慢，建议使用科学上网。
 如果一切顺利，你会出现这个界面，我这里选择的是Vite + React 的模式所以会出现这个界面，你如果选择其他的将会出现对应的界面。
-![截屏2024-06-03 14.49.56.png](https://cdn.nlark.com/yuque/0/2024/png/277039/1717397420748-2366a93c-6f1a-476d-9c29-1abbb0f61f8e.png#averageHue=%2331302f&clientId=u477b8675-8224-4&from=drop&id=u6fefe072&originHeight=1200&originWidth=1600&originalType=binary&ratio=2&rotation=0&showTitle=false&size=150092&status=done&style=none&taskId=ue7bb1b22-81ad-48b3-88d1-3be592ee34c&title=)
+![截屏2024-06-03 14.49.56.png](/img/截屏2024-06-03 14.49.56.png)
 ## 项目结构
 ```bash
 [tauri-app] # 项目名称
@@ -50,6 +50,6 @@ pnpm create tauri-app
 pnpm tauri build
 ```
 会出现如下错误，需要修改一下`src-tauri/tauri.conf.json`中的`"identifier"为"com.xtool"`，可根据自身的项目来确定identifier。第一次构建也会比较费时间，依然建议使用科学上网。
-![截屏2024-06-03 15.09.58.png](https://cdn.nlark.com/yuque/0/2024/png/277039/1717398632398-9fb2872d-6ef9-434d-8d26-96010bfbb912.png#averageHue=%232a2e36&clientId=u477b8675-8224-4&from=drop&id=u1337624b&originHeight=1814&originWidth=2850&originalType=binary&ratio=2&rotation=0&showTitle=false&size=755246&status=done&style=none&taskId=u1632f089-bc07-44ff-9f68-0ea2fcd7a17&title=)
+![截屏2024-06-03 15.09.58.png](/img/截屏2024-06-03 15.09.58.png)
 打包构建完成之后，安装包会出现在如下目录，到此就可以安装和使用了。
-![截屏2024-06-03 15.19.43.png](https://cdn.nlark.com/yuque/0/2024/png/277039/1717399237537-070ccc3a-3293-4d21-9f62-73aa0f43bb44.png#averageHue=%2383adb3&clientId=u17fd7577-d25d-4&from=drop&id=ufe793821&originHeight=1904&originWidth=3286&originalType=binary&ratio=2&rotation=0&showTitle=false&size=3789549&status=done&style=none&taskId=u5635a22f-7aed-4b4a-8a85-378a7995bff&title=)
+![截屏2024-06-03 15.19.43.png](/img/截屏2024-06-03 15.19.43.png)

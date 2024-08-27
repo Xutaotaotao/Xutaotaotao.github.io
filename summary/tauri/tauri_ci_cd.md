@@ -13,7 +13,7 @@ Tauri 是一个跨平台的客户端框架，体积小而且很精悍，如果�
 # CI/CD 流程概述
 
 这里先简单概述一下 CI/CD 的流程，因为有的小伙伴不一定知道 CI/CD 。
-![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/d56c7a7d6857461fa975b306bfe67603~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724758073&x-orig-sign=umuCbsxlpnOBLGmaHPHBKIGu0dU%3D)
+![](/img/yuque_diagram(6).jpg)
 上图是一个最简单的CI / CD的流程图，大概逻辑就是开发者提交代码之后版本控制系统（如 Git）触发CI / CD流程，通过代码检出，构建应用等关键动作自动化完成整个发布。当然在一些工程化的体系中还可能加很多其他节点，比如代码分析，各种测试(单元测试、集成测试、性能测试等)，发布卡点设计，发布通知等，不过我们这里只实现最核心的流程节点。
 
 # 选择 CI/CD 工具
@@ -62,7 +62,7 @@ Tauri 是一个跨平台的客户端框架，体积小而且很精悍，如果�
 # 为 Tauri 应用配置 CI/CD
 
 在进行配置前，我们需要梳理一下整个构建的动作，这里的构建动作就跟我们本地开发一样，但是更加细致化一些，大概的流程如下。
-![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/43e7740319ec44679812b1a83dbcced2~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724758073&x-orig-sign=BQzi2by1puIPcYZ5W3KP%2BdAfTxk%3D)
+![](/img/yuque_diagram(7).jpg)
 上面提到的步骤，我们需要用 GitHub Actions 的脚本来实现，下面我们就来看看具体的实现。
 
 ```yaml
@@ -193,7 +193,8 @@ with:
 这部分配置了发布的详细信息，包括使用的 GitHub 令牌、标签名、发布名称、发布说明等，这里用作测试，创建一个草稿版本，不是预发布版本。
 
 如果一切顺利的话，当你push feature-testci 这个分支的时候会出现如下两张图：
-![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/8d7f69b45a4d460c822978eedc61af03~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724758073&x-orig-sign=3gH2uWk6qiOu80zI1FC0%2F14SlQs%3D)![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/29acfc90ca0d490fb04017354c239453~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724758073&x-orig-sign=wpqgJ%2BZXhI%2FWH9JkNfKh8mpOC1I%3D)
+![image.png](/img/imagetauricicd1.png)
+![image.png](/img/tauri111.webp)
 一张图是Action的构建过程，两个平台都构建完成了；一张图是生成的安装包，两个平台的包都有了。
 
 # 常见问题
@@ -201,10 +202,10 @@ with:
 ## 权限问题
 
 其实这个里面有的时候会遇到一些问题，最主要的问题是权限的问题。GitHub 环境令牌，此令牌默认只有读取权限，在运行工作流时你可能会收到“Resource not accessible by integration”错误。
-![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/b5071ae9bd2d444689dcd1000d46caeb~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724758073&x-orig-sign=qkGH9H4UgPczK2av1KQCiS41Q0Y%3D)
+![image.png](/img/imagetauricicd2.png)
 这个需要在设置里面配置相应的权限，在Action—General的最下方
-![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/445d84a03b7b4ab0ad3ab94e4cbc23df~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724758073&x-orig-sign=RX0MJORmL2eZ0DIb5H9uqbo1eAI%3D)
-![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/950bda22996c4015bb8e5048a790cdf3~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724758073&x-orig-sign=hJeQ5yCiEqN%2FCSSliCNWoyKGRNA%3D)
+![image.png](/img/imagetauricicd3.png)
+![image.png](/img/950bda22996c4015bb8e5048a790cdf3~tplv-73owjymdk6-jj-mark-v1_0_0_0_0_5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q_q75.webp)
 
 ## 生成应用的安全问题
 

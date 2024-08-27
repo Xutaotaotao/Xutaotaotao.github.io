@@ -36,7 +36,7 @@ Electron发送HTTP请求的方案有很多。
 
 Electron的本地数据存储方式也有很多种，可以直接读写文件，也可以用相关的库，方便数据管理。一些库的对比，详情：<https://www.npmtrends.com/electron-store-vs-lokijs-vs-lowdb-vs-nedb-vs-realm>
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/db0eb0cebb8a473c94be3f09f22d2e80~tplv-k3u1fbpfcp-zoom-1.png)
+![](/img/db0eb0cebb8a473c94be3f09f22d2e80~tplv-k3u1fbpfcp-zoom-1.png)
 
 综合来看[lowdb](https://github.com/typicode/lowdb)更胜一筹，所以选择lowdb做本地数据库，非常好的一点是它支持同步，不必担心数据没有写入就进行了下一步需要本地数据的业务操作。
 
@@ -46,7 +46,7 @@ Electron的本地数据存储方式也有很多种，可以直接读写文件，
 
 比较常见的日志工具就是[electron-log](https://github.com/megahertz/electron-log)和[log4js-node](https://github.com/log4js-node/log4js-node)，这两款日志工具我都有用过。可以看下npm的排行，这里把express-winston和logging也加上看一下，详情：<https://npmtrends.com/electron-log-vs-express-winston-vs-log4js-vs-logging>
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a6550b1659da43a9868d956a04b28f76~tplv-k3u1fbpfcp-zoom-1.png)
+![](/img/a6550b1659da43a9868d956a04b28f76~tplv-k3u1fbpfcp-zoom-1.png)
 
 这里简单说一下[electron-log](https://github.com/megahertz/electron-log)和[log4js-node](https://github.com/log4js-node/log4js-node)的比较，两者上手都比较简单，log4js-node暴露的API 非常多，electron-log就稍显逊色了，另外最直观的感受就是，electron-log的日志文件路径不好找，暂时没发现自定义日志路径的方法，log4js-node有相应的方法，而且你可以自定义各种文件类型。
 
@@ -60,7 +60,7 @@ Electron的本地数据存储方式也有很多种，可以直接读写文件，
 
 三种构建工具[electron-builder](https://github.com/electron-userland/electron-builder),[electron-forge](https://github.com/electron/forge) ,[electron-packager](https://github.com/electron/electron-packager) 对比一下
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5cfccd49c5bc4f078f7fbbfe1ad62228~tplv-k3u1fbpfcp-zoom-1.png)
+![](/img/5cfccd49c5bc4f078f7fbbfe1ad62228~tplv-k3u1fbpfcp-zoom-1.png)
 
 从这个排行来看[electron-builder](https://github.com/electron-userland/electron-builder)的确很强，electron-forge最近又更新大的版本，不过没有尝鲜，我在[electron-builder](https://github.com/electron-userland/electron-builder)上倒是踩了不少坑，可以分享给大家。所以我在开发的时候选择的构建打包工具是[electron-builder](https://github.com/electron-userland/electron-builder)，它把整套解决方案都集成了，包括打包、更新、签名、分发，基本的钩子和配置都有相应的暴露。
 

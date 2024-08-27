@@ -13,9 +13,9 @@ titleTemplate: Electron实战
 
 dll 的调用其实很简单，有些时候环境引来的问题会比较麻烦。在 npm 仓库中也有很多调用 DLL 的库，至于怎么选择其实看自己，现在比较常见，使用最多的应该属[ffi-napi](https://github.com/node-ffi-napi/node-ffi-napi)。在不同平台调用的文件不一样`OS X`就是`.dylib`文件,`Windows`就是`.dll`,`Linux`就是`.so`,但是我们不使用`ffi-napi`,最主要的原因是环境会搞得你很头疼，如果`node-gyp`的安装有问题，就会让你非常烦躁，有的时候解决环境问题会花费大量时间，我踩过坑，所以不推荐。这里推荐使用[Koffi](https://koffi.dev/benchmarks),依赖项少，速度很快，下面有个粗略的对比。
 
-![perf_linux_20220812.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e5b0046ba5fe48d5b7643124468f34a7~tplv-k3u1fbpfcp-watermark.png?)
+![perf_linux_20220812.png](/img/e5b0046ba5fe48d5b7643124468f34a7~tplv-k3u1fbpfcp-watermark.png)
 
-![perf_windows_20220812.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9d7871beac3d4f13be13d2be884040be~tplv-k3u1fbpfcp-watermark.png?)
+![perf_windows_20220812.png](/img/9d7871beac3d4f13be13d2be884040be~tplv-k3u1fbpfcp-watermark.png)
 
 ### 构建 dylib、dll 文件
 
@@ -114,12 +114,12 @@ pnpm add -g @napi-rs/cli
 
 然后用`napi new`创建一个新的项目，当然，如果你有成熟的分包管理工具也可以在原项目下创建项目，后面在打包构建的时候整合，我们这个为了方便简单演示其原理我们就新建一个项目。
 
-![截屏2023-02-28 20.03.18.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9328e5a2d5eb4aecb542b5fa5eaa2b9d~tplv-k3u1fbpfcp-watermark.png?)
+![截屏2023-02-28 20.03.18.png](/img/9328e5a2d5eb4aecb542b5fa5eaa2b9d~tplv-k3u1fbpfcp-watermark.png)
 这里我们就选择所有平台，简直就是跨端大杀器。
 
 创建项目后会这样
 
-![截屏2023-02-28 20.07.47.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/31f6653369c34a4586c17f79b4e57882~tplv-k3u1fbpfcp-watermark.png?)
+![截屏2023-02-28 20.07.47.png](/img/31f6653369c34a4586c17f79b4e57882~tplv-k3u1fbpfcp-watermark.png)
 
 这里我们可以在`sum`的下面加一个减法的函数`subtraction`,测试一下它的易用性
 
@@ -140,7 +140,7 @@ pnpm run build
 
 构建之后会出现一个你现在构建平台的一个`.node`文件
 
-![20230228202841.jpg](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/915d0119640f418f91ffdb4cffa4507a~tplv-k3u1fbpfcp-watermark.png?)
+![20230228202841.jpg](/img/915d0119640f418f91ffdb4cffa4507a~tplv-k3u1fbpfcp-watermark.png)
 
 我们将其拷贝至我们原有的`Electron`项目中的`resources`目录下。
 
@@ -165,7 +165,7 @@ export const rsNativeSubtraction = (a:number,b:number) => {
 
 这是现在的目录结构
 
-![截屏2023-02-28 21.12.33.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7d0d56e937984e06bd26563ad969ba4d~tplv-k3u1fbpfcp-watermark.png?)
+![截屏2023-02-28 21.12.33.png](/img/7d0d56e937984e06bd26563ad969ba4d~tplv-k3u1fbpfcp-watermark.png)
 
 ## 结语
 

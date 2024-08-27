@@ -124,7 +124,7 @@ const changeLangAction = async (lang: string) => {
   };
 ```
 
-![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/25dd911eeb7c47b788b55a3a3fe0517e~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724757980&x-orig-sign=p%2BNiD%2FClid4KK42QY9qS5EwhxCw%3D)
+![image.png](/img/25dd911eeb7c47b788b55a3a3fe0517e~tplv-73owjymdk6-jj-mark-v1_0_0_0_0_5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q_q75.webp)
 
 设置日志级别
 

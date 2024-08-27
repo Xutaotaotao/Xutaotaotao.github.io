@@ -7,15 +7,7 @@ export default defineConfig({
     ],
     [
       'meta',
-      {name: 'referrer',content: 'no-referrer'},
-    ],
-    [
-      'meta',
       {name:'robots',content:"index,follow"}
-    ],
-    [
-      'meta',
-      {name: 'referrer',content: 'no-referrer'},
     ],
     [
       "meta",

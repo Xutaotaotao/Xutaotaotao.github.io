@@ -156,7 +156,7 @@ src/preload/index.ts
       }, []);
 ```
 
-![png.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0729ccab22af41d68b32049f4754b0c7~tplv-k3u1fbpfcp-watermark.png?)
+![png.png](/img/0729ccab22af41d68b32049f4754b0c7~tplv-k3u1fbpfcp-watermark.png)
 
 ## 小技巧
 
@@ -170,6 +170,6 @@ src/preload/index.ts
 ``` 
 即可获得一个本地存储文件服务来验证更新
 
-![png.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2efae90a69e74721a1c51b898e3d8f1f~tplv-k3u1fbpfcp-watermark.png?)
+![png.png](/img/2efae90a69e74721a1c51b898e3d8f1f~tplv-k3u1fbpfcp-watermark.png)
 
 到这里基本的核心更新逻辑就完成了。

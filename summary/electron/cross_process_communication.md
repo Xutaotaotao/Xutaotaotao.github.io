@@ -38,11 +38,11 @@ preload: join(__dirname, "../preload/index.js")
 
 现在整体目录如下
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/31cfa95604fe41a4b9dfe4ba8800efb4~tplv-k3u1fbpfcp-zoom-1.png)
+![](/img/31cfa95604fe41a4b9dfe4ba8800efb4~tplv-k3u1fbpfcp-zoom-1.png)
 
 启动开发环境你会发现以下错误
 
-![](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4340125f71af4b07a975140e44184465~tplv-k3u1fbpfcp-zoom-1.png)
+![](/img/4340125f71af4b07a975140e44184465~tplv-k3u1fbpfcp-zoom-1.png)
 
 因为启动开发环境后，Electron进程读取的build后的目录，所以我们需要对`preload`目录做`build`处理，先前我们已经构建过渲染进程和`main`进程了，`preload`开发环境的build其实也是类似的思路，配置`config/vite/preload.js`文件，在`scripts/dev.js`脚本中做相应的构建方法。
 
@@ -395,7 +395,7 @@ const initDev = async () => {
 
 work进程
 
-![截屏2023-02-25 18.59.12.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/dd8327e0dd3a4a588af8a28920cabc99~tplv-k3u1fbpfcp-watermark.png?)
+![截屏2023-02-25 18.59.12.png](/img/dd8327e0dd3a4a588af8a28920cabc99~tplv-k3u1fbpfcp-watermark.png)
 
 主进程
 
@@ -419,7 +419,7 @@ work进程
 
 不出意外，`pnpm run dev`会出现这样的情况
 
-![截屏2023-02-25 19.04.39.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/84adfe7b48b2403e9d4aa73ab1aaf020~tplv-k3u1fbpfcp-watermark.png?)
+![截屏2023-02-25 19.04.39.png](/img/84adfe7b48b2403e9d4aa73ab1aaf020~tplv-k3u1fbpfcp-watermark.png)
 
 这样，我们的work进程就好了，下面我们开始尝试两种通信方式吧！
 
@@ -468,7 +468,7 @@ ipcRenderer.on('msgFormRender',(event:Event,msg:any) => {
 
 `pnpm run dev`后点击渲染进程的按钮，查看work进程的打印
 
-![截屏2023-02-25 19.34.38.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/52706652e41742c5a1f0f5fac8a30e07~tplv-k3u1fbpfcp-watermark.png?)
+![截屏2023-02-25 19.34.38.png](/img/52706652e41742c5a1f0f5fac8a30e07~tplv-k3u1fbpfcp-watermark.png)
 
 当然你也可以做work进程的消息回执处理，思路跟渲染进程发送消息到work进程的思路一样。
 
@@ -534,7 +534,7 @@ const sendMsgToWorkByMessagePort = () => {
 </div>
 ```
 
-![截屏2023-02-25 20.51.14.png](https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0f0c477fa24e42d9b9cecd6e2765260e~tplv-k3u1fbpfcp-watermark.png?)
+![截屏2023-02-25 20.51.14.png](/img/0f0c477fa24e42d9b9cecd6e2765260e~tplv-k3u1fbpfcp-watermark.png)
 
 # 总结
 

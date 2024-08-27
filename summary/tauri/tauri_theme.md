@@ -40,7 +40,7 @@ titleTemplate: Tauri应用开发实践指南
 ## 主题变更的具体实现
 
 整体思路如下所示：
-![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/a0399e75955d491f947c0311c20ed62d~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724757913&x-orig-sign=si0EvOgV%2BndIhORnvpXsb42HA80%3D)
+![](/img/a0399e75955d491f947c0311c20ed62d~tplv-73owjymdk6-jj-mark-v1_0_0_0_0_5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q_q75.webp)
 这个流程是循环往复的，闭合整个主题变更的流程，下面就是细节实现了：
 
 ### 倒入插件tauri-plugin-theme
@@ -225,9 +225,9 @@ export default ThemeIcon;
 ```
 
 这里需要注意，windows 在切换主题的时候是需要重启应用的，为了更好的体验，我们需要提醒一下用户，如果是 Mac 端的话可以丝滑切换。
-![2801719196938\_.pic.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/6e407508e07944498dbb0ceb635ff891~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724757913&x-orig-sign=%2BsefRL%2FBfYp1nO17f%2F90IzTcqsc%3D)
-![2811719196939\_.pic.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/9ab6ab173ded4dd8902ad65359f37852~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724757913&x-orig-sign=XCeTYuLFJ2d063wEj2SsoFb%2BB2w%3D)
-![2821719196940\_.pic.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/18db4c6c84f8478f9a2c8d148e8fe5c6~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724757913&x-orig-sign=uzLj86CFnkYCDK5ZzrzVADfv6cY%3D)
+![2801719196938\_.pic.jpg](/img/6e407508e07944498dbb0ceb635ff891~tplv-73owjymdk6-jj-mark-v1_0_0_0_0_5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q_q75.webp)
+![2811719196939\_.pic.jpg](/img/9ab6ab173ded4dd8902ad65359f37852~tplv-73owjymdk6-jj-mark-v1_0_0_0_0_5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q_q75.webp)
+![2821719196940\_.pic.jpg](/img/18db4c6c84f8478f9a2c8d148e8fe5c6~tplv-73owjymdk6-jj-mark-v1_0_0_0_0_5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q_q75.webp)
 
 # 多语言设置的具体实现
 

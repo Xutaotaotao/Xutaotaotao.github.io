@@ -38,13 +38,13 @@ titleTemplate: Electron实战
 
 一图抵千字，我拿出这张图你自己就有所判断了，还是那句话，仁者见仁，智者见智，完全看自己情况。
 
-![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/116675da10894141b5bfb06ca39c060e~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724760090&x-orig-sign=9TCVONnCwCTyGjcWXqyFX3roWJI%3D)
+![image.png](/img/116675da10894141b5bfb06ca39c060e~tplv-73owjymdk6-jj-mark-v1_0_0_0_0_5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q_q75.webp)
 图片来源：<https://www.electronjs.org/apps>
 
 # 技术整体架构
 
 这里我画了一张我所从事 Electron 产品的整体技术架构图。
-![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/bd8f08b154684382b67258de95127d80~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724760090&x-orig-sign=rl8O1hrZ0LI%2FQ3A9Gd7rfaiLA6Q%3D)
+![](/img/bd8f08b154684382b67258de95127d80~tplv-73owjymdk6-jj-mark-v1_0_0_0_0_5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q_q75.webp)
 整个项目基于 Vite 开发构建的，基础设施就是常见的安全策略，然后加上一些本地存储方案，外加一个外部插件，这个插件是用 Tauri 做的 Webview，至于为什么要做这个插件我会在后面的段落说明。应用层面的框架主要是分三个大块，下面主要是为了构建一些基础底座，然后将架构进行分层设计，添加一些原生扩展，上面就是基础的应用管理和 GUI 相关的东西，有了这个整体的框架在后面实现一些业务场景的时候就会变得易如反掌（夸张了一点，因为有的技术细节真的很磨人😐）。
 
 当然这里只是一个整体的架构图，其实还有很多技术细节的流程图以及业务场景图并没有在这里体现出来，不过我也会挑选一些方案在后面的篇幅里面做出相应的讲解。
@@ -59,7 +59,7 @@ titleTemplate: Electron实战
 
 升级更新主要是需要做到定向灰度。这个功能是非常重要的，应该大部分的应用都有定向灰度的功能，所以我们为了让软件能够平滑升级，第一步就是实现定向灰度，达到效果可回收，性能可监控，错误可告警的目的。定向更新的功能实现了之后，后面有再多的功能需要实现都有基础保障了，下面是更新相关的能力图。
 
-![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/696641ef270c48bc8cd4c2c72395d258~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724760090&x-orig-sign=vXDwfWRJyutJcJueXpYaUzodhHk%3D)
+![](/img/696641ef270c48bc8cd4c2c72395d258~tplv-73owjymdk6-jj-mark-v1_0_0_0_0_5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q_q75.webp)
 
 整个更新模块的设计是分为两大块，一块是后台管理系统，一块是客户端。后台管理系统主要是维护相应的策略配置，比如哪些设备需要定向更新，哪些需要自动更新，不需要更新的白名单以及更新后是需要提醒用户相应的更新功能还是就静默更新。客户端主要就是拉取相应的策略，然后执行相应的更新动作。
 
@@ -72,7 +72,7 @@ titleTemplate: Electron实战
 任务模块的实现在我们这个软件里面也是非常重要的一环，因为客户端会跑非常多的定时任务。刚开始研发这个产品的时候其实还好，定时任务屈指可数，但是随着长时间的迭代，端上要执行的任务越来越多，每个任务的触发时间，触发条件都不一样，以及还要考虑任务的并发情况和对性能的影响，所以在中后期我们对整个任务模块都做了相应的改造。
 
 下面是整个任务模块的核心能力图。
-![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/745117ab129e4c49a7f9e105bf2dfdd1~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1724760090&x-orig-sign=2FM66w8wqK0CGoERDjqSgVwfcgc%3D)
+![](/img/745117ab129e4c49a7f9e105bf2dfdd1~tplv-73owjymdk6-jj-mark-v1_0_0_0_0_5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q_q75.webp)
 
 业界也有一些任务相关的开源工具包，比如 node-schedule、node-cron、cron，这些都是很优秀的库，但是我在使用过程中发现他们好像不具备并发限制的场景，比如有很多任务我们在开始设置的时候都会有个时间间隔，这些任务的时间间隔都是可以在后台随意配置的，如果端上不做并发限制会导致一个问题，就是用户某一瞬间会觉得电脑非常卡。
 

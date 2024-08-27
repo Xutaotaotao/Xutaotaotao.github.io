@@ -16,7 +16,7 @@ Tauri 的整体架构，自顶向下可以分为三层：
 2. [WRY](https://github.com/tauri-apps/wry)：一个跨平台 Webview 渲染库，会根据各平台选择特定的浏览器引擎启动 Webview，抹平平台差异，暴露统一的上层 API。
 3. [TAO](https://github.com/tauri-apps/tao)：跨平台应用窗口管理器，主要用于构建各平台下的应用主窗口。
 
-![image.png](https://cdn.nlark.com/yuque/0/2024/png/277039/1717393816609-002a56d9-0fc9-43f9-b59a-ddab66432477.png#averageHue=%23f6e9e9&clientId=uc16a16b6-ec32-4&from=paste&id=lQ7Pf&originHeight=543&originWidth=1595&originalType=url&ratio=2&rotation=0&showTitle=false&size=214008&status=done&style=none&taskId=u05e96550-e945-4e87-b5b3-5d6627de81a&title=)
+![image.png](/img/how_about_tarui.png)
 Tauri 除了完全使用 rust 开发以外，与 electron 最大的不同之处就在于，没有使用直接为每个应用单独集成一个 chromium 环境，而是直接使用操作系统内置的浏览器引擎执行 Web APP，也就是这里提到的：WRY。
 
 | 操作系统 | 浏览器引擎 | 说明 |

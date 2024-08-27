@@ -6,7 +6,7 @@ titleTemplate: 前端徐徐
 
 # React组件通信方式
 
-![](https://cdn.nlark.com/yuque/0/2023/jpeg/277039/1690715555815-409e6af8-4097-49b8-b28e-c59f769558bc.jpeg)
+![](/img/yuque_mind.jpeg)
 
 ## Props
 
