@@ -90,13 +90,15 @@ export default defineConfig({
     },
     nav: [
       { text: '开发实战', link: '/summary/',activeMatch: '^/summary/' },
-      { text: '问题解析', link: '/question/',activeMatch: '^/question/' },
+      { text: '前端面试题', link: '/question/',activeMatch: '^/question/' },
       // { text: '个人成长', link: '/growth/',activeMatch: '^/growth/' }
       { text: '摄影集锦', link: 'https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzkwOTUyMzc1NA==&scene=1&album_id=3537712498173345795#wechat_redirect' },
       { text: '开源项目',items: [
         { text: 'electron-prokit', link: 'https://xutaotaotao.github.io/electron-prokit/' },
         { text: 'FindAll', link: 'https://findallteam.github.io/' },
         { text: 'XTools', link: 'https://taotaoxu.com/XTools/' },
+        { text: 'get-installed-apps', link: 'https://github.com/Xutaotaotao/get-installed-apps' },
+        { text: 'wukong-wallpaper', link: 'https://github.com/Xutaotaotao/wukong-wallpaper' },
       ]},
       { text: '关于我', link: '/about/',activeMatch: '^/about/' },
     ],
@@ -201,6 +203,10 @@ export default defineConfig({
                   text: 'CI/CD 自动构建发布 Tauri 桌面端应用',
                   link: '/summary/tauri/tauri_ci_cd'
                 },
+                {
+                  text: '打造《黑神话：悟空》壁纸软件：使用 Tauri 快速上手',
+                  link: '/summary/tauri/tauri_wukong_wallpaper'
+                },
               ]
             },
             {
@@ -218,6 +224,14 @@ export default defineConfig({
                   text: '纯前端实现图片切割,一键导出多张分割图片',
                   link: '/summary/practice/image-slicing'
                 },
+                {
+                  text: '教你一步步用 Julep + ChatUI 构建 AI 应用',
+                  link: '/summary/practice/chatui_julep'
+                },
+                {
+                  text: 'Google 浏览器中的 AI 魔法 — window.ai （本地运行 AI 程序）',
+                  link: '/summary/practice/window_ai'
+                },
               ]
             }
           ]
@@ -225,7 +239,7 @@ export default defineConfig({
       ],
       '/question/': [
         {
-          text: '问题解析',
+          text: '前端面试题',
           items: [
             {
               text: 'Javascript',

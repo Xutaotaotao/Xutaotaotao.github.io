@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: React组件通信方式
-titleTemplate: 前端徐徐
+titleTemplate: 前端面试题
 ---
 
 # React组件通信方式

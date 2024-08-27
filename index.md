@@ -20,8 +20,8 @@ features:
     details: Electron & Tauri & 小需求开发实战
     link: /summary/
   - icon: 💡
-    title: 问题解析
-    details: 一些问题解析，把一个问题研究清楚
+    title: 前端面试题
+    details: 一些面试问题解析，把一个问题研究清楚
     link: /question/
   - icon: 📷
     title: 摄影集锦

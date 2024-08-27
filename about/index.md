@@ -26,6 +26,7 @@ titleTemplate: 前端徐徐
 - [FindAll](https://github.com/FindAllTeam/FindAll)：一个自动化分析网络安全应急响应工具。
 - [electron-prokit](https://github.com/Xutaotaotao/electron-prokit)：一款基于 Electron 的桌面软件开发框架,让你拥有极致的桌面开发体验。
 - [get-installed-apps](https://github.com/Xutaotaotao/get-installed-apps)：通过 Node.js 获取电脑安装的软件，支持 Windows 和 Mac 两个平台。
+- [wukong-wallpaper](https://github.com/Xutaotaotao/wukong-wallpaper)：《黑神话：悟空》桌面壁纸应用。
   :::
 
 

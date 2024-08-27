@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: 跨域解决方案
-titleTemplate: 前端徐徐
+titleTemplate: 前端面试题
 ---
 # 跨域解决方案
 

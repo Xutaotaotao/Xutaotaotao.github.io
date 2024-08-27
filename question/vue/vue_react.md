@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: Vue 和 React
-titleTemplate: 前端徐徐
+titleTemplate: 前端面试题
 ---
 
 # Vue 和 React

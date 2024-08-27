@@ -1,7 +1,7 @@
 ---
 outline: deep
 title: 输入URL回车后的全过程
-titleTemplate: 前端徐徐
+titleTemplate: 前端面试题
 ---
 # 输入URL回车后的全过程
 <img src="/question/network/what_steps_after_entering_the_url.jpg">
