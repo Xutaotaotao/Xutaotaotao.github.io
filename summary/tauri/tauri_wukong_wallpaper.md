@@ -10,11 +10,11 @@ titleTemplate: Tauri应用开发实践指南
 
 - Windows
 
-![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/462829652d3b470c9f0b38b5e3c47c04~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725009449&x-orig-sign=AvwhrII60pdnZfuuRnzgiI5zUp0%3D)
+![image.png](/img/082811.webp)
 
 - Mac
 
-![970af9b5e896db75b9ffd660a2b99e5.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/2545a5091e0a4b89997fee8cd6fa78b7~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725009449&x-orig-sign=wVn8zkvcBDOwDR%2B38m9UQYGJgUs%3D)
+![970af9b5e896db75b9ffd660a2b99e5.jpg](/img/082812.webp)
 
 ## 前言
 
@@ -32,11 +32,11 @@ titleTemplate: Tauri应用开发实践指南
 ## 核心流程
 
 其实核心流程很简单，如下图所示。
-![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/61ef91d799e74cb0a04c0fe0cb286670~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725009449&x-orig-sign=Ck1R%2BGvAPAyGGj4fnGfng8mxVMo%3D)
+![](/img/082813.jpg)
 步骤就是很常规的流式流程，中规中矩。
 
 当然上面的是从 GUI 前端界面操作的，我们还有在系统托盘的功能，就是上一张下一张的快捷切换壁纸的功能，流程跟这个有所差别，但是核心逻辑都差不多，具体逻辑如下图所示。
-![](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/c6c332213e374f32997573c90d6e4622~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725009449&x-orig-sign=4GzE%2FSXJ5p6jtYCMk%2B0IIQwUzcg%3D)
+![](/img/082814.jpg)
 上面的两个流程最核心的就是下载壁纸和更换壁纸，这两个地方也是最难的地方。
 
 ## 如何实现下载和更换壁纸
@@ -226,12 +226,12 @@ useEffect(() => {
 *   Mac 端扩展屏幕壁纸不同步，确保扩展屏幕在主屏幕即可
 *   Mac 首次使用文件权限提醒
 
-![b0cdb7b8871ba5628c76b43c35fe6d4.jpg](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/eb682eb00859437b930492218073a7a1~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725009449&x-orig-sign=SMSjZ20Mlvb4D3b7%2FVu941WtrPg%3D)
+![b0cdb7b8871ba5628c76b43c35fe6d4.jpg](/img/082815.webp)
 直接允许之后就可以使用。
 
 *   Windows 下载 & 安装阻止
 
-![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/2467fdaad7c94f1b99ee8dbd7792f377~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725009449&x-orig-sign=LBH2esSjI2S7D9GHdQosQGtpHgI%3D)
+![image.png](/img/082816.webp)
 解除限制即可使用，原因是因为没有签名。
 
 ## 源码

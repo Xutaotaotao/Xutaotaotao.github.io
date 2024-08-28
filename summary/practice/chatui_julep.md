@@ -247,7 +247,7 @@ export default App;
 ```
 
 下面是前端页面效果：
-![FireShot Capture 068 - Vite + React + TS - 127.0.0.1.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0b7bfdc4c36b484bb1f050ab3b6a4b4d~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=860\&h=1864\&s=64636\&e=png\&b=f0f0f0)
+![FireShot Capture 068 - Vite + React + TS - 127.0.0.1.png](/img/082801.webp)
 客户端做好了，我们需要将 Julep 集成到我们的项目中，并能够对话，让我们开始集成吧。
 
 ## 安装依赖
@@ -276,7 +276,7 @@ pnpm add express @julep/sdk cors body-parser dotenv axios -D
 
 要集成 Julep，我们需要一个 API 密钥。
 访问 platform.julep.ai 并使用 Google 账号登录。复制位于右上角的 "YOUR API TOKEN"。
-![下载 (2).png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b9ebd3bc7bdc480cb77187d95bde82b4~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=4074\&h=1906\&s=286569\&e=png\&b=ffffff)
+![下载 (2).png](/img/082802.webp)
 这个 API 令牌将作为你的 API 密钥。
 在你的项目目录中创建一个 `.env` 文件，并粘贴以下代码：
 
@@ -561,8 +561,8 @@ app.listen(3000, () => {
     npm run dev
 
 这将使你的项目在本地主机上运行。以下是项目的演示：
-![FireShot Capture 070 - MovieCompanion - 127.0.0.1.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e86371832a624270a09ff2c804df35f9~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=860\&h=1864\&s=148992\&e=png\&b=f2f1f1)
-![截屏2024-06-26 10.02.05.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/84c7ac94219747d084c73fd3cabca5cd~tplv-k3u1fbpfcp-jj-mark:0:0:0:0:q75.image#?w=662\&h=1436\&s=232073\&e=png\&b=f5f4f4)
+![FireShot Capture 070 - MovieCompanion - 127.0.0.1.png](/img/082803.webp)
+![截屏2024-06-26 10.02.05.png](/img/082804.webp)
 
 
 ## 源码

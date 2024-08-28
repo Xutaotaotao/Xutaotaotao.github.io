@@ -26,7 +26,7 @@ titleTemplate: Google AI 实战
 然后在顶部的搜索框中输入“prompt API”。
 你应该看到“Prompt API for Gemini Nano”是唯一的选项。
 将开关设置为“Enabled”，然后重启一下 Chrome。
-![截屏2024-07-03 14.32.52.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/d7632f064d1a4e88a25e6438d5a7a570~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725116115&x-orig-sign=ISOm9A2iKra%2BTC9wuDU76vo1we4%3D)
+![截屏2024-07-03 14.32.52.png](/img/082805.webp)
 
 #### 2.打开optimization guide on device
 
@@ -35,7 +35,7 @@ titleTemplate: Google AI 实战
 你应该看到“Enables optimization guide on device”这个唯一选项。你需要启用它，选择“Enabled ByPassPerfRequirement”选项。然后再重新启动 Chrome。
 这样就可以了，现在我们可以开始本地使用 AI 了！
 
-![截屏2024-07-03 14.37.08.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/30f4ef826dcb4ee0aaec8673d62ef312~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725116115&x-orig-sign=a%2BxP2oTVqF%2F60P14KG%2FUzmKGFh0%3D)
+![截屏2024-07-03 14.37.08.png](/img/082806.webp)
 
 ### 确认 Gemini Nano 可用性步骤如下：
 
@@ -55,9 +55,9 @@ titleTemplate: Google AI 实战
 4.  下载完成后，确认 Gemini Nano 的版本号大于指定版本。
 
 有的可能打开没有这个选项，可以尝试登录Google账户，然后多重启几次浏览器，另外就是检查一下自己的电脑是否满足相应的要求。基本要求如下图所示：
-![image.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/3b99b4d4dc1d4fd396b3980c90173b25~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725116115&x-orig-sign=GUGHtgwq1ydJ0YaPVImqHn%2BHPcg%3D)
+![image.png](/img/082807.webp)
 最后，在确认 Gemini Nano 下载和版本更新后，再次打开 DevTools 控制台，输入 `await window.ai.canCreateTextSession(); `进行确认。如果返回 "readily"，则表示 Gemini Nano 已经准备就绪。
-![截屏2024-07-03 14.45.03.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/05c26838e6cc4f0daca3e54efeaba0dc~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725116115&x-orig-sign=qCiTpdZIc2ebYN87TFYhT5RDmj4%3D)
+![截屏2024-07-03 14.45.03.png](/img/082808.webp)
 
 ## 使用 window\.ai
 
@@ -96,7 +96,7 @@ console.log(result)
 ```
 
 然后我们得到：
-![截屏2024-07-03 14.47.25.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/ebe4e659fb11463ea865d01b58bbdf51~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725116115&x-orig-sign=p1InniGrJldooJ1pBkrklMSHn6o%3D)
+![截屏2024-07-03 14.47.25.png](/img/082809.webp)
 虽然有点令人失望，但至少它工作了！
 
 ### 快速可复用示例
@@ -130,7 +130,7 @@ async function askLocalGPT(promptText){
 askLocalGPT(`帮我总结一下下面这些内容:${document.querySelector('main').textContent.toString()}`)
 ```
 
-![截屏2024-07-03 15.10.08.png](https://p0-xtjj-private.juejin.cn/tos-cn-i-73owjymdk6/3496ef51442548edbe0cd077fef144b7~tplv-73owjymdk6-jj-mark-v1:0:0:0:0:5o6Y6YeR5oqA5pyv56S-5Yy6IEAg5YmN56uv5b6Q5b6Q:q75.awebp?policy=eyJ2bSI6MywidWlkIjoiMTE0MDA0OTM5MjU1Njc4In0%3D&rk3s=f64ab15b&x-orig-authkey=f32326d3454f2ac7e96d3d06cdbb035152127018&x-orig-expires=1725116115&x-orig-sign=KXOs8Sz21kuBruTOoMYRkdfPlX4%3D)
+![截屏2024-07-03 15.10.08.png](/img/082810.webp)
 
 ### 你会创建什么？
 
