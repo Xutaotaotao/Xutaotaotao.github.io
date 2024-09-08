@@ -3,6 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import SideSponsors from './components/SideSponsors.vue'
 import NavVisitor from './components/NavVisitor.vue'
 import Graph from './components/Graph.vue'
+import PhotoContent from './components/PhotoContent.vue'
 
 export default   {
   extends: DefaultTheme,
@@ -14,5 +15,6 @@ export default   {
   },
   enhanceApp({app}) {
     app.component('Graph' , Graph)
+    app.component('PhotoContent',PhotoContent)
   }
 }

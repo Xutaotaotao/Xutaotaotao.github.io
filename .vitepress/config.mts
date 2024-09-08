@@ -90,9 +90,9 @@ export default defineConfig({
     },
     nav: [
       { text: '开发实战', link: '/summary/',activeMatch: '^/summary/' },
+      { text: '前端知识图谱', link: '/feMap/',activeMatch: '^/feMap/' },
       { text: '前端面试题', link: '/question/',activeMatch: '^/question/' },
-      // { text: '个人成长', link: '/growth/',activeMatch: '^/growth/' }
-      { text: '摄影集锦', link: 'https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzkwOTUyMzc1NA==&scene=1&album_id=3537712498173345795#wechat_redirect' },
+      { text: '摄影记录', link: '/photo' },
       { text: '开源项目',items: [
         { text: 'electron-prokit', link: 'https://xutaotaotao.github.io/electron-prokit/' },
         { text: 'FindAll', link: 'https://findallteam.github.io/' },
@@ -107,6 +107,10 @@ export default defineConfig({
         {
           text: '开发实战',
           items: [
+            {
+              text:'概览',
+              link: '/summary/'
+            },
             {
               text: 'Electron 开发实践指南',
               items: [
@@ -242,6 +246,10 @@ export default defineConfig({
           text: '前端面试题',
           items: [
             {
+              text:'概览',
+              link: '/question/'
+            },
+            {
               text: 'Javascript',
               items: [
                 {
@@ -337,25 +345,27 @@ export default defineConfig({
           ]
         }
       ],
-      // '/growth/': [
-      //   {
-      //     text: '个人成长',
-      //     // items: [
-      //     //   {
-      //     //     text: '成长1',
-      //     //     link: '/growth/'
-      //     //   },
-      //     // ]
-      //   }
-      // ]
       '/photo/':[
         {
-          text:'2024-03-09',
-          link:'/photo/2024-03-09'
-        },
+          text: '摄影记录',
+          items:[]
+        }
+      ],
+      '/feMap/':[
         {
-          text:'2024-03-16',
-          link:'/photo/2024-03-16'
+          text: '前端知识图谱',
+          items:[
+            {
+              text:'概览',
+              link: '/feMap/'
+            },
+            {
+              text:'研发链路',
+              items: [
+                {text:'包管理器',link:'/feMap/developMap/packageManager'},
+              ]
+            }
+          ]
         }
       ]
     },
