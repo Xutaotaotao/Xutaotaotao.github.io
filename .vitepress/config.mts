@@ -363,6 +363,7 @@ export default defineConfig({
               text:'研发链路',
               items: [
                 {text:'包管理器',link:'/feMap/developMap/packageManager'},
+                {text:'脚手架',link:'/feMap/developMap/scaffold'},
               ]
             }
           ]

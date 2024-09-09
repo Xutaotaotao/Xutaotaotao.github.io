@@ -14,7 +14,18 @@ export const packageManager = {
 }
 
 export const scaffold = {
-    id: '脚手架'
+    id: '脚手架',
+    children: [
+        {id:'什么是脚手架'},
+        {id:'发展历史'},
+        {id:'脚手架工作原理'},
+        {id:'脚手架解决的问题'},
+        {id:'常见脚手架'},
+        {id:'如何使用'},
+        {id:'优势'},
+        {id:'问题'},
+        {id:'以后的发展'},
+     ]
 }
 
 export const codeSpecifications = {

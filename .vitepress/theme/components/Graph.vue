@@ -20,7 +20,7 @@
 import { onMounted, ref,defineProps } from "vue";
 import { Graph, treeToGraphData } from "@antv/g6";
 import { Text } from '@antv/g';
-import { allData,packageManager } from '../data'
+import { allData,packageManager,scaffold } from '../data'
 
 const isFullscreen = ref(false);
 const showButton = ref(false);
@@ -160,6 +160,8 @@ const initGraph = (containerId) => {
         return allData
       case 'packageManager':
         return packageManager
+      case 'scaffold':
+        return scaffold
     }
   }
       const data = getData()
@@ -207,7 +209,7 @@ const initGraph = (containerId) => {
           direction: 'H',
           getHeight: () => 16,
           getWidth: (node) => getNodeWidth(node.id, rootId === node.id),
-          getVGap: () => 20,
+          getVGap: () => 30,
           getHGap: () => 30,
         },
         behaviors: [{ type: 'collapse-expand', key: 'collapse-expand' }, "drag-canvas", "zoom-canvas"],
@@ -264,9 +266,11 @@ onMounted(() => {
   position: absolute;
   top: 10px;
   right: 10px;
+  padding: 10px;
   font-size: 32px;
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 2010;
 }
 </style>
