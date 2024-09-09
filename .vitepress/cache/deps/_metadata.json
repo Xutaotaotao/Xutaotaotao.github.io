@@ -1,52 +1,70 @@
 {
-  "hash": "19dfb9b6",
-  "configHash": "65e12ae2",
-  "lockfileHash": "91edf577",
-  "browserHash": "c412b6c2",
+  "hash": "87a48722",
+  "configHash": "fab1ebe2",
+  "lockfileHash": "512c03d0",
+  "browserHash": "31be50b8",
   "optimized": {
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "56a827cb",
+      "fileHash": "9e4bc771",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "821b41be",
+      "fileHash": "a3671afd",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "01e1d6c2",
+      "fileHash": "5bd4e990",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "6d0564e4",
+      "fileHash": "0933f30f",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "5af46689",
+      "fileHash": "99396214",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "73de6da3",
+      "fileHash": "480a1fc1",
+      "needsInterop": false
+    },
+    "@antv/g6": {
+      "src": "../../../node_modules/@antv/g6/esm/index.js",
+      "file": "@antv_g6.js",
+      "fileHash": "c89b94aa",
+      "needsInterop": false
+    },
+    "@antv/g": {
+      "src": "../../../node_modules/@antv/g/dist/index.esm.js",
+      "file": "@antv_g.js",
+      "fileHash": "733b27cc",
       "needsInterop": false
     }
   },
   "chunks": {
+    "chunk-4O3MD7LZ": {
+      "file": "chunk-4O3MD7LZ.js"
+    },
     "chunk-YVCV7MZG": {
       "file": "chunk-YVCV7MZG.js"
     },
     "chunk-45KCXATN": {
       "file": "chunk-45KCXATN.js"
+    },
+    "chunk-ULBN3QDT": {
+      "file": "chunk-ULBN3QDT.js"
     }
   }
 }
