@@ -17,7 +17,7 @@ titleTemplate: Tauri应用开发实践指南
 
 我这里推荐使用 Tauri 生态里面有现成工具包，但是这个包也有个缺点，就是在浏览器控制台中是无法看到请求的，因为他是 Tauri 里面的 rust 去帮我们调用请求从而绕过了 webview2 前端框架，不过这个是官网推荐的包，在解决方案这块是有保障的，不会出现一些奇奇怪怪的问题。
 
-```basic
+```txt
 npm install -D @tauri-apps/api
 ```
 
@@ -27,7 +27,7 @@ npm install -D @tauri-apps/api
 
 *   src-tauri/tauri.conf.json
 
-```basic
+```txt
 {
  //..
   "tauri": {
