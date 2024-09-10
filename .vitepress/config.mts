@@ -369,6 +369,12 @@ export default defineConfig({
                 {text:'包管理器',link:'/feMap/developMap/packageManager'},
                 {text:'脚手架',link:'/feMap/developMap/scaffold'},
               ]
+            },
+            {
+              text:'浏览器',
+              items: [
+                {text:'浏览器渲染的基石：DOM Tree 与 CSSOM',link:'/feMap/browser/dom-cssom'},
+              ]
             }
           ]
         }
