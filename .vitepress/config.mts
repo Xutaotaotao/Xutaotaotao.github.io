@@ -166,6 +166,10 @@ export default defineConfig({
                   text: '谈谈我做 Electron 桌面端应用的这一两年',
                   link: '/summary/electron/talk_about_electron'
                 },
+                {
+                  text: '十年跨平台开发，Electron 凭什么占据一席之地？',
+                  link: '/summary/electron/electron_summer'
+                },
               ]
             },
             {
