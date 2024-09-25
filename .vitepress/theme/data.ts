@@ -77,20 +77,28 @@ export const performance = {
     ]
 }
 
-export const browser = {
-    id:'浏览器',
+export const domAndCssom = {
+    id:'DOM Tree && CSSOM',
+    children: [
+        {id:'DOM Tree',children:[{id:'DOM Tree形成过程'},{id:'DOM Tree内部结构'},{id:'DOM Tree影响'},]},
+        {id:'CSSOM',children:[{id:'形成过程'},{id:'内部结构'},{id:'影响'}]},
+        {id:'两者关系',children:[{id:'并行构建'},{id:'形成渲染树'},{id:'JS 对两者的影响'}]},
+     ]
 }
 
-export const workingPrinciple = {
-    id:'工作原理',
-    children:[browser]
+export const browser = {
+    id:'浏览器',
+    children: [
+        domAndCssom
+    ]
 }
+
 
 export const allData = {
     id: '前端知识图谱',
     children:[
         developMap,
         performance,
-        workingPrinciple
+        browser
     ]
 }

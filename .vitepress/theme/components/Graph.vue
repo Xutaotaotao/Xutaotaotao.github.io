@@ -18,7 +18,7 @@
 
 <script setup>
 import { onMounted, ref,defineProps } from "vue";
-import { allData,packageManager,scaffold } from '../data'
+import { allData,packageManager,scaffold,domAndCssom } from '../data'
 
 const { Graph, treeToGraphData } = G6;
 const isFullscreen = ref(false);
@@ -165,6 +165,8 @@ const initGraph = (containerId) => {
         return packageManager
       case 'scaffold':
         return scaffold
+      case 'domAndCssom':
+        return domAndCssom
     }
   }
       const data = getData()
@@ -174,7 +176,7 @@ const initGraph = (containerId) => {
       }
       graph = new Graph({
         container: document.getElementById(containerId),
-        autoFit: false,
+        autoFit: props.type === 'allData' ? 'view' : false,
         data: treeToGraphData(data),
         node: {
           type: 'rect',
