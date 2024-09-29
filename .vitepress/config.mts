@@ -170,6 +170,10 @@ export default defineConfig({
                   text: '十年跨平台开发，Electron 凭什么占据一席之地？',
                   link: '/summary/electron/electron_summer'
                 },
+                {
+                  text: '从架构到API，你真的掌握了Electron的全貌吗？',
+                  link: '/summary/electron/electron_frame'
+                },
               ]
             },
             {
