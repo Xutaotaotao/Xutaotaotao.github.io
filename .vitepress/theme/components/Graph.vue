@@ -69,7 +69,7 @@ const COLORS = [
 const RootNodeStyle = {
   fill: '#bae0ff',
   labelFill: '#262626',
-  labelFontSize: 16,
+  labelFontSize: 14,
   labelFontWeight: 600,
   labelPlacement: 'center',
   ports: [{ placement: 'right' }, { placement: 'left' }],
@@ -77,12 +77,12 @@ const RootNodeStyle = {
 };
 
 const NodeStyle = {
-  stroke: '#69b1ff',
-  lineWidth: 1,
-  strokeOpacity: 1,
-  fill: 'transparent',
+  labelFill: '#262626',
+  labelFontSize: 14,
+  labelFontWeight: 500,
   labelPlacement: 'center',
-  labelFontSize: 12,
+  ports: [{ placement: 'right' }, { placement: 'left' }],
+  radius: 4,
   ports: [
     { placement: 'right-bottom', key: 'right-bottom' },
     { placement: 'left-bottom', key: 'left-bottom' },
@@ -188,7 +188,7 @@ const initGraph = (containerId) => {
               size: [getNodeWidth(d.id, isRoot), 30],
               ...(isRoot ? RootNodeStyle : {
                 ...NodeStyle,
-                stroke: color
+                fill: color
               }),
             };
           },
@@ -273,6 +273,7 @@ onMounted(() => {
   right: 10px;
   padding: 10px;
   font-size: 32px;
+  color: black;
   background: none;
   border: none;
   cursor: pointer;
