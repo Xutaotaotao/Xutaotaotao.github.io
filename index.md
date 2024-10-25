@@ -24,9 +24,9 @@ features:
     details: 一些面试问题解析，把一个问题研究清楚
     link: /question/
   - icon: 📷
-    title: 摄影集锦
+    title: 摄影记录
     details: 一些摄影集锦，记录生活中的美好瞬间
-    link: https://mp.weixin.qq.com/mp/appmsgalbum?action=getalbum&__biz=MzkwOTUyMzc1NA==&scene=1&album_id=3537712498173345795#wechat_redirect
+    link: /photo/
 
   - icon: 🔧
     title: Electron-Prokit
