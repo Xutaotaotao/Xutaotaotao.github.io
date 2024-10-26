@@ -1,11 +1,17 @@
 <template>
-  <div
-    :style="`height: ${height}; margin-bottom: 50px; position: relative;`"
-    @mouseenter="showButton = true"
+  <div :style="`height: ${height}; margin-bottom: 50px; position: relative;`" @mouseenter="showButton = true"
     @mouseleave="showButton = false">
     <div style="width: 100%; height: 100%" id="container"></div>
-    <button v-show="showButton"  @click="showFullscreen" class="fullscreen-btn">
-      <svg t="1725697644591" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8413" width="24" height="24"><path d="M846.787 133.787c11.716-11.716 30.71-11.716 42.426 0 11.716 11.716 11.716 30.71 0 42.426L649.44 415.987c-11.715 11.716-30.71 11.716-42.426 0-11.716-11.716-11.716-30.71 0-42.426l239.774-239.774zM373.645 606.928c11.716-11.716 30.711-11.716 42.427 0 11.716 11.716 11.716 30.71 0 42.427L177.213 888.213c-11.716 11.716-30.71 11.716-42.426 0-11.716-11.716-11.716-30.71 0-42.426l238.858-238.859zM177.213 133.787c-11.716-11.716-30.71-11.716-42.426 0-11.716 11.716-11.716 30.71 0 42.426l238.858 238.859c11.716 11.716 30.711 11.716 42.427 0 11.716-11.716 11.716-30.71 0-42.427L177.213 133.787z m471.311 471.31c-11.715-11.715-30.71-11.715-42.426 0-11.716 11.717-11.716 30.712 0 42.427l240.689 240.69c11.716 11.715 30.71 11.715 42.426 0 11.716-11.717 11.716-30.711 0-42.427l-240.689-240.69z" fill="#85A5FF" p-id="8414"></path><path d="M867 156H692.302c-16.569 0-30-13.431-30-30 0-16.569 13.431-30 30-30h177.23C901.272 96 927 121.729 927 153.467v177.68c0 16.57-13.431 30-30 30-16.569 0-30-13.43-30-30V156z m0 534.118c0-16.569 13.431-30 30-30 16.569 0 30 13.431 30 30v178.415C927 900.27 901.271 926 869.533 926H691.386c-16.568 0-30-13.431-30-30 0-16.569 13.432-30 30-30H867V690.118zM332.55 866c16.57 0 30 13.431 30 30 0 16.569-13.43 30-30 30H154.468C122.73 926 97 900.271 97 868.533v-177.5c0-16.568 13.431-30 30-30 16.569 0 30 13.432 30 30V866h175.55zM157 156v175.148c0 16.568-13.431 30-30 30-16.569 0-30-13.432-30-30v-177.68C97 121.728 122.729 96 154.467 96h178.084c16.568 0 30 13.431 30 30 0 16.569-13.432 30-30 30H157z" fill="#2F54EB" p-id="8415"></path></svg>
+    <button v-show="showButton" @click="showFullscreen" class="fullscreen-btn">
+      <svg t="1725697644591" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        p-id="8413" width="24" height="24">
+        <path
+          d="M846.787 133.787c11.716-11.716 30.71-11.716 42.426 0 11.716 11.716 11.716 30.71 0 42.426L649.44 415.987c-11.715 11.716-30.71 11.716-42.426 0-11.716-11.716-11.716-30.71 0-42.426l239.774-239.774zM373.645 606.928c11.716-11.716 30.711-11.716 42.427 0 11.716 11.716 11.716 30.71 0 42.427L177.213 888.213c-11.716 11.716-30.71 11.716-42.426 0-11.716-11.716-11.716-30.71 0-42.426l238.858-238.859zM177.213 133.787c-11.716-11.716-30.71-11.716-42.426 0-11.716 11.716-11.716 30.71 0 42.426l238.858 238.859c11.716 11.716 30.711 11.716 42.427 0 11.716-11.716 11.716-30.71 0-42.427L177.213 133.787z m471.311 471.31c-11.715-11.715-30.71-11.715-42.426 0-11.716 11.717-11.716 30.712 0 42.427l240.689 240.69c11.716 11.715 30.71 11.715 42.426 0 11.716-11.717 11.716-30.711 0-42.427l-240.689-240.69z"
+          fill="#85A5FF" p-id="8414"></path>
+        <path
+          d="M867 156H692.302c-16.569 0-30-13.431-30-30 0-16.569 13.431-30 30-30h177.23C901.272 96 927 121.729 927 153.467v177.68c0 16.57-13.431 30-30 30-16.569 0-30-13.43-30-30V156z m0 534.118c0-16.569 13.431-30 30-30 16.569 0 30 13.431 30 30v178.415C927 900.27 901.271 926 869.533 926H691.386c-16.568 0-30-13.431-30-30 0-16.569 13.432-30 30-30H867V690.118zM332.55 866c16.57 0 30 13.431 30 30 0 16.569-13.43 30-30 30H154.468C122.73 926 97 900.271 97 868.533v-177.5c0-16.568 13.431-30 30-30 16.569 0 30 13.432 30 30V866h175.55zM157 156v175.148c0 16.568-13.431 30-30 30-16.569 0-30-13.432-30-30v-177.68C97 121.728 122.729 96 154.467 96h178.084c16.568 0 30 13.431 30 30 0 16.569-13.432 30-30 30H157z"
+          fill="#2F54EB" p-id="8415"></path>
+      </svg>
     </button>
   </div>
   <div v-if="isFullscreen" class="fullscreen-modal">
@@ -17,8 +23,8 @@
 </template>
 
 <script setup>
-import { onMounted, ref,defineProps } from "vue";
-import { allData,packageManager,scaffold,domAndCssom } from '../data'
+import { onMounted, ref, defineProps } from "vue";
+import { allData, packageManager, scaffold, domAndCssom, codeSpecifications,develop } from '../data'
 
 const { Graph, treeToGraphData } = G6;
 const isFullscreen = ref(false);
@@ -167,65 +173,69 @@ const initGraph = (containerId) => {
         return scaffold
       case 'domAndCssom':
         return domAndCssom
+      case "codeSpecifications":
+        return codeSpecifications
+      case "develop":
+        return develop
     }
   }
-      const data = getData()
-      const rootId = data.id;
-      if (graph) {
-        graph.destroy();
-      }
-      graph = new Graph({
-        container: document.getElementById(containerId),
-        autoFit: props.type === 'allData' ? 'view' : false,
-        data: treeToGraphData(data),
-        node: {
-          type: 'rect',
-          style: (d) => {
-            const isRoot = d.id === rootId;
-            const color = getColor(graph, d.id)
-            return {
-              labelText: d.id,
-              size: [getNodeWidth(d.id, isRoot), 30],
-              ...(isRoot ? RootNodeStyle : {
-                ...NodeStyle,
-                fill: color
-              }),
-            };
-          },
-          animation: {
-            enter: false,
-          },
-        },
-        edge: {
-          type: "cubic-horizontal",
-          style: {
-            curvePosition: 0.4,
-            stroke: function (d) {
-              return getColor(this, d.target);
-            }
-          },
+  const data = getData()
+  const rootId = data.id;
+  if (graph) {
+    graph.destroy();
+  }
+  graph = new Graph({
+    container: document.getElementById(containerId),
+    autoFit: props.type === 'allData' ? 'view' : false,
+    data: treeToGraphData(data),
+    node: {
+      type: 'rect',
+      style: (d) => {
+        const isRoot = d.id === rootId;
+        const color = getColor(graph, d.id)
+        return {
+          labelText: d.id,
+          size: [getNodeWidth(d.id, isRoot), 30],
+          ...(isRoot ? RootNodeStyle : {
+            ...NodeStyle,
+            fill: color
+          }),
+        };
+      },
+      animation: {
+        enter: false,
+      },
+    },
+    edge: {
+      type: "cubic-horizontal",
+      style: {
+        curvePosition: 0.4,
+        stroke: function (d) {
+          return getColor(this, d.target);
+        }
+      },
 
-          animation: {
-            enter: false,
-          },
-        },
-        layout: {
-          type: 'mindmap',
-          direction: 'H',
-          getHeight: () => 16,
-          getWidth: (node) => getNodeWidth(node.id, rootId === node.id),
-          getVGap: () => 30,
-          getHGap: () => 30,
-        },
-        behaviors: [{ type: 'collapse-expand', key: 'collapse-expand' }, "drag-canvas", "zoom-canvas"],
-      });
+      animation: {
+        enter: false,
+      },
+    },
+    layout: {
+      type: 'mindmap',
+      direction: 'H',
+      getHeight: () => 16,
+      getWidth: (node) => getNodeWidth(node.id, rootId === node.id),
+      getVGap: () => 30,
+      getHGap: () => 30,
+    },
+    behaviors: [{ type: 'collapse-expand', key: 'collapse-expand' }, "drag-canvas", "zoom-canvas"],
+  });
 
-      graph.render();
+  graph.render();
 
-      graph.updateBehavior({
-        key: 'collapse-expand',
-        trigger: 'click'
-      });
+  graph.updateBehavior({
+    key: 'collapse-expand',
+    trigger: 'click'
+  });
 };
 
 onMounted(() => {

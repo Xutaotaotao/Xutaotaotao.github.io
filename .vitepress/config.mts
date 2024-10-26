@@ -10,6 +10,10 @@ export default defineConfig({
       {name:'robots',content:"index,follow"}
     ],
     [
+      'meta',
+      {name:'referrer',content:"no-referrer"}
+    ],
+    [
       "meta",
       {
         name: "keywords",
@@ -376,6 +380,8 @@ export default defineConfig({
               items: [
                 {text:'包管理器',link:'/feMap/developMap/packageManager'},
                 {text:'脚手架',link:'/feMap/developMap/scaffold'},
+                {text:'代码规范',link:'/feMap/developMap/codeSpecifications'},
+                {text:'开发',link:'/feMap/developMap/develop'},
               ]
             },
             {

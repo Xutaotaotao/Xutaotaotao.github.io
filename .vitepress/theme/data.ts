@@ -29,11 +29,24 @@ export const scaffold = {
 }
 
 export const codeSpecifications = {
-    id: '代码规范'
+    id: '代码规范',
+    children: [
+        {id:"业界流行规范",children:[{id:' Airbnb Style Guide'},{id:'StandardJS'},{id:'Google Style Guide'}]},
+        {id:"CSS 命名规范",children:[{id:'BEM'},{id:'OOCSS'},{id:'SMACSS'}]},
+        {id:"代码规范工具",children:[{id:'ESLint'},{id:'stylelint'},{id:'commitlint'},{id:'prettier'},{id:"husky & lint-staged"}]},
+
+    ]
 }
 
 export const develop = {
-    id: '开发'
+    id: '开发',
+    children:[
+        {id:'开发服务器'},
+        {id:"热更新"},
+        {id:"数据模拟"},
+        {id:"代理"},
+
+    ]
 }
 
 export const test = {
