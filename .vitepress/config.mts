@@ -97,6 +97,8 @@ export default defineConfig({
       copyright: 'ICP备案/许可证号：  <a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2023003982号-2</a>'
     },
     nav: [
+      { text: 'Electron 开发', link: '/electron' },
+      { text: 'Tauri 开发', link: '/tauri' },
       { text: '开发实战', link: '/summary/',activeMatch: '^/summary/' },
       { text: '前端知识图谱', link: '/feMap/',activeMatch: '^/feMap/' },
       { text: '前端面试题', link: '/question/',activeMatch: '^/question/' },
@@ -359,12 +361,6 @@ export default defineConfig({
               ]
             }
           ]
-        }
-      ],
-      '/photo/':[
-        {
-          text: '摄影记录',
-          items:[]
         }
       ],
       '/feMap/':[
