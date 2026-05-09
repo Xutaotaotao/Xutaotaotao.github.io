@@ -103,13 +103,17 @@ export default defineConfig({
       { text: '前端知识图谱', link: '/feMap/',activeMatch: '^/feMap/' },
       { text: '前端面试题', link: '/question/',activeMatch: '^/question/' },
       { text: '摄影记录', link: '/photo' },
-      { text: '开源项目',items: [
-        { text: 'electron-prokit', link: 'https://xutaotaotao.github.io/electron-prokit/' },
-        { text: 'FindAll', link: 'https://findallteam.github.io/' },
-        { text: 'XTools', link: 'https://taotaoxu.com/XTools/' },
-        { text: 'get-installed-apps', link: 'https://github.com/Xutaotaotao/get-installed-apps' },
-        { text: 'wukong-wallpaper', link: 'https://github.com/Xutaotaotao/wukong-wallpaper' },
-      ]},
+      {
+        text: '项目',
+        items: [
+          { text: '肠安记', link: '/GutEase/product' },
+          { text: 'electron-prokit', link: 'https://xutaotaotao.github.io/electron-prokit/' },
+          { text: 'FindAll', link: 'https://findallteam.github.io/' },
+          { text: 'XTools', link: 'https://taotaoxu.com/XTools/' },
+          { text: 'get-installed-apps', link: 'https://github.com/Xutaotaotao/get-installed-apps' },
+          { text: 'wukong-wallpaper', link: 'https://github.com/Xutaotaotao/wukong-wallpaper' },
+        ],
+      },
       { text: '关于我', link: '/about/',activeMatch: '^/about/' },
     ],
     sidebar: {
@@ -388,7 +392,17 @@ export default defineConfig({
             }
           ]
         }
-      ]
+      ],
+      '/GutEase/': [
+        {
+          text: '肠安记（GutEase）',
+          items: [
+            { text: '专区首页', link: '/GutEase/' },
+            { text: '产品介绍', link: '/GutEase/product' },
+            { text: '隐私政策', link: '/GutEase/privacy' },
+          ],
+        },
+      ],
     },
 
     socialLinks: [
