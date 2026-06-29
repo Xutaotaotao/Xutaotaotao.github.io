@@ -108,7 +108,7 @@ onUnmounted(() => {
         <a
           v-for="post in blog.latestPosts"
           :key="post.id"
-          class="grid gap-4 border-b border-craft-line py-5 transition-colors hover:bg-[color-mix(in_srgb,var(--color-craft-card)_72%,transparent)] md:grid-cols-[minmax(0,1fr)_32_24] md:items-start md:gap-5"
+          class="block border-b border-craft-line py-5 transition-colors hover:bg-[color-mix(in_srgb,var(--color-craft-card)_72%,transparent)]"
           :href="post.href"
         >
           <span class="min-w-0">
@@ -116,7 +116,7 @@ onUnmounted(() => {
               {{ post.title }}
             </strong>
             <small class="mt-2 block text-sm leading-6 text-craft-muted">{{ post.excerpt }}</small>
-            <span class="mt-3 flex flex-wrap gap-2">
+            <span class="mt-3 flex flex-wrap items-center gap-2">
               <span
                 v-for="tag in post.tags.slice(0, 3)"
                 :key="tag"
@@ -124,10 +124,11 @@ onUnmounted(() => {
               >
                 {{ tag }}
               </span>
+              <span class="inline-flex min-h-7 items-center justify-center border border-craft-line bg-craft-card px-2.5 font-mono text-xs font-extrabold uppercase text-craft-soft">
+                {{ post.date }}
+              </span>
             </span>
           </span>
-          <span class="font-mono text-xs font-extrabold uppercase text-craft-soft md:pt-1">{{ post.category }}</span>
-          <span class="font-mono text-xs font-extrabold uppercase text-craft-soft md:pt-1">{{ post.date }}</span>
         </a>
       </div>
 

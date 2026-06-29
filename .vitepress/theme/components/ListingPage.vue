@@ -188,10 +188,9 @@ onUnmounted(() => {
                 >
                   {{ tag }}
                 </span>
+                <span class="craft-chip craft-chip-date">{{ post.date }}</span>
               </span>
             </span>
-            <span class="craft-entry-category">{{ post.category }}</span>
-            <span class="craft-entry-date">{{ post.date }}</span>
           </a>
         </div>
       </section>

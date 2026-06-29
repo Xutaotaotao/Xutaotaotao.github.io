@@ -700,6 +700,7 @@ a:focus-visible {
 .craft-entry-tags {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 8px;
   margin-top: 14px;
 }
@@ -840,7 +841,11 @@ a:focus-visible {
 
 .craft-archive-list .craft-entry,
 .craft-taxonomy-posts .craft-entry {
-  grid-template-columns: minmax(0, 1fr) 140px 110px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.craft-chip-date {
+  color: var(--craft-soft);
 }
 
 .craft-about {
