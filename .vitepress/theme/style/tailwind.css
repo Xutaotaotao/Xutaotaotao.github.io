@@ -1,0 +1,15 @@
+@import "tailwindcss" important;
+
+@theme {
+  --color-craft-paper: var(--craft-paper);
+  --color-craft-paper-strong: color-mix(in srgb, var(--craft-paper) 88%, white);
+  --color-craft-card: var(--craft-card);
+  --color-craft-ink: var(--craft-ink);
+  --color-craft-muted: var(--craft-muted);
+  --color-craft-soft: var(--craft-soft);
+  --color-craft-line: var(--craft-rule);
+  --color-craft-line-strong: var(--craft-rule-strong);
+  --color-craft-accent: var(--craft-accent);
+  --font-sans: "Inter", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}

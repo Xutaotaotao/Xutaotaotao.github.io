@@ -1,6 +1,6 @@
 ---
 layout: listing
-kind: about
-title: 关于我
+kind: archive
+title: 归档
 titleTemplate: 前端徐徐
 ---

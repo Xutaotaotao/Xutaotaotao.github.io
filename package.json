@@ -9,11 +9,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "design:check": "node scripts/check-design.mjs"
   },
   "author": "Xutaotaotao",
   "license": "ISC",
   "devDependencies": {
+    "@tailwindcss/vite": "^4.3.1",
+    "tailwindcss": "^4.3.1",
     "vitepress": "^1.3.3"
   },
   "repository": {

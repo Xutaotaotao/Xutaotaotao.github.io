@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Redesign Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg: #f3efe8;
+        --card: rgba(255,255,255,0.72);
+        --text: #14161b;
+        --muted: #666057;
+        --line: rgba(20,22,27,0.1);
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: linear-gradient(180deg, #f8f4ee 0%, var(--bg) 100%); color: var(--text); font-family: "Inter", "Noto Sans SC", sans-serif; }
+      a { color: inherit; text-decoration: none; }
+      .shell { width: min(1240px, calc(100% - 48px)); margin: 0 auto; padding: 30px 0 56px; }
+      h1 { margin: 0; font-size: clamp(38px, 5vw, 64px); line-height: 1; }
+      .intro { max-width: 760px; margin: 18px 0 0; color: var(--muted); font-size: 18px; line-height: 1.8; }
+      .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 30px; }
+      .card { display: grid; gap: 16px; padding: 18px; border: 1px solid var(--line); background: var(--card); }
+      .card img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border: 1px solid var(--line); }
+      .meta { color: var(--muted); font-family: "JetBrains Mono", monospace; font-size: 11px; font-weight: 800; text-transform: uppercase; }
+      .card strong { font-size: 24px; }
+      .card p { margin: 0; color: var(--muted); line-height: 1.7; }
+      .card .link { display: inline-flex; min-height: 42px; align-items: center; padding: 0 14px; border: 1px solid var(--line); width: fit-content; font-family: "JetBrains Mono", monospace; font-size: 12px; font-weight: 800; text-transform: uppercase; }
+      @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+      @media (max-width: 720px) {
+        .shell { width: min(100% - 24px, 1240px); }
+        .intro { font-size: 16px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <h1>首页重设计方案集合</h1>
+      <p class="intro">我给你拉开了几种不同方向，不只是微调一个版本。你可以先看气质，再决定要不要继续往现有博客里正式实现。</p>
+      <div class="grid">
+        <article class="card">
+          <img src="/public/img/hero-workspace-BzxyHKuJ.jpg" alt="Editorial preview">
+          <div class="meta">Option A / Editorial</div>
+          <strong>杂志感、内容出版物气质</strong>
+          <p>更像个人出版物封面，强调标题、留白和图片的叙事关系。</p>
+          <a class="link" href="/design-preview/home-redesign-editorial.html">打开预览</a>
+        </article>
+        <article class="card">
+          <img src="/public/img/hero-workspace-BzxyHKuJ.jpg" alt="Swiss preview">
+          <div class="meta">Option B / Swiss</div>
+          <strong>理性网格、克制、现代</strong>
+          <p>这就是你当前看的那版，适合正式站点长期使用，风险最低。</p>
+          <a class="link" href="/design-preview/home-redesign-preview.html">打开预览</a>
+        </article>
+        <article class="card">
+          <img src="/public/img/hero-workspace-BzxyHKuJ.jpg" alt="Product preview">
+          <div class="meta">Option C / Product</div>
+          <strong>更像产品主页和内容索引</strong>
+          <p>模块感更强，适合把博客做成“作品 + 内容入口”的混合体。</p>
+          <a class="link" href="/design-preview/home-redesign-product.html">打开预览</a>
+        </article>
+        <article class="card">
+          <img src="/public/img/hero-workspace-BzxyHKuJ.jpg" alt="Dark tech preview">
+          <div class="meta">Option D / Dark Tech</div>
+          <strong>深色技术感、开发者工作台</strong>
+          <p>更偏技术人格和工程气质，适合你想把身份感拉得更强一点。</p>
+          <a class="link" href="/design-preview/home-redesign-dark-tech.html">打开预览</a>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
