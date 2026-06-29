@@ -1,0 +1,69 @@
+/* Atom One editor surfaces */
+
+:root {
+  --atom-code-surface: #fafafa;
+  --atom-code-border: #dbdbdc;
+  --atom-inline-bg: #eceff1;
+  --atom-inline-fg: #383a42;
+  --atom-line-highlight: #383a420c;
+  --atom-lang-color: #9d9d9f;
+}
+
+:root[data-theme='dark'],
+.dark {
+  --atom-code-surface: #282c34;
+  --atom-code-border: #21252b;
+  --atom-inline-bg: #2c313a;
+  --atom-inline-fg: #abb2bf;
+  --atom-line-highlight: #2c313c;
+  --atom-lang-color: #636d83;
+}
+
+:root {
+  --vp-code-block-bg: var(--atom-code-surface);
+  --vp-code-block-divider-color: var(--atom-code-border);
+  --vp-code-line-highlight-color: var(--atom-line-highlight);
+  --vp-code-lang-color: var(--atom-lang-color);
+  --vp-code-font-size: 13px;
+  --vp-code-line-height: 1.5;
+  --vp-code-bg: var(--atom-inline-bg);
+  --vp-code-color: var(--atom-inline-fg);
+  --vp-code-tab-bg: var(--atom-code-surface);
+  --vp-code-tab-divider: var(--atom-code-border);
+  --vp-code-copy-code-bg: color-mix(in srgb, var(--atom-code-surface) 88%, #000);
+  --vp-code-copy-code-hover-bg: var(--atom-code-surface);
+}
+
+.vp-doc div[class*='language-'],
+.vp-doc .vp-block {
+  border: 1px solid var(--atom-code-border);
+}
+
+@media (min-width: 640px) {
+  .vp-doc div[class*='language-'],
+  .vp-doc .vp-block {
+    border-radius: 4px;
+  }
+}
+
+.vp-doc [class*='language-'] pre {
+  padding: 16px 0;
+}
+
+.vp-doc [class*='language-'] code {
+  font-family: var(--vp-font-family-mono);
+}
+
+.vp-doc [class*='language-'] code.vp-code {
+  color: inherit;
+}
+
+.dark .vp-code span,
+:root[data-theme='dark'] .vp-code span {
+  color: var(--shiki-dark, inherit);
+}
+
+html:not(.dark) .vp-code span,
+:root:not([data-theme='dark']) .vp-code span {
+  color: var(--shiki-light, inherit);
+}

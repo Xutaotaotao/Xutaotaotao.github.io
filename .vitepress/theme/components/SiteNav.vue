@@ -54,6 +54,7 @@ function applyTheme(next: 'light' | 'dark') {
   }
 
   document.documentElement.dataset.theme = next
+  document.documentElement.classList.toggle('dark', next === 'dark')
 }
 
 function toggleTheme() {

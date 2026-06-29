@@ -2,6 +2,13 @@ import { defineConfig } from 'vitepress'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  appearance: false,
+  markdown: {
+    theme: {
+      light: 'one-light',
+      dark: 'one-dark-pro',
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },
@@ -26,6 +33,7 @@ export default defineConfig({
         const theme = localStorage.getItem('taotao-theme') || 'light';
         const lang = localStorage.getItem('taotao-lang') || 'zh';
         document.documentElement.dataset.theme = theme;
+        document.documentElement.classList.toggle('dark', theme === 'dark');
         document.documentElement.dataset.lang = lang;
       })();`,
     ],
