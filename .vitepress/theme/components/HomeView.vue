@@ -77,15 +77,15 @@ onUnmounted(() => {
       <figure class="m-0 flex w-full flex-col items-center justify-self-center pt-2 sm:pt-4 md:items-end md:justify-self-end md:pt-6">
         <div class="relative flex aspect-square w-full max-w-72 items-center justify-center rounded-full border border-craft-line bg-craft-card p-3 sm:max-w-88 sm:p-4">
           <img
-            class="block h-full w-full rounded-full object-cover"
-            src="/img/home-avatar-352.jpg"
-            srcset="/img/home-avatar-352.jpg 352w, /img/home-avatar-704.jpg 704w"
+            class="home-avatar block h-full w-full rounded-full"
+            src="/img/home-avatar-portrait-576.jpg"
+            srcset="/img/home-avatar-portrait-576.jpg 432w, /img/home-avatar-portrait-768.jpg 768w"
             sizes="(min-width: 640px) 352px, 288px"
             width="352"
             height="352"
             fetchpriority="high"
             decoding="async"
-            alt="Portrait of Taotao"
+            alt="徐徐在山间的照片"
           >
         </div>
         <figcaption class="mt-5 flex flex-col items-center gap-1 font-mono text-xs font-extrabold uppercase text-craft-soft">

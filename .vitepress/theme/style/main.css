@@ -77,6 +77,11 @@ a:focus-visible {
   background: var(--craft-paper);
 }
 
+.home-avatar {
+  object-fit: cover;
+  object-position: center 98%;
+}
+
 .craft-nav {
   position: sticky;
   top: 0;
