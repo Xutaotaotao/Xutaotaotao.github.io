@@ -987,6 +987,26 @@ a:focus-visible {
   margin: 0;
 }
 
+.craft-footer-primary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 14px;
+}
+
+.craft-footer-icp {
+  text-transform: none;
+  font-family: var(--vp-font-family-base);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.craft-footer-icp a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .craft-footer p:last-child {
   display: flex;
   flex-wrap: wrap;

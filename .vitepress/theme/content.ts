@@ -95,6 +95,8 @@ export const copy = {
     humanNote: '这个站点的每一篇内容都由我整理、校对和发布。',
     footerLeft: '© 2026 前端徐徐',
     footerMeta: 'Frontend / Desktop Apps / Notes',
+    footerIcpLabel: 'ICP备案/许可证号：',
+    footerIcpNumber: '渝ICP备2023003982号-2',
   },
   en: {
     location: 'Chongqing · Remote-friendly',
@@ -120,5 +122,7 @@ export const copy = {
     humanNote: 'Every post here is edited, checked, and published by me.',
     footerLeft: '© 2026 Taotao Blog',
     footerMeta: 'Frontend / Desktop Apps / Notes',
+    footerIcpLabel: 'ICP License:',
+    footerIcpNumber: '渝ICP备2023003982号-2',
   },
 }

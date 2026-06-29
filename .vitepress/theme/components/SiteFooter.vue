@@ -26,7 +26,13 @@ onUnmounted(() => {
 
 <template>
   <footer class="craft-footer">
-    <p>{{ copy[lang].footerLeft }}</p>
+    <p class="craft-footer-primary">
+      <span>{{ copy[lang].footerLeft }}</span>
+      <span class="craft-footer-icp">
+        {{ copy[lang].footerIcpLabel }}
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">{{ copy[lang].footerIcpNumber }}</a>
+      </span>
+    </p>
     <p>{{ copy[lang].footerMeta }}</p>
     <p>
       <a href="https://github.com/Xutaotaotao" target="_blank" rel="noreferrer">GitHub</a>
