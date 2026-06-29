@@ -1,6 +1,6 @@
 ---
 layout: listing
 kind: notes
-title: 短记
+title: 随笔
 titleTemplate: 前端徐徐
 ---

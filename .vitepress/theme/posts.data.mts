@@ -104,6 +104,11 @@ const categoryRules = [
     category: '知识图谱',
     tags: ['工程化', '知识图谱'],
   },
+  {
+    prefix: 'notes/',
+    category: '随笔',
+    tags: ['随笔'],
+  },
 ] as const
 
 function normalizeRelativePath(url: string) {
@@ -302,14 +307,16 @@ function buildArchiveGroups(posts: PostRecord[]) {
 // Placeholder for TypeScript; VitePress replaces this module at build/dev time.
 export const data = null as unknown as Ref<BlogData>
 
-export default createContentLoader(['summary/**/*.md', 'question/**/*.md', 'feMap/**/*.md'], {
+export default createContentLoader(
+  ['summary/**/*.md', 'question/**/*.md', 'feMap/**/*.md', 'notes/**/*.md'],
+  {
   includeSrc: true,
   globOptions: {
     ignore: ['**/index.md'],
   },
   transform(rawData): BlogData {
-    const posts = rawData
-      .filter((entry) => !['/summary/', '/question/', '/feMap/'].includes(entry.url))
+    const allPosts = rawData
+      .filter((entry) => !['/summary/', '/question/', '/feMap/', '/notes/'].includes(entry.url))
       .map((entry) => {
         const relativePath = normalizeRelativePath(entry.url)
         const frontmatter = entry.frontmatter as Frontmatter
@@ -337,20 +344,15 @@ export default createContentLoader(['summary/**/*.md', 'question/**/*.md', 'feMa
       })
       .sort((left, right) => right.date.localeCompare(left.date) || left.title.localeCompare(right.title, 'zh-Hans-CN'))
 
+    const posts = allPosts
+
     const categoryGroups = buildTaxonomyGroups(posts, 'category')
     const tagGroups = buildTaxonomyGroups(posts, 'tags')
-    const featuredIds = ['summary/electron/talk_about_electron.md', 'summary/electron/why_choose_electron.md']
-    const latestPosts = [
-      ...featuredIds
-        .map((id) => posts.find((post) => post.id === id))
-        .filter((post): post is PostRecord => Boolean(post)),
-      ...posts,
-    ].filter((post, index, list) => list.findIndex((item) => item.id === post.id) === index)
-    const postsByHref = Object.fromEntries(posts.map((post) => [post.href, post]))
+    const postsByHref = Object.fromEntries(allPosts.map((post) => [post.href, post]))
 
     return {
       posts,
-      latestPosts: latestPosts.slice(0, 8),
+      latestPosts: posts.slice(0, 8),
       archiveGroups: buildArchiveGroups(posts),
       categoryGroups,
       tagGroups,

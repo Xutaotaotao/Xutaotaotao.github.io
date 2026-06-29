@@ -19,9 +19,7 @@ const requiredFiles = [
 
 const requiredDistChecks = [
   ['.vitepress/dist/index.html', '最新文章'],
-  ['.vitepress/dist/index.html', '分类'],
-  ['.vitepress/dist/index.html', '标签'],
-  ['.vitepress/dist/index.html', '谈谈我做 Electron 桌面端应用的这一两年'],
+  ['.vitepress/dist/index.html', '博客改版记录的随想'],
   ['.vitepress/dist/archive/index.html', '归档'],
   ['.vitepress/dist/archive/index.html', '为什么选择Electron'],
   ['.vitepress/dist/archive/index.html', 'apply、call、bind 比较'],
@@ -30,6 +28,7 @@ const requiredDistChecks = [
   ['.vitepress/dist/tags/index.html', '标签'],
   ['.vitepress/dist/tags/index.html', 'Electron'],
   ['.vitepress/dist/about/index.html', '关于我'],
+  ['.vitepress/dist/archive/index.html', '博客改版记录的随想'],
   ['.vitepress/dist/index.html', 'craft-mobile-menu'],
   ['.vitepress/dist/index.html', '首页'],
   ['.vitepress/dist/index.html', '归档'],
@@ -53,7 +52,6 @@ const forbiddenDistChecks = [
   ['.vitepress/dist/about/index.html', '统一文章流'],
   ['.vitepress/dist/about/index.html', '源文档仍然保留'],
   ['.vitepress/dist/about/index.html', '现在的内容结构'],
-  ['.vitepress/dist/index.html', '短记'],
   ['.vitepress/dist/index.html', '前端知识图谱'],
   ['.vitepress/dist/index.html', '前端面试题'],
   ['.vitepress/dist/index.html', '摄影记录'],
