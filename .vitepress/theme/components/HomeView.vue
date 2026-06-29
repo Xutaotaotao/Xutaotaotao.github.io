@@ -37,7 +37,7 @@ onUnmounted(() => {
           id="home-title"
           class="font-sans text-4xl font-bold leading-none tracking-tight text-craft-ink sm:text-5xl md:whitespace-nowrap lg:text-6xl"
         >
-          {{ lang === 'zh' ? '你好，我是徐徐。' : "Hey, I'm Taotao." }}
+          {{ lang === 'zh' ? '你好，我是徐徐。' : "Hey, I'm Terence." }}
         </h1>
         <p class="mt-8 max-w-2xl text-lg leading-relaxed text-craft-ink lg:text-xl">
           {{ copy[lang].heroIntroBefore }}<a
@@ -84,7 +84,7 @@ onUnmounted(() => {
         </div>
         <figcaption class="mt-5 flex flex-col items-center gap-1 font-mono text-xs font-extrabold uppercase text-craft-soft">
           <span>Portrait</span>
-          <span>{{ lang === 'zh' ? '前端徐徐 / AI 全栈开发工程师' : 'Taotao / AI full-stack engineer' }}</span>
+          <span>{{ lang === 'zh' ? '徐徐 / AI 全栈开发工程师' : 'Terence / AI full-stack engineer' }}</span>
         </figcaption>
       </figure>
     </section>
