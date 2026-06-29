@@ -12,6 +12,7 @@ const lang = ref<Language>('zh')
 const theme = ref<'light' | 'dark'>('light')
 const menuOpen = ref(false)
 const navRoot = ref<HTMLElement | null>(null)
+const showLangSwitch = false
 
 const labels = computed(() => navLabels[lang.value])
 
@@ -148,7 +149,7 @@ onUnmounted(() => {
       <span class="craft-divider" aria-hidden="true"></span>
 
       <div class="craft-nav-controls">
-        <div class="craft-lang-switch" aria-label="language switch">
+        <div v-if="showLangSwitch" class="craft-lang-switch" aria-label="language switch">
           <button
             class="craft-switch"
             type="button"
