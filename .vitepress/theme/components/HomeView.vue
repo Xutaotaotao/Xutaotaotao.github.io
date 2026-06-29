@@ -78,7 +78,13 @@ onUnmounted(() => {
         <div class="relative flex aspect-square w-full max-w-72 items-center justify-center rounded-full border border-craft-line bg-craft-card p-3 sm:max-w-88 sm:p-4">
           <img
             class="block h-full w-full rounded-full object-cover"
-            src="/img/home-avatar.jpg"
+            src="/img/home-avatar-352.jpg"
+            srcset="/img/home-avatar-352.jpg 352w, /img/home-avatar-704.jpg 704w"
+            sizes="(min-width: 640px) 352px, 288px"
+            width="352"
+            height="352"
+            fetchpriority="high"
+            decoding="async"
             alt="Portrait of Taotao"
           >
         </div>
