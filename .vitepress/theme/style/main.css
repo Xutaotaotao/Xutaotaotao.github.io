@@ -469,14 +469,23 @@ a:focus-visible {
   line-height: 1.28;
 }
 
-.craft-intro,
-.craft-page-heading p:last-child {
+.craft-intro {
   max-width: 400px;
   margin: 18px 0 0;
   color: var(--craft-hero-muted);
   font-size: 12px;
   font-weight: 500;
   line-height: 1.88;
+}
+
+.craft-page-heading p:last-child {
+  max-width: none;
+  margin: 18px 0 0;
+  color: var(--craft-hero-muted);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.88;
+  white-space: nowrap;
 }
 
 .craft-hero-meta {
@@ -1302,6 +1311,10 @@ a:focus-visible {
   .craft-page-heading p:last-child {
     font-size: 12px;
     line-height: 1.8;
+  }
+
+  .craft-page-heading p:last-child {
+    white-space: normal;
   }
 
   .craft-hero-figure {
