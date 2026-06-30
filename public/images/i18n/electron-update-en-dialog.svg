@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none">
+  <rect width="1280" height="760" fill="#8b8b8b"/>
+  <rect x="0" y="0" width="1280" height="46" fill="#2f2d36"/>
+  <circle cx="18" cy="23" r="10" fill="#ff5f57"/>
+  <circle cx="52" cy="23" r="10" fill="#febc2e"/>
+  <circle cx="86" cy="23" r="10" fill="#28c840"/>
+  <text x="1070" y="30" fill="#d4d4d8" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Vite + React + TS</text>
+
+  <g opacity="0.26">
+    <circle cx="260" cy="430" r="80" fill="#7c3aed"/>
+    <circle cx="420" cy="420" r="90" fill="#06b6d4"/>
+    <rect x="660" y="340" width="460" height="42" rx="10" fill="#ffffff"/>
+    <rect x="660" y="420" width="460" height="42" rx="10" fill="#ffffff"/>
+    <rect x="660" y="500" width="460" height="48" rx="10" fill="#2563eb"/>
+    <text x="192" y="580" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">Vite + React</text>
+  </g>
+
+  <rect x="362" y="170" width="556" height="212" rx="18" fill="#ffffff"/>
+  <circle cx="410" cy="226" r="18" fill="#f59e0b"/>
+  <text x="450" y="236" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Notice</text>
+  <text x="450" y="296" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="24">The new version has finished downloading.</text>
+  <text x="450" y="330" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="24">Install it now?</text>
+  <rect x="676" y="318" width="96" height="40" rx="12" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="724" y="344" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" text-anchor="middle">Later</text>
+  <rect x="786" y="312" width="110" height="52" rx="14" fill="#3b82f6"/>
+  <rect x="792" y="318" width="98" height="40" rx="12" stroke="#bfdbfe" stroke-width="4"/>
+  <text x="841" y="346" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Install</text>
+</svg>

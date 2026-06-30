@@ -1,59 +1,74 @@
 <script setup lang="ts">
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useData } from 'vitepress'
-import { type Language } from '../content'
+import { copy, type Language } from '../content'
 import { data as blog } from '../posts.data.mts'
+import { useSiteLocale } from '../composables/useSiteLocale'
 
 type PageKind = 'archive' | 'categories' | 'tags' | 'about'
 
 const { frontmatter } = useData()
-const lang = ref<Language>('zh')
+const { lang, localizedPath } = useSiteLocale()
 const archiveCategoryFilter = ref('')
 const archiveTagFilter = ref('')
 const selectedTaxonomySlug = ref('')
 
 const pageKind = computed(() => (frontmatter.value.kind as PageKind | undefined) ?? 'archive')
 const pageTitle = computed(() => String(frontmatter.value.title ?? ''))
+const localizedBlog = computed(() => blog?.[lang.value] ?? blog?.zh ?? {
+  posts: [],
+  latestPosts: [],
+  archiveGroups: [],
+  categoryGroups: [],
+  tagGroups: [],
+  postsByHref: {},
+  postsBySource: {},
+  stats: {
+    totalPosts: 0,
+    totalCategories: 0,
+    totalTags: 0,
+  },
+})
 
 const pageCopy = computed(() => {
   switch (pageKind.value) {
     case 'categories':
       return {
-        label: '/categories',
+        label: localizedPath('/categories/'),
         intro:
           lang.value === 'zh'
-            ? '按主题查看所有文章，目录只是来源，分类才是阅读入口。'
-            : 'Browse posts by the themes behind the writing.',
+            ? copy.zh.categoriesIntro
+            : copy.en.categoriesIntro,
       }
     case 'tags':
       return {
-        label: '/tags',
+        label: localizedPath('/tags/'),
         intro:
           lang.value === 'zh'
-            ? '标签用于串起技术栈、场景和长期关注的问题。'
-            : 'Tags connect stacks, scenarios, and long-running questions.',
+            ? copy.zh.tagsIntro
+            : copy.en.tagsIntro,
       }
     case 'about':
       return {
-        label: '/about',
+        label: localizedPath('/about/'),
         intro:
           lang.value === 'zh'
-            ? 'A developer who cares about how things feel.'
+            ? '一个在意体验、工程质量与长期产品感受的开发者。'
             : 'A developer who cares about how things feel.',
       }
     default:
       return {
-        label: '/archive',
+        label: localizedPath('/archive/'),
         intro:
           lang.value === 'zh'
-            ? '所有文章按时间归档，读者可以先按年份浏览，再回到分类和标签继续筛选。'
-            : 'Every post in one timeline, grouped by year.',
+            ? copy.zh.latestIntro
+            : copy.en.latestIntro,
       }
   }
 })
 
 const taxonomyGroups = computed(() =>
-  pageKind.value === 'categories' ? blog.categoryGroups : blog.tagGroups,
+  pageKind.value === 'categories' ? localizedBlog.value.categoryGroups : localizedBlog.value.tagGroups,
 )
 
 const taxonomySummary = computed(() => taxonomyGroups.value.slice(0, pageKind.value === 'tags' ? 18 : undefined))
@@ -67,10 +82,10 @@ const selectedTaxonomyGroup = computed(() => {
 
 const filteredPosts = computed(() => {
   if (!archiveCategoryFilter.value && !archiveTagFilter.value) {
-    return blog.posts
+    return localizedBlog.value.posts
   }
 
-  return blog.posts.filter((post) => {
+  return localizedBlog.value.posts.filter((post) => {
     const categoryMatched = !archiveCategoryFilter.value || post.category === archiveCategoryFilter.value
     const tagMatched = !archiveTagFilter.value || post.tags.includes(archiveTagFilter.value)
     return categoryMatched && tagMatched
@@ -101,14 +116,14 @@ const archiveHeading = computed(() => {
   if (archiveCategoryFilter.value) {
     return {
       title: archiveCategoryFilter.value,
-      intro: lang.value === 'zh' ? `分类下共 ${filteredPosts.value.length} 篇文章` : `${filteredPosts.value.length} posts in this category`,
+      intro: copy[lang.value].categoryPostsCount(filteredPosts.value.length),
     }
   }
 
   if (archiveTagFilter.value) {
     return {
       title: `# ${archiveTagFilter.value}`,
-      intro: lang.value === 'zh' ? `标签下共 ${filteredPosts.value.length} 篇文章` : `${filteredPosts.value.length} posts with this tag`,
+      intro: copy[lang.value].tagPostsCount(filteredPosts.value.length),
     }
   }
 
@@ -129,26 +144,7 @@ function syncArchiveFilter() {
 function selectTaxonomy(slug: string) {
   selectedTaxonomySlug.value = slug
 }
-
-function syncLanguage(event?: Event) {
-  if (event) {
-    lang.value = (event as CustomEvent<Language>).detail
-    return
-  }
-
-  const savedLang = localStorage.getItem('taotao-lang')
-  lang.value = savedLang === 'en' ? 'en' : 'zh'
-}
-
-onMounted(() => {
-  syncLanguage()
-  syncArchiveFilter()
-  window.addEventListener('taotao:lang', syncLanguage)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('taotao:lang', syncLanguage)
-})
+syncArchiveFilter()
 </script>
 
 <template>
@@ -167,7 +163,7 @@ onUnmounted(() => {
       >
         <div class="craft-archive-year">
           <h2>{{ group.year }}</h2>
-          <span>{{ group.count }} 篇</span>
+          <span>{{ group.count }} {{ copy[lang].archiveCountSuffix }}</span>
         </div>
 
         <div class="craft-entry-list craft-archive-list">
@@ -198,55 +194,41 @@ onUnmounted(() => {
 
     <div v-else-if="pageKind === 'about'" class="craft-about">
       <p>
-        {{
-          lang === 'zh'
-            ? '我是前端徐徐，长期关注前端工程、桌面端应用、产品化工具和有耐心的用户体验。'
-            : 'I focus on frontend engineering, desktop apps, productized tools, and patient user experiences.'
-        }}
+        {{ copy[lang].aboutIntro }}
       </p>
       <p>
-        {{
-          lang === 'zh'
-            ? '我擅长 React、Vue、Electron、Tauri、Node.js 与 Rust 周边工程实践，也喜欢把真实项目里的取舍整理成文章。'
-            : 'I work with React, Vue, Electron, Tauri, Node.js, and the Rust-adjacent parts of desktop engineering.'
-        }}
+        {{ copy[lang].aboutSkills }}
       </p>
 
       <div class="craft-about-grid">
         <article class="craft-about-card">
-          <span>Posts</span>
-          <strong>{{ blog.stats.totalPosts }}</strong>
-          <p>{{ lang === 'zh' ? '已整理文章' : 'Published notes' }}</p>
+          <span>{{ copy[lang].aboutPublishedLabel }}</span>
+          <strong>{{ localizedBlog.stats.totalPosts }}</strong>
+          <p>{{ copy[lang].aboutPublished }}</p>
         </article>
         <article class="craft-about-card">
-          <span>Categories</span>
-          <strong>{{ blog.stats.totalCategories }}</strong>
-          <p>{{ lang === 'zh' ? '主题方向' : 'Core themes' }}</p>
+          <span>{{ copy[lang].aboutThemesLabel }}</span>
+          <strong>{{ localizedBlog.stats.totalCategories }}</strong>
+          <p>{{ copy[lang].aboutThemes }}</p>
         </article>
         <article class="craft-about-card">
-          <span>Tags</span>
-          <strong>{{ blog.stats.totalTags }}</strong>
-          <p>{{ lang === 'zh' ? '技术标签' : 'Technical tags' }}</p>
+          <span>{{ copy[lang].aboutTagsLabel }}</span>
+          <strong>{{ localizedBlog.stats.totalTags }}</strong>
+          <p>{{ copy[lang].aboutTags }}</p>
         </article>
       </div>
 
-      <h2>{{ lang === 'zh' ? '正在关注' : 'Currently' }}</h2>
-      <p>
-        {{
-          lang === 'zh'
-            ? '正在持续整理桌面端工程实践、前端知识图谱和一些产品化工具，也记录摄影、户外和生活里的光线。'
-            : 'I am continuing to organize desktop engineering practice, frontend knowledge maps, and productized tools, with occasional notes on photography, outdoor time, and daily light.'
-        }}
-      </p>
+      <h2>{{ copy[lang].aboutCurrentTitle }}</h2>
+      <p>{{ copy[lang].aboutCurrentText }}</p>
 
-      <h2>{{ lang === 'zh' ? '联系与入口' : 'Contact and links' }}</h2>
+      <h2>{{ copy[lang].aboutLinksTitle }}</h2>
       <p>
         GitHub:
         <a href="https://github.com/Xutaotaotao" target="_blank" rel="noreferrer">Xutaotaotao</a>
         ·
-        <a href="/archive/">{{ lang === 'zh' ? '查看归档' : 'Open archive' }}</a>
+        <a :href="localizedPath('/archive/')">{{ copy[lang].openArchive }}</a>
         ·
-        <a href="/tags/">{{ lang === 'zh' ? '查看标签' : 'Browse tags' }}</a>
+        <a :href="localizedPath('/tags/')">{{ copy[lang].browseTags }}</a>
       </p>
     </div>
 
@@ -288,11 +270,7 @@ onUnmounted(() => {
             <div>
               <h2>{{ selectedTaxonomyGroup.name }}</h2>
               <p>
-                {{
-                  lang === 'zh'
-                    ? `共 ${selectedTaxonomyGroup.count} 篇文章`
-                    : `${selectedTaxonomyGroup.count} posts`
-                }}
+                {{ copy[lang].selectedTaxonomyCount(selectedTaxonomyGroup.count) }}
               </p>
             </div>
           </header>
@@ -312,7 +290,7 @@ onUnmounted(() => {
         </section>
 
         <div class="craft-section-link">
-          <a href="/archive/">{{ lang === 'zh' ? '浏览全部文章' : 'Browse all posts' }}</a>
+          <a :href="localizedPath('/archive/')">{{ copy[lang].browseAllPosts }}</a>
         </div>
       </section>
     </div>

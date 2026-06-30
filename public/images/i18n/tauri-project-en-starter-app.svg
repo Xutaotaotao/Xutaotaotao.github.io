@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Tauri starter application</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">After dependencies finish installing, the default app window should open normally.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#0f766e14"/><text x="146" y="154" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Starter app</text>
+  
+    <rect x="72" y="196" width="1136" height="494" rx="28" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="72" y="196" width="1136" height="54" rx="28" fill="#eef2ff"/>
+    <circle cx="108" cy="223" r="8" fill="#ef4444"/>
+    <circle cx="132" cy="223" r="8" fill="#f59e0b"/>
+    <circle cx="156" cy="223" r="8" fill="#10b981"/>
+    <text x="190" y="231" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Tauri + Vite + React</text>
+    <rect x="92" y="270" width="260" height="388" rx="20" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="112" y="314" fill="#0f766e" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Starter sections</text>
+    <text x="112" y="282" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Vite</text><text x="112" y="322" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22" >React</text><text x="112" y="362" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22" >Tauri docs</text><text x="112" y="402" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22" >Command example</text>
+    <rect x="388" y="270" width="790" height="184" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="420" y="302" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Welcome to Tauri</text>
+    <text x="420" y="302" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">The default window confirms that Rust + frontend wiring works.</text><text x="420" y="340" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Different templates show different starter content.</text>
+    <rect x="388" y="474" width="790" height="164" rx="20" fill="#0f766e12" stroke="#0f766e33" stroke-width="2"/>
+    <text x="420" y="508" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">What to check</text>
+    <text x="420" y="520" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">• The desktop window launches.</text><text x="420" y="554" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">• Frontend assets load normally.</text><text x="420" y="588" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">• The Rust backend compiles without setup errors.</text>
+    <text x="72" y="718" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Seeing the starter UI is the quickest sanity check for the whole environment.</text>
+  </svg>

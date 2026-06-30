@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" fill="none">
+  <rect width="960" height="400" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Tooling that keeps standards in place</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Quality systems usually combine linting, formatting, commit checks, and Git hooks.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="48" y="146" width="170" height="176" rx="20" fill="#dbeafe"/>
+    <text x="133" y="186" fill="#1d4ed8" font-size="21" font-weight="700" text-anchor="middle">ESLint</text>
+    <text x="133" y="220" fill="#0f172a" font-size="14" text-anchor="middle">JavaScript and</text>
+    <text x="133" y="242" fill="#0f172a" font-size="14" text-anchor="middle">TypeScript rules</text>
+
+    <rect x="236" y="146" width="170" height="176" rx="20" fill="#dcfce7"/>
+    <text x="321" y="186" fill="#15803d" font-size="21" font-weight="700" text-anchor="middle">stylelint</text>
+    <text x="321" y="220" fill="#0f172a" font-size="14" text-anchor="middle">CSS quality and</text>
+    <text x="321" y="242" fill="#0f172a" font-size="14" text-anchor="middle">consistency checks</text>
+
+    <rect x="424" y="146" width="170" height="176" rx="20" fill="#fae8ff"/>
+    <text x="509" y="186" fill="#a21caf" font-size="21" font-weight="700" text-anchor="middle">Prettier</text>
+    <text x="509" y="220" fill="#0f172a" font-size="14" text-anchor="middle">Automatic formatting</text>
+    <text x="509" y="242" fill="#0f172a" font-size="14" text-anchor="middle">for stable code style</text>
+
+    <rect x="612" y="146" width="140" height="176" rx="20" fill="#ffedd5"/>
+    <text x="682" y="186" fill="#c2410c" font-size="21" font-weight="700" text-anchor="middle">commitlint</text>
+    <text x="682" y="220" fill="#0f172a" font-size="14" text-anchor="middle">Readable</text>
+    <text x="682" y="242" fill="#0f172a" font-size="14" text-anchor="middle">commit history</text>
+
+    <rect x="770" y="146" width="142" height="176" rx="20" fill="#e0f2fe"/>
+    <text x="841" y="186" fill="#0369a1" font-size="21" font-weight="700" text-anchor="middle">Husky +</text>
+    <text x="841" y="212" fill="#0369a1" font-size="21" font-weight="700" text-anchor="middle">lint-staged</text>
+    <text x="841" y="246" fill="#0f172a" font-size="14" text-anchor="middle">Pre-commit enforcement</text>
+  </g>
+</svg>

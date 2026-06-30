@@ -20,14 +20,22 @@ const requiredFiles = [
 const requiredDistChecks = [
   ['.vitepress/dist/index.html', '最新文章'],
   ['.vitepress/dist/index.html', '博客改版记录的随想'],
+  ['.vitepress/dist/en/index.html', 'Latest Posts'],
+  ['.vitepress/dist/en/index.html', 'Notes on the Blog Redesign'],
   ['.vitepress/dist/archive/index.html', '归档'],
   ['.vitepress/dist/archive/index.html', '为什么选择Electron'],
   ['.vitepress/dist/archive/index.html', 'apply、call、bind 比较'],
+  ['.vitepress/dist/en/archive/index.html', 'Archive'],
+  ['.vitepress/dist/en/archive/index.html', 'Why Choose Electron'],
   ['.vitepress/dist/categories/index.html', '分类'],
   ['.vitepress/dist/categories/index.html', '桌面开发'],
+  ['.vitepress/dist/en/categories/index.html', 'Categories'],
+  ['.vitepress/dist/en/categories/index.html', 'Desktop Development'],
   ['.vitepress/dist/tags/index.html', '标签'],
   ['.vitepress/dist/tags/index.html', 'Electron'],
+  ['.vitepress/dist/en/tags/index.html', 'Tags'],
   ['.vitepress/dist/about/index.html', '关于我'],
+  ['.vitepress/dist/en/about/index.html', 'About'],
   ['.vitepress/dist/archive/index.html', '博客改版记录的随想'],
   ['.vitepress/dist/index.html', 'craft-mobile-menu'],
   ['.vitepress/dist/index.html', '首页'],
@@ -35,6 +43,17 @@ const requiredDistChecks = [
   ['.vitepress/dist/index.html', '分类'],
   ['.vitepress/dist/index.html', '标签'],
   ['.vitepress/dist/index.html', '关于'],
+  ['.vitepress/dist/en/index.html', 'Home'],
+  ['.vitepress/dist/en/index.html', 'Archive'],
+  ['.vitepress/dist/en/index.html', 'Categories'],
+  ['.vitepress/dist/en/index.html', 'Tags'],
+  ['.vitepress/dist/en/index.html', 'About'],
+  ['.vitepress/dist/electron/index.html', 'Electron 专题'],
+  ['.vitepress/dist/en/electron/index.html', 'Electron'],
+  ['.vitepress/dist/photo/index.html', '摄影记录'],
+  ['.vitepress/dist/en/photo/index.html', 'Photography'],
+  ['.vitepress/dist/feMap/index.html', '前端知识图谱'],
+  ['.vitepress/dist/en/feMap/index.html', 'Frontend Knowledge Graph'],
   ['.vitepress/dist/assets', 'craft-taxonomy'],
   ['.vitepress/dist/assets', 'craft-shell'],
 ]
@@ -55,10 +74,13 @@ const forbiddenDistChecks = [
   ['.vitepress/dist/index.html', '前端知识图谱'],
   ['.vitepress/dist/index.html', '前端面试题'],
   ['.vitepress/dist/index.html', '摄影记录'],
-  ['.vitepress/dist/assets', '/GutEase/product'],
+  ['.vitepress/dist/index.html', 'href="/GutEase/product.html"'],
+  ['.vitepress/dist/index.html', 'href="/GutEase/privacy.html"'],
+  ['.vitepress/dist/en/index.html', 'href="/en/GutEase/product.html"'],
+  ['.vitepress/dist/en/index.html', 'href="/en/GutEase/privacy.html"'],
 ]
 
-const forbiddenDistFiles = [
+const requiredDistFiles = [
   '.vitepress/dist/summary/index.html',
   '.vitepress/dist/question/index.html',
   '.vitepress/dist/feMap/index.html',
@@ -69,6 +91,19 @@ const forbiddenDistFiles = [
   '.vitepress/dist/GutEase/index.html',
   '.vitepress/dist/GutEase/product.html',
   '.vitepress/dist/GutEase/privacy.html',
+  '.vitepress/dist/en/summary/index.html',
+  '.vitepress/dist/en/question/index.html',
+  '.vitepress/dist/en/feMap/index.html',
+  '.vitepress/dist/en/notes/index.html',
+  '.vitepress/dist/en/photo/index.html',
+  '.vitepress/dist/en/electron/index.html',
+  '.vitepress/dist/en/tauri/index.html',
+  '.vitepress/dist/en/GutEase/index.html',
+  '.vitepress/dist/en/GutEase/product.html',
+  '.vitepress/dist/en/GutEase/privacy.html',
+]
+
+const forbiddenDistFiles = [
   '.vitepress/dist/README.html',
   '.vitepress/dist/docs/superpowers/plans/2026-06-28-taotao-blog-hexo-flattening.html',
 ]
@@ -115,9 +150,15 @@ for (const [target, forbidden] of forbiddenDistChecks) {
   }
 }
 
+for (const file of requiredDistFiles) {
+  if (!existsSync(resolve(root, file))) {
+    fail(`Missing required build output: ${file}`)
+  }
+}
+
 for (const file of forbiddenDistFiles) {
   if (existsSync(resolve(root, file))) {
-    fail(`Legacy build output should not exist: ${file}`)
+    fail(`Build output should not exist: ${file}`)
   }
 }
 

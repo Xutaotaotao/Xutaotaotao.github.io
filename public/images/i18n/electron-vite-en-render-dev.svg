@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" fill="none">
+  <rect width="1200" height="680" rx="28" fill="#111827"/>
+  <text x="48" y="68" fill="#e5e7eb" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Renderer dev server setup</text>
+  <rect x="32" y="100" width="552" height="540" rx="16" fill="#1f2937"/>
+  <rect x="616" y="100" width="552" height="540" rx="16" fill="#1f2937"/>
+  <g fill="#d1d5db" font-family="JetBrains Mono, monospace" font-size="21">
+    <text x="64" y="156">scripts/dev.js</text>
+    <text x="64" y="206">const sharedOptions = { mode: "dev", build: { watch: {} } }</text>
+    <text x="64" y="256">const renderDev = {</text>
+    <text x="100" y="296">async createRenderServer() {</text>
+    <text x="136" y="336">configFile: "../config/vite/render.js"</text>
+    <text x="136" y="376">this.server = await createServer(options)</text>
+    <text x="136" y="416">await this.server.listen()</text>
+    <text x="136" y="456">this.server.printUrls()</text>
+  </g>
+  <g fill="#d1d5db" font-family="JetBrains Mono, monospace" font-size="21">
+    <text x="648" y="156">config/vite/render.js</text>
+    <text x="648" y="206">const config = {</text>
+    <text x="684" y="246">resolve: { alias: { "@": "../../src" } }</text>
+    <text x="684" y="286">build: { outDir: "../../dist/render" }</text>
+    <text x="684" y="326">plugins: [react()]</text>
+  </g>
+</svg>

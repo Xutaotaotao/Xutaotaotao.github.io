@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" fill="none">
+  <rect width="960" height="360" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Theme switching flow in Tauri</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Persist preference → update DOM theme → apply native window theme → keep the UI in sync.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="52" y="154" width="170" height="108" rx="20" fill="#dbeafe"/><text x="137" y="196" fill="#1d4ed8" font-size="20" font-weight="700" text-anchor="middle">Read setting</text><text x="137" y="226" fill="#0f172a" font-size="14" text-anchor="middle">Store / DB</text>
+    <rect x="276" y="154" width="170" height="108" rx="20" fill="#dcfce7"/><text x="361" y="196" fill="#15803d" font-size="20" font-weight="700" text-anchor="middle">Update DOM</text><text x="361" y="226" fill="#0f172a" font-size="14" text-anchor="middle">App theme state</text>
+    <rect x="500" y="154" width="170" height="108" rx="20" fill="#ede9fe"/><text x="585" y="196" fill="#6d28d9" font-size="20" font-weight="700" text-anchor="middle">Native theme</text><text x="585" y="226" fill="#0f172a" font-size="14" text-anchor="middle">Plugin command</text>
+    <rect x="724" y="154" width="184" height="108" rx="20" fill="#ffedd5"/><text x="816" y="196" fill="#c2410c" font-size="20" font-weight="700" text-anchor="middle">User sees change</text><text x="816" y="226" fill="#0f172a" font-size="14" text-anchor="middle">Restart on Windows if needed</text>
+  </g>
+  <g stroke="#94a3b8" stroke-linecap="round" stroke-width="8">
+    <path d="M230 208h28"/><path d="M454 208h28"/><path d="M678 208h28"/>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Targeted update capabilities</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">A serious desktop product needs rollout controls, not just a download button.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#2563eb14"/><text x="146" y="154" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Updates</text>
+  
+    
+      <rect x="72" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="96" y="264" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Policy</text>
+      <text x="96" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Targeted rollout</text>
+      <text x="96" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Choose which devices receive a build</text>
+    
+      <rect x="460" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="484" y="264" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Safety</text>
+      <text x="484" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Failure recall</text>
+      <text x="484" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Pause or pull back risky releases</text>
+    
+      <rect x="848" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="872" y="264" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Mode</text>
+      <text x="872" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Silent vs prompt</text>
+      <text x="872" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Control whether users see update UI</text>
+    
+      <rect x="72" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="96" y="458" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">List</text>
+      <text x="96" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Whitelist / no-update</text>
+      <text x="96" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Protect special machines</text>
+    
+      <rect x="460" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="484" y="458" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Observe</text>
+      <text x="484" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Monitoring</text>
+      <text x="484" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Track update success and failures</text>
+    
+      <rect x="848" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="872" y="458" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Client</text>
+      <text x="872" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Local executor</text>
+      <text x="872" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Desktop app enforces backend policy</text>
+    
+    <text x="72" y="710" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Once rollout is controllable, every later feature becomes safer to ship.</text>
+  </svg>

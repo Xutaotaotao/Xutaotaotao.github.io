@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" fill="none">
+  <rect width="920" height="360" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Electron architecture</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Electron combines Chromium for rendering and Node.js for system-facing logic.</text>
+  <rect x="76" y="150" width="300" height="150" rx="24" fill="#dbeafe"/>
+  <text x="226" y="196" fill="#1d4ed8" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Chromium</text>
+  <text x="226" y="226" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="15" text-anchor="middle">HTML, CSS, and browser UI rendering</text>
+  <text x="226" y="252" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="15" text-anchor="middle">Window surface and frontend runtime</text>
+  <rect x="544" y="150" width="300" height="150" rx="24" fill="#dcfce7"/>
+  <text x="694" y="196" fill="#15803d" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Node.js</text>
+  <text x="694" y="226" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="15" text-anchor="middle">Filesystem, processes, IPC, packaging</text>
+  <text x="694" y="252" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="15" text-anchor="middle">Native integrations and desktop workflows</text>
+  <path d="M394 224h132" stroke="#94a3b8" stroke-linecap="round" stroke-width="8"/>
+</svg>

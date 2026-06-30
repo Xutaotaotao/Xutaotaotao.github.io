@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" fill="none">
+  <rect width="720" height="360" rx="28" fill="#f8fafc"/>
+  <rect x="170" y="70" width="380" height="220" rx="24" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="200" y="116" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Switch theme</text>
+  <text x="200" y="156" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Switching the native window theme on Windows</text>
+  <text x="200" y="182" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">may require restarting the app. Continue?</text>
+  <rect x="200" y="220" width="124" height="42" rx="14" fill="#0f172a"/>
+  <text x="262" y="247" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="15" text-anchor="middle">Confirm</text>
+  <rect x="338" y="220" width="124" height="42" rx="14" fill="#e2e8f0"/>
+  <text x="400" y="247" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="15" text-anchor="middle">Cancel</text>
+</svg>

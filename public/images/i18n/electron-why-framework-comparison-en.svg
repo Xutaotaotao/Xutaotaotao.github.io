@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" fill="none">
+  <rect width="960" height="420" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Cross-platform desktop framework comparison</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">A quick high-level comparison focused on productivity, runtime weight, and ecosystem maturity.</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="14">
+    <rect x="48" y="134" width="864" height="236" rx="20" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="92" y="170" fill="#0f172a" font-weight="700">Framework</text>
+    <text x="300" y="170" fill="#0f172a" font-weight="700">Runtime model</text>
+    <text x="548" y="170" fill="#0f172a" font-weight="700">Strength</text>
+    <text x="760" y="170" fill="#0f172a" font-weight="700">Trade-off</text>
+
+    <text x="92" y="220" fill="#1d4ed8" font-weight="700">Electron</text>
+    <text x="300" y="220" fill="#0f172a">Chromium + Node.js</text>
+    <text x="548" y="220" fill="#0f172a">Fast web-to-desktop productivity</text>
+    <text x="760" y="220" fill="#0f172a">Heavier runtime</text>
+
+    <text x="92" y="270" fill="#15803d" font-weight="700">Tauri</text>
+    <text x="300" y="270" fill="#0f172a">System WebView + Rust</text>
+    <text x="548" y="270" fill="#0f172a">Small binaries, lower memory use</text>
+    <text x="760" y="270" fill="#0f172a">Younger ecosystem</text>
+
+    <text x="92" y="320" fill="#6d28d9" font-weight="700">Qt / Flutter / RN</text>
+    <text x="300" y="320" fill="#0f172a">Native or custom rendering</text>
+    <text x="548" y="320" fill="#0f172a">Broader UI/runtime choices</text>
+    <text x="760" y="320" fill="#0f172a">Different stacks to learn</text>
+  </g>
+</svg>

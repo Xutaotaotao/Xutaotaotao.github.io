@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" fill="none">
+  <rect width="920" height="360" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Common CSS naming strategies</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Different naming systems solve readability and reuse in different ways.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="48" y="146" width="250" height="160" rx="22" fill="#e0f2fe"/>
+    <text x="78" y="188" fill="#0369a1" font-size="22" font-weight="700">BEM</text>
+    <text x="78" y="220" fill="#0f172a" font-size="15">Block → Element → Modifier</text>
+    <text x="78" y="248" fill="#0f172a" font-size="15">Best for component-level clarity</text>
+    <text x="78" y="276" fill="#0f172a" font-size="15">Verbose but explicit</text>
+
+    <rect x="334" y="146" width="250" height="160" rx="22" fill="#ffedd5"/>
+    <text x="364" y="188" fill="#c2410c" font-size="22" font-weight="700">OOCSS</text>
+    <text x="364" y="220" fill="#0f172a" font-size="15">Separate structure from skin</text>
+    <text x="364" y="248" fill="#0f172a" font-size="15">Promotes reusable style objects</text>
+    <text x="364" y="276" fill="#0f172a" font-size="15">Needs stronger abstraction discipline</text>
+
+    <rect x="620" y="146" width="250" height="160" rx="22" fill="#ede9fe"/>
+    <text x="650" y="188" fill="#6d28d9" font-size="22" font-weight="700">SMACSS</text>
+    <text x="650" y="220" fill="#0f172a" font-size="15">Base, Layout, Module, State, Theme</text>
+    <text x="650" y="248" fill="#0f172a" font-size="15">Good for layered system design</text>
+    <text x="650" y="276" fill="#0f172a" font-size="15">More structure upfront</text>
+  </g>
+</svg>

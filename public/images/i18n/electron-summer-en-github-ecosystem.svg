@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">GitHub ecosystem around Electron</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Projects that often show up in real Electron workflows.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#2563eb14"/><text x="146" y="154" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Open source</text>
+  
+    
+      <rect x="72" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="96" y="264" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Core</text>
+      <text x="96" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Electron</text>
+      <text x="96" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Runtime and desktop APIs</text>
+    
+      <rect x="460" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="484" y="264" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Tooling</text>
+      <text x="484" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Electron Forge</text>
+      <text x="484" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Dev, package, publish</text>
+    
+      <rect x="848" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="872" y="264" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Release</text>
+      <text x="872" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Electron Builder</text>
+      <text x="872" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Installers, signing, updates</text>
+    
+      <rect x="72" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="96" y="458" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Inspect</text>
+      <text x="96" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">DevTools</text>
+      <text x="96" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Debug renderer performance</text>
+    
+      <rect x="460" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="484" y="458" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Update</text>
+      <text x="484" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Updater hooks</text>
+      <text x="484" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Patch delivery and rollout</text>
+    
+      <rect x="848" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="872" y="458" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Examples</text>
+      <text x="872" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Template repos</text>
+      <text x="872" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Community starters and demos</text>
+    
+    <text x="72" y="710" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">A strong ecosystem is one of Electron's biggest long-term advantages.</text>
+  </svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">On-device AI checklist</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">If availability stays blocked, check the machine and browser prerequisites.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#7c3aed14"/><text x="146" y="154" fill="#7c3aed" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Checklist</text>
+  
+    
+      <rect x="72" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="96" y="264" fill="#7c3aed" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Browser</text>
+      <text x="96" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Chrome Canary</text>
+      <text x="96" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Latest version installed</text>
+    
+      <rect x="460" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="484" y="264" fill="#7c3aed" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Flags</text>
+      <text x="484" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Two AI flags enabled</text>
+      <text x="484" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Prompt API + optimization guide</text>
+    
+      <rect x="848" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="872" y="264" fill="#7c3aed" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Model</text>
+      <text x="872" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Optimization Guide model</text>
+      <text x="872" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Downloaded under chrome://components</text>
+    
+      <rect x="72" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="96" y="458" fill="#7c3aed" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Hardware</text>
+      <text x="96" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Supported device class</text>
+      <text x="96" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Enough local resources for the model</text>
+    
+      <rect x="460" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="484" y="458" fill="#7c3aed" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Console</text>
+      <text x="484" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">DevTools access</text>
+      <text x="484" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Run availability checks</text>
+    
+      <rect x="848" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="872" y="458" fill="#7c3aed" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Retry</text>
+      <text x="872" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Restart if needed</text>
+      <text x="872" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">The first attempt may fail once</text>
+    
+    <text x="72" y="710" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Most setup problems come from missing flags, missing model downloads, or unsupported hardware.</text>
+  </svg>

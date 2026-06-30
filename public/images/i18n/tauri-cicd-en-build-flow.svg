@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 400" fill="none">
+  <rect width="980" height="400" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Tauri CI/CD build flow</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">The workflow prepares Rust and Node, installs dependencies, then packages for each target OS.</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="14">
+    <rect x="48" y="150" width="128" height="94" rx="18" fill="#dbeafe"/><text x="112" y="204" fill="#1d4ed8" font-size="18" font-weight="700" text-anchor="middle">Checkout</text>
+    <rect x="198" y="150" width="128" height="94" rx="18" fill="#dcfce7"/><text x="262" y="204" fill="#15803d" font-size="18" font-weight="700" text-anchor="middle">Rust</text>
+    <rect x="348" y="150" width="128" height="94" rx="18" fill="#ede9fe"/><text x="412" y="204" fill="#6d28d9" font-size="18" font-weight="700" text-anchor="middle">Cache</text>
+    <rect x="498" y="150" width="128" height="94" rx="18" fill="#ffedd5"/><text x="562" y="204" fill="#c2410c" font-size="18" font-weight="700" text-anchor="middle">Node</text>
+    <rect x="648" y="150" width="128" height="94" rx="18" fill="#fae8ff"/><text x="712" y="204" fill="#a21caf" font-size="18" font-weight="700" text-anchor="middle">Install</text>
+    <rect x="798" y="150" width="134" height="94" rx="18" fill="#e0f2fe"/><text x="865" y="204" fill="#0369a1" font-size="18" font-weight="700" text-anchor="middle">Package</text>
+  </g>
+  <g stroke="#94a3b8" stroke-linecap="round" stroke-width="8">
+    <path d="M184 197h8"/><path d="M334 197h8"/><path d="M484 197h8"/><path d="M634 197h8"/><path d="M784 197h8"/>
+  </g>
+</svg>

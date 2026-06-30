@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" fill="none">
+  <rect width="960" height="560" rx="28" fill="#0f172a"/>
+  <text x="48" y="72" fill="#93c5fd" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Electron source tree</text>
+  <text x="48" y="110" fill="#cbd5e1" font-family="Inter, Arial, sans-serif" font-size="16">A compact overview of the top-level folders referenced in the article.</text>
+  <g fill="#e2e8f0" font-family="JetBrains Mono, monospace" font-size="22">
+    <text x="72" y="168">Electron</text>
+    <text x="72" y="208">├── build/</text>
+    <text x="72" y="242">├── chromium_src/</text>
+    <text x="72" y="276">├── docs/</text>
+    <text x="72" y="310">├── lib/</text>
+    <text x="72" y="344">├── patches/</text>
+    <text x="72" y="378">├── script/</text>
+    <text x="72" y="412">├── shell/</text>
+    <text x="72" y="446">├── spec/</text>
+    <text x="72" y="480">└── typings/</text>
+  </g>
+  <g fill="#93c5fd" font-family="Inter, Arial, sans-serif" font-size="18">
+    <text x="396" y="208">Build scripts and configuration</text>
+    <text x="396" y="242">Chromium integration layer</text>
+    <text x="396" y="276">Project documentation</text>
+    <text x="396" y="310">JavaScript and TypeScript APIs</text>
+    <text x="396" y="344">Local source patches</text>
+    <text x="396" y="378">Developer utilities</text>
+    <text x="396" y="412">Core C++ implementation</text>
+    <text x="396" y="446">Automated tests</text>
+    <text x="396" y="480">Type definitions</text>
+  </g>
+</svg>

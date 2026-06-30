@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" fill="none">
+  <rect width="900" height="360" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">DOM + CSSOM → Render Tree</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Visible DOM nodes are matched with computed styles to build the render tree.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="56" y="138" width="220" height="170" rx="22" fill="#e0f2fe"/>
+    <text x="166" y="174" fill="#075985" font-size="20" font-weight="700" text-anchor="middle">DOM Tree</text>
+    <text x="82" y="214" fill="#0f172a" font-size="15">html</text>
+    <text x="106" y="242" fill="#0f172a" font-size="15">body</text>
+    <text x="130" y="270" fill="#0f172a" font-size="15">h1 / p / img</text>
+
+    <rect x="340" y="138" width="220" height="170" rx="22" fill="#ede9fe"/>
+    <text x="450" y="174" fill="#5b21b6" font-size="20" font-weight="700" text-anchor="middle">CSSOM</text>
+    <text x="366" y="214" fill="#0f172a" font-size="15">body { font: 16px; }</text>
+    <text x="366" y="242" fill="#0f172a" font-size="15">h1 { color: blue; }</text>
+    <text x="366" y="270" fill="#0f172a" font-size="15">img { display: block; }</text>
+
+    <rect x="624" y="138" width="220" height="170" rx="22" fill="#dcfce7"/>
+    <text x="734" y="174" fill="#166534" font-size="20" font-weight="700" text-anchor="middle">Render Tree</text>
+    <text x="650" y="214" fill="#0f172a" font-size="15">Visible nodes only</text>
+    <text x="650" y="242" fill="#0f172a" font-size="15">Computed style attached</text>
+    <text x="650" y="270" fill="#0f172a" font-size="15">Ready for layout + paint</text>
+  </g>
+  <g stroke="#94a3b8" stroke-linecap="round" stroke-width="8">
+    <path d="M284 222h36"/>
+    <path d="M568 222h36"/>
+  </g>
+</svg>

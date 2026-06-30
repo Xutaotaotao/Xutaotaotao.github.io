@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Electron at a glance</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">A desktop shell built from Chromium + Node.js + web UI.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#2563eb14"/><text x="146" y="154" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Electron</text><rect x="240" y="132" width="148" height="34" rx="17" fill="#2563eb14"/><text x="314" y="154" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Desktop</text>
+  
+    
+    <rect x="72" y="196" width="500" height="454" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="96" y="220" width="10" height="10" rx="5" fill="#2563eb"/>
+    <text x="120" y="238" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Core ingredients</text>
+    <text x="100" y="288" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >Chromium for rendering</text><text x="100" y="322" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >Node.js for local system access</text><text x="100" y="356" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >HTML / CSS / JavaScript for UI</text>
+  
+    
+    <rect x="612" y="196" width="596" height="454" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="636" y="220" width="10" height="10" rx="5" fill="#2563eb"/>
+    <text x="660" y="238" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Why teams still choose it</text>
+    <text x="640" y="288" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >Fast GUI delivery</text><text x="640" y="326" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >Shared code for Windows, macOS, Linux</text><text x="640" y="364" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >Huge ecosystem and tooling history</text><text x="640" y="402" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >Frontend-heavy teams can move quickly</text>
+  
+    <text x="72" y="706" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Electron remains one of the most practical cross-platform desktop options.</text>
+  </svg>

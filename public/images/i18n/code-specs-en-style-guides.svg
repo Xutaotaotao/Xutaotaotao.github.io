@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" fill="none">
+  <rect width="920" height="360" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Widely used frontend style guides</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Three common styles teams adopt when they want consistency at scale.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="48" y="146" width="250" height="160" rx="22" fill="#dbeafe"/>
+    <text x="78" y="188" fill="#1d4ed8" font-size="22" font-weight="700">Airbnb</text>
+    <text x="78" y="220" fill="#0f172a" font-size="15">Detailed JavaScript + React rules</text>
+    <text x="78" y="248" fill="#0f172a" font-size="15">Strong ecosystem adoption</text>
+    <text x="78" y="276" fill="#0f172a" font-size="15">Good default for larger teams</text>
+
+    <rect x="334" y="146" width="250" height="160" rx="22" fill="#dcfce7"/>
+    <text x="364" y="188" fill="#15803d" font-size="22" font-weight="700">StandardJS</text>
+    <text x="364" y="220" fill="#0f172a" font-size="15">Zero-config formatting baseline</text>
+    <text x="364" y="248" fill="#0f172a" font-size="15">Minimal setup and fast adoption</text>
+    <text x="364" y="276" fill="#0f172a" font-size="15">Less flexible for custom rules</text>
+
+    <rect x="620" y="146" width="250" height="160" rx="22" fill="#fae8ff"/>
+    <text x="650" y="188" fill="#a21caf" font-size="22" font-weight="700">Google</text>
+    <text x="650" y="220" fill="#0f172a" font-size="15">Readability-focused conventions</text>
+    <text x="650" y="248" fill="#0f172a" font-size="15">Broad documentation coverage</text>
+    <text x="650" y="276" fill="#0f172a" font-size="15">Heavier to absorb at first</text>
+  </g>
+</svg>

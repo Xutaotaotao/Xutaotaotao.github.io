@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { navLabels, projectLinks, type Language } from '../content'
+import { localizeProjectHref } from '../lib/site-locale.mjs'
 
 const props = defineProps<{
   lang: Language
@@ -14,6 +15,13 @@ const open = ref(false)
 const root = ref<HTMLElement | null>(null)
 
 const label = computed(() => navLabels[props.lang].projects)
+const itemText = (item: { text: string, textEn?: string }) => (
+  props.lang === 'en' ? item.textEn ?? item.text : item.text
+)
+
+const itemHref = (item: { href: string, external?: boolean }) => (
+  localizeProjectHref(item.href, props.lang, item.external)
+)
 
 function toggle() {
   open.value = !open.value
@@ -72,12 +80,12 @@ onUnmounted(() => {
         :key="item.href"
         class="craft-nav-dropdown-item"
         role="menuitem"
-        :href="item.href"
+        :href="itemHref(item)"
         :target="item.external ? '_blank' : undefined"
         :rel="item.external ? 'noreferrer' : undefined"
         @click="handleNavigate"
       >
-        <span>{{ item.text }}</span>
+        <span>{{ itemText(item) }}</span>
         <svg
           v-if="item.external"
           viewBox="0 0 20 20"

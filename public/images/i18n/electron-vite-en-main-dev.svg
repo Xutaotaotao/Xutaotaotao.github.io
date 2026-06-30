@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" fill="none">
+  <rect width="1200" height="680" rx="28" fill="#111827"/>
+  <text x="48" y="68" fill="#e5e7eb" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Main-process build and launch flow</text>
+  <rect x="28" y="104" width="360" height="520" rx="16" fill="#1f2937"/>
+  <rect x="420" y="104" width="360" height="520" rx="16" fill="#1f2937"/>
+  <rect x="812" y="104" width="360" height="520" rx="16" fill="#1f2937"/>
+  <g fill="#d1d5db" font-family="JetBrains Mono, monospace" font-size="20">
+    <text x="52" y="156">config/vite/main.js</text>
+    <text x="52" y="208">build: { outDir: "../../dist/main" }</text>
+    <text x="52" y="248">rollupOptions.external = ["electron", ...]</text>
+    <text x="52" y="288">entryFileNames = "[name].cjs"</text>
+  </g>
+  <g fill="#d1d5db" font-family="JetBrains Mono, monospace" font-size="20">
+    <text x="444" y="156">src/main/index.ts</text>
+    <text x="444" y="208">createWindow()</text>
+    <text x="444" y="248">mainWindow.loadURL(VITE_DEV_SERVER_URL)</text>
+    <text x="444" y="288">mainWindow.webContents.openDevTools()</text>
+  </g>
+  <g fill="#d1d5db" font-family="JetBrains Mono, monospace" font-size="20">
+    <text x="836" y="156">scripts/dev.js</text>
+    <text x="836" y="208">await renderDev.createRenderServer()</text>
+    <text x="836" y="248">await mainDev.createMainServer(renderDevServer)</text>
+    <text x="836" y="288">spawn(String(electronPath), ["."])</text>
+  </g>
+</svg>

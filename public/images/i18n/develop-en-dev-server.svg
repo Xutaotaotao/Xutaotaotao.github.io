@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" fill="none">
+  <rect width="920" height="360" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Local dev server feedback loop</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">A dev server watches source files, rebuilds changed modules, and pushes feedback back into the browser.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="58" y="156" width="180" height="120" rx="22" fill="#dbeafe"/>
+    <text x="148" y="198" fill="#1d4ed8" font-size="22" font-weight="700" text-anchor="middle">Editor</text>
+    <text x="148" y="228" fill="#0f172a" font-size="15" text-anchor="middle">Source files change</text>
+    <text x="148" y="250" fill="#0f172a" font-size="15" text-anchor="middle">Save triggers watcher</text>
+
+    <rect x="370" y="156" width="180" height="120" rx="22" fill="#dcfce7"/>
+    <text x="460" y="198" fill="#15803d" font-size="22" font-weight="700" text-anchor="middle">Dev Server</text>
+    <text x="460" y="228" fill="#0f172a" font-size="15" text-anchor="middle">Incremental rebuild</text>
+    <text x="460" y="250" fill="#0f172a" font-size="15" text-anchor="middle">Error overlay + assets</text>
+
+    <rect x="682" y="156" width="180" height="120" rx="22" fill="#ede9fe"/>
+    <text x="772" y="198" fill="#6d28d9" font-size="22" font-weight="700" text-anchor="middle">Browser</text>
+    <text x="772" y="228" fill="#0f172a" font-size="15" text-anchor="middle">Live preview</text>
+    <text x="772" y="250" fill="#0f172a" font-size="15" text-anchor="middle">Fast feedback</text>
+  </g>
+  <g stroke="#94a3b8" stroke-linecap="round" stroke-width="8">
+    <path d="M248 216h100"/>
+    <path d="M560 216h100"/>
+  </g>
+</svg>

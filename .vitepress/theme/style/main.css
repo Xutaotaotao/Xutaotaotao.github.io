@@ -382,6 +382,56 @@ a:focus-visible {
   stroke-linejoin: round;
 }
 
+.craft-embed-page {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 40px 0 80px;
+}
+
+.craft-embed-copy {
+  max-width: 720px;
+}
+
+.craft-embed-copy h1 {
+  margin: 0;
+  font-family: var(--vp-font-family-base);
+  font-size: clamp(40px, 6vw, 64px);
+  line-height: 1;
+}
+
+.craft-embed-copy p {
+  margin: 18px 0 0;
+  color: var(--craft-muted);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.craft-embed-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.craft-embed-actions a {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--craft-rule);
+  padding: 0 16px;
+  background: var(--craft-card);
+  color: var(--craft-ink);
+  font-family: var(--vp-font-family-mono);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.craft-embed-actions a:hover {
+  background: var(--craft-card-strong);
+}
+
 .craft-main {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;

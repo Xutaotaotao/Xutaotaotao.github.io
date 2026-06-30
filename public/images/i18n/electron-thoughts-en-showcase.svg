@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Electron app showcase</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Real products are the best proof that the framework can scale beyond demos.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#2563eb14"/><text x="146" y="154" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Showcase</text>
+  
+    
+      <rect x="72" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="96" y="264" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">IDE</text>
+      <text x="96" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">VS Code</text>
+      <text x="96" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Editor + extension ecosystem</text>
+    
+      <rect x="460" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="484" y="264" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Work chat</text>
+      <text x="484" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Slack</text>
+      <text x="484" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Cross-platform desktop client</text>
+    
+      <rect x="848" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="872" y="264" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Social</text>
+      <text x="872" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Discord</text>
+      <text x="872" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Messaging and voice client</text>
+    
+      <rect x="72" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="96" y="458" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">API</text>
+      <text x="96" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Postman</text>
+      <text x="96" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Developer tooling app</text>
+    
+      <rect x="460" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="484" y="458" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Git</text>
+      <text x="484" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">GitHub Desktop</text>
+      <text x="484" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Repository workflow UI</text>
+    
+      <rect x="848" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="872" y="458" fill="#2563eb" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Music</text>
+      <text x="872" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">NetEase Cloud Music</text>
+      <text x="872" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Consumer desktop product</text>
+    
+    <text x="72" y="710" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">These examples helped many teams trust Electron for production workloads.</text>
+  </svg>

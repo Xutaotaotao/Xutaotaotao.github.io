@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" fill="none">
+  <rect width="960" height="520" rx="28" fill="#f8fafc"/>
+  <text x="480" y="86" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700" text-anchor="middle">IPC main and renderer</text>
+  <text x="300" y="156" fill="#0f766e" font-family="JetBrains Mono, monospace" font-size="28" text-anchor="middle">main.js</text>
+  <text x="662" y="156" fill="#0f766e" font-family="JetBrains Mono, monospace" font-size="28" text-anchor="middle">index.html</text>
+  <rect x="210" y="186" width="180" height="184" rx="18" fill="#bae6fd"/>
+  <rect x="572" y="186" width="180" height="184" rx="18" fill="#bbf7d0"/>
+  <text x="300" y="268" fill="#155e75" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Main</text>
+  <text x="300" y="308" fill="#155e75" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Process</text>
+  <text x="662" y="268" fill="#166534" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Renderer</text>
+  <text x="662" y="308" fill="#166534" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">Process</text>
+  <circle cx="300" cy="394" r="10" fill="#0f172a"/>
+  <circle cx="662" cy="394" r="10" fill="#0f172a"/>
+  <path d="M312 404C392 492 570 492 650 404" stroke="#475569" stroke-width="4" stroke-dasharray="4 10" stroke-linecap="round"/>
+  <text x="480" y="472" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" text-anchor="middle">Pass messages between the processes</text>
+</svg>

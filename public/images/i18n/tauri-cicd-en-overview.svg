@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" fill="none">
+  <rect width="960" height="360" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">CI/CD overview for Tauri releases</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">A push to the repository triggers build automation, packaging, and release artifact delivery.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="44" y="154" width="168" height="108" rx="20" fill="#dbeafe"/>
+    <text x="128" y="194" fill="#1d4ed8" font-size="22" font-weight="700" text-anchor="middle">Push code</text>
+    <text x="128" y="224" fill="#0f172a" font-size="14" text-anchor="middle">Version control event</text>
+
+    <rect x="258" y="154" width="168" height="108" rx="20" fill="#dcfce7"/>
+    <text x="342" y="194" fill="#15803d" font-size="22" font-weight="700" text-anchor="middle">Workflow</text>
+    <text x="342" y="224" fill="#0f172a" font-size="14" text-anchor="middle">GitHub Actions starts</text>
+
+    <rect x="472" y="154" width="168" height="108" rx="20" fill="#ede9fe"/>
+    <text x="556" y="194" fill="#6d28d9" font-size="22" font-weight="700" text-anchor="middle">Build</text>
+    <text x="556" y="224" fill="#0f172a" font-size="14" text-anchor="middle">Multi-platform packaging</text>
+
+    <rect x="686" y="154" width="230" height="108" rx="20" fill="#ffedd5"/>
+    <text x="801" y="194" fill="#c2410c" font-size="22" font-weight="700" text-anchor="middle">Release assets</text>
+    <text x="801" y="224" fill="#0f172a" font-size="14" text-anchor="middle">Draft release with installers</text>
+  </g>
+  <g stroke="#94a3b8" stroke-linecap="round" stroke-width="8">
+    <path d="M220 208h24"/>
+    <path d="M434 208h24"/>
+    <path d="M648 208h24"/>
+  </g>
+</svg>

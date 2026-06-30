@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" fill="none">
+  <rect width="960" height="420" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Tauri architecture</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">A web frontend sits on top of Tauri app APIs, WRY WebView rendering, and TAO window management.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="112" y="132" width="736" height="74" rx="22" fill="#dbeafe"/>
+    <text x="480" y="176" fill="#1d4ed8" font-size="24" font-weight="700" text-anchor="middle">tauri-app</text>
+    <text x="480" y="198" fill="#0f172a" font-size="14" text-anchor="middle">Project config, command bridge, packaging, updates, security model</text>
+
+    <rect x="170" y="240" width="620" height="68" rx="22" fill="#dcfce7"/>
+    <text x="480" y="280" fill="#15803d" font-size="22" font-weight="700" text-anchor="middle">WRY</text>
+    <text x="480" y="302" fill="#0f172a" font-size="14" text-anchor="middle">Cross-platform WebView runtime that chooses the host browser engine</text>
+
+    <rect x="246" y="340" width="468" height="54" rx="20" fill="#ede9fe"/>
+    <text x="480" y="372" fill="#6d28d9" font-size="22" font-weight="700" text-anchor="middle">TAO</text>
+    <text x="480" y="392" fill="#0f172a" font-size="14" text-anchor="middle">Cross-platform windowing and event loop layer</text>
+  </g>
+</svg>

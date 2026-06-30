@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Tauri build output</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">A successful build produces desktop artifacts in the target bundle folders.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#2563eb14"/><text x="146" y="154" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Build success</text>
+  
+    <rect x="72" y="210" width="600" height="420" rx="24" fill="#0f172a"/>
+    <text x="110" y="262" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">Terminal</text>
+    <text x="110" y="300" fill="#e2e8f0" font-family="JetBrains Mono, monospace" font-size="22">$ pnpm tauri build</text>
+    <rect x="706" y="210" width="502" height="420" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="742" y="262" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">Generated artifacts</text>
+    <text x="760" y="300" fill="#475569" font-family="JetBrains Mono, monospace" font-size="20">src-tauri/target/release/bundle</text><text x="760" y="334" fill="#475569" font-family="JetBrains Mono, monospace" font-size="20">macOS .app / .dmg outputs</text><text x="760" y="368" fill="#475569" font-family="JetBrains Mono, monospace" font-size="20">Windows installer outputs</text><text x="760" y="402" fill="#475569" font-family="JetBrains Mono, monospace" font-size="20">Ready to install and test</text>
+    <text x="72" y="706" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">The first successful build proves that the toolchain and packaging path are working.</text>
+  </svg>

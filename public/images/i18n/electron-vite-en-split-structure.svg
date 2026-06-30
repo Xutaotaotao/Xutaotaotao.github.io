@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" fill="none">
+  <rect width="960" height="560" rx="28" fill="#111827"/>
+  <text x="48" y="68" fill="#e5e7eb" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Split renderer and main code</text>
+  <rect x="40" y="100" width="332" height="420" rx="16" fill="#1f2937"/>
+  <rect x="392" y="100" width="528" height="420" rx="16" fill="#1f2937"/>
+  <g fill="#d1d5db" font-family="JetBrains Mono, monospace" font-size="22">
+    <text x="68" y="148">VITE-ELECTRON-TEMPLATE</text>
+    <text x="68" y="188">├── src</text>
+    <text x="68" y="224">│   ├── main</text>
+    <text x="68" y="260">│   └── render</text>
+    <text x="68" y="296">│       ├── assets</text>
+    <text x="68" y="332">│       ├── App.tsx</text>
+    <text x="68" y="368">│       └── main.tsx</text>
+  </g>
+  <g fill="#e5e7eb" font-family="JetBrains Mono, monospace" font-size="22">
+    <text x="424" y="156">&lt;script type="module" src="/src/render/main.tsx"&gt;&lt;/script&gt;</text>
+  </g>
+</svg>

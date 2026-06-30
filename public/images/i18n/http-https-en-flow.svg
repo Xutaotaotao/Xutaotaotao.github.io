@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 360" fill="none">
+  <rect width="940" height="360" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">HTTPS connection and encryption flow</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">HTTPS adds a TLS handshake before HTTP data is exchanged.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="52" y="146" width="180" height="130" rx="22" fill="#dbeafe"/>
+    <text x="142" y="188" fill="#1d4ed8" font-size="22" font-weight="700" text-anchor="middle">Browser</text>
+    <text x="142" y="220" fill="#0f172a" font-size="15" text-anchor="middle">Requests a secure</text>
+    <text x="142" y="242" fill="#0f172a" font-size="15" text-anchor="middle">HTTPS session</text>
+
+    <rect x="380" y="132" width="180" height="158" rx="22" fill="#dcfce7"/>
+    <text x="470" y="176" fill="#15803d" font-size="22" font-weight="700" text-anchor="middle">TLS Handshake</text>
+    <text x="470" y="210" fill="#0f172a" font-size="15" text-anchor="middle">Certificate validation</text>
+    <text x="470" y="236" fill="#0f172a" font-size="15" text-anchor="middle">Key negotiation</text>
+    <text x="470" y="262" fill="#0f172a" font-size="15" text-anchor="middle">Cipher setup</text>
+
+    <rect x="708" y="146" width="180" height="130" rx="22" fill="#ede9fe"/>
+    <text x="798" y="188" fill="#6d28d9" font-size="22" font-weight="700" text-anchor="middle">Server</text>
+    <text x="798" y="220" fill="#0f172a" font-size="15" text-anchor="middle">Returns encrypted</text>
+    <text x="798" y="242" fill="#0f172a" font-size="15" text-anchor="middle">HTTP response</text>
+  </g>
+  <g stroke="#94a3b8" stroke-linecap="round" stroke-width="8">
+    <path d="M242 212h116"/>
+    <path d="M570 212h116"/>
+  </g>
+</svg>

@@ -1,27 +1,8 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue'
-import { copy, type Language } from '../content'
+import { copy } from '../content'
+import { useSiteLocale } from '../composables/useSiteLocale'
 
-const lang = ref<Language>('zh')
-
-function syncLanguage(event?: Event) {
-  if (event) {
-    lang.value = (event as CustomEvent<Language>).detail
-    return
-  }
-
-  const savedLang = localStorage.getItem('taotao-lang')
-  lang.value = savedLang === 'en' ? 'en' : 'zh'
-}
-
-onMounted(() => {
-  syncLanguage()
-  window.addEventListener('taotao:lang', syncLanguage)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('taotao:lang', syncLanguage)
-})
+const { lang, localizedPath } = useSiteLocale()
 </script>
 
 <template>
@@ -36,8 +17,8 @@ onUnmounted(() => {
     <p>{{ copy[lang].footerMeta }}</p>
     <p>
       <a href="https://github.com/Xutaotaotao" target="_blank" rel="noreferrer">GitHub</a>
-      <a href="/archive/">Archive</a>
-      <a href="/tags/">Tags</a>
+      <a :href="localizedPath('/archive/')">{{ copy[lang].openArchive }}</a>
+      <a :href="localizedPath('/tags/')">{{ copy[lang].browseTags }}</a>
     </p>
   </footer>
 </template>

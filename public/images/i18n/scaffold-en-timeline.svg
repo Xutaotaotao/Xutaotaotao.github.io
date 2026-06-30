@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" fill="none">
+  <rect width="920" height="360" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Scaffolding evolution timeline</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Project setup moved from manual folders to framework-specific CLIs and modern toolchains.</text>
+  <g stroke="#cbd5e1" stroke-width="6" stroke-linecap="round">
+    <path d="M92 226h736"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif">
+    <circle cx="132" cy="226" r="12" fill="#1d4ed8"/>
+    <text x="132" y="186" fill="#0f172a" font-size="16" font-weight="700" text-anchor="middle">Manual setup</text>
+    <text x="132" y="258" fill="#475569" font-size="13" text-anchor="middle">Hand-written folders</text>
+
+    <circle cx="330" cy="226" r="12" fill="#15803d"/>
+    <text x="330" y="186" fill="#0f172a" font-size="16" font-weight="700" text-anchor="middle">Custom scripts</text>
+    <text x="330" y="258" fill="#475569" font-size="13" text-anchor="middle">Early Node automation</text>
+
+    <circle cx="528" cy="226" r="12" fill="#a21caf"/>
+    <text x="528" y="186" fill="#0f172a" font-size="16" font-weight="700" text-anchor="middle">Generators</text>
+    <text x="528" y="258" fill="#475569" font-size="13" text-anchor="middle">Yeoman and reusable templates</text>
+
+    <circle cx="726" cy="226" r="12" fill="#c2410c"/>
+    <text x="726" y="186" fill="#0f172a" font-size="16" font-weight="700" text-anchor="middle">Framework CLIs</text>
+    <text x="726" y="258" fill="#475569" font-size="13" text-anchor="middle">Vite, CRA, Vue CLI, Angular CLI</text>
+  </g>
+</svg>

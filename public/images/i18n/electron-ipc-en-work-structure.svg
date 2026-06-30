@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Background work process structure</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Add a hidden renderer for background tasks and worker-style logic.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#0f766e14"/><text x="146" y="154" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Renderer</text><rect x="240" y="132" width="148" height="34" rx="17" fill="#0f766e14"/><text x="314" y="154" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Work</text>
+  
+    
+    <rect x="72" y="196" width="500" height="454" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="96" y="220" width="10" height="10" rx="5" fill="#0f766e"/>
+    <text x="120" y="238" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">work renderer files</text>
+    <text x="100" y="288" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >src/work/index.ts</text><text x="100" y="322" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >config/vite/work.js</text><text x="100" y="356" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >dist/work/index.cjs</text><text x="100" y="390" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >dist/work/index.html</text>
+  
+    
+    <rect x="612" y="196" width="596" height="454" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="636" y="220" width="10" height="10" rx="5" fill="#0f766e"/>
+    <text x="660" y="238" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Build flow</text>
+    <text x="640" y="288" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >Build work files with a dedicated Vite config.</text><text x="640" y="326" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >Start that build from scripts/dev.js.</text><text x="640" y="364" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >Create a hidden BrowserWindow with show: false.</text><text x="640" y="402" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >Load work/index.html and keep it off-screen.</text>
+  
+    <text x="72" y="706" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">This process handles background communication without blocking the main UI.</text>
+  </svg>

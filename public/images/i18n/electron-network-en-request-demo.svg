@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none">
+  <rect width="1280" height="760" fill="#f8fafc"/>
+  <rect x="0" y="0" width="1280" height="52" fill="#2f2d36"/>
+  <circle cx="24" cy="26" r="10" fill="#6b7280"/>
+  <circle cx="60" cy="26" r="10" fill="#6b7280"/>
+  <circle cx="96" cy="26" r="10" fill="#6b7280"/>
+  <text x="1060" y="33" fill="#d1d5db" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Vite + React + TS</text>
+  <rect x="0" y="52" width="240" height="708" fill="#ffffff"/>
+  <rect x="12" y="284" width="212" height="56" rx="14" fill="#dbeafe"/>
+  <text x="72" y="116" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600">Home</text>
+  <text x="72" y="192" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600">Communication</text>
+  <text x="72" y="268" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600">Native</text>
+  <text x="72" y="320" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">HttpTest</text>
+  <rect x="256" y="68" width="1000" height="660" rx="12" fill="#ffffff"/>
+  <rect x="286" y="92" width="158" height="54" rx="10" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+  <rect x="468" y="92" width="158" height="54" rx="10" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+  <rect x="650" y="92" width="158" height="54" rx="10" fill="#ffffff" stroke="#d1d5db" stroke-width="2"/>
+  <text x="365" y="126" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" text-anchor="middle">401 (render)</text>
+  <text x="547" y="126" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" text-anchor="middle">401 (main)</text>
+  <text x="729" y="126" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" text-anchor="middle">401 (work)</text>
+</svg>

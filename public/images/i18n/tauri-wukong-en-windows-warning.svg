@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Windows first-run warning</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Unsigned desktop apps may trigger a warning before installation or launch.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#dc262614"/><text x="146" y="154" fill="#dc2626" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Unsigned app</text>
+  
+    <rect x="72" y="196" width="1136" height="494" rx="28" fill="#e5e7eb"/>
+    <rect x="356" y="250" width="568" height="340" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="420" y="310" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800">Windows protected your PC</text>
+    <text x="420" y="350" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24">The app is unsigned, so SmartScreen may stop the first launch.</text><text x="420" y="390" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24">If you trust the app, unblock it and continue.</text>
+    <rect x="420" y="500" width="164" height="54" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/><text x="502" y="534" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Cancel</text><rect x="616" y="500" width="164" height="54" rx="16" fill="#dc2626" stroke="#dc2626" stroke-width="2"/><text x="698" y="534" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Run anyway</text>
+    <text x="72" y="718" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">This is a normal consequence of distributing an unsigned desktop build.</text>
+  </svg>

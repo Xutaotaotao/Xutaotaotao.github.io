@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" fill="none">
+  <rect width="880" height="380" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Image slicing tool example</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">The app uploads a source image, previews slices, and exports them through native file APIs.</text>
+  <rect x="80" y="134" width="280" height="188" rx="24" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="220" y="176" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Source image</text>
+  <rect x="118" y="202" width="204" height="82" rx="16" fill="#dbeafe"/>
+  <text x="220" y="250" fill="#1d4ed8" font-family="Inter, Arial, sans-serif" font-size="16" text-anchor="middle">Upload / Preview</text>
+  <rect x="520" y="134" width="280" height="188" rx="24" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="660" y="176" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="middle">Output slices</text>
+  <rect x="552" y="204" width="72" height="64" rx="14" fill="#dcfce7"/>
+  <rect x="640" y="204" width="72" height="64" rx="14" fill="#ede9fe"/>
+  <rect x="728" y="204" width="72" height="64" rx="14" fill="#ffedd5"/>
+  <path d="M376 228h120" stroke="#94a3b8" stroke-linecap="round" stroke-width="8"/>
+</svg>

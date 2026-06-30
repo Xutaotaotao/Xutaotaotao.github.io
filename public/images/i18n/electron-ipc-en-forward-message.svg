@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Forward through the main process</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Renderer-to-renderer communication can be routed through main.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#2563eb14"/><text x="146" y="154" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">IPC relay</text>
+  
+    
+      <rect x="223" y="290" width="250" height="220" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <circle cx="261" cy="328" r="16" fill="#2563eb22"/>
+      <text x="261" y="336" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" text-anchor="middle">1</text>
+      <text x="251" y="374" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Renderer</text>
+      <text x="251" y="410" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Click button</text><text x="251" y="444" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Call nativeBridge</text><text x="251" y="478" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">send(&quot;renderSendMsgToWork&quot;)</text>
+      <path d="M483 400H505L491 386M505 400L491 414" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+      <rect x="515" y="290" width="250" height="220" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <circle cx="553" cy="328" r="16" fill="#2563eb22"/>
+      <text x="553" y="336" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" text-anchor="middle">2</text>
+      <text x="543" y="374" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Main</text>
+      <text x="543" y="410" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">ipcMain.on(...)</text><text x="543" y="444" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Receive renderer payload</text><text x="543" y="478" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Forward via workWindow.webContents.send</text>
+      <path d="M775 400H797L783 386M797 400L783 414" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+      <rect x="807" y="290" width="250" height="220" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <circle cx="845" cy="328" r="16" fill="#2563eb22"/>
+      <text x="845" y="336" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" text-anchor="middle">3</text>
+      <text x="835" y="374" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Work</text>
+      <text x="835" y="410" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">ipcRenderer.on(...)</text><text x="835" y="444" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Read forwarded message</text><text x="835" y="478" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Run background logic</text>
+      
+    
+    <text x="640" y="620" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22" text-anchor="middle">This pattern is easy to understand and works well for simple routing.</text>
+  </svg>

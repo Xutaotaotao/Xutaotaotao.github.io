@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">High-level Electron product architecture</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">A mature desktop client often needs more than just a renderer and a menu.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#0f766e14"/><text x="146" y="154" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Architecture</text>
+  
+    
+      <rect x="300" y="220" width="680" height="84" rx="22" fill="#ecfeff" stroke="#99f6e4" stroke-width="2"/>
+      <text x="328" y="256" fill="#0f766e" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">GUI</text>
+      <text x="328" y="286" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Windows, views, and interaction flows</text>
+      <text x="660" y="286" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">User-facing product layer</text>
+    
+      <rect x="250" y="332" width="780" height="84" rx="22" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="2"/>
+      <text x="278" y="368" fill="#0f766e" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Application</text>
+      <text x="278" y="398" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Policies, services, and process coordination</text>
+      <text x="610" y="398" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Business behavior layer</text>
+    
+      <rect x="200" y="444" width="880" height="84" rx="22" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2"/>
+      <text x="228" y="480" fill="#0f766e" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Foundation</text>
+      <text x="228" y="510" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Local storage, security strategy, and updater plumbing</text>
+      <text x="560" y="510" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Shared desktop capabilities</text>
+    
+      <rect x="150" y="556" width="980" height="84" rx="22" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="2"/>
+      <text x="178" y="592" fill="#0f766e" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Native</text>
+      <text x="178" y="622" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">System APIs, extensions, and special integrations</text>
+      <text x="510" y="622" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">OS-facing layer</text>
+    
+    <text x="640" y="700" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22" text-anchor="middle">The foundation layer is what makes later product scenarios much easier to implement.</text>
+  </svg>

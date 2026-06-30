@@ -5,14 +5,15 @@ import { navItems, navLabels, type Language, type NavItem } from '../content'
 import NavVisitor from './NavVisitor.vue'
 import SiteProjectsMenu from './SiteProjectsMenu.vue'
 import SiteSearch from './SiteSearch.vue'
+import { useSiteLocale } from '../composables/useSiteLocale'
 
 const route = useRoute()
 
-const lang = ref<Language>('zh')
+const { lang, localizedPath, strippedRoutePath, applyLang } = useSiteLocale()
 const theme = ref<'light' | 'dark'>('light')
 const menuOpen = ref(false)
 const navRoot = ref<HTMLElement | null>(null)
-const showLangSwitch = false
+const showLangSwitch = true
 
 const labels = computed(() => navLabels[lang.value])
 
@@ -26,24 +27,13 @@ function normalizedPath(path: string) {
 
 function isActive(item: NavItem) {
   const current = normalizedPath(route.path)
-  const target = normalizedPath(item.href)
+  const target = normalizedPath(localizedPath(item.href))
 
-  if (target === '/') {
-    return current === '/'
+  if (target === '/en/' || target === '/') {
+    return current === target
   }
 
   return current === target || current.startsWith(target)
-}
-
-function applyLang(next: Language) {
-  lang.value = next
-
-  if (typeof localStorage !== 'undefined') {
-    localStorage.setItem('taotao-lang', next)
-  }
-
-  document.documentElement.dataset.lang = next
-  window.dispatchEvent(new CustomEvent('taotao:lang', { detail: next }))
 }
 
 function applyTheme(next: 'light' | 'dark') {
@@ -76,19 +66,17 @@ function handleOutsideClick(event: MouseEvent) {
 }
 
 onMounted(() => {
-  const savedLang = localStorage.getItem('taotao-lang')
   const savedTheme = localStorage.getItem('taotao-theme')
 
-  applyLang(savedLang === 'en' ? 'en' : 'zh')
   applyTheme(savedTheme === 'dark' ? 'dark' : 'light')
 
-  document.documentElement.classList.toggle('is-home', route.path === '/')
+  document.documentElement.classList.toggle('is-home', route.path === '/' || route.path === '/en/')
   document.addEventListener('click', handleOutsideClick)
 
   watch(
     () => route.path,
     (path) => {
-      document.documentElement.classList.toggle('is-home', path === '/')
+      document.documentElement.classList.toggle('is-home', path === '/' || path === '/en/')
       closeMenu()
     },
   )
@@ -107,7 +95,7 @@ onUnmounted(() => {
     @keydown.esc="closeMenu"
   >
     <div class="craft-nav-start">
-      <a class="craft-brand" href="/" aria-label="前端徐徐 首页">前端徐徐</a>
+      <a class="craft-brand" :href="localizedPath('/')" :aria-label="labels.homeAria">{{ labels.brand }}</a>
       <NavVisitor />
       <SiteSearch class="craft-nav-search--lead" />
     </div>
@@ -117,7 +105,7 @@ onUnmounted(() => {
       type="button"
       :aria-expanded="menuOpen"
       aria-controls="craft-mobile-menu"
-      :aria-label="menuOpen ? '关闭导航菜单' : '打开导航菜单'"
+      :aria-label="menuOpen ? labels.menuClose : labels.menuOpen"
       @click="toggleMenu"
     >
       <span></span>
@@ -127,7 +115,7 @@ onUnmounted(() => {
     <nav
       id="craft-mobile-menu"
       class="craft-nav-links craft-mobile-menu"
-      aria-label="主导航"
+      :aria-label="labels.mainNav"
     >
       <div class="craft-primary-links">
         <a
@@ -135,7 +123,7 @@ onUnmounted(() => {
           :key="item.key"
           class="craft-nav-link"
           :class="{ active: isActive(item) }"
-          :href="item.href"
+          :href="localizedPath(item.href)"
           @click="closeMenu"
         >
           {{ itemText(item) }}
@@ -151,30 +139,30 @@ onUnmounted(() => {
 
       <div class="craft-nav-controls">
         <div v-if="showLangSwitch" class="craft-lang-switch" aria-label="language switch">
-          <button
+          <a
             class="craft-switch"
-            type="button"
             :class="{ active: lang === 'zh' }"
-            aria-label="切换到中文"
+            :aria-label="labels.switchZh"
+            :href="localizedPath(strippedRoutePath, 'zh')"
             @click="applyLang('zh')"
           >
             中
-          </button>
-          <button
+          </a>
+          <a
             class="craft-switch"
-            type="button"
             :class="{ active: lang === 'en' }"
-            aria-label="Switch to English"
+            :aria-label="labels.switchEn"
+            :href="localizedPath(strippedRoutePath, 'en')"
             @click="applyLang('en')"
           >
             EN
-          </button>
+          </a>
         </div>
 
         <button
           class="craft-theme-toggle"
           type="button"
-          :aria-label="theme === 'light' ? '切换深色主题' : '切换浅色主题'"
+          :aria-label="theme === 'light' ? labels.switchDark : labels.switchLight"
           @click="toggleTheme"
         >
           <svg

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" fill="none">
+  <rect width="960" height="620" rx="28" fill="#111827"/>
+  <rect x="0" y="0" width="960" height="52" fill="#2f2d36"/>
+  <circle cx="22" cy="26" r="10" fill="#febc2e"/>
+  <circle cx="58" cy="26" r="10" fill="#f59e0b"/>
+  <circle cx="94" cy="26" r="10" fill="#22c55e"/>
+  <text x="772" y="34" fill="#d1d5db" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Vite + React + TS</text>
+  <polygon points="344,150 408,124 380,284" fill="#7c3aed"/>
+  <polygon points="296,154 344,150 380,284" fill="#38bdf8"/>
+  <polygon points="352,136 416,116 388,224" fill="#fde047"/>
+  <circle cx="602" cy="198" r="58" stroke="#22d3ee" stroke-width="10"/>
+  <circle cx="602" cy="198" r="14" fill="#22d3ee"/>
+  <ellipse cx="602" cy="198" rx="90" ry="32" stroke="#22d3ee" stroke-width="10"/>
+  <ellipse cx="602" cy="198" rx="32" ry="90" stroke="#22d3ee" stroke-width="10"/>
+  <text x="480" y="372" fill="#f3f4f6" font-family="Inter, Arial, sans-serif" font-size="68" font-weight="700" text-anchor="middle">Vite + React</text>
+  <rect x="410" y="430" width="160" height="56" rx="18" fill="#1f2937"/>
+  <text x="490" y="466" fill="#f9fafb" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">count is 0</text>
+  <text x="480" y="548" fill="#9ca3af" font-family="Inter, Arial, sans-serif" font-size="22" text-anchor="middle">Click on the Vite and React logos to learn more</text>
+</svg>

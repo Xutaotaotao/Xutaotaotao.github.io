@@ -1,6 +1,12 @@
 import { defineConfig } from 'vitepress'
 import tailwindcss from '@tailwindcss/vite'
 
+const footerIcp = '<a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2023003982号-2</a>'
+const zhKeywords =
+  "前端徐徐,前端博客,前端开发,Eletron实战,Tauri实战,Eletron,Tauri,Taotao's Blog,xutaotao,Xutaotaotao,Taotao,徐涛焘,徐涛涛,徐涛,blog,Blog,技术博客,博客,个人博客,技术总结,问题解析,个人成长,前端,JavaScript,Vue,React,网络,Electron,Node.js,TypeScript,Rust"
+const enKeywords =
+  'Terence Xu, frontend blog, frontend engineering, Electron practice, Tauri practice, JavaScript, Vue, React, network, Electron, Node.js, TypeScript, Rust, desktop apps, personal tech blog'
+
 export default defineConfig({
   appearance: false,
   markdown: {
@@ -15,14 +21,6 @@ export default defineConfig({
   srcExclude: [
     'README.md',
     'docs/**',
-    'electron/index.md',
-    'tauri/index.md',
-    'summary/index.md',
-    'question/index.md',
-    'feMap/index.md',
-    'notes/index.md',
-    'photo/index.md',
-    'GutEase/**',
   ],
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
@@ -31,23 +29,41 @@ export default defineConfig({
       {},
       `(() => {
         const theme = localStorage.getItem('taotao-theme') || 'light';
-        const lang = localStorage.getItem('taotao-lang') || 'zh';
         document.documentElement.dataset.theme = theme;
         document.documentElement.classList.toggle('dark', theme === 'dark');
-        document.documentElement.dataset.lang = lang;
+
+        const savedLang = localStorage.getItem('taotao-lang');
+        const systemLang = (() => {
+          const languages = [navigator.language, ...(navigator.languages || [])];
+          for (const language of languages) {
+            const code = (language || '').toLowerCase();
+            if (code.startsWith('zh')) return 'zh';
+            if (code.startsWith('en')) return 'en';
+          }
+          return 'zh';
+        })();
+        const preferred = savedLang === 'en' || savedLang === 'zh' ? savedLang : systemLang;
+        const path = window.location.pathname;
+        const pathLang = path === '/en' || path.startsWith('/en/') ? 'en' : 'zh';
+
+        document.documentElement.dataset.lang = preferred;
+
+        if (pathLang !== preferred) {
+          const strip = path.startsWith('/en/') || path === '/en' ? (path.slice(3) || '/') : path;
+          const normalized = strip === '/' ? strip : strip.replace(/index\\.html$/, '').replace(/\\.html$/, '/');
+          const target = preferred === 'en'
+            ? (normalized === '/' ? '/en/' : '/en' + normalized)
+            : normalized;
+          const current = path.replace(/index\\.html$/, '').replace(/\\.html$/, '/') || '/';
+          const next = target.replace(/index\\.html$/, '').replace(/\\.html$/, '/') || '/';
+          if (current !== next) {
+            window.location.replace(target + window.location.search + window.location.hash);
+          }
+        }
       })();`,
     ],
     ['meta', { name: 'robots', content: 'index,follow' }],
     ['meta', { name: 'referrer', content: 'no-referrer' }],
-    [
-      'meta',
-      {
-        name: 'keywords',
-        content:
-          "前端徐徐,前端博客,前端开发,Eletron实战,Tauri实战,Eletron,Tauri,Taotao's Blog,xutaotao,Xutaotaotao,Taotao,徐涛焘,徐涛涛,徐涛,blog,Blog,技术博客,博客,个人博客,技术总结,问题解析,个人成长,前端,JavaScript,Vue,React,网络,Electron,Node.js,TypeScript,Rust",
-      },
-    ],
-    ['script', { src: 'https://unpkg.com/@antv/g6@5/dist/g6.min.js' }],
     ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=GTM-TFGN8CGD' }],
     ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-TB63M8G2D6' }],
     [
@@ -91,44 +107,89 @@ export default defineConfig({
     const canonicalUrl = `https://taotaoxu.com/${pageData.relativePath}`
       .replace(/index\.md$/, '')
       .replace(/\.md$/, '.html')
+    const pageKeywords = pageData.relativePath.startsWith('en/') ? enKeywords : zhKeywords
 
     pageData.frontmatter.head ??= []
     pageData.frontmatter.head.push(['link', { rel: 'canonical', href: canonicalUrl }])
+    pageData.frontmatter.head.push(['meta', { name: 'keywords', content: pageKeywords }])
   },
   lastUpdated: true,
-  title: '前端徐徐',
-  titleTemplate: '前端徐徐',
-  description:
-    "前端徐徐,前端博客,前端开发,Eletron实战,Tauri实战,Eletron,Tauri,Taotao's Blog,xutaotao,Xutaotaotao,Taotao,徐涛焘,徐涛涛,徐涛,blog,Blog,技术博客,博客,个人博客,技术总结,问题解析,个人成长,前端,JavaScript,Vue,React,网络,Electron,Node.js,TypeScript,Rust",
-  themeConfig: {
-    siteTitle: '前端徐徐',
-    search: {
-      provider: 'local',
-      options: {
-        locales: {
-          root: {
-            translations: {
-              button: {
-                buttonText: '搜索',
-                buttonAriaLabel: '搜索',
+  locales: {
+    root: {
+      label: '简体中文',
+      lang: 'zh-CN',
+      title: '前端徐徐',
+      titleTemplate: '前端徐徐',
+      description: zhKeywords,
+      themeConfig: {
+        siteTitle: '前端徐徐',
+        search: {
+          provider: 'local',
+          options: {
+            locales: {
+              root: {
+                translations: {
+                  button: {
+                    buttonText: '搜索',
+                    buttonAriaLabel: '搜索',
+                  },
+                },
               },
             },
           },
         },
+        footer: {
+          message: '如有转载或 CV 的请标注本站原文地址',
+          copyright: `ICP备案/许可证号：  ${footerIcp}`,
+        },
+        nav: [
+          { text: '首页', link: '/' },
+          { text: '归档', link: '/archive/' },
+          { text: '分类', link: '/categories/' },
+          { text: '标签', link: '/tags/' },
+          { text: '关于', link: '/about/' },
+        ],
+        sidebar: false,
+        socialLinks: [{ icon: 'github', link: 'https://github.com/Xutaotaotao' }],
       },
     },
-    footer: {
-      message: '如有转载或 CV 的请标注本站原文地址',
-      copyright: 'ICP备案/许可证号：  <a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2023003982号-2</a>',
+    en: {
+      label: 'English',
+      lang: 'en-US',
+      title: 'Terence Xu',
+      titleTemplate: 'Terence Xu',
+      description: enKeywords,
+      themeConfig: {
+        siteTitle: 'Terence Xu',
+        search: {
+          provider: 'local',
+          options: {
+            locales: {
+              en: {
+                translations: {
+                  button: {
+                    buttonText: 'Search',
+                    buttonAriaLabel: 'Search',
+                  },
+                },
+              },
+            },
+          },
+        },
+        footer: {
+          message: 'Please link back to the original page when reposting or referencing this site.',
+          copyright: `ICP License: ${footerIcp}`,
+        },
+        nav: [
+          { text: 'Home', link: '/en/' },
+          { text: 'Archive', link: '/en/archive/' },
+          { text: 'Categories', link: '/en/categories/' },
+          { text: 'Tags', link: '/en/tags/' },
+          { text: 'About', link: '/en/about/' },
+        ],
+        sidebar: false,
+        socialLinks: [{ icon: 'github', link: 'https://github.com/Xutaotaotao' }],
+      },
     },
-    nav: [
-      { text: '首页', link: '/' },
-      { text: '归档', link: '/archive/' },
-      { text: '分类', link: '/categories/' },
-      { text: '标签', link: '/tags/' },
-      { text: '关于', link: '/about/' },
-    ],
-    sidebar: false,
-    socialLinks: [{ icon: 'github', link: 'https://github.com/Xutaotaotao' }],
   },
 })

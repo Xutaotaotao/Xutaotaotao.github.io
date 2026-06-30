@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" fill="none">
+  <rect width="960" height="420" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">React component communication map</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Choose the pattern based on relationship distance and state ownership.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="364" y="156" width="232" height="92" rx="22" fill="#dbeafe"/>
+    <text x="480" y="196" fill="#1d4ed8" font-size="24" font-weight="700" text-anchor="middle">Component state</text>
+    <text x="480" y="224" fill="#0f172a" font-size="15" text-anchor="middle">Single source of truth lives here</text>
+
+    <rect x="84" y="302" width="150" height="72" rx="18" fill="#dcfce7"/>
+    <text x="159" y="336" fill="#15803d" font-size="20" font-weight="700" text-anchor="middle">Props</text>
+    <text x="159" y="358" fill="#0f172a" font-size="13" text-anchor="middle">Parent → Child</text>
+
+    <rect x="258" y="302" width="150" height="72" rx="18" fill="#ede9fe"/>
+    <text x="333" y="336" fill="#6d28d9" font-size="20" font-weight="700" text-anchor="middle">Callbacks</text>
+    <text x="333" y="358" fill="#0f172a" font-size="13" text-anchor="middle">Child → Parent</text>
+
+    <rect x="432" y="302" width="150" height="72" rx="18" fill="#ffedd5"/>
+    <text x="507" y="336" fill="#c2410c" font-size="20" font-weight="700" text-anchor="middle">Context</text>
+    <text x="507" y="358" fill="#0f172a" font-size="13" text-anchor="middle">Cross-tree sharing</text>
+
+    <rect x="606" y="302" width="150" height="72" rx="18" fill="#fae8ff"/>
+    <text x="681" y="336" fill="#a21caf" font-size="20" font-weight="700" text-anchor="middle">Redux</text>
+    <text x="681" y="358" fill="#0f172a" font-size="13" text-anchor="middle">Global state</text>
+
+    <rect x="780" y="302" width="120" height="72" rx="18" fill="#e0f2fe"/>
+    <text x="840" y="336" fill="#0369a1" font-size="20" font-weight="700" text-anchor="middle">Ref</text>
+    <text x="840" y="358" fill="#0f172a" font-size="13" text-anchor="middle">Imperative bridge</text>
+  </g>
+  <g stroke="#94a3b8" stroke-linecap="round" stroke-width="7">
+    <path d="M480 248v34"/>
+    <path d="M480 282H159"/>
+    <path d="M480 282H333"/>
+    <path d="M480 282H507"/>
+    <path d="M480 282H681"/>
+    <path d="M480 282H840"/>
+  </g>
+</svg>

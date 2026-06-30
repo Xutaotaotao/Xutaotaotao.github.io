@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Create a Rust Node addon with napi-rs</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">The project generator gives you a ready bridge between Rust and Node.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#7c3aed14"/><text x="146" y="154" fill="#7c3aed" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Rust</text><rect x="240" y="132" width="148" height="34" rx="17" fill="#7c3aed14"/><text x="314" y="154" fill="#7c3aed" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">napi-rs</text>
+  
+    <rect x="72" y="210" width="600" height="420" rx="24" fill="#0f172a"/>
+    <text x="110" y="262" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">Terminal</text>
+    <text x="110" y="300" fill="#e2e8f0" font-family="JetBrains Mono, monospace" font-size="22">$ pnpm add -g @napi-rs/cli</text><text x="110" y="336" fill="#e2e8f0" font-family="JetBrains Mono, monospace" font-size="22">$ napi new</text><text x="110" y="372" fill="#e2e8f0" font-family="JetBrains Mono, monospace" font-size="22">$ Select target platforms</text>
+    <rect x="706" y="210" width="502" height="420" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="742" y="262" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">Generated project</text>
+    <text x="760" y="300" fill="#475569" font-family="JetBrains Mono, monospace" font-size="20">src/lib.rs</text><text x="760" y="334" fill="#475569" font-family="JetBrains Mono, monospace" font-size="20">package.json</text><text x="760" y="368" fill="#475569" font-family="JetBrains Mono, monospace" font-size="20">Cargo.toml</text><text x="760" y="402" fill="#475569" font-family="JetBrains Mono, monospace" font-size="20">npm/&lt;platform&gt;.node</text><text x="760" y="436" fill="#475569" font-family="JetBrains Mono, monospace" font-size="20">Build scripts</text>
+    <text x="72" y="706" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">The generator removes a lot of manual boilerplate from the native bridge setup.</text>
+  </svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" fill="none">
+  <rect width="760" height="360" rx="28" fill="#f8fafc"/>
+  <rect x="124" y="70" width="512" height="220" rx="24" fill="#ffffff" stroke="#cbd5e1"/>
+  <rect x="124" y="70" width="512" height="44" rx="24" fill="#e2e8f0"/>
+  <text x="156" y="98" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Light theme</text>
+  <rect x="160" y="136" width="440" height="38" rx="14" fill="#f1f5f9"/>
+  <rect x="160" y="192" width="210" height="70" rx="18" fill="#dbeafe"/>
+  <rect x="390" y="192" width="210" height="70" rx="18" fill="#dcfce7"/>
+</svg>

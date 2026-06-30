@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Electron timeline</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">A few milestones from Atom Shell to a mature ecosystem.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#2563eb14"/><text x="146" y="154" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">2013</text><rect x="240" y="132" width="148" height="34" rx="17" fill="#2563eb14"/><text x="314" y="154" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">2023</text>
+  
+    
+    <rect x="72" y="196" width="500" height="454" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="96" y="220" width="10" height="10" rx="5" fill="#2563eb"/>
+    <text x="120" y="238" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Early years</text>
+    <text x="100" y="288" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >2013  Atom Shell begins</text><text x="100" y="322" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >2014  Atom launches publicly</text><text x="100" y="356" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >2015  Electron becomes the project name</text>
+  
+    
+    <rect x="612" y="196" width="596" height="454" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="636" y="220" width="10" height="10" rx="5" fill="#2563eb"/>
+    <text x="660" y="238" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Growth years</text>
+    <text x="640" y="288" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >2016  Adoption spreads widely</text><text x="640" y="326" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >2020  Electron 10 improves stability</text><text x="640" y="364" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >2023  The project turns ten years old</text>
+  
+    <text x="72" y="706" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">The framework moved from editor infrastructure to a broad desktop platform.</text>
+  </svg>

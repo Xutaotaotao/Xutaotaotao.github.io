@@ -1,28 +1,23 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue'
-import { copy, type Language } from '../content'
+import { computed } from 'vue'
+import { copy } from '../content'
 import { data as blog } from '../posts.data.mts'
+import { useSiteLocale } from '../composables/useSiteLocale'
 
-
-const lang = ref<Language>('zh')
-
-function syncLanguage(event?: Event) {
-  if (event) {
-    lang.value = (event as CustomEvent<Language>).detail
-    return
-  }
-
-  const savedLang = localStorage.getItem('taotao-lang')
-  lang.value = savedLang === 'en' ? 'en' : 'zh'
-}
-
-onMounted(() => {
-  syncLanguage()
-  window.addEventListener('taotao:lang', syncLanguage)
-})
-
-onUnmounted(() => {
-  window.removeEventListener('taotao:lang', syncLanguage)
+const { lang, localizedPath } = useSiteLocale()
+const localizedBlog = computed(() => blog?.[lang.value] ?? blog?.zh ?? {
+  posts: [],
+  latestPosts: [],
+  archiveGroups: [],
+  categoryGroups: [],
+  tagGroups: [],
+  postsByHref: {},
+  postsBySource: {},
+  stats: {
+    totalPosts: 0,
+    totalCategories: 0,
+    totalTags: 0,
+  },
 })
 </script>
 
@@ -35,31 +30,46 @@ onUnmounted(() => {
       <div class="min-w-0 max-w-152 pt-4 md:pt-12">
         <h1
           id="home-title"
-          class="font-sans text-4xl font-bold leading-none tracking-tight text-craft-ink sm:text-5xl md:whitespace-nowrap lg:text-6xl"
+          :class="[
+            'font-sans font-bold tracking-tight text-craft-ink',
+            lang === 'en'
+              ? 'max-w-[12ch] text-[clamp(2.25rem,5vw,3.75rem)] leading-[1.05]'
+              : 'text-[clamp(2.5rem,5.5vw,4rem)] leading-[1.05] md:whitespace-nowrap',
+          ]"
         >
-          {{ lang === 'zh' ? '你好，我是徐徐。' : "Hey, I'm Terence." }}
+        {{ copy[lang].heroLead }} {{ copy[lang].heroName }}
         </h1>
-        <p class="mt-8 max-w-2xl text-lg leading-relaxed text-craft-ink lg:text-xl">
+        <!-- <p
+          :class="[
+            'mt-5 font-sans font-medium tracking-tight text-craft-muted',
+            lang === 'en'
+              ? 'max-w-[20ch] text-[clamp(1.1rem,1.9vw,1.55rem)] leading-[1.3]'
+              : 'text-[clamp(1.2rem,2vw,1.7rem)] leading-[1.3]',
+          ]"
+        >
+          {{ copy[lang].heroTitle }}
+        </p> -->
+        <p class="mt-6 max-w-4xl text-lg leading-8 text-craft-muted sm:text-xl sm:leading-9 lg:text-[1.3rem] lg:leading-10">
           {{ copy[lang].heroIntroBefore }}<a
-            href="/archive/"
+            :href="localizedPath('/archive/')"
             class="font-medium text-craft-accent underline decoration-dotted underline-offset-4 hover:text-craft-accent-strong"
           >{{ copy[lang].heroIntroLink }}</a>{{ copy[lang].heroIntroAfter }}
         </p>
 
-        <p class="mt-5 max-w-2xl text-lg leading-relaxed text-craft-ink lg:text-xl">
+        <p class="mt-6 max-w-3xl text-sm leading-7 text-craft-ink sm:text-base sm:leading-8 lg:text-[1.02rem]">
           {{ copy[lang].heroNote }}
         </p>
 
         <div class="mt-12 flex flex-wrap gap-4">
           <a
-            href="/archive/"
-            class="inline-flex min-h-12 items-center justify-center border border-craft-line px-5 text-xl font-medium text-craft-ink transition-colors hover:bg-craft-card"
+            :href="localizedPath('/archive/')"
+            class="inline-flex min-h-12 items-center justify-center border border-craft-line px-5 text-lg font-medium text-craft-ink transition-colors hover:bg-craft-card"
           >
             {{ copy[lang].archiveLink }}
           </a>
           <a
-            href="/about/"
-            class="inline-flex min-h-12 items-center justify-center border border-craft-line px-5 text-xl font-medium text-craft-ink transition-colors hover:bg-craft-card"
+            :href="localizedPath('/about/')"
+            class="inline-flex min-h-12 items-center justify-center border border-craft-line px-5 text-lg font-medium text-craft-ink transition-colors hover:bg-craft-card"
           >
             {{ copy[lang].aboutLink }}
           </a>
@@ -67,7 +77,7 @@ onUnmounted(() => {
             href="https://github.com/Xutaotaotao"
             target="_blank"
             rel="noreferrer"
-            class="inline-flex min-h-12 items-center justify-center border border-craft-line px-5 text-xl font-medium text-craft-ink transition-colors hover:bg-craft-card"
+            class="inline-flex min-h-12 items-center justify-center border border-craft-line px-5 text-lg font-medium text-craft-ink transition-colors hover:bg-craft-card"
           >
             {{ copy[lang].github }}
           </a>
@@ -85,7 +95,7 @@ onUnmounted(() => {
             height="352"
             fetchpriority="high"
             decoding="async"
-            alt="徐徐在山间的照片"
+            :alt="lang === 'zh' ? '徐徐在山间的照片' : 'Portrait of Terence in the mountains'"
           >
         </div>
         <figcaption class="mt-5 flex flex-col items-center gap-1 font-mono text-xs font-extrabold uppercase text-craft-soft">
@@ -112,7 +122,7 @@ onUnmounted(() => {
 
       <div class="border-t border-craft-line">
         <a
-          v-for="post in blog.latestPosts"
+          v-for="post in localizedBlog.latestPosts"
           :key="post.id"
           class="block border-b border-craft-line py-5 transition-colors hover:bg-[color-mix(in_srgb,var(--color-craft-card)_72%,transparent)]"
           :href="post.href"
@@ -140,7 +150,7 @@ onUnmounted(() => {
 
       <div class="mt-4 flex justify-end">
         <a
-          href="/archive/"
+          :href="localizedPath('/archive/')"
           class="inline-flex min-h-10 items-center justify-center border border-craft-line bg-craft-card px-4 font-mono text-xs font-extrabold text-craft-ink transition-colors hover:bg-craft-card"
         >
           {{ copy[lang].archiveMore }}

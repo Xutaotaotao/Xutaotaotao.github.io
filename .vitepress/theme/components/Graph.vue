@@ -2,7 +2,7 @@
   <div :style="`height: ${height}; margin-bottom: 50px; position: relative;`" @mouseenter="showButton = true"
     @mouseleave="showButton = false">
     <div style="width: 100%; height: 100%" id="container"></div>
-    <button v-show="showButton" @click="showFullscreen" class="fullscreen-btn">
+    <button v-show="showButton" @click="showFullscreen" class="fullscreen-btn" :aria-label="graphUiText.open" :title="graphUiText.open">
       <svg t="1725697644591" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
         p-id="8413" width="24" height="24">
         <path
@@ -16,19 +16,21 @@
   </div>
   <div v-if="isFullscreen" class="fullscreen-modal">
     <div class="modal-content">
-      <button @click="closeFullscreen" class="close-btn">&times;</button>
+      <button @click="closeFullscreen" class="close-btn" :aria-label="graphUiText.close" :title="graphUiText.close">&times;</button>
       <div id="fullscreen-container" style="width: 100%; height: 100%;"></div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted, ref, defineProps } from "vue";
-import { allData, packageManager, scaffold, domAndCssom, codeSpecifications,develop } from '../data'
+import { computed, onMounted, ref, watch } from "vue";
+import { Graph as G6Graph, treeToGraphData } from '@antv/g6'
+import { allData, packageManager, scaffold, domAndCssom, codeSpecifications, develop } from '../data'
+import { useSiteLocale } from '../composables/useSiteLocale'
 
-const { Graph, treeToGraphData } = G6;
 const isFullscreen = ref(false);
 const showButton = ref(false);
+const { lang } = useSiteLocale()
 let graph;
 
 const props = defineProps({
@@ -42,20 +44,30 @@ const props = defineProps({
   }
 });
 
+const getNodeLabel = (node) => {
+  if (!node) return '';
+  return lang.value === 'en'
+    ? (node.labelEn || node.id)
+    : (node.labelZh || node.id);
+};
 
-const showFullscreen = () => {
+const graphUiText = computed(() => ({
+  open: lang.value === 'en' ? 'Open fullscreen graph' : '全屏查看图谱',
+  close: lang.value === 'en' ? 'Close fullscreen graph' : '关闭全屏图谱',
+}))
+
+
+const showFullscreen = async () => {
   isFullscreen.value = true;
-  // 在下一个tick重新渲染图表，确保DOM已更新
-  setTimeout(() => {
-    initGraph('fullscreen-container');
+  setTimeout(async () => {
+    await initGraph('fullscreen-container');
   }, 0);
 };
 
-const closeFullscreen = () => {
+const closeFullscreen = async () => {
   isFullscreen.value = false;
-  // 可能需要重新初始化原始容器中的图表
-  setTimeout(() => {
-    initGraph('container');
+  setTimeout(async () => {
+    await initGraph('container');
   }, 0);
 };
 
@@ -104,10 +116,11 @@ const measureText = (text, font = '14px Arial') => {
   return metrics.width;
 }
 
-const getNodeWidth = (nodeId, isRoot) => {
+const getNodeWidth = (node, isRoot) => {
+  const text = getNodeLabel(node);
   return isRoot
-    ? measureText(nodeId) + 40
-    : measureText(nodeId) + 30;
+    ? measureText(text) + 40
+    : measureText(text) + 30;
 };
 
 const ancestorsOf = (graph, nodeId) => {
@@ -162,7 +175,13 @@ const getColor = (graph, nodeId) => {
 
 
 
-const initGraph = (containerId) => {
+const initGraph = async (containerId) => {
+  const container = document.getElementById(containerId)
+
+  if (!container) {
+    return
+  }
+
   const getData = () => {
     switch (props.type) {
       case 'allData':
@@ -184,8 +203,8 @@ const initGraph = (containerId) => {
   if (graph) {
     graph.destroy();
   }
-  graph = new Graph({
-    container: document.getElementById(containerId),
+  graph = new G6Graph({
+    container,
     autoFit: props.type === 'allData' ? 'view' : false,
     data: treeToGraphData(data),
     node: {
@@ -194,8 +213,8 @@ const initGraph = (containerId) => {
         const isRoot = d.id === rootId;
         const color = getColor(graph, d.id)
         return {
-          labelText: d.id,
-          size: [getNodeWidth(d.id, isRoot), 30],
+          labelText: getNodeLabel(d),
+          size: [getNodeWidth(d, isRoot), 30],
           ...(isRoot ? RootNodeStyle : {
             ...NodeStyle,
             fill: color
@@ -223,7 +242,7 @@ const initGraph = (containerId) => {
       type: 'mindmap',
       direction: 'H',
       getHeight: () => 16,
-      getWidth: (node) => getNodeWidth(node.id, rootId === node.id),
+      getWidth: (node) => getNodeWidth(node, rootId === node.id),
       getVGap: () => 30,
       getHGap: () => 30,
     },
@@ -239,8 +258,14 @@ const initGraph = (containerId) => {
 };
 
 onMounted(() => {
-  initGraph('container');
+  void initGraph('container');
 });
+
+watch(lang, async () => {
+  if (!graph) return
+  const containerId = isFullscreen.value ? 'fullscreen-container' : 'container'
+  await initGraph(containerId)
+})
 </script>
 <style scoped>
 .fullscreen-btn {

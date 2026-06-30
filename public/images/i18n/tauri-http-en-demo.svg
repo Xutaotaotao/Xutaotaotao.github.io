@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none">
+  <rect width="1280" height="760" fill="#f8fafc"/>
+  <rect x="0" y="0" width="1280" height="60" fill="#ffffff"/>
+  <text x="72" y="48" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">XTools</text>
+  <g fill="#111827" font-family="Inter, Arial, sans-serif">
+    <text x="80" y="144" font-size="28" font-weight="700">HTTP</text>
+    <text x="170" y="144" font-size="20" fill="#475569">Simple HTTP request demo</text>
+  </g>
+  <rect x="44" y="178" width="182" height="44" rx="8" fill="#e0f2fe"/>
+  <text x="135" y="208" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Run GET request</text>
+  <rect x="44" y="244" width="1192" height="178" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="72" y="304" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">GET response data</text>
+  <text x="72" y="378" fill="#475569" font-family="JetBrains Mono, monospace" font-size="20">{ "userId": 1, "id": 2, "title": "qui est esse", ... }</text>
+  <rect x="44" y="462" width="196" height="44" rx="8" fill="#e0f2fe"/>
+  <text x="142" y="492" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Run POST request</text>
+  <rect x="44" y="528" width="1192" height="154" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <text x="72" y="586" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">POST response data</text>
+  <text x="72" y="648" fill="#475569" font-family="JetBrains Mono, monospace" font-size="20">{ "id": 101, "title": "foo", "body": "bar" }</text>
+</svg>

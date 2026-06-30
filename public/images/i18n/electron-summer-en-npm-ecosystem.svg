@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">NPM ecosystem around Electron</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Common capability clusters you can adopt instead of rebuilding.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#7c3aed14"/><text x="146" y="154" fill="#7c3aed" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Packages</text>
+  
+    
+      <rect x="72" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="96" y="264" fill="#7c3aed" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Packaging</text>
+      <text x="96" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Installers</text>
+      <text x="96" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">electron-builder</text><text x="96" y="348" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">electron-packager</text>
+    
+      <rect x="460" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="484" y="264" fill="#7c3aed" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Testing</text>
+      <text x="484" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Automation</text>
+      <text x="484" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">electron-mocha</text><text x="484" y="348" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">end-to-end flows</text>
+    
+      <rect x="848" y="210" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="872" y="264" fill="#7c3aed" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Quality</text>
+      <text x="872" y="296" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Debugging</text>
+      <text x="872" y="318" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Main process inspection</text><text x="872" y="348" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Renderer profiling</text>
+    
+      <rect x="72" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="96" y="458" fill="#7c3aed" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">DX</text>
+      <text x="96" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Starters</text>
+      <text x="96" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Vite templates</text><text x="96" y="542" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">React and Vue setups</text>
+    
+      <rect x="460" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="484" y="458" fill="#7c3aed" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">System</text>
+      <text x="484" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Native bridges</text>
+      <text x="484" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">SQLite</text><text x="484" y="542" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">ffi</text><text x="484" y="572" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Node addons</text>
+    
+      <rect x="848" y="404" width="360" height="170" rx="22" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <text x="872" y="458" fill="#7c3aed" font-family="JetBrains Mono, monospace" font-size="18" font-weight="700">Ops</text>
+      <text x="872" y="490" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Updates</text>
+      <text x="872" y="512" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Auto-update strategies</text><text x="872" y="542" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Release pipelines</text>
+    
+    <text x="72" y="710" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Electron inherits a lot of leverage from the wider Node.js package world.</text>
+  </svg>

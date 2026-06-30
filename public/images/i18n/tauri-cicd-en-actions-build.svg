@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 320" fill="none">
+  <rect width="940" height="320" rx="28" fill="#0f172a"/>
+  <text x="42" y="60" fill="#f8fafc" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">GitHub Actions build status</text>
+  <rect x="42" y="90" width="856" height="184" rx="18" fill="#111827" stroke="#334155"/>
+  <text x="70" y="134" fill="#93c5fd" font-family="SFMono-Regular, Menlo, monospace" font-size="16">release / macos-latest   ✓ passed</text>
+  <text x="70" y="164" fill="#86efac" font-family="SFMono-Regular, Menlo, monospace" font-size="16">release / windows-latest ✓ passed</text>
+  <text x="70" y="204" fill="#cbd5e1" font-family="SFMono-Regular, Menlo, monospace" font-size="15">Artifacts uploaded to draft release.</text>
+  <text x="70" y="232" fill="#64748b" font-family="SFMono-Regular, Menlo, monospace" font-size="14">Example status panel replacing the original Chinese screenshot.</text>
+</svg>

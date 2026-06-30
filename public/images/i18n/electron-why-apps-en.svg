@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" fill="none">
+  <rect width="920" height="360" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Well-known Electron apps</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Real-world products prove that Electron can support serious desktop delivery at scale.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="78" y="150" width="220" height="138" rx="22" fill="#dbeafe"/>
+    <text x="188" y="194" fill="#1d4ed8" font-size="24" font-weight="700" text-anchor="middle">VS Code</text>
+    <text x="188" y="228" fill="#0f172a" font-size="15" text-anchor="middle">Editor and extension platform</text>
+    <rect x="350" y="150" width="220" height="138" rx="22" fill="#dcfce7"/>
+    <text x="460" y="194" fill="#15803d" font-size="24" font-weight="700" text-anchor="middle">Postman</text>
+    <text x="460" y="228" fill="#0f172a" font-size="15" text-anchor="middle">API development workflow</text>
+    <rect x="622" y="150" width="220" height="138" rx="22" fill="#ede9fe"/>
+    <text x="732" y="194" fill="#6d28d9" font-size="24" font-weight="700" text-anchor="middle">Slack / Skype</text>
+    <text x="732" y="228" fill="#0f172a" font-size="15" text-anchor="middle">Collaboration and communication</text>
+  </g>
+</svg>

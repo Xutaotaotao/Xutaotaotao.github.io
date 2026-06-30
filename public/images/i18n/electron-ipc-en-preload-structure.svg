@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Electron preload structure</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Expose a narrow bridge before wiring IPC calls.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#2563eb14"/><text x="146" y="154" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Electron</text><rect x="240" y="132" width="148" height="34" rx="17" fill="#2563eb14"/><text x="314" y="154" fill="#2563eb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">IPC</text>
+  
+    
+    <rect x="72" y="196" width="500" height="454" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="96" y="220" width="10" height="10" rx="5" fill="#2563eb"/>
+    <text x="120" y="238" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">src/</text>
+    <text x="100" y="288" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >main/index.ts</text><text x="100" y="322" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >preload/index.ts</text><text x="100" y="356" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >render/App.tsx</text><text x="100" y="390" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >config/vite/preload.js</text><text x="100" y="424" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >scripts/dev.js</text>
+  
+    
+    <rect x="612" y="196" width="596" height="454" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="636" y="220" width="10" height="10" rx="5" fill="#2563eb"/>
+    <text x="660" y="238" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Bridge setup</text>
+    <text x="640" y="288" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >contextBridge.exposeInMainWorld(&quot;nativeBridge&quot;)</text><text x="640" y="326" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >ipcRenderer.send(&quot;openUrlByDefaultBrowser&quot;, url)</text><text x="640" y="364" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >BrowserWindow preload points to ../preload/index.cjs</text><text x="640" y="402" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >Build preload output before launching Electron</text>
+  
+    <text x="72" y="706" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">The preload layer sits between the renderer and native APIs.</text>
+  </svg>

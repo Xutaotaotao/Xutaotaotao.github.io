@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none">
+  <rect width="1280" height="760" fill="#1f2430"/>
+  <rect x="0" y="0" width="1280" height="52" fill="#232936"/>
+  <text x="82" y="34" fill="#d1d5db" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">XTTOOLS</text>
+  <rect x="80" y="96" width="220" height="540" rx="12" fill="#20252f"/>
+  <rect x="332" y="96" width="868" height="386" rx="12" fill="#252b37"/>
+  <rect x="332" y="500" width="868" height="176" rx="12" fill="#1d212b"/>
+  <text x="380" y="146" fill="#e5e7eb" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">main.rs</text>
+  <g fill="#9ca3af" font-family="JetBrains Mono, monospace" font-size="20">
+    <text x="380" y="586">[2024-07-10 12:20:13] [INFO] [loghttp://localhost:1420/...] changeLangAction in render</text>
+    <text x="380" y="622">[2024-07-10 12:20:13] [INFO] [xtools] change_menu_language: zh</text>
+    <text x="380" y="658">[2024-07-10 12:20:13] [DEBUG] [sqlx::query] summary="REPLACE INTO key_value ..."</text>
+  </g>
+  <rect x="360" y="548" width="774" height="110" rx="10" stroke="#ef4444" stroke-width="4"/>
+</svg>

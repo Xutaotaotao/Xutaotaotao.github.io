@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" fill="none">
+  <rect width="960" height="360" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Native download flow in Tauri</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Detect Tauri runtime, ask the user for a save location, then write files or a ZIP archive with native APIs.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="48" y="154" width="170" height="108" rx="20" fill="#dbeafe"/><text x="133" y="196" fill="#1d4ed8" font-size="20" font-weight="700" text-anchor="middle">Detect env</text><text x="133" y="226" fill="#0f172a" font-size="14" text-anchor="middle">Browser vs Tauri</text>
+    <rect x="272" y="154" width="170" height="108" rx="20" fill="#dcfce7"/><text x="357" y="196" fill="#15803d" font-size="20" font-weight="700" text-anchor="middle">Dialog</text><text x="357" y="226" fill="#0f172a" font-size="14" text-anchor="middle">Pick save path</text>
+    <rect x="496" y="154" width="170" height="108" rx="20" fill="#ede9fe"/><text x="581" y="196" fill="#6d28d9" font-size="20" font-weight="700" text-anchor="middle">Package</text><text x="581" y="226" fill="#0f172a" font-size="14" text-anchor="middle">Single file or ZIP</text>
+    <rect x="720" y="154" width="192" height="108" rx="20" fill="#ffedd5"/><text x="816" y="196" fill="#c2410c" font-size="20" font-weight="700" text-anchor="middle">Write to disk</text><text x="816" y="226" fill="#0f172a" font-size="14" text-anchor="middle">fs + path APIs</text>
+  </g>
+  <g stroke="#94a3b8" stroke-linecap="round" stroke-width="8">
+    <path d="M226 208h28"/><path d="M450 208h28"/><path d="M674 208h28"/>
+  </g>
+</svg>

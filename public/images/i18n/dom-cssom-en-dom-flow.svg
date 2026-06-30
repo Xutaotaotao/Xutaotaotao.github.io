@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" fill="none">
+  <rect width="900" height="340" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">DOM Tree construction flow</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">How the browser turns HTML into an in-memory document tree.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <g transform="translate(48 150)">
+      <rect width="132" height="72" rx="18" fill="#dbeafe"/>
+      <text x="66" y="32" fill="#1d4ed8" font-size="15" font-weight="700" text-anchor="middle">1. Bytes</text>
+      <text x="66" y="54" fill="#1e3a8a" font-size="13" text-anchor="middle">HTML response</text>
+    </g>
+    <g transform="translate(214 150)">
+      <rect width="132" height="72" rx="18" fill="#dcfce7"/>
+      <text x="66" y="32" fill="#15803d" font-size="15" font-weight="700" text-anchor="middle">2. Decode</text>
+      <text x="66" y="54" fill="#166534" font-size="13" text-anchor="middle">Characters</text>
+    </g>
+    <g transform="translate(380 150)">
+      <rect width="132" height="72" rx="18" fill="#fae8ff"/>
+      <text x="66" y="32" fill="#a21caf" font-size="15" font-weight="700" text-anchor="middle">3. Tokens</text>
+      <text x="66" y="54" fill="#701a75" font-size="13" text-anchor="middle">Tags and text</text>
+    </g>
+    <g transform="translate(546 150)">
+      <rect width="132" height="72" rx="18" fill="#fef3c7"/>
+      <text x="66" y="32" fill="#b45309" font-size="15" font-weight="700" text-anchor="middle">4. Nodes</text>
+      <text x="66" y="54" fill="#92400e" font-size="13" text-anchor="middle">DOM objects</text>
+    </g>
+    <g transform="translate(712 150)">
+      <rect width="140" height="72" rx="18" fill="#fee2e2"/>
+      <text x="70" y="32" fill="#b91c1c" font-size="15" font-weight="700" text-anchor="middle">5. DOM Tree</text>
+      <text x="70" y="54" fill="#991b1b" font-size="13" text-anchor="middle">Structured document</text>
+    </g>
+  </g>
+  <g stroke="#94a3b8" stroke-linecap="round" stroke-width="8">
+    <path d="M186 186h18"/>
+    <path d="M352 186h18"/>
+    <path d="M518 186h18"/>
+    <path d="M684 186h18"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Electron + Rust project layout</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Keep the native addon close to resources and wrap it behind a TypeScript module.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#0f766e14"/><text x="146" y="154" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Bridge</text>
+  
+    
+    <rect x="72" y="196" width="500" height="454" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="96" y="220" width="10" height="10" rx="5" fill="#0f766e"/>
+    <text x="120" y="238" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Electron project</text>
+    <text x="100" y="288" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >resources/rs-native.&lt;platform&gt;.node</text><text x="100" y="322" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >src/native/index.ts</text><text x="100" y="356" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >src/main/index.ts</text><text x="100" y="390" fill="#475569" font-family="JetBrains Mono, monospace" font-size="22" >config/vite/main.js</text>
+  
+    
+    <rect x="612" y="196" width="596" height="454" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <rect x="636" y="220" width="10" height="10" rx="5" fill="#0f766e"/>
+    <text x="660" y="238" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Bridge responsibilities</text>
+    <text x="640" y="288" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >Load the addon from resources/.</text><text x="640" y="326" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >Wrap sum() and subtraction() in TS helpers.</text><text x="640" y="364" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >Mark native dependencies as external in Vite.</text><text x="640" y="402" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24" >Reuse the wrapper from main process code.</text>
+  
+    <text x="72" y="706" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">This layout keeps the native layer discoverable without leaking low-level details everywhere.</text>
+  </svg>

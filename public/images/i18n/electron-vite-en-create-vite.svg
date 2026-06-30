@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" fill="none">
+  <rect width="960" height="560" rx="28" fill="#f8fafc"/>
+  <text x="48" y="72" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Create a Vite + React project</text>
+  <rect x="48" y="108" width="864" height="404" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <g fill="#0f172a" font-family="JetBrains Mono, monospace" font-size="24">
+    <text x="76" y="158">Packages are hard linked from the content-addressable store to the virtual store.</text>
+    <text x="76" y="214">+ create-vite 4.1.0</text>
+    <text x="76" y="270">✓ Project name: vite-electron-template</text>
+    <text x="76" y="310">✓ Select a framework: React</text>
+    <text x="76" y="350">✓ Select a variant: TypeScript + SWC</text>
+    <text x="76" y="416">Done. Next:</text>
+    <text x="120" y="456">cd vite-electron-template</text>
+    <text x="120" y="490">pnpm install</text>
+  </g>
+</svg>

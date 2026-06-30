@@ -1,5 +1,6 @@
 ---
 outline: deep
+title: 前端知识图谱
 titleTemplate: 前端徐徐
 ---
 

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Windows native bridge benchmark</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Relative performance and setup friction are both part of the decision.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#0f766e14"/><text x="146" y="154" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Windows</text>
+  
+    
+      <text x="92" y="284" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Koffi</text>
+      <rect x="300" y="260" width="760" height="28" rx="14" fill="#e2e8f0"/>
+      <rect x="300" y="260" width="620" height="28" rx="14" fill="#0f766e"/>
+      <text x="1088" y="284" fill="#475569" font-family="JetBrains Mono, monospace" font-size="20">Fast + fewer dependencies</text>
+    
+      <text x="92" y="356" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">ffi-napi</text>
+      <rect x="300" y="332" width="760" height="28" rx="14" fill="#e2e8f0"/>
+      <rect x="300" y="332" width="400" height="28" rx="14" fill="#2563eb"/>
+      <text x="1088" y="356" fill="#475569" font-family="JetBrains Mono, monospace" font-size="20">Common choice, more setup</text>
+    
+      <text x="92" y="428" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">node-ffi</text>
+      <rect x="300" y="404" width="760" height="28" rx="14" fill="#e2e8f0"/>
+      <rect x="300" y="404" width="280" height="28" rx="14" fill="#94a3b8"/>
+      <text x="1088" y="428" fill="#475569" font-family="JetBrains Mono, monospace" font-size="20">Legacy option</text>
+    
+    <text x="72" y="706" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">When environment setup is painful, the &quot;slightly slower&quot; tool is often still the wrong one.</text>
+  </svg>

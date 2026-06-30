@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" fill="none">
+  <rect width="920" height="320" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Actions settings: allow release automation</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Confirm that workflows can create releases, upload packages, and write deployment metadata.</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="16">
+    <rect x="82" y="136" width="756" height="136" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="114" y="182" fill="#0f172a" font-weight="700">Recommended scope</text>
+    <text x="114" y="216" fill="#0f172a">• contents: write</text>
+    <text x="314" y="216" fill="#0f172a">• actions: write</text>
+    <text x="494" y="216" fill="#0f172a">• packages: write</text>
+    <text x="114" y="246" fill="#475569" font-size="14">Match the permissions block in your workflow file.</text>
+  </g>
+</svg>

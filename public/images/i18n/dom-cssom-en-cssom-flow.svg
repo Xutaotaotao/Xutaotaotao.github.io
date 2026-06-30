@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" fill="none">
+  <rect width="900" height="340" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">CSSOM construction flow</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">How stylesheets become structured rules the browser can match and compute.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <g transform="translate(48 150)">
+      <rect width="132" height="72" rx="18" fill="#e0f2fe"/>
+      <text x="66" y="32" fill="#0369a1" font-size="15" font-weight="700" text-anchor="middle">1. Bytes</text>
+      <text x="66" y="54" fill="#0c4a6e" font-size="13" text-anchor="middle">CSS response</text>
+    </g>
+    <g transform="translate(214 150)">
+      <rect width="132" height="72" rx="18" fill="#ede9fe"/>
+      <text x="66" y="32" fill="#6d28d9" font-size="15" font-weight="700" text-anchor="middle">2. Decode</text>
+      <text x="66" y="54" fill="#4c1d95" font-size="13" text-anchor="middle">Characters</text>
+    </g>
+    <g transform="translate(380 150)">
+      <rect width="132" height="72" rx="18" fill="#fce7f3"/>
+      <text x="66" y="32" fill="#be185d" font-size="15" font-weight="700" text-anchor="middle">3. Tokens</text>
+      <text x="66" y="54" fill="#9d174d" font-size="13" text-anchor="middle">Selectors and values</text>
+    </g>
+    <g transform="translate(546 150)">
+      <rect width="132" height="72" rx="18" fill="#ecfccb"/>
+      <text x="66" y="32" fill="#4d7c0f" font-size="15" font-weight="700" text-anchor="middle">4. Rules</text>
+      <text x="66" y="54" fill="#3f6212" font-size="13" text-anchor="middle">CSS rule nodes</text>
+    </g>
+    <g transform="translate(712 150)">
+      <rect width="140" height="72" rx="18" fill="#ffedd5"/>
+      <text x="70" y="32" fill="#c2410c" font-size="15" font-weight="700" text-anchor="middle">5. CSSOM</text>
+      <text x="70" y="54" fill="#9a3412" font-size="13" text-anchor="middle">Computed style tree</text>
+    </g>
+  </g>
+  <g stroke="#94a3b8" stroke-linecap="round" stroke-width="8">
+    <path d="M186 186h18"/>
+    <path d="M352 186h18"/>
+    <path d="M518 186h18"/>
+    <path d="M684 186h18"/>
+  </g>
+</svg>

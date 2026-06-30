@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 320" fill="none">
+  <rect width="940" height="320" rx="28" fill="#0f172a"/>
+  <text x="42" y="62" fill="#f8fafc" font-family="SFMono-Regular, Menlo, monospace" font-size="22" font-weight="700">Detect Electron apps on macOS</text>
+  <rect x="42" y="92" width="856" height="180" rx="18" fill="#111827" stroke="#334155"/>
+  <text x="70" y="138" fill="#93c5fd" font-family="SFMono-Regular, Menlo, monospace" font-size="16">$ for app in /Applications/*; do</text>
+  <text x="70" y="166" fill="#cbd5e1" font-family="SFMono-Regular, Menlo, monospace" font-size="16">  [ -d "$app/Contents/Frameworks/Electron Framework.framework" ]</text>
+  <text x="70" y="194" fill="#cbd5e1" font-family="SFMono-Regular, Menlo, monospace" font-size="16">  &amp;&amp; echo "$app"</text>
+  <text x="70" y="222" fill="#93c5fd" font-family="SFMono-Regular, Menlo, monospace" font-size="16">done</text>
+  <text x="70" y="254" fill="#64748b" font-family="SFMono-Regular, Menlo, monospace" font-size="14">Prints installed applications that bundle Electron Framework.</text>
+</svg>

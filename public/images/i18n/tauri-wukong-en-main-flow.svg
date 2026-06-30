@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">Main wallpaper flow</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">The primary UX is straightforward: choose, download, apply, confirm.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#0f766e14"/><text x="146" y="154" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Flow</text>
+  
+    
+      <rect x="77" y="290" width="250" height="220" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <circle cx="115" cy="328" r="16" fill="#0f766e22"/>
+      <text x="115" y="336" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" text-anchor="middle">1</text>
+      <text x="105" y="374" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Choose image</text>
+      <text x="105" y="410" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Select a wallpaper card</text><text x="105" y="444" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Keep the gallery simple</text>
+      <path d="M337 400H359L345 386M359 400L345 414" stroke="#0f766e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+      <rect x="369" y="290" width="250" height="220" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <circle cx="407" cy="328" r="16" fill="#0f766e22"/>
+      <text x="407" y="336" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" text-anchor="middle">2</text>
+      <text x="397" y="374" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Download</text>
+      <text x="397" y="410" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Fetch the jpg with reqwest</text><text x="397" y="444" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Save it under the user home directory</text>
+      <path d="M629 400H651L637 386M651 400L637 414" stroke="#0f766e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+      <rect x="661" y="290" width="250" height="220" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <circle cx="699" cy="328" r="16" fill="#0f766e22"/>
+      <text x="699" y="336" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" text-anchor="middle">3</text>
+      <text x="689" y="374" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Apply</text>
+      <text x="689" y="410" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Call OS-specific wallpaper code</text><text x="689" y="444" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Handle Windows and macOS separately</text>
+      <path d="M921 400H943L929 386M943 400L929 414" stroke="#0f766e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+      <rect x="953" y="290" width="250" height="220" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+      <circle cx="991" cy="328" r="16" fill="#0f766e22"/>
+      <text x="991" y="336" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="800" text-anchor="middle">4</text>
+      <text x="981" y="374" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="800">Confirm</text>
+      <text x="981" y="410" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Clear loading state</text><text x="981" y="444" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Show success or failure feedback</text>
+      
+    
+    <text x="640" y="620" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22" text-anchor="middle">The hard part is the OS integration, not the visible flow itself.</text>
+  </svg>

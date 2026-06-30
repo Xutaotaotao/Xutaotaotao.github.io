@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" fill="none"><rect width="1280" height="760" fill="#f8fafc"/>
+    
+    <text x="72" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="800">macOS file permission prompt</text>
+    <text x="72" y="110" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">The first run may need local file access before wallpaper changes succeed.</text>
+    <rect x="72" y="132" width="148" height="34" rx="17" fill="#0f766e14"/><text x="146" y="154" fill="#0f766e" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Permission</text>
+  
+    <rect x="72" y="196" width="1136" height="494" rx="28" fill="#e5e7eb"/>
+    <rect x="356" y="250" width="568" height="340" rx="24" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <text x="420" y="310" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="800">Allow file access?</text>
+    <text x="420" y="350" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24">The wallpaper app wants to access files in your home directory.</text><text x="420" y="390" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24">Grant access so the downloaded image can be stored and reused.</text>
+    <rect x="420" y="500" width="164" height="54" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/><text x="502" y="534" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Deny</text><rect x="616" y="500" width="164" height="54" rx="16" fill="#0f766e" stroke="#0f766e" stroke-width="2"/><text x="698" y="534" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Allow</text>
+    <text x="72" y="718" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Permission prompts are expected when the app writes files locally for the first time.</text>
+  </svg>

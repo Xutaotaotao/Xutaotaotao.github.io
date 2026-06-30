@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" fill="none">
+  <rect width="960" height="360" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">How a scaffolding tool works</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">A CLI collects decisions, selects a template, writes config, installs dependencies, and creates the starter project.</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="44" y="156" width="148" height="110" rx="20" fill="#dbeafe"/>
+    <text x="118" y="192" fill="#1d4ed8" font-size="20" font-weight="700" text-anchor="middle">CLI</text>
+    <text x="118" y="222" fill="#0f172a" font-size="14" text-anchor="middle">Prompts and flags</text>
+
+    <rect x="226" y="156" width="148" height="110" rx="20" fill="#dcfce7"/>
+    <text x="300" y="192" fill="#15803d" font-size="20" font-weight="700" text-anchor="middle">Template</text>
+    <text x="300" y="222" fill="#0f172a" font-size="14" text-anchor="middle">Starter structure</text>
+
+    <rect x="408" y="156" width="148" height="110" rx="20" fill="#ede9fe"/>
+    <text x="482" y="192" fill="#6d28d9" font-size="20" font-weight="700" text-anchor="middle">Config</text>
+    <text x="482" y="222" fill="#0f172a" font-size="14" text-anchor="middle">Build, lint, test</text>
+
+    <rect x="590" y="156" width="148" height="110" rx="20" fill="#ffedd5"/>
+    <text x="664" y="192" fill="#c2410c" font-size="20" font-weight="700" text-anchor="middle">Install</text>
+    <text x="664" y="222" fill="#0f172a" font-size="14" text-anchor="middle">Dependencies</text>
+
+    <rect x="772" y="156" width="148" height="110" rx="20" fill="#fae8ff"/>
+    <text x="846" y="192" fill="#a21caf" font-size="20" font-weight="700" text-anchor="middle">Project</text>
+    <text x="846" y="222" fill="#0f172a" font-size="14" text-anchor="middle">Ready to start</text>
+  </g>
+  <g stroke="#94a3b8" stroke-linecap="round" stroke-width="8">
+    <path d="M198 212h20"/>
+    <path d="M380 212h20"/>
+    <path d="M562 212h20"/>
+    <path d="M744 212h20"/>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 420" fill="none">
+  <rect width="940" height="420" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Electron logging library comparison</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">A simplified trend-style illustration for electron-log, log4js, express-winston, and logging.</text>
+  <line x1="120" y1="320" x2="840" y2="320" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="120" y1="132" x2="120" y2="320" stroke="#cbd5e1" stroke-width="2"/>
+  <path d="M120 146C188 158 228 136 282 142C338 148 392 140 454 146C518 152 578 140 632 146C692 152 744 150 840 138" stroke="#22c55e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M120 262C184 260 224 260 278 258C332 256 388 262 442 258C496 254 548 260 606 256C664 252 730 252 840 248" stroke="#f97316" stroke-width="6" stroke-linecap="round"/>
+  <path d="M120 274C184 274 232 272 282 216C322 168 348 132 374 144C400 156 412 250 452 264C504 282 560 274 624 272C688 270 744 272 840 270" stroke="#3b82f6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M120 312C250 312 380 312 510 312C640 312 740 312 840 312" stroke="#ef4444" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">
+    <text x="704" y="144" fill="#22c55e">log4js</text>
+    <text x="704" y="250" fill="#f97316">express-winston</text>
+    <text x="704" y="276" fill="#3b82f6">electron-log</text>
+    <text x="704" y="314" fill="#ef4444">logging</text>
+  </g>
+</svg>

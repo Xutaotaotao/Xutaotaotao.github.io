@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" fill="none">
+  <rect width="960" height="420" rx="28" fill="#f8fafc"/>
+  <text x="480" y="74" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">Inside Electron</text>
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="120" y="132" width="230" height="158" rx="28" fill="#dcfce7"/>
+    <text x="235" y="206" fill="#16a34a" font-size="58" font-weight="800" text-anchor="middle">Node.js</text>
+    <text x="235" y="334" fill="#0f172a" font-size="26" text-anchor="middle">System APIs and runtime</text>
+    <text x="480" y="226" fill="#64748b" font-size="72" font-weight="700" text-anchor="middle">+</text>
+    <rect x="610" y="132" width="230" height="158" rx="28" fill="#dbeafe"/>
+    <text x="725" y="206" fill="#2563eb" font-size="52" font-weight="800" text-anchor="middle">Chromium</text>
+    <text x="725" y="334" fill="#0f172a" font-size="26" text-anchor="middle">Rendering engine and UI</text>
+  </g>
+</svg>

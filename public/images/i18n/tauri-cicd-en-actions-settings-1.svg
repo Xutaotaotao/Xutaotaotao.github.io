@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" fill="none">
+  <rect width="920" height="320" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Actions settings: repository permissions</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Open Settings → Actions → General and allow workflows to read and write.</text>
+  <rect x="82" y="136" width="756" height="136" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="114" y="182" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Workflow permissions</text>
+  <text x="114" y="220" fill="#15803d" font-family="Inter, Arial, sans-serif" font-size="16">● Read and write permissions</text>
+  <text x="114" y="248" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="14">Needed for release creation and artifact upload.</text>
+</svg>

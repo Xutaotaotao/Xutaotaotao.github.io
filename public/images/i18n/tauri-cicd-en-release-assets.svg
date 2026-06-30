@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" fill="none">
+  <rect width="920" height="320" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Draft release assets</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Typical outputs include installers and archives for each target platform.</text>
+  <g font-family="Inter, Arial, sans-serif" font-size="15">
+    <rect x="74" y="140" width="772" height="132" rx="22" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="108" y="182" fill="#0f172a" font-weight="700">XTools_1.0.0_x64.dmg</text>
+    <text x="108" y="214" fill="#0f172a">XTools_1.0.0_x64_en-US.msi</text>
+    <text x="108" y="246" fill="#0f172a">latest.json / updater metadata</text>
+    <text x="620" y="182" fill="#1d4ed8">macOS installer</text>
+    <text x="620" y="214" fill="#15803d">Windows installer</text>
+    <text x="620" y="246" fill="#6d28d9">Update channel manifest</text>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 420" fill="none">
+  <rect width="940" height="420" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Electron packaging tools</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">A simplified comparison for electron-builder, electron-forge, and electron-packager.</text>
+  <line x1="120" y1="320" x2="840" y2="320" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="120" y1="132" x2="120" y2="320" stroke="#cbd5e1" stroke-width="2"/>
+  <path d="M120 238C180 242 216 232 268 236C320 240 360 110 404 118C450 126 476 224 530 232C586 240 640 232 694 236C748 240 796 236 840 234" stroke="#3b82f6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M120 300C260 300 380 300 520 300C640 300 740 300 840 300" stroke="#f97316" stroke-width="6" stroke-linecap="round"/>
+  <path d="M120 274C178 274 214 266 262 270C312 274 364 266 418 270C470 274 522 272 576 270C632 268 704 272 840 268" stroke="#22c55e" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">
+    <text x="688" y="238" fill="#3b82f6">electron-builder</text>
+    <text x="688" y="270" fill="#22c55e">electron-packager</text>
+    <text x="688" y="302" fill="#f97316">electron-forge</text>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" fill="none">
+  <rect width="920" height="360" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Why Electron's ecosystem matters</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Electron inherits mature tooling from both the Chromium and Node.js worlds.</text>
+  <rect x="78" y="150" width="330" height="148" rx="24" fill="#dbeafe"/>
+  <text x="108" y="188" fill="#1d4ed8" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Open-source ecosystem</text>
+  <text x="108" y="220" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="15">• Packaging and auto-update libraries</text>
+  <text x="108" y="246" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="15">• Native bridges and desktop utilities</text>
+  <text x="108" y="272" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="15">• Established starter templates and build tools</text>
+  <rect x="512" y="150" width="330" height="148" rx="24" fill="#dcfce7"/>
+  <text x="542" y="188" fill="#15803d" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Practical advantage</text>
+  <text x="542" y="220" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="15">• Faster onboarding for frontend teams</text>
+  <text x="542" y="246" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="15">• More examples to copy and debug from</text>
+  <text x="542" y="272" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="15">• Lower risk when shipping real products</text>
+</svg>

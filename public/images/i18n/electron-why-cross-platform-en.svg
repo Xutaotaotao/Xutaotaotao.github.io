@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 360" fill="none">
+  <rect width="920" height="360" rx="28" fill="#f8fafc"/>
+  <text x="48" y="64" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Cross-platform delivery with one frontend stack</text>
+  <text x="48" y="96" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="16">Most UI and business logic stays shared while each OS only needs a smaller compatibility layer.</text>
+  <rect x="72" y="144" width="240" height="160" rx="24" fill="#dbeafe"/>
+  <text x="192" y="184" fill="#1d4ed8" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Shared code</text>
+  <text x="192" y="216" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="15" text-anchor="middle">Frontend UI, routes, state, data flow</text>
+  <text x="192" y="242" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="15" text-anchor="middle">Usually the largest part of the project</text>
+  <rect x="372" y="144" width="152" height="160" rx="24" fill="#dcfce7"/>
+  <text x="448" y="184" fill="#15803d" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">macOS</text>
+  <text x="448" y="224" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="14" text-anchor="middle">Packaging</text>
+  <text x="448" y="248" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="14" text-anchor="middle">Permissions</text>
+  <rect x="564" y="144" width="152" height="160" rx="24" fill="#ede9fe"/>
+  <text x="640" y="184" fill="#6d28d9" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Windows</text>
+  <text x="640" y="224" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="14" text-anchor="middle">Installers</text>
+  <text x="640" y="248" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="14" text-anchor="middle">Native quirks</text>
+  <rect x="756" y="144" width="92" height="160" rx="24" fill="#ffedd5"/>
+  <text x="802" y="184" fill="#c2410c" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">Linux</text>
+  <text x="802" y="224" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="14" text-anchor="middle">Runtime</text>
+  <text x="802" y="248" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="14" text-anchor="middle">Packaging</text>
+</svg>

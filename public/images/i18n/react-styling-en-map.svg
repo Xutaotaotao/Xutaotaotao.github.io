@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" fill="none">
+  <rect width="960" height="520" rx="28" fill="#f8fafc"/>
+  <rect x="48" y="176" width="332" height="104" rx="20" fill="#e2e8f0"/>
+  <text x="214" y="236" fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">React styling solutions</text>
+  <g stroke-linecap="round" stroke-width="8">
+    <path d="M380 228C430 228 430 92 512 92H910" stroke="#06b6d4"/>
+    <path d="M380 228C430 228 430 170 512 170H910" stroke="#3b82f6"/>
+    <path d="M380 228C430 228 430 248 512 248H910" stroke="#22c55e"/>
+    <path d="M380 228C430 228 430 326 512 326H910" stroke="#f97316"/>
+    <path d="M380 228C430 228 430 404 512 404H910" stroke="#8b5cf6"/>
+  </g>
+  <g fill="#0f172a" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">
+    <text x="690" y="102">Inline styles</text>
+    <text x="690" y="180">Traditional CSS</text>
+    <text x="690" y="258">CSS Modules</text>
+    <text x="690" y="336">CSS-in-JS</text>
+    <text x="690" y="414">CSS frameworks</text>
+  </g>
+</svg>
