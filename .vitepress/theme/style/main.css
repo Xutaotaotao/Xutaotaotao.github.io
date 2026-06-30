@@ -1226,6 +1226,11 @@ a:focus-visible {
 }
 
 @media (max-width: 760px) {
+  .VPDoc {
+    padding-left: max(14px, env(safe-area-inset-left)) !important;
+    padding-right: max(14px, env(safe-area-inset-right)) !important;
+  }
+
   .craft-nav {
     min-height: 64px;
     padding: 0 14px 0 18px;

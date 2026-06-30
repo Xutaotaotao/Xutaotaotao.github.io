@@ -249,6 +249,16 @@ test('Graph component uses bundled G6 import instead of relying on a global wind
   assert.equal(content.includes('window.G6'), false)
 })
 
+test('mobile article pages keep horizontal padding instead of stretching edge to edge', () => {
+  const root = process.cwd()
+  const content = readFileSync(resolve(root, '.vitepress/theme/style/main.css'), 'utf8')
+
+  assert.match(
+    content,
+    /@media\s*\(max-width:\s*760px\)\s*\{[\s\S]*?\.VPDoc\s*\{[\s\S]*?padding-left:\s*max\(14px,\s*env\(safe-area-inset-left\)\)\s*!important;[\s\S]*?padding-right:\s*max\(14px,\s*env\(safe-area-inset-right\)\)\s*!important;[\s\S]*?\}/,
+  )
+})
+
 test('transformPageData injects locale-specific keywords metadata instead of sharing Chinese keywords globally', async () => {
   const configModule = await import('../.vitepress/config.mts')
   const config = configModule.default
