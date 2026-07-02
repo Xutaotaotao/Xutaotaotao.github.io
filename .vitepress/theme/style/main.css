@@ -1169,6 +1169,161 @@ a:focus-visible {
   border-radius: 0;
 }
 
+.VPDoc .talent-model-diagram {
+  margin: 20px 0 24px;
+  padding: 14px 10px 16px;
+  border: 1px solid var(--craft-rule);
+  background: color-mix(in srgb, #dbeafe 42%, var(--craft-card));
+  overflow-x: auto;
+}
+
+:root[data-theme='dark'] .VPDoc .talent-model-diagram {
+  background: color-mix(in srgb, #1e3a5f 28%, var(--craft-card));
+}
+
+.VPDoc .talent-model-title {
+  margin: 0 0 12px;
+  text-align: center;
+  font-family: var(--vp-font-family-base);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--craft-ink);
+}
+
+.VPDoc .talent-model-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  min-width: min(100%, 420px);
+  margin: 0 auto;
+}
+
+.VPDoc .talent-model-card {
+  flex: 0 0 auto;
+  padding: 8px 10px;
+  border: 2px solid var(--craft-ink);
+  background: color-mix(in srgb, var(--craft-card) 88%, white);
+}
+
+.VPDoc .talent-model-arrow {
+  flex: 0 0 auto;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--craft-ink);
+}
+
+.VPDoc .talent-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.VPDoc .talent-block-top,
+.VPDoc .talent-block-side,
+.VPDoc .talent-block-tags li {
+  font-family: var(--vp-font-family-base);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--craft-ink);
+  white-space: nowrap;
+}
+
+.VPDoc .talent-block-body {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.VPDoc .talent-block-side {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  letter-spacing: 0.06em;
+}
+
+.VPDoc .talent-glyphs {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.VPDoc .talent-glyphs-t {
+  width: 52px;
+  height: 58px;
+}
+
+.VPDoc .talent-glyphs-e {
+  width: 44px;
+  height: 58px;
+}
+
+.VPDoc .talent-bar {
+  position: absolute;
+  border-radius: 1px;
+  background: var(--craft-ink);
+}
+
+.VPDoc .talent-glyphs-t .talent-bar-h {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 11px;
+}
+
+.VPDoc .talent-glyphs-t .talent-bar-v {
+  top: 0;
+  left: 50%;
+  width: 11px;
+  height: 100%;
+  transform: translateX(-50%);
+}
+
+.VPDoc .talent-glyphs-e .talent-bar-spine {
+  top: 0;
+  left: 0;
+  width: 11px;
+  height: 100%;
+}
+
+.VPDoc .talent-glyphs-e .talent-bar-e1,
+.VPDoc .talent-glyphs-e .talent-bar-e2,
+.VPDoc .talent-glyphs-e .talent-bar-e3 {
+  left: 0;
+  width: 34px;
+  height: 11px;
+}
+
+.VPDoc .talent-glyphs-e .talent-bar-e1 {
+  top: 0;
+}
+
+.VPDoc .talent-glyphs-e .talent-bar-e2 {
+  top: 23px;
+}
+
+.VPDoc .talent-glyphs-e .talent-bar-e3 {
+  top: 47px;
+}
+
+.VPDoc .talent-block-tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 58px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html[data-lang='en'] .VPDoc .talent-block-top,
+html[data-lang='en'] .VPDoc .talent-block-side,
+html[data-lang='en'] .VPDoc .talent-block-tags li {
+  font-size: 0.66rem;
+}
+
 @media (min-width: 960px) {
   .craft-nav-search--lead {
     display: flex;
