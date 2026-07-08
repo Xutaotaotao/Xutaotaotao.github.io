@@ -1,6 +1,5 @@
 ---
-layout: listing
-kind: about
+layout: about
 title: About
 titleTemplate: Terence Xu
 ---

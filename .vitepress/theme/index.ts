@@ -1,10 +1,12 @@
 import DefaultTheme from 'vitepress/theme'
-import Electron from './components/Electron.vue'
-import Graph from './components/Graph.vue'
+import { defineAsyncComponent } from 'vue'
 import Layout from './Layout.vue'
-import PhotoContent from './components/PhotoContent.vue'
 import SideSponsors from './components/SideSponsors.vue'
-import Tauri from './components/Tauri.vue'
+
+const Electron = defineAsyncComponent(() => import('./components/Electron.vue'))
+const Graph = defineAsyncComponent(() => import('./components/Graph.vue'))
+const PhotoContent = defineAsyncComponent(() => import('./components/PhotoContent.vue'))
+const Tauri = defineAsyncComponent(() => import('./components/Tauri.vue'))
 import './style/tailwind.css'
 import './style/main.css'
 import './style/code.css'

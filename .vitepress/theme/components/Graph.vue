@@ -24,7 +24,6 @@
 
 <script setup>
 import { computed, onMounted, ref, watch } from "vue";
-import { Graph as G6Graph, treeToGraphData } from '@antv/g6'
 import { allData, packageManager, scaffold, domAndCssom, codeSpecifications, develop } from '../data'
 import { useSiteLocale } from '../composables/useSiteLocale'
 
@@ -32,6 +31,16 @@ const isFullscreen = ref(false);
 const showButton = ref(false);
 const { lang } = useSiteLocale()
 let graph;
+let G6Graph;
+let treeToGraphData;
+
+async function loadG6() {
+  if (!G6Graph) {
+    const g6 = await import('@antv/g6')
+    G6Graph = g6.Graph
+    treeToGraphData = g6.treeToGraphData
+  }
+}
 
 const props = defineProps({
   height: {
@@ -176,6 +185,7 @@ const getColor = (graph, nodeId) => {
 
 
 const initGraph = async (containerId) => {
+  await loadG6()
   const container = document.getElementById(containerId)
 
   if (!container) {

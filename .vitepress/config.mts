@@ -9,6 +9,9 @@ const enKeywords =
 
 export default defineConfig({
   appearance: false,
+  router: {
+    prefetchLinks: false,
+  },
   markdown: {
     theme: {
       light: 'one-light',
@@ -17,6 +20,34 @@ export default defineConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+    build: {
+      chunkSizeWarningLimit: 900,
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (!id.includes('node_modules')) {
+              return
+            }
+
+            if (id.includes('@antv/g6')) {
+              return 'antv-g6'
+            }
+
+            if (id.includes('@antv/g-canvas') || id.includes('@antv/g-plugin')) {
+              return 'antv-renderer'
+            }
+
+            if (id.includes('@antv/layout') || id.includes('@antv/hierarchy') || id.includes('@antv/algorithm')) {
+              return 'antv-layout'
+            }
+
+            if (id.includes('@antv/')) {
+              return 'antv-vendor'
+            }
+          },
+        },
+      },
+    },
   },
   srcExclude: [
     'README.md',
@@ -64,42 +95,43 @@ export default defineConfig({
     ],
     ['meta', { name: 'robots', content: 'index,follow' }],
     ['meta', { name: 'referrer', content: 'no-referrer' }],
-    ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=GTM-TFGN8CGD' }],
-    ['script', { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-TB63M8G2D6' }],
     [
       'script',
       {},
-      `window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-TB63M8G2D6');`,
-    ],
-    [
-      'script',
-      {},
-      `(function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "mdde12font")`,
-    ],
-    [
-      'script',
-      {},
-      `window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'TAG_ID');`,
-    ],
-    [
-      'script',
-      {},
-      `var _hmt = _hmt || [];
-      (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?48d31a1ec82cedac903f0150d2e000d9";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
+      `(() => {
+        function loadAnalytics() {
+          var g1 = document.createElement('script');
+          g1.async = true;
+          g1.src = 'https://www.googletagmanager.com/gtag/js?id=GTM-TFGN8CGD';
+          document.head.appendChild(g1);
+
+          var g2 = document.createElement('script');
+          g2.async = true;
+          g2.src = 'https://www.googletagmanager.com/gtag/js?id=G-TB63M8G2D6';
+          document.head.appendChild(g2);
+
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-TB63M8G2D6');
+
+          (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "mdde12font");
+
+          var hm = document.createElement('script');
+          hm.async = true;
+          hm.src = 'https://hm.baidu.com/hm.js?48d31a1ec82cedac903f0150d2e000d9';
+          document.head.appendChild(hm);
+        }
+
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadAnalytics, { timeout: 4000 });
+        } else {
+          window.addEventListener('load', loadAnalytics, { once: true });
+        }
       })();`,
     ],
   ],

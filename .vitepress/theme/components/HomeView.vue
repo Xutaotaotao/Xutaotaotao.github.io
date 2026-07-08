@@ -1,23 +1,12 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { copy } from '../content'
-import { data as blog } from '../posts.data.mts'
+import { data as blog } from '../latest-posts.data.mts'
 import { useSiteLocale } from '../composables/useSiteLocale'
 
 const { lang, localizedPath } = useSiteLocale()
 const localizedBlog = computed(() => blog?.[lang.value] ?? blog?.zh ?? {
-  posts: [],
   latestPosts: [],
-  archiveGroups: [],
-  categoryGroups: [],
-  tagGroups: [],
-  postsByHref: {},
-  postsBySource: {},
-  stats: {
-    totalPosts: 0,
-    totalCategories: 0,
-    totalTags: 0,
-  },
 })
 </script>
 

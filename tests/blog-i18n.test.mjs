@@ -240,12 +240,13 @@ test('custom static entry pages declare explicit localized titles', () => {
   }
 })
 
-test('Graph component uses bundled G6 import instead of relying on a global window.G6 runtime', () => {
+test('Graph component lazy-loads bundled G6 instead of relying on a global window.G6 runtime', () => {
   const root = process.cwd()
   const content = readFileSync(resolve(root, '.vitepress/theme/components/Graph.vue'), 'utf8')
 
   assert.equal(content.includes('const { Graph, treeToGraphData } = G6;'), false)
-  assert.equal(content.includes("import { Graph as G6Graph, treeToGraphData } from '@antv/g6'"), true)
+  assert.equal(content.includes("import { Graph as G6Graph, treeToGraphData } from '@antv/g6'"), false)
+  assert.match(content, /import\(['"]@antv\/g6['"]\)/)
   assert.equal(content.includes('window.G6'), false)
 })
 

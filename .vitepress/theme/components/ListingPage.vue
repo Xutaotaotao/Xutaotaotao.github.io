@@ -234,21 +234,7 @@ syncArchiveFilter()
 
     <div v-else class="craft-taxonomy-page craft-taxonomy-page-compact">
       <section class="craft-taxonomy craft-taxonomy-panel craft-taxonomy-summary">
-        <div v-if="pageKind === 'categories'" class="craft-taxonomy-list">
-          <button
-            v-for="group in taxonomySummary"
-            :key="group.name"
-            type="button"
-            class="craft-taxonomy-item"
-            :class="{ active: selectedTaxonomyGroup?.slug === group.slug }"
-            @click="selectTaxonomy(group.slug)"
-          >
-            <span class="craft-taxonomy-name">{{ group.name }}</span>
-            <span class="craft-taxonomy-count">{{ group.count }}</span>
-          </button>
-        </div>
-
-        <div v-else class="craft-tag-cloud">
+        <div class="craft-tag-cloud">
           <button
             v-for="group in taxonomySummary"
             :key="group.name"

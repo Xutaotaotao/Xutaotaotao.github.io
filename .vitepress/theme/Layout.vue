@@ -1,17 +1,19 @@
 <script setup lang="ts">
 import DefaultTheme from 'vitepress/theme'
-import { computed } from 'vue'
+import { computed, defineAsyncComponent } from 'vue'
 import { useData } from 'vitepress'
 import SiteFooter from './components/SiteFooter.vue'
 import SiteNav from './components/SiteNav.vue'
-import HomeView from './components/HomeView.vue'
-import ListingPage from './components/ListingPage.vue'
-import ArticleMeta from './components/ArticleMeta.vue'
+
+const HomeView = defineAsyncComponent(() => import('./components/HomeView.vue'))
+const ListingPage = defineAsyncComponent(() => import('./components/ListingPage.vue'))
+const AboutView = defineAsyncComponent(() => import('./components/AboutView.vue'))
+const ArticleMeta = defineAsyncComponent(() => import('./components/ArticleMeta.vue'))
 
 const { frontmatter } = useData()
 
 const layout = computed(() => frontmatter.value.layout)
-const isCustomPage = computed(() => ['home', 'listing'].includes(layout.value))
+const isCustomPage = computed(() => ['home', 'listing', 'about'].includes(layout.value))
 </script>
 
 <template>
@@ -19,6 +21,7 @@ const isCustomPage = computed(() => ['home', 'listing'].includes(layout.value))
     <SiteNav />
     <HomeView v-if="layout === 'home'" />
     <ListingPage v-else-if="layout === 'listing'" />
+    <AboutView v-else-if="layout === 'about'" />
     <DefaultTheme.Layout v-else>
       <template #doc-before>
         <ArticleMeta />
