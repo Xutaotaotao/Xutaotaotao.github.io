@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-import { useData } from 'vitepress'
+import { computed, onMounted, ref, watch } from 'vue'
+import { useData, useRoute } from 'vitepress'
 import { copy, type Language } from '../content'
 import { data as blog } from '../posts.data.mts'
 import { useSiteLocale } from '../composables/useSiteLocale'
@@ -8,6 +8,7 @@ import { useSiteLocale } from '../composables/useSiteLocale'
 type PageKind = 'archive' | 'categories' | 'tags' | 'about'
 
 const { frontmatter } = useData()
+const route = useRoute()
 const { lang, localizedPath } = useSiteLocale()
 const archiveCategoryFilter = ref('')
 const archiveTagFilter = ref('')
@@ -141,10 +142,42 @@ function syncArchiveFilter() {
   archiveTagFilter.value = params.get('tag') ?? ''
 }
 
+function syncTaxonomySelection() {
+  if (typeof window === 'undefined') return
+
+  if (pageKind.value !== 'categories' && pageKind.value !== 'tags') {
+    selectedTaxonomySlug.value = ''
+    return
+  }
+
+  const params = new URLSearchParams(window.location.search)
+  const slug = params.get('slug') ?? ''
+  const exists = taxonomyGroups.value.some((group) => group.slug === slug)
+  selectedTaxonomySlug.value = exists ? slug : ''
+}
+
 function selectTaxonomy(slug: string) {
   selectedTaxonomySlug.value = slug
+
+  if (typeof window === 'undefined') return
+
+  const url = new URL(window.location.href)
+  url.searchParams.set('slug', slug)
+  window.history.replaceState(window.history.state, '', url)
 }
-syncArchiveFilter()
+
+onMounted(() => {
+  syncArchiveFilter()
+  syncTaxonomySelection()
+})
+
+watch(
+  () => route.path,
+  () => {
+    syncArchiveFilter()
+    syncTaxonomySelection()
+  },
+)
 </script>
 
 <template>

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vitepress'
 import tailwindcss from '@tailwindcss/vite'
+import { appSplashHtml, appSplashStyles } from './theme/lib/app-splash.mjs'
 
 const footerIcp = '<a href="https://beian.miit.gov.cn/" target="_blank">渝ICP备2023003982号-2</a>'
 const zhKeywords =
@@ -54,6 +55,7 @@ export default defineConfig({
     'docs/**',
   ],
   head: [
+    ['style', {}, appSplashStyles],
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     [
       'script',
@@ -144,6 +146,9 @@ export default defineConfig({
     pageData.frontmatter.head ??= []
     pageData.frontmatter.head.push(['link', { rel: 'canonical', href: canonicalUrl }])
     pageData.frontmatter.head.push(['meta', { name: 'keywords', content: pageKeywords }])
+  },
+  transformHtml(html) {
+    return html.replace(/<body([^>]*)>/, `<body$1>${appSplashHtml}`)
   },
   lastUpdated: true,
   locales: {
