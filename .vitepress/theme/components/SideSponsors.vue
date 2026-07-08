@@ -9,7 +9,7 @@ const { lang } = useSiteLocale()
   <div style="display: flex;flex-direction: column;">
     <div style="display: flex;justify-content:center;margin-top: 40px; margin-bottom: 20px;color:#d4380d">{{ copy[lang].qrContact }}</div>
     <div style="display: flex;justify-content: center;">
-      <img style="border: 1px solid #e2e2e3;border-radius: 8px;height:200px" src="/wx_qr.jpeg" :alt="copy[lang].qrContact"/>
+      <img style="border: 1px solid #e2e2e3;border-radius: 8px;max-width: 200px;width: 100%;height: auto;display: block;" src="/wx_qr.jpeg" :alt="copy[lang].qrContact"/>
     </div>
     <!-- <div style="display: flex;justify-content:center;margin-bottom: 20px;color:#d4380d">鼓励作者欢迎微信打赏</div>
     <div style="display: flex;justify-content: center;">

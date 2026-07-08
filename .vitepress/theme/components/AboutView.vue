@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import { copy } from '../content'
 import { useSiteLocale } from '../composables/useSiteLocale'
 
 const { lang } = useSiteLocale()
@@ -338,6 +339,14 @@ const currentContent = computed(() => content[lang.value as keyof typeof content
             <span class="contact-icon">{{ item.icon }}</span>
             <span>{{ item.text }}</span>
           </a>
+        </div>
+        <div class="contact-qr">
+          <p class="contact-qr-label">{{ copy[lang].qrContact }}</p>
+          <img
+            class="contact-qr-image"
+            src="/wx_qr.jpeg"
+            :alt="copy[lang].qrContact"
+          />
         </div>
       </div>
     </div>
@@ -706,6 +715,32 @@ const currentContent = computed(() => content[lang.value as keyof typeof content
 
 .contact-icon {
   font-size: 20px;
+}
+
+.contact-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--craft-rule);
+}
+
+.contact-qr-label {
+  margin: 0 0 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--craft-muted);
+}
+
+.contact-qr-image {
+  display: block;
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--craft-rule);
+  border-radius: 8px;
+  object-fit: contain;
 }
 
 /* List Styles */
