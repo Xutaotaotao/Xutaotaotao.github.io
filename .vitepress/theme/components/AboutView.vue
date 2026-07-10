@@ -57,15 +57,47 @@ const content = {
     journey: {
       title: '职业历程',
       items: [
-        { year: '2018', title: '初入职场', desc: '毕业加入咨询公司金融事业部，开始前端开发生涯，出差多地交付移动端项目' },
+        {
+          year: '2018',
+          title: '初入职场',
+          descParts: [
+            '毕业加入 ',
+            { text: '汉得信息', href: 'https://www.hand-china.com/' },
+            '，开始前端开发生涯，开发移动端项目',
+          ],
+        },
         { year: '2019', title: '技术转型', desc: '从 Vue 转向 React，从移动端到 PC 端，担任前端组副组长，开始接触敏捷开发' },
         { year: '2020', title: '团队管理', desc: '担任前端组组长，带领 15 人团队负责远程交付中心，学会合理安排精力和时间' },
-        { year: '2021', title: '互联网', desc: '加入哈啰出行，开始 Electron 开发之旅，这是技术成长最快的时期' },
+        {
+          year: '2021',
+          title: '互联网',
+          descParts: [
+            '加入 ',
+            { text: '哈啰出行', href: 'https://www.hello-inc.com/' },
+            '，开始 Electron 开发之旅，这是技术成长最快的时期',
+          ],
+        },
         { year: '2022', title: '创业项目', desc: '加入婚恋社交创业项目，从 0 到 1 完成产品开发，经历完整的 C 端产品生命周期' },
         { year: '2023', title: '晋升资深', desc: '晋升资深前端工程师，深度投入零信任安全产品，掌握 Electron + Rust 技术栈' },
         { year: '2024', title: '开始写作', desc: '开始技术写作，成为掘金优秀作者，Electron 文章爆款，建立个人品牌' },
-        { year: '2025', title: 'AI 创业', desc: '加入 Fellou AI 创业公司开发 AI Browser，经历 3 家公司，职业变化最多的一年' },
-        { year: '2026', title: '全栈转型', desc: '转型全栈工程师，深耕精准农业，拥抱 AI Native 开发，成为 E 型人才' },
+        {
+          year: '2025',
+          title: 'AI 创业',
+          descParts: [
+            '加入 ',
+            { text: 'Fellou AI', href: 'https://fellou.ai/' },
+            ' 开发 AI Browser，开发全球首个 AI 行动浏览器',
+          ],
+        },
+        {
+          year: '2026',
+          title: '全栈转型',
+          descParts: [
+            '加入 ',
+            { text: '华测导航', href: 'https://www.huace.cn/' },
+            ' 转型全栈工程师，深耕精准农业，拥抱 AI Native 开发，成为 E 型人才',
+          ],
+        },
       ],
     },
     philosophy: {
@@ -85,7 +117,7 @@ const content = {
         { icon: '📝', title: '技术写作', desc: '掘金优秀作者，周更技术文章，沉淀知识体系，Electron 系列文章爆款' },
         { icon: '🥾', title: '徒步爱好者', desc: '虎跳峡、五台山、黄山、章里古道...在大自然中放松心灵，三天徒步朝圣之旅' },
         { icon: '📷', title: '摄影', desc: '爱摄影的前端工程师，记录徒步途中的风景和生活中的美好瞬间' },
-        { icon: '🌍', title: '探索', desc: '云南、新疆、香格里拉...感受不同地方的风土人情，2025 年走过多个省份' },
+        { icon: '🌍', title: '探索', desc: '云南、新疆、香格里拉...感受不同地方的风土人情，走过多个省份' },
       ],
     },
     quote: {
@@ -105,9 +137,9 @@ const content = {
     title: 'Terence Xu',
     subtitle: 'Full-Stack Engineer · AI Native Developer · Open Source Contributor · Hiking Enthusiast',
     tags: [
-      { icon: '⚡', text: '8 Years Experience' },
+      { icon: '⚡', text: '8 Years of Experience' },
       { icon: '🤖', text: 'AI Native' },
-      { icon: '🌐', text: 'Full-Stack' },
+      { icon: '🌐', text: 'Full-Stack Development' },
       { icon: '✍️', text: 'Juejin Outstanding Author' },
       { icon: '🥾', text: 'Hiking & Photography' },
     ],
@@ -115,72 +147,104 @@ const content = {
       title: 'About Me',
       intro: [
         'Hi! I\'m Terence Xu (徐徐), a full-stack engineer with 8 years of experience, embracing AI Native development.',
-        'From consulting firms to internet giants, from execution to managing a 15-person team, from frontend expert to full-stack engineer, from traditional development to AI startups, my career has undergone multiple transformations.',
-        'I currently focus on AI Native full-stack development, precision agriculture systems, big data map rendering, Flutter applications, and leveraging AI tools (Claude, Codex, Cursor) to push creative boundaries.',
+        'From consulting firms to major internet companies, from execution to leading a 15-person team, from frontend specialist to full-stack engineer, and from traditional development to AI startups, my career has gone through multiple transitions.',
+        'I currently focus on AI Native full-stack development, precision agriculture systems, big data map rendering, Flutter applications, and using AI tools (Claude, Codex, Cursor) to push creative boundaries.',
       ],
     },
     stats: [
-      { number: '8', label: 'Years Experience' },
-      { number: '15', label: 'Team Members Led' },
-      { number: '4', label: 'Companies' },
-      { number: '10+', label: 'Projects' },
+      { number: '8', label: 'Years of Experience' },
+      { number: '15', label: 'Team Management' },
+      { number: '4', label: 'Companies Worked At' },
+      { number: '10+', label: 'Project Experience' },
     ],
     tech: {
       title: 'Tech Stack',
       items: [
-        { icon: '🎯', title: 'Full-Stack', desc: 'Java · Node.js · Express · Koa · Database · RESTful API · End-to-End' },
-        { icon: '⚛️', title: 'Frontend', desc: 'React · Vue · TypeScript · Electron · Taro · React-Native · Flutter' },
+        { icon: '🎯', title: 'Full-Stack Development', desc: 'Java · Node.js · Express · Koa · Database · RESTful API · End-to-End Delivery' },
+        { icon: '⚛️', title: 'Frontend Tech', desc: 'React · Vue · TypeScript · Electron · Taro · React-Native · Flutter' },
         { icon: '🤖', title: 'AI Native', desc: 'Cursor · Codex · Claude · Vibe Coding · AI-Assisted Development' },
-        { icon: '🗺️', title: 'Map Rendering', desc: 'GeoServer · Big Data Viz · Trajectory · Spatial Data · Canvas' },
-        { icon: '🔧', title: 'Engineering', desc: 'Webpack · Vite · CI/CD · Docker · Performance · Automation' },
-        { icon: '🖥️', title: 'Desktop Apps', desc: 'Electron · Tauri · Chromium · Chrome Extensions · Rust' },
-        { icon: '🌾', title: 'Precision Agriculture', desc: 'Machine Config · Path Planning · Analytics · Remote Sensing · Field Management' },
-        { icon: '🔐', title: 'Security', desc: 'VPN · Zero Trust · Certificate · Policy Engine · XSS/CSRF' },
+        { icon: '🗺️', title: 'Map Rendering', desc: 'GeoServer · Big Data Visualization · Trajectory Rendering · Spatial Data · Canvas' },
+        { icon: '🔧', title: 'Engineering', desc: 'Webpack · Vite · CI/CD · Docker · Performance Optimization · Automated Builds' },
+        { icon: '🖥️', title: 'Desktop Apps', desc: 'Electron · Tauri · Chromium Core · Chrome Extensions · Rust' },
+        { icon: '🌾', title: 'Precision Agriculture', desc: 'Machine Config · Path Planning · Data Analytics · Remote Sensing · Field Management' },
+        { icon: '🔐', title: 'Security', desc: 'VPN · Zero Trust · Certificate Management · Policy Engine · XSS/CSRF Protection' },
       ],
     },
     highlights: {
-      title: 'Highlights',
+      title: 'Work Highlights',
       items: [
-        { icon: '🌾', title: 'Precision Agriculture System (2026)', desc: 'Built a complete precision agriculture web system from 0 to 1 using Vibe Coding, serving as R&D lead with end-to-end delivery' },
-        { icon: '🏗️', title: 'AI Browser Core Development (2025)', desc: 'Built the world\'s first AI action browser with Electron, completed Chrome extension API simulation in 2 weeks' },
-        { icon: '🔐', title: 'Zero Trust Security Product (2023-2025)', desc: 'Led desktop client and management backend architecture, implemented 18 detection capabilities and 15 security strategies using Electron + Rust' },
-        { icon: '💝', title: 'Dating Social Product (2022)', desc: 'Built mini-program and app from 0 to 1, achieved top 3 performance in the company, fast iteration and launch' },
-        { icon: '👥', title: 'Team Management Experience (2019-2021)', desc: 'Built and led a 15-person frontend team from scratch, established tech standards and CI/CD processes, awarded Best Programmer of the Year' },
-        { icon: '💰', title: 'Financial System (2018-2019)', desc: 'Delivered cloud platform to Ping An, Orient Securities and other major financial institutions, generating tens of millions in revenue' },
+        { icon: '🌾', title: 'Precision Agriculture System (2026)', desc: 'Built a complete precision agriculture system from 0 to 1 with Vibe Coding and end-to-end delivery' },
+        { icon: '🏗️', title: 'AI Browser Core Development (2025)', desc: 'Built the world\'s first AI action browser with Electron and completed Chrome extension API simulation within two weeks' },
+        { icon: '🔐', title: 'Zero Trust Security Product (2023-2025)', desc: 'Led desktop client and management backend architecture, implemented 18 detection capabilities and 15 security strategies with Electron + Rust' },
+        { icon: '💝', title: 'Dating Social Product (2022)', desc: 'Built the dating social mini program and app from 0 to 1, ranked top 3 in company performance, and shipped through fast iteration' },
+        { icon: '👥', title: 'Team Management Experience (2019-2021)', desc: 'Built and led a 15-person frontend team from scratch, established engineering standards and CI/CD workflows, and was named Programmer of the Year' },
+        { icon: '💰', title: 'Financial System (2018-2019)', desc: 'Delivered the Rongzhihui cloud platform to Ping An, Orient Securities, and other major financial institutions, generating tens of millions in revenue' },
       ],
     },
     journey: {
       title: 'Career Journey',
       items: [
-        { year: '2018', title: 'Career Start', desc: 'Joined consulting firm financial division, started frontend career, traveled to multiple cities for mobile project delivery' },
-        { year: '2019', title: 'Tech Transition', desc: 'Transitioned from Vue to React, mobile to PC, became deputy team lead, embraced Agile development' },
-        { year: '2020', title: 'Team Management', desc: 'Became frontend team lead, led 15-person team for remote delivery center, learned to manage energy and time' },
-        { year: '2021', title: 'Internet Giant', desc: 'Joined Hellobike, started Electron development journey, the period of fastest technical growth' },
-        { year: '2022', title: 'Startup Project', desc: 'Joined dating social startup project, built product from 0 to 1, experienced complete C-end product lifecycle' },
-        { year: '2023', title: 'Senior Promotion', desc: 'Promoted to senior frontend engineer, deeply involved in zero trust security product, mastered Electron + Rust stack' },
-        { year: '2024', title: 'Started Writing', desc: 'Started technical writing, became outstanding author on Juejin, viral Electron articles, built personal brand' },
-        { year: '2025', title: 'AI Startup', desc: 'Joined Fellou AI startup to develop AI Browser, experienced 3 companies, the year of most career changes' },
-        { year: '2026', title: 'Full-Stack Transition', desc: 'Transitioned to full-stack engineer, focused on precision agriculture, embraced AI Native development, became E-shaped talent' },
+        {
+          year: '2018',
+          title: 'Early Career',
+          descParts: [
+            'After graduation, joined ',
+            { text: 'Hand China', href: 'https://www.hand-china.com/' },
+            ', started my frontend career, and built mobile projects',
+          ],
+        },
+        { year: '2019', title: 'Tech Transition', desc: 'Transitioned from Vue to React, from mobile to PC, became deputy frontend team lead, and started working with Agile development' },
+        { year: '2020', title: 'Team Management', desc: 'Became frontend team lead, led a 15-person team for the remote delivery center, and learned how to manage energy and time' },
+        {
+          year: '2021',
+          title: 'Internet',
+          descParts: [
+            'Joined ',
+            { text: 'Hellobike', href: 'https://www.hello-inc.com/' },
+            ', started my Electron journey, and experienced the fastest period of technical growth',
+          ],
+        },
+        { year: '2022', title: 'Startup Venture', desc: 'Joined a dating social startup, built the product from 0 to 1, and experienced the full consumer product lifecycle' },
+        { year: '2023', title: 'Senior Promotion', desc: 'Promoted to senior frontend engineer, deeply invested in zero trust security products, and mastered the Electron + Rust stack' },
+        { year: '2024', title: 'Started Writing', desc: 'Started technical writing, became a Juejin outstanding author, had viral Electron articles, and built a personal brand' },
+        {
+          year: '2025',
+          title: 'AI Startup',
+          descParts: [
+            'Joined ',
+            { text: 'Fellou AI', href: 'https://fellou.ai/' },
+            ' to develop AI Browser and build the world\'s first AI action browser',
+          ],
+        },
+        {
+          year: '2026',
+          title: 'Full-Stack Transition',
+          descParts: [
+            'Joined ',
+            { text: 'CHC Navigation', href: 'https://www.huace.cn/' },
+            ', transitioned to full-stack engineer, focused on precision agriculture, embraced AI Native development, and became E-shaped talent',
+          ],
+        },
       ],
     },
     philosophy: {
-      title: 'Philosophy',
+      title: 'Technical Philosophy',
       items: [
-        'Embrace AI, become E-shaped talent: AI ability + taste + architecture + endurance',
-        'Initiative and proactivity matter more than pure coding skills',
-        'Deeply understand business, design architecture well, let AI handle coding',
-        'End-to-end closure, solo extreme combat capability',
-        'Write for yourself first, then help others',
-        'Life is not the future, nor the past, but this moment',
+        'Embrace AI and become E-shaped talent: AI skills + taste + architecture + stamina',
+        'Initiative and agency matter more than coding ability alone',
+        'Understand the business deeply, design the architecture well, and let AI handle the coding',
+        'End-to-end ownership with solo extreme execution capability',
+        'Write for yourself first, then for others',
+        'Life is not the future or the past; it is this moment',
       ],
     },
     hobbies: {
-      title: 'Beyond Code',
+      title: 'Beyond Work',
       items: [
-        { icon: '📝', title: 'Tech Writing', desc: 'Outstanding author on Juejin, weekly tech articles, knowledge system, viral Electron series' },
-        { icon: '🥾', title: 'Hiking', desc: 'Tiger Leaping Gorge, Wutai Mountain, Huangshan... relaxing in nature, 3-day pilgrimage hike' },
-        { icon: '📷', title: 'Photography', desc: 'Frontend engineer who loves photography, capturing beautiful moments during hikes and daily life' },
-        { icon: '🌍', title: 'Exploration', desc: 'Yunnan, Xinjiang, Shangri-La... experiencing different cultures, traveled multiple provinces in 2025' },
+        { icon: '📝', title: 'Tech Writing', desc: 'Juejin outstanding author, weekly technical articles, building a knowledge system, and viral Electron series' },
+        { icon: '🥾', title: 'Hiking Enthusiast', desc: 'Tiger Leaping Gorge, Mount Wutai, Huangshan, Zhangli Ancient Trail... relaxing in nature on multi-day pilgrimage hikes' },
+        { icon: '📷', title: 'Photography', desc: 'A frontend engineer who loves photography, capturing scenery on hikes and beautiful moments in daily life' },
+        { icon: '🌍', title: 'Exploration', desc: 'Yunnan, Xinjiang, Shangri-La... experiencing local cultures and traveling across many provinces' },
       ],
     },
     quote: {
@@ -199,6 +263,10 @@ const content = {
 }
 
 const currentContent = computed(() => content[lang.value as keyof typeof content] || content.zh)
+
+function isJourneyLink(part: string | { text: string; href: string }): part is { text: string; href: string } {
+  return typeof part === 'object'
+}
 </script>
 
 <template>
@@ -241,7 +309,7 @@ const currentContent = computed(() => content[lang.value as keyof typeof content
       <!-- Stats Card -->
       <div class="about-card">
         <div class="card-icon">📊</div>
-        <h2 class="card-title">{{ lang === 'zh' ? '工作概览' : 'Overview' }}</h2>
+        <h2 class="card-title">{{ lang === 'zh' ? '工作概览' : 'Work Overview' }}</h2>
         <div class="stats-grid">
           <div v-for="stat in currentContent.stats" :key="stat.label" class="stat-item">
             <div class="stat-number">{{ stat.number }}</div>
@@ -283,7 +351,19 @@ const currentContent = computed(() => content[lang.value as keyof typeof content
             <div class="journey-year">{{ item.year }}</div>
             <div class="journey-content">
               <h4>{{ item.title }}</h4>
-              <p>{{ item.desc }}</p>
+              <p v-if="item.descParts">
+                <template v-for="(part, index) in item.descParts" :key="index">
+                  <a
+                    v-if="isJourneyLink(part)"
+                    class="journey-link"
+                    :href="part.href"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >{{ part.text }}</a>
+                  <template v-else>{{ part }}</template>
+                </template>
+              </p>
+              <p v-else>{{ item.desc }}</p>
             </div>
           </div>
         </div>
@@ -837,6 +917,18 @@ const currentContent = computed(() => content[lang.value as keyof typeof content
   color: var(--craft-muted);
   line-height: 1.6;
   margin: 0;
+}
+
+.journey-link {
+  color: var(--craft-accent);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--craft-accent) 40%, transparent);
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.journey-link:hover {
+  color: var(--craft-accent-strong);
 }
 
 @media (max-width: 768px) {

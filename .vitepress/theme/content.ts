@@ -98,7 +98,7 @@ export const copy = {
     heroName: '徐徐。',
     heroTitle: 'AI 全栈开发工程师',
     heroIntroBefore:
-      '我是一名 AI 全栈开发工程师和开源创作者，也长期做前端与桌面端产品。从很早就开始写代码，并在这个',
+      '我是一名 AI 全栈开发工程师和开源创作者，长期做前端与桌面端&移动端产品。从很早就开始写代码，并在这个',
     heroIntroLink: '博客',
     heroIntroAfter: '里持续整理技术文章与项目复盘。',
     heroNote: '本站上的每一篇内容都由我亲自撰写和整理，不是 AI 生成的。',
