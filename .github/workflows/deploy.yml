@@ -1,38 +1,28 @@
-# Sample workflow for building and deploying a VitePress site to GitHub Pages
-#
+# Build VitePress and deploy to GitHub Pages + self-hosted nginx.
 name: Deploy VitePress site to Pages
 
 on:
-  # Runs on pushes targeting the `main` branch. Change this to `master` if you're
-  # using the `master` branch as the default branch.
   push:
     branches: [master]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: pages
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Not needed if lastUpdated is not enabled
-      # - uses: pnpm/action-setup@v2 # Uncomment this if you're using pnpm
+          fetch-depth: 0
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -41,15 +31,14 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
-        run: yarn install # or pnpm install / yarn install
+        run: yarn install
       - name: Build with VitePress
-        run: yarn docs:build # or pnpm docs:build / yarn docs:build
+        run: yarn docs:build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
 
-  # Deployment job
   deploy:
     environment:
       name: github-pages
@@ -61,22 +50,102 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        
+
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
           name: github-pages
           path: artifact
-      
-      - name: Extract artifact
-        run: tar -xf artifact/*.tar --directory artifact
 
-      - name: Deploy to Server
+      - name: Extract artifact
+        run: |
+          mkdir -p site
+          tar -xf artifact/*.tar -C site
+          echo "Site layout:"
+          du -sh site
+          du -sh site/*/ 2>/dev/null || true
+          ls -la site | head -40
+
+      # 1) hashed JS/CSS first — new HTML must never 404 mid-deploy
+      - name: Sync assets (hashed JS/CSS)
         uses: easingthemes/ssh-deploy@v2.1.5
         env:
-            SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-            ARGS: '-rltgoDzvO --delete'
-            SOURCE: artifact/*
-            REMOTE_HOST: ${{ secrets.SERVER_HOST }}
-            REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
-            TARGET: /usr/share/nginx/html/
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: '-rltgoDzvO'
+          SOURCE: site/assets/
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
+          TARGET: /usr/share/nginx/html/assets/
+
+      # 2) pages / chunks, skip the heavy image tree
+      - name: Sync pages (exclude img)
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: '-rltgoDzvO --exclude=img --exclude=assets'
+          SOURCE: site/
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
+          TARGET: /usr/share/nginx/html/
+
+      # 3) baseline images without large note albums
+      - name: Sync img except notes
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: '-rltgoDzvO --exclude=notes'
+          SOURCE: site/img/
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
+          TARGET: /usr/share/nginx/html/img/
+
+      # 4) note albums one folder at a time (smallest → largest)
+      - name: Sync note image folders in batches
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          RSYNC_RSH="ssh -i $HOME/.ssh/deploy_key -o StrictHostKeyChecking=no -o ServerAliveInterval=30"
+          REMOTE="${REMOTE_USER}@${REMOTE_HOST}"
+          TARGET_ROOT=/usr/share/nginx/html
+
+          ssh -i "$HOME/.ssh/deploy_key" -o StrictHostKeyChecking=no "$REMOTE" \
+            "mkdir -p $TARGET_ROOT/img/notes"
+
+          if [ ! -d site/img/notes ]; then
+            echo "No site/img/notes directory, skip."
+            exit 0
+          fi
+
+          # Sort by size ascending so the site recovers sooner.
+          mapfile -t FOLDERS < <(
+            find site/img/notes -mindepth 1 -maxdepth 1 -type d -printf '%s\t%p\n' \
+              | sort -n \
+              | cut -f2-
+          )
+
+          for folder in "${FOLDERS[@]}"; do
+            name="$(basename "$folder")"
+            size="$(du -sh "$folder" | cut -f1)"
+            echo "::group::Sync notes/$name ($size)"
+            rsync -rltgoDzvO --partial --timeout=120 -e "$RSYNC_RSH" \
+              "$folder/" "$REMOTE:$TARGET_ROOT/img/notes/$name/"
+            echo "::endgroup::"
+          done
+
+      # 5) prune orphans after everything is already on the server.
+      # Already-synced files should be skipped by size/mtime; this mainly deletes old hashes.
+      - name: Final prune with --delete
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: '-rltgoDzvO --delete'
+          SOURCE: site/
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
+          TARGET: /usr/share/nginx/html/
