@@ -112,6 +112,14 @@ function normalizeRelativePath(url) {
 }
 
 function normalizeDate(value) {
+  if (value instanceof Date && !Number.isNaN(value.valueOf())) {
+    // YAML bare dates are UTC midnight; use UTC getters to avoid -1 day in east timezones.
+    const year = value.getUTCFullYear()
+    const month = String(value.getUTCMonth() + 1).padStart(2, '0')
+    const day = String(value.getUTCDate()).padStart(2, '0')
+    return `${year}-${month}-${day}`
+  }
+
   if (typeof value !== 'string') return null
   const normalized = value.trim().slice(0, 10)
   return /^\d{4}-\d{2}-\d{2}$/.test(normalized) ? normalized : null
