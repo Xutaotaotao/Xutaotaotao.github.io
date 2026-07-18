@@ -154,6 +154,8 @@ test('current bilingual rollout includes the expected mirrored English articles'
     'en/summary/terminal/mac.md',
     'en/summary/terminal/windows.md',
     'en/summary/practice/image-slicing.md',
+    'en/summary/practice/mcp_get_installed_apps.md',
+    'en/summary/practice/mcp_intro.md',
     'en/summary/practice/node_install_app.md',
     'en/summary/practice/react_i18.md',
     'en/summary/practice/taro_img_share.md',

@@ -46,12 +46,12 @@ const content = {
     highlights: {
       title: '工作亮点',
       items: [
-        { icon: '🌾', title: '精准农业系统（2026）', desc: '从 0 到 1 用 Vibe Coding 构建完整的精准农业系统，端到端闭环交付' },
-        { icon: '🏗️', title: 'AI Browser 核心开发（2025）', desc: '基于 Electron 构建全球首个 AI 行动浏览器，两周内完成 Chrome 插件 API 模拟实现' },
-        { icon: '🔐', title: '零信任安全产品（2023-2025）', desc: '主导桌面客户端与管理后台架构，实现 18 种检测能力和 15 种安全策略，使用 Electron + Rust' },
-        { icon: '💝', title: '婚恋社交产品（2022）', desc: '从 0 到 1 完成婚恋社交小程序与 APP 开发，性能进入公司前三，快速迭代上线' },
-        { icon: '👥', title: '团队管理经验（2019-2021）', desc: '从 0 到 1 组建并带领 15 人前端团队，制定技术规范、CI/CD 流程，获评年度最牛程序员' },
-        { icon: '💰', title: '金融系统（2018-2019）', desc: '融智汇云平台供给平安、东方证券等大型金融机构，带来数千万级营收' },
+        { icon: '🌾', title: '精准农业系统（2026）', desc: '从 0 到 1 主导精准农业系统交付（Vibe Coding），落地农机配置、路径规划与田块任务分析等核心能力，端到端闭环上线，获国际客户认可。' },
+        { icon: '🏗️', title: 'AI Browser 核心开发（2025）', desc: '主导 AI Browser 桌面端核心架构（Electron），两周内落地 Chrome 插件 API 兼容层，支撑 Groups / Tabs 等浏览器核心能力重构，推动产品从原型走向可发布版本。' },
+        { icon: '🔐', title: '零信任安全产品（2023-2025）', desc: '主导零信任桌面客户端与运营后台架构（Electron + Rust），落地覆盖进程 / 软件 / 硬件 / 合规等多维检测能力，支撑十余类安全策略的配置、调度与端上执行，并完成性能与体验从「能用」到「可规模化」的关键优化。' },
+        { icon: '💝', title: '婚恋社交产品（2022）', desc: '从 0 到 1 主导婚恋社交小程序与 APP 交付，完成核心匹配与社交链路落地；通过启动与关键路径优化，将端上性能做到公司同类产品前三，支撑高频迭代稳定上线。' },
+        { icon: '👥', title: '团队管理经验（2019-2021）', desc: '从 0 到 1 组建并带领 15 人前端团队，负责远程交付中心，建立技术规范与 CI/CD 流程，保障多项目稳定交付，获评年度最牛程序员。' },
+        { icon: '💰', title: '金融系统（2018-2019）', desc: '参与融智汇云平台前端交付，支撑平安、东方证券等大型金融机构落地，助力平台实现数千万级营收。' },
       ],
     },
     journey: {
@@ -86,7 +86,7 @@ const content = {
           descParts: [
             '加入 ',
             { text: 'Fellou AI', href: 'https://fellou.ai/' },
-            ' 开发 AI Browser，开发全球首个 AI 行动浏览器',
+            ' 开发 AI Browser，定位为 AI 行动浏览器',
           ],
         },
         {
@@ -173,12 +173,12 @@ const content = {
     highlights: {
       title: 'Work Highlights',
       items: [
-        { icon: '🌾', title: 'Precision Agriculture System (2026)', desc: 'Built a complete precision agriculture system from 0 to 1 with Vibe Coding and end-to-end delivery' },
-        { icon: '🏗️', title: 'AI Browser Core Development (2025)', desc: 'Built the world\'s first AI action browser with Electron and completed Chrome extension API simulation within two weeks' },
-        { icon: '🔐', title: 'Zero Trust Security Product (2023-2025)', desc: 'Led desktop client and management backend architecture, implemented 18 detection capabilities and 15 security strategies with Electron + Rust' },
-        { icon: '💝', title: 'Dating Social Product (2022)', desc: 'Built the dating social mini program and app from 0 to 1, ranked top 3 in company performance, and shipped through fast iteration' },
-        { icon: '👥', title: 'Team Management Experience (2019-2021)', desc: 'Built and led a 15-person frontend team from scratch, established engineering standards and CI/CD workflows, and was named Programmer of the Year' },
-        { icon: '💰', title: 'Financial System (2018-2019)', desc: 'Delivered the Rongzhihui cloud platform to Ping An, Orient Securities, and other major financial institutions, generating tens of millions in revenue' },
+        { icon: '🌾', title: 'Precision Agriculture System (2026)', desc: 'Led delivery of the precision agriculture system from 0 to 1 (Vibe Coding), shipping core capabilities including machine configuration, path planning, and field task analytics; delivered end-to-end and recognized by international customers.' },
+        { icon: '🏗️', title: 'AI Browser Core Development (2025)', desc: 'Led the AI Browser desktop core architecture (Electron), landed a Chrome extension API compatibility layer within two weeks, supported Groups / Tabs core rework, and helped move the product from prototype to a shippable release.' },
+        { icon: '🔐', title: 'Zero Trust Security Product (2023-2025)', desc: 'Led the zero-trust desktop client and operations backend architecture (Electron + Rust), covering multi-dimensional detection across process / software / hardware / compliance, supporting configuration, scheduling, and on-device execution for 10+ security policy types, and driving the critical optimization from "usable" to "scalable" in performance and experience.' },
+        { icon: '💝', title: 'Dating Social Product (2022)', desc: 'Led delivery of the dating social mini program and app from 0 to 1, shipping the core matching and social loop; optimized startup and critical paths to reach top 3 performance among similar products in the company, supporting high-frequency iteration and stable releases.' },
+        { icon: '👥', title: 'Team Management Experience (2019-2021)', desc: 'Built and led a 15-person frontend team from 0 to 1, owned the remote delivery center, established engineering standards and CI/CD workflows, ensured stable multi-project delivery, and was named Programmer of the Year.' },
+        { icon: '💰', title: 'Financial System (2018-2019)', desc: 'Contributed to frontend delivery of the Rongzhihui cloud platform, supporting rollouts for Ping An, Orient Securities, and other major financial institutions, and helping the platform achieve tens of millions in revenue.' },
       ],
     },
     journey: {
@@ -213,7 +213,7 @@ const content = {
           descParts: [
             'Joined ',
             { text: 'Fellou AI', href: 'https://fellou.ai/' },
-            ' to develop AI Browser and build the world\'s first AI action browser',
+            ' to develop AI Browser, positioned as an AI action browser',
           ],
         },
         {
