@@ -23,6 +23,7 @@ export const navLabels = {
     categories: '分类',
     tags: '标签',
     about: '关于',
+    work: '工作记录',
     projects: '项目',
     brand: '前端徐徐',
     homeAria: '前端徐徐 首页',
@@ -41,6 +42,7 @@ export const navLabels = {
     categories: 'Categories',
     tags: 'Tags',
     about: 'About',
+    work: 'Work log',
     projects: 'Projects',
     brand: 'Terence Xu',
     homeAria: 'Terence Xu Home',
@@ -88,6 +90,11 @@ export const navItems = [
     key: 'about',
     href: '/about/',
     activePrefixes: ['/about/'],
+  },
+  {
+    key: 'work',
+    href: '/work/',
+    activePrefixes: ['/work/'],
   },
 ] satisfies readonly NavItem[]
 

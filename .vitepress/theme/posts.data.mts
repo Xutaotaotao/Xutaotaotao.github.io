@@ -63,6 +63,8 @@ export default createContentLoader(
         'en/categories/index.md',
         'en/tags/index.md',
         'en/about/index.md',
+        'work/**/*.md',
+        'en/work/**/*.md',
         'GutEase/**/*.md',
         'en/GutEase/**/*.md',
         'electron/index.md',

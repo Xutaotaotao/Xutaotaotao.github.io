@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { copy } from '../content'
+import { aboutWork } from '../about-work'
+import { data as workLog } from '../work-log.data'
 import { useSiteLocale } from '../composables/useSiteLocale'
 
-const { lang } = useSiteLocale()
+const { lang, localizedPath } = useSiteLocale()
 
 const content = {
   zh: {
@@ -264,6 +266,9 @@ const content = {
 
 const currentContent = computed(() => content[lang.value as keyof typeof content] || content.zh)
 
+const recentWork = computed(() => workLog[lang.value].slice(0, 3))
+const workLabels = computed(() => aboutWork[lang.value])
+
 function isJourneyLink(part: string | { text: string; href: string }): part is { text: string; href: string } {
   return typeof part === 'object'
 }
@@ -294,6 +299,19 @@ function isJourneyLink(part: string | { text: string; href: string }): part is {
         </span>
       </div>
     </div>
+
+    <section class="about-card recent-work-card" aria-labelledby="recent-work-title">
+      <div class="card-icon" aria-hidden="true">🛠️</div>
+      <h2 id="recent-work-title" class="card-title">{{ workLabels.title }}</h2>
+      <div class="timeline">
+        <article v-for="item in recentWork" :key="item.id" class="timeline-item recent-work-entry">
+          <time class="recent-work-date" :datetime="item.date">{{ item.date }}</time>
+          <h3 class="recent-work-entry-title"><a :href="`${localizedPath('/work/')}#${item.id}`">{{ item.title }}</a></h3>
+          <p>{{ item.summary }}</p>
+        </article>
+      </div>
+      <a class="recent-work-more" :href="localizedPath('/work/')">{{ workLabels.allLabel }}<span aria-hidden="true"> →</span></a>
+    </section>
 
     <!-- Masonry Grid -->
     <div class="masonry-grid">
@@ -439,6 +457,15 @@ function isJourneyLink(part: string | { text: string; href: string }): part is {
   margin: 0 auto;
   padding: 40px 20px 80px;
 }
+
+/* Recent work extends the existing card and timeline styles. */
+.recent-work-card { margin-bottom: 32px; }
+.recent-work-date { display: block; margin-bottom: 6px; color: var(--craft-muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.recent-work-entry-title { margin: 0 0 8px; color: var(--craft-ink); font-size: 16px; font-weight: 600; line-height: 1.6; }
+.recent-work-entry-title a { text-underline-offset: 4px; }
+.recent-work-entry-title a:hover { color: var(--craft-accent); text-decoration: underline; }
+.recent-work-more { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; margin-top: 20px; color: var(--craft-accent); font-size: 14px; font-weight: 600; text-underline-offset: 4px; }
+.recent-work-more:hover { text-decoration: underline; }
 
 /* Hero Card */
 .hero-card {

@@ -70,6 +70,8 @@ const categoryRules = [
 ]
 
 const staticPagePrefixes = [
+  '/work/',
+  '/en/work/',
   '/GutEase/',
   '/en/GutEase/',
 ]

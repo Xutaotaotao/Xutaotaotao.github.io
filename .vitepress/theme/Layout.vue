@@ -16,6 +16,10 @@ const AboutView = defineAsyncComponent({
   loader: () => import('./components/AboutView.vue'),
   suspensible: true,
 })
+const WorkLogView = defineAsyncComponent({
+  loader: () => import('./components/WorkLogView.vue'),
+  suspensible: true,
+})
 const ArticleMeta = defineAsyncComponent(() => import('./components/ArticleMeta.vue'))
 
 const { frontmatter } = useData()
@@ -41,6 +45,12 @@ onMounted(() => {
       <AboutView />
       <template #fallback>
         <PageSkeleton variant="about" />
+      </template>
+    </Suspense>
+    <Suspense v-else-if="layout === 'work'">
+      <WorkLogView />
+      <template #fallback>
+        <PageSkeleton variant="listing" />
       </template>
     </Suspense>
     <DefaultTheme.Layout v-else>
